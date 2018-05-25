@@ -3,23 +3,26 @@ FAQ: Sawtooth in General
 
 What is Sawtooth?
 -----------------
-Hyperledger Sawtooth is a modular platform for building, deploying, and running distributed, permissioned ledgers.
+Hyperledger Sawtooth is a modular enterprise blockchain platform for building, deploying, and running distributed ledgers.
+The design philosophy targets keeping ledgers distributed and making smart contracts safe, particularly for enterprise use.
 Hyperledger Sawtooth includes a novel consensus algorithm, Proof of Elapsed Time (PoET), which targets large distributed validator populations with minimal resource consumption.
 No special hardware is required to run Sawtooth or PoET.
 
 What are some useful Sawtooth links?
 ------------------------------------
 
+https://sawtooth.hyperledger.org/docs/core/nightly/master/introduction.html
+    Sawtooth introduction
 https://www.hyperledger.org/projects/sawtooth
-    Sawtooth Introduction and Download
+    Sawtooth introduction and download
 https://github.com/hyperledger/sawtooth-core
     Github repository for Sawtooth Core
 https://sawtooth.hyperledger.org/docs/core/nightly/master/
-    Sawtooth Documentation with introduction, and several guides and references, including:
+    Sawtooth documentation, with several guides and references, including:
 https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide.html
     Sawtooth Application Developer's Guide
 https://chat.hyperledger.org/channel/sawtooth
-    Sawtooth chat main channel (several others exist here)
+    Sawtooth chat main channel (several others Sawtooth channels exist here)
 
 What is the difference between Hyperledger and Sawtooth?
 --------------------------------------------------------
@@ -54,6 +57,7 @@ I get this error when running ``sawtooth setting list`` or ``xo list`` : ``Error
 -----------------------------
 
 This usually occurs when there is no genesis node created.  To create, type the following:
+
 ::
 
     sawtooth keygen
@@ -61,6 +65,7 @@ This usually occurs when there is no genesis node created.  To create, type the 
     sudo -u sawtooth sawadm genesis config-genesis.batch
 
 Then start the validator:
+
 ::
 
     sudo sawadm keygen
