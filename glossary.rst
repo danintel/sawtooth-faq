@@ -2,6 +2,7 @@ Appendix: Glossary
 ==================
 
 See also:
+
 * https://sawtooth.hyperledger.org/docs/core/nightly/master/glossary.html
 * https://sawtooth.hyperledger.org/docs/core/releases/1.0/architecture/poet.html#definitions
 
@@ -112,7 +113,7 @@ Sawtooth
 SETH
      Ethereum-compatible Sawtooth Transaction Processor. Suppors running Ethereum Virtual Machine
 secp256k1
-    An ECDSA (Elliptic Curve DSA) cryptographic algorithm used by Sawtooth with a 32-byte key. Used for Validator and TP; same algorithm used by Bitcoin
+    An ECDSA (Elliptic Curve DSA) cryptographic algorithm used by Sawtooth with a 32-byte key. Used for Validator and TP. Bitcoin also uses this algorithm
 Serialization
     A scheme to encode data as a byte stream.  For Sawtooth the serialization must be deterministic, meaning the encoding is always in the same order and always the same for the same data.  Protobufs are often used in Sawtooth Serialization, but that is not a requirement.  A simpler alternative, for example, is CSV.
 SGX

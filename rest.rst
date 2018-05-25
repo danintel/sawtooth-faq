@@ -1,11 +1,13 @@
 FAQ: Sawtooth REST API
 ==================
 
-What's the difference between the sawtooth-rest-api --bind (or -B) and --connect (or -C) options?
+What's the difference between the ``sawtooth-rest-api --bind`` and ``--connect`` options?
 -------------------
 
-``--bind`` (``-B``) specifies where your rest-api would listen. The default is http://localhost:8008
-``--connect`` (``-C``) specifies where your rest-api can reach to the validator. The default is http://localhost:4004
+``sawtooth-rest-api --bind`` (``-B``)
+    specifies where your rest-api would listen. The default is http://localhost:8008
+``sawtooth-rest-api --connect`` (``-C``)
+    specifies where your rest-api can reach to the validator. The default is http://localhost:4004
 
 What REST API commands are available?
 -------------------
@@ -21,6 +23,8 @@ From the Client Docker container, access from rest-api.  For example:
 ::
 
     curl http://rest-api:8008/state
+
+These are the supported REST API commands:
 
 POST /batches
     Submit a protobuf-formatted batch list to the validator
