@@ -1,5 +1,11 @@
-Here are some TF prefixes (there is no central registry):
+Appendix: Prefixes
+==================
+
+Here is an unofficial list of some TF prefixes (there is no central registry):
+
+======================= ======= ===============
 TF NAME                 PREFIX  PREFIX ENCODING
+======================= ======= ===============
 settings                000000  Validator settings
                                 000000<1st 62 chars of SHA-256(policy name)>
 blockinfo               00b10c  Validator Block Info
@@ -18,3 +24,5 @@ sabre                   00ec00,00ec01,00ec02 WebAssembly VM
 seth                    a68b06  Ethereum VM
 rbac                    8563d0  NEXT Identity Platform
 cookie-maker            1a5312  Cookie Maker example
+
+© Copyright 2018, Intel Corporation.

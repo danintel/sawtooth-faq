@@ -1,25 +1,36 @@
-* Does a client send a transaction request to all the validators in the network?
+FAQ: Sawtooth Transaction Processing
+==================
+
+Does a client send a transaction request to all the validators in the network?
+-------------------
 
 No, it would just need to send the batch to one validator, then that validator will broadcast the batch to the rest of its peers.
 If the validator is down, your connection attempt from the app would fail.
 The app could have error handling to try again (in a retry loop) or try another validator.
 
-* Does Sawtooth have a way to control what participants have access to what assets in the business network and under what conditions?
+Does Sawtooth have a way to control what participants have access to what assets in the business network and under what conditions?
+-------------------
 
 Blockchains, including Sawtooth, can be deployed as permissioned networks, wherein transactions are visible to the participants of the permissioned network, but not visible to the general public.
 
-* What transaction processors are required?
+What transaction processors are required?
+-------------------
 Just the Settings TP.  All the other TPs are optional.
 
-* What does the Settings TP do?
+What does the Settings TP do?
+-------------------
 The settings-tp provides on-chain configs to be applied to the Sawtooth Validators, so that you can change operational parameters without restarting the validators or the whole sawtooth network.
 Also, you could right your own settings-tp, that stores the settings the same way but enforces different rules on how they are updated.
 
-* Can different Validator Nodes have different Transaction Processors running?
+Can different Validator Nodes have different Transaction Processors running?
+-------------------
 No. The set of TPs must be the same for all validator nodes in a Sawtooth network.
 If a validator receives a transaction that it does not have a transaction processor for, the validator will wait until a transaction processor connects that can handle that transaction. That validator would fall behind the rest on the network while it waits.
 
-* How can I limit what Transaction Processors run on a Validator Node?
+How can I limit what Transaction Processors run on a Validator Node?
+-------------------
 You can also limit which transactions are accepted on the network by setting
 `sawtooth.validator.transaction_families` If that setting is not set, all transaction processors are accepted.
 This setting is ignored in dev-mode consensus.
+
+© Copyright 2018, Intel Corporation.
