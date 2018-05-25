@@ -12,6 +12,6 @@ Frequently-asked Questions (FAQ) for Hyperledger Sawtooth
 
 ## Appendix
 * [Glossary](glossary.rst)
-* [Transaction Famliy Prefixes](prefixes.rst)
+* [Transaction Family Prefixes](prefixes.rst)
 
 © Copyright 2018, Intel Corporation.
