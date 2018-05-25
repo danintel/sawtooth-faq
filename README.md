@@ -2,7 +2,7 @@
 Frequently-asked Questions (FAQ) for Hyperledger Sawtooth
 
 ## FAQ
-* [Sawtooth](sawtooth.rst)
+* [Sawtooth in General](sawtooth.rst)
 * [Sawtooth Transaction Processing](transaction-processing.rst)
 * [Sawtooth Validator](validator.rst)
 * [Sawtooth Consensus Algorithms (including PoET)](consensus.rst)
