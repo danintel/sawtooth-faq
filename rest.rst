@@ -1,14 +1,25 @@
-* What's the difference between the sawtooth-rest-api --bind (or -B) and --connect (or -C) options?
+FAQ: Sawtooth REST API
+==================
 
---bind (-B) specifies where your rest-api would listen. The default is http://localhost:8008
---connect (-C) specifies where your rest-api can reach to the validator. The default is http://localhost:4004
+What's the difference between the sawtooth-rest-api --bind (or -B) and --connect (or -C) options?
+-------------------
 
-* What REST API commands are available?
+``--bind`` (``-B``) specifies where your rest-api would listen. The default is http://localhost:8008
+``--connect`` (``-C``) specifies where your rest-api can reach to the validator. The default is http://localhost:4004
+
+What REST API commands are available?
+-------------------
 
 Use localhost to access the REST API from the Validator Docker container or from where the Validator is running.
 For example:
+
+::
+
     curl http://localhost:8008/state
 From the Client Docker container, access from rest-api.  For example:
+
+::
+
     curl http://rest-api:8008/state
 
 POST /batches
@@ -33,3 +44,5 @@ GET /transactions/{transaction_id}
     Fetch the specified transaction
 GET /peers
     Fetch a list of current peered validators
+
+© Copyright 2018, Intel Corporation.
