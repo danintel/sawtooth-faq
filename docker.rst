@@ -1,7 +1,7 @@
 FAQ: Using Docker with Sawtooth
 ====================
 
-I get this error running "docker-compose -f sawtooth-default.yaml up" Error: files exist, rerun with --force to overwrite existing files
+I get this error running ``docker-compose -f sawtooth-default.yaml up`` : ``Error: files exist, rerun with --force to overwrite existing files``
 -------------------
 
 This occurs when docker was not halted cleanly.  Run the following first:
@@ -22,19 +22,19 @@ An alternate solution is to force it to ignore the existing files:
 
     docker-compose -f docker/compose/sawtooth-default.yaml up --force
 
-I get this error running "docker-compose -f sawtooth-default.yaml up" ERROR: Couldn't connect to Docker daemon at http+docker://localhost - is it running?
+I get this error running ``docker-compose -f sawtooth-default.yaml up`` : ``ERROR: Couldn't connect to Docker daemon at http+docker://localhost - is it running?``
 -------------------
 If it's at a non-standard location, specify the URL with the DOCKER_HOST environment variable.
 
-You may not have enough permission to run. Try "sudo docker-compose ..."
-See if sure docker is running with and start Docker with:
+You may not have enough permission to run. Try prefixing with sudo: ``sudo docker-compose ...``
+To determine if sure docker is running and to start Docker, type:
 
 ::
 
     service docker status
     sudo service docker start
 
-I get this error running "docker run hello-world": Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.37/containers/json: dial unix /var/run/docker.sock: connect: permission denied
+I get this error running ``docker run hello-world`` :  ``Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.37/containers/json: dial unix /var/run/docker.sock: connect: permission denied``
 -------------------
 
 Try running with sudo.  For example: sudo docker run hello-world
