@@ -39,7 +39,7 @@ I get this error running ``docker run hello-world`` :  ``Got permission denied w
 
 Try running with sudo.  For example: sudo docker run hello-world
 
-I get this error running ``docker run hello-world`` : ``docker: Error response from daemon: Get https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers). ``
+I get this error running ``docker run hello-world`` : ``docker: Error response from daemon: Get https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers).``
 -------------------
 
 If you are behind a network firewall, it is usually a proxy problem.
