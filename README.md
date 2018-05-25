@@ -1,5 +1,5 @@
-# sawtooth-faq
-Hyperledger Sawtooth Frequently-asked Questions (FAQ)
+# Sawtooth FAQ
+Frequently-asked Questions (FAQ) for Hyperledger Sawtooth
 
 ## FAQ
 * [Sawtooth](sawtooth.rst)
