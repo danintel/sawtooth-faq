@@ -1,5 +1,7 @@
 FAQ: Sawtooth Client
 ====================
+[`PREVIOUS`_] [`NEXT`_]
+-----------------------
 
 What languages does the Sawtooth SDK support?
 -------------------

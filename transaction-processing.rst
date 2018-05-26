@@ -1,5 +1,7 @@
 FAQ: Sawtooth Transaction Processing
 ==================
+[`PREVIOUS`_] [`NEXT`_]
+-----------------------
 
 Does a client send a transaction request to all the validators in the network?
 -------------------

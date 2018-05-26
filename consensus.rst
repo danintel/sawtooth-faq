@@ -1,5 +1,7 @@
 FAQ: Sawtooth Consensus Algorithms (including PoET)
 ====================
+[`PREVIOUS`_] [`NEXT`_]
+-----------------------
 
 What consensus algorithms does Sawtooth support?
 -------------------

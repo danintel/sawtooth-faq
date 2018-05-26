@@ -1,5 +1,7 @@
 FAQ: Sawtooth Validator
 ==================
+[`PREVIOUS`_] [`NEXT`_]
+-----------------------
 
 Is there a simple example to show how to run Sawtooth
 -------------------

@@ -1,5 +1,7 @@
 Appendix: Glossary
 ==================
+[`PREVIOUS`_] [`NEXT`_]
+-----------------------
 
 See also:
 
