@@ -48,6 +48,8 @@ What's the difference betweeen the ``sawtooth``, ``sawadm``, ``sawnet``, and ``s
 ``sawtooth``
     Interfact with a Sawtooth validator, such as batches, blocks, identity, keygen, peers, settings, state, and transaction information
 
+For more information, see the Sawtooth CLI Command Reference at https://sawtooth.hyperledger.org/docs/core/releases/latest/cli.html
+
 Must software developed with Sawtooth be open source?
 ------------------------
 
