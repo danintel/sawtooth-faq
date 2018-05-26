@@ -52,4 +52,10 @@ GET /peers
 For more information, see the Sawtooth REST API Reference at
 https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api.html
 
+[`PREVIOUS`_] [`NEXT`_]
+=========
+
+.. _PREVIOUS: client.rst
+.. _NEXT: docker.rst
+
 © Copyright 2018, Intel Corporation.
