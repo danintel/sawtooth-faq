@@ -71,8 +71,8 @@ Marshalling
     serialization of data
 Merkle Tree (or Trie)
     a radix search tree data structure with addressable nodes. Used to store state
-Nakamoto-sytle Consensus
-    uses some soft of Proof of Work mechanism (vs. Classical Consensus)
+Nakamoto-style Consensus
+    uses some sort of lottery-based mechanism, such as Proof of Work (vs. Classical Consensus)
 Node ID
     Address
 Nonce
@@ -91,7 +91,7 @@ PoET
 PoW
     Proof of Work. Completing work (CPU-intensive Nakamoto-style consensus algorithm)
 PoS
-    Proof of Stake. Consensus algorithm based on the most wealth or age (stake)
+    Proof of Stake. Nakamoto-style consensus algorithm based on the most wealth or age (stake)
 Private Blockchain
     See Permissioned Blockchain
 Proposal
