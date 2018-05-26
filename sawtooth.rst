@@ -41,7 +41,7 @@ How do I tell what version of Sawtooth is running?
     $ sawtooth --version
     sawtooth-cli (Hyperledger Sawtooth) version 1.0.4
 
-What's the difference betweeen the ``sawtooth``, ``sawadm``, ``sawnet``, and ``sawset`` commands?
+What's the difference between the ``sawtooth``, ``sawadm``, ``sawnet``, and ``sawset`` commands?
 -------------------------------
 ``sawadm``
     Administration tasks such as creating the genesis batch file or validator key generation
@@ -50,7 +50,7 @@ What's the difference betweeen the ``sawtooth``, ``sawadm``, ``sawnet``, and ``s
 ``sawset``
     Change genesis block settings or views, create, and vote on new block proposals
 ``sawtooth``
-    Interfact with a Sawtooth validator, such as batches, blocks, identity, keygen, peers, settings, state, and transaction information
+    Interact with a Sawtooth validator, such as batches, blocks, identity, keygen, peers, settings, state, and transaction information
 
 For more information, see the Sawtooth CLI Command Reference at https://sawtooth.hyperledger.org/docs/core/releases/latest/cli.html
 
@@ -77,7 +77,7 @@ Then start the validator:
     sudo sawadm keygen
     sudo -u sawtooth sawtooth-validator -vv
 
-How to I delete prevoiusly existing blockchain data?
+How to I delete previously-existing blockchain data?
 ----------------------------------
 
 Type the following: ``sudo -u sawtooth rm -rf /var/lib/sawtooth/*``
