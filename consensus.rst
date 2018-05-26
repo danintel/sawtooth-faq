@@ -47,4 +47,10 @@ No.  SGX is only needed if you use the hardened version of PoET, PoET SGX.
 We also have a version of PoET that just uses conventional software, PoET Simulator,
 which runs on a Sawtooth network with any processor.
 
+[`PREVIOUS`_] [`NEXT`_]
+=========
+
+.. _PREVIOUS: validator.rst
+.. _NEXT: client.rst
+
 © Copyright 2018, Intel Corporation.

@@ -33,4 +33,10 @@ You can also limit which transactions are accepted on the network by setting
 `sawtooth.validator.transaction_families` If that setting is not set, all transaction processors are accepted.
 This setting is ignored in dev-mode consensus.
 
+[`PREVIOUS`_] [`NEXT`_]
+=========
+
+.. _PREVIOUS: sawtooth.rst
+.. _NEXT: validator.rst
+
 © Copyright 2018, Intel Corporation.

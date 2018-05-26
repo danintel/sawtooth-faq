@@ -61,4 +61,10 @@ I set sawtooth.validator.transaction_families as follows (from the documentation
 
 The sawtooth.validator.transaction_families setting is ignored using dev-mode consensus and does not need to be set.
 
+[`PREVIOUS`_] [`NEXT`_]
+=========
+
+.. _PREVIOUS: transaction-processing.rst
+.. _NEXT: consensus.rst
+
 © Copyright 2018, Intel Corporation.

@@ -33,4 +33,9 @@ Here is an unofficial list of some Transaction Family (TF) prefixes
     simple_supply           5d6af4  Simple Supply example used for training
     cookie-maker            1a5312  Cookie Maker example
 
+[`PREVIOUS`_]
+=========
+
+.. _PREVIOUS: glossary.rst
+
 © Copyright 2018, Intel Corporation.
