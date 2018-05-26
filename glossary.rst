@@ -103,7 +103,7 @@ Public Blockchain
 Raft
     Consensus algorithm that elects a leader for a term of arbitrary time.  Raft is CFT, but not BFT
 REST
-     Representational State Transfer. Industry-standard web-based API.  REST is available on a Sawtooth validator node through TCP port 8008
+     Representational State Transfer. Industry-standard web-based API.  REST is available on a Sawtooth validator node through TCP port 8008.  For more information, see the Sawtooth REST API Reference at https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api.html
 TF
     Transaction Family. Consists of the Client, State, and TP
 TP

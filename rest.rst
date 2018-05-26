@@ -49,4 +49,7 @@ GET /transactions/{transaction_id}
 GET /peers
     Fetch a list of current peered validators
 
+For more information, see the Sawtooth REST API Reference at
+https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api.html
+
 © Copyright 2018, Intel Corporation.
