@@ -11,20 +11,20 @@ No special hardware is required to run Sawtooth or PoET.
 What are some useful Sawtooth links?
 ------------------------------------
 
-https://sawtooth.hyperledger.org/docs/core/nightly/master/introduction.html
-    Sawtooth introduction
-https://www.hyperledger.org/projects/sawtooth
-    Sawtooth introduction and download
-https://github.com/hyperledger/sawtooth-core
-    Github repository for Sawtooth Core
-https://sawtooth.hyperledger.org/docs/core/nightly/master/
-    Sawtooth documentation, with several guides and references, including:
-https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide.html
-    Sawtooth Application Developer's Guide
-https://chat.hyperledger.org/channel/sawtooth
-    Sawtooth chat main channel (several others Sawtooth channels exist here)
-https://github.com/danintel/sawtooth-faq
-    Sawtooth FAQ
+Sawtooth introduction
+    https://sawtooth.hyperledger.org/docs/core/nightly/master/introduction.html
+Sawtooth introduction and download
+    https://www.hyperledger.org/projects/sawtooth
+Github repository for Sawtooth Core
+    https://github.com/hyperledger/sawtooth-core
+Sawtooth documentation, with several guides and references, including:
+    https://sawtooth.hyperledger.org/docs/core/nightly/master/
+Sawtooth Application Developer's Guide
+    https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide.html
+Sawtooth chat main channel (several others Sawtooth channels exist here)
+    https://chat.hyperledger.org/channel/sawtooth
+Sawtooth FAQ
+    https://github.com/danintel/sawtooth-faq
 
 What is the difference between Hyperledger and Sawtooth?
 --------------------------------------------------------
