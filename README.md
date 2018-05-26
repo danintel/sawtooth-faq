@@ -21,4 +21,6 @@ This Sawtooth FAQ is Apache 2.0 licensed and accepts contributions via
 
 Each commit must include a `Signed-off-by` ine in the commit message (`git commit -s`). This sign-off indicates that you agree the commit satisfies the [Developer Certificate of Origin (DCO).](https://developercertificate.org/)
 
+# \[ [NEXT](validator.rst) \]
+
 © Copyright 2018, Intel Corporation.
