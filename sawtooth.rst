@@ -23,6 +23,8 @@ https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide.h
     Sawtooth Application Developer's Guide
 https://chat.hyperledger.org/channel/sawtooth
     Sawtooth chat main channel (several others Sawtooth channels exist here)
+https://github.com/danintel/sawtooth-faq
+    Sawtooth FAQ
 
 What is the difference between Hyperledger and Sawtooth?
 --------------------------------------------------------
