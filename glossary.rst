@@ -39,8 +39,6 @@ Classical Consensus
     Uses an agreement or voting mechanism (vs. Nakamoto-style consensus)
 Docker
     A light-weight OS-level VM technology which isolates processes into separate "containers"
-PoET
-    Proof of Elapsed Time (optional Nakamoto-style consensus algorithm used for Sawtooth)
 CSV
     Comma separated values.  E.g.: ``a,b,c,d``
 Curve325519
@@ -55,6 +53,8 @@ Enclave
     SGX-protected area of data and code to provide confidentiality and integrity even against privileged malware
 EVM
     Ethereum Virtual Machine. Executes machine-independent code for Ethereum.  Supported by SETH on Sawtooth
+Fork
+    When network nodes have two competing nodes at the head of a blockchain
 Gossip
     A message broadcast mechanism that uses forwarding to random peers (Sawtooth Validator nodes)
 Hyperledger
@@ -66,30 +66,37 @@ IntKey
 K
     Claim limit, number of blocks a validator can publish before it must signup again (when using PoET)
 K Test
-    test a block-claiming validator follows K, claim limit before another signup
+    Test a block-claiming validator follows K, claim limit before another signup
+Liveness
+    A consensus algorithm property where the nodes eventually must agree on a value
 Marshalling
     serialization of data
 Merkle Tree (or Trie)
     a radix search tree data structure with addressable nodes. Used to store state
+n
+    Nodes in a blockchain network
 Nakamoto-style Consensus
     uses some sort of lottery-based mechanism, such as Proof of Work (vs. Classical Consensus)
 Node ID
     Address
+Node
+    See Validator
 Nonce
     A one-time number; usually random, but must not predictably repeat (such as after reboot/restart)
+One-say, all-adopt
+	Strategy where only a single multicast round of messages reaches agreement
 Payload
     Data processed by the TP and only the TP. Can be any format (CSV, protobufs, etc.) Data model is defined by TF. Payload is encoded using MIME's Base64 (``A-Za-z0-9+/``) + ``=`` for 0 mod 4 padding
 PBFT
-    Practical Byzantine Fault Tolerance. A "classical" consensus algorithm that uses a state machine
+    Practical Byzantine Fault Tolerance. A "classical" consensus algorithm that uses a state machine. PBFT is a three-phase, network-intense algorithm, so is not scalable to large networks
 Permissioned Blockchain (aka Private Blockchain)
-    participants must ID themselves to a network (e.g., Hyperledger Sawto
-oth or Hyperledger Fabric)
+    participants must ID themselves to a network (e.g., Hyperledger Sawtooth or Hyperledger Fabric)
 Permissionless Blockchain (aka Public Blockchain)
     anyone can join network (e.g., Bitcoin, Ethereum)
 PoET
-    Proof of Elapsed Time (optional Nakamoto-style consensus algorithm used for Sawtooth). PoET with SGX has BFT. PoET Simulator has CFT.
+    Proof of Elapsed Time (optional Nakamoto-style consensus algorithm used for Sawtooth). PoET with SGX has BFT. PoET Simulator has CFT. Not CPU-intensitve as with PoW-style algorithms, although it still can fork and have stale blocks.  See PoET specification at https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture/poet.html
 PoW
-    Proof of Work. Completing work (CPU-intensive Nakamoto-style consensus algorithm)
+    Proof of Work. Completing work (CPU-intensive Nakamoto-style consensus algorithm). Usually used in permissionless blockchains
 PoS
     Proof of Stake. Nakamoto-style consensus algorithm based on the most wealth or age (stake)
 Private Blockchain
@@ -102,14 +109,20 @@ PDO
     Private Data Object. Blockchain objects that are kept private through encryption
 Public Blockchain
     See Permissionless Blockchain
+r
+    Rate, measurement of performance in transactions per second
 Raft
     Consensus algorithm that elects a leader for a term of arbitrary time.  Raft is CFT, but not BFT
 REST
      Representational State Transfer. Industry-standard web-based API.  REST is available on a Sawtooth validator node through TCP port 8008.  For more information, see the Sawtooth REST API Reference at https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api.html
+Stale block
+     A block proposed to be at the head of a blockchain, but lost to a competing block that became the head as decided by the consensus algorithm
 TF
     Transaction Family. Consists of the Client, State, and TP
 TP
     Transaction Processor. Processes transactions for a specific TF.  Runs on Validator. Similar to a Ethereum "smart contract" or Bitcoin "chain code"
+Safety
+    A consensus algorithm property where the "honest" (non-Byzantine) nodes agree on the same value
 Sawtooth
     Permissioned blockchain platform for running distributed ledgers
 SETH
