@@ -115,6 +115,8 @@ Raft
     Consensus algorithm that elects a leader for a term of arbitrary time.  Raft is CFT, but not BFT
 REST
      Representational State Transfer. Industry-standard web-based API.  REST is available on a Sawtooth validator node through TCP port 8008.  For more information, see the Sawtooth REST API Reference at https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api.html
+Sabre
+    TF that implements on-chain smart contracts with the WebAssembly VM.  For more information, see Sabre RFC at https://github.com/hyperledger/sawtooth-rfcs/blob/master/text/0007-wasm-smart-contracts.md
 Stale block
      A block proposed to be at the head of a blockchain, but lost to a competing block that became the head as decided by the consensus algorithm
 TF
@@ -143,6 +145,12 @@ Validator
     Validates transactions and sends to the appropriate TP; proposes new blocks for block chain
 Validator
     Validates transactions and sends to the appropriate TP; proposes new blocks for block chain usually in a network of validator nodes
+VM
+    Virtual Machine
+Wasm
+    See WebAssembly
+WebAssembly
+    A stack-based VM newly-implemented in major web browsers. It is well-suited for the purposes of smart contract execution due to its sandboxed design, growing popularity, and tool support. Sabre implements WebAssembly
 XO
     Example Sawtooth TP that implements the Tic-tac-toe game
 Z Test
