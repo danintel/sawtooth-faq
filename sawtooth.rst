@@ -34,6 +34,10 @@ What is the difference between Hyperledger and Sawtooth?
 * Sawtooth (or Hyperledger Sawtooth) is blockchain software sponsored by Intel Corporation, but does not require Intel hardware.
 * Hyperledger is a consortium of Linux blockchain software, including Sawtooth, under the Linux Foundation
 
+Sawtooth is designed for permissioned and private blockchains. Can it work well for a public blockchain?
+-------------------------------------------
+Sawtooth would work for public blockchain, as well. The features we're providing in Sawtooth are designed for a permissioned, private network in mind.  For a public blockchain, you probably want to use BFT consensus (such as PoET-SGX). There is no mining.
+
 How do I tell what version of Sawtooth is running?
 --------------------------------------------------
 ::
