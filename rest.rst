@@ -15,7 +15,7 @@ What REST API commands are available?
 -------------------
 
 Use localhost to access the REST API from the Validator Docker container or from where the Validator is running.
-For example:
+For example, to get state history (equivalent to `sawtooth state list`) type:
 
 ::
 

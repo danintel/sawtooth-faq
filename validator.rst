@@ -3,6 +3,13 @@ FAQ: Sawtooth Validator
 [`PREVIOUS`_] [`NEXT`_]
 -----------------------
 
+What validation does the validator do?
+-----------------------
+At a high-level, the Validator verifies the following:
+*Permission - Check the batch signing key against the allowed transactor permissions
+*Signature - Check for integrity of the data
+*Structure - Check structural composition of batches: duplicate transactions, extra transactions, etc.
+
 Is there a simple example to show how to run Sawtooth
 -------------------
 See these instructions to install and use Sawtooth with Docker, Ubuntu Linux, or AWS:
@@ -62,6 +69,10 @@ I set sawtooth.validator.transaction_families as follows (from the documentation
 -------------------
 
 The sawtooth.validator.transaction_families setting is ignored using dev-mode consensus and does not need to be set.
+
+What is the difference between `sawtooth-validator --peers {list}` and `sawtooth-validator --seeds {list}`?
+-------------------
+There are two peering modes in sawtooth: static and dynamic. The static peering mode requires the `--peers` arg to connect to other peer validators. Whereas, in the dynamic peering mode the `--peers` if specified will be processed and then use `--seeds` for the initial connection to the validator network and to start topology build-out (discovery and connection to more peer validators).
 
 [`PREVIOUS`_] [`NEXT`_]
 =========
