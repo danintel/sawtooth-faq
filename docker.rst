@@ -44,6 +44,12 @@ Try running with sudo.  For example: sudo docker run hello-world
 I get this error running ``docker run hello-world`` : ``docker: Error response from daemon: Get https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers).``
 -------------------
 
+If it worked before, first try restarting docker:
+
+::
+
+   sudo service docker start; sudo service docker stop
+
 If you are behind a network firewall, it is usually a proxy problem.
 Proxy configurations are firewall-dependent, but this might serve as a pattern:
 
