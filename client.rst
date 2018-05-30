@@ -3,6 +3,8 @@ FAQ: Sawtooth Client
 [`PREVIOUS`_] [`NEXT`_]
 -----------------------
 
+.. contents::
+
 What languages does the Sawtooth SDK support?
 -------------------
 
