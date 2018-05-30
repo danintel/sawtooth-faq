@@ -2,8 +2,8 @@ Preliminary FAQ: Sawtooth Transaction Processing
 ==================
 .. contents::
 
-.. **Warning**::
-   This FAQ was written by a non-expert so may be both fiction and fact!
+.. Warning::
+   **This FAQ was written by a non-expert so may contain both fiction and fact!**
 
 Does a client send a transaction request to all the validators in the network?
 -------------------

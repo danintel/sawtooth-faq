@@ -2,8 +2,8 @@ Appendix: Glossary
 ==================
 .. contents::
 
-.. **Warning**::
-   This FAQ was written by a non-expert so may be both fiction and fact!
+.. Warning::
+   **This FAQ was written by a non-expert so may contain both fiction and fact!**
 
 See also:
 

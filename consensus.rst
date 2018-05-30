@@ -2,8 +2,8 @@ Preliminary FAQ: Sawtooth Consensus Algorithms (including PoET)
 ====================
 .. contents::
 
-.. **Warning**::
-   This FAQ was written by a non-expert so may be both fiction and fact!
+.. Warning::
+   **This FAQ was written by a non-expert so may contain both fiction and fact!**
 
 What consensus algorithms does Sawtooth support?
 -------------------
