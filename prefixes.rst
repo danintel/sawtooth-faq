@@ -4,22 +4,27 @@ Appendix: Prefixes
 -------------
 
 Here is an unofficial list of some Transaction Family (TF) prefixes
-(there is no central registry, most or all are on github):
+(there is no central registry, most or all of these are on github):
 
 +--------------------+--------+----------------------------------------------+
 | TF NAME            | PREFIX | PREFIX ENCODING                              |
 +====================+========+==============================================+
 | settings           | 000000 | Validator settings.  Only required TF        |
+|                    |        |                                              |
 |                    |        | 000000<1st 62 chars of SHA-256(policy name)> |
+|                    |        |                                              |
 |                    |        | 000000<1st 62 chars of SHA-256(policy name)> |
 +--------------------+--------+----------------------------------------------+
 | blockinfo          | 00b10c | Validator Block Info.  Used for SETH         |
+|                    |        |                                              |
 |                    |        | 00b10c00 metadata namespace                  |
-|                    |        |             (info about other namespaces)    |
+|                    |        |     info about other namespaces              |
+|                    |        |                                              |
 |                    |        | 00b10c01 block info namespace                |
-|                    |        |             (historic block info)            |
-|                    |        |         00b10c0100....00<block # in hex>     |
-|                    |        |             info on block at block #         |
+|                    |        |     historic block info                      |
+|                    |        |                                              |
+|                    |        | 00b10c0100....00<block # in hex>             |
+|                    |        |     info on block at block #                 |
 +--------------------+--------+----------------------------------------------+
 | identity           | 00001d | Validator Identity                           |
 +--------------------+--------+----------------------------------------------+
@@ -33,7 +38,7 @@ Here is an unofficial list of some Transaction Family (TF) prefixes
 +--------------------+--------+----------------------------------------------+
 | rbac               | 8563d0 | NEXT Identity Platform                       |
 +--------------------+--------+----------------------------------------------+
-|  SOME EXAMPLE TFs                                                          |
+|  **SOME EXAMPLE TFs**                                                      |
 +--------------------+--------+----------------------------------------------+
 | battleship         | 6e10df | Battleship example game                      |
 +--------------------+--------+----------------------------------------------+
