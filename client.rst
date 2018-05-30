@@ -2,7 +2,10 @@ Preliminary FAQ: Sawtooth Client
 ====================
 .. contents::
 
-.. Warning!::
+.. Warning::
+   This FAQ was written by a non-expert so may be both fiction and fact!
+
+.. **Warning**::
    This FAQ was written by a non-expert so may be both fiction and fact!
 
 What languages does the Sawtooth SDK support?
