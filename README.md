@@ -24,8 +24,7 @@ https://chat.hyperledger.org/channel/sawtooth
 
 This FAQ is Apache 2.0 licensed and accepts contributions via
 [GitHub](https://github.com/danintel/sawtooth-faq) pull requests.
-
-Each commit must include a `Signed-off-by` in the commit message (`git commit -s`). This sign-off means you agree the commit satisfies the [Developer Certificate of Origin (DCO).](https://developercertificate.org/)
+Each commit must include a [`Signed-off-by:` in the commit message](https://www.kernel.org/doc/html/v4.16/process/submitting-patches.html#sign-your-work-the-developer-s-certificate-of-origin) (`git commit -s`). This sign-off means you agree the commit satisfies the [Developer Certificate of Origin (DCO).](https://developercertificate.org/)
 
 # \[ [NEXT](validator.rst) \]
 
