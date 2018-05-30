@@ -1,7 +1,9 @@
 FAQ: Sawtooth REST API
 ==================
-[`PREVIOUS`_] [`NEXT`_]
------------------------
+.. contents::
+
+.. Warning::
+   This FAQ was written by a non-expert so may be both fiction as well as fact!
 
 What's the difference between the ``sawtooth-rest-api --bind`` and ``--connect`` options?
 -------------------

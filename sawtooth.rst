@@ -1,7 +1,9 @@
 FAQ: Sawtooth in General
 ========================
-[`PREVIOUS`_] [`NEXT`_]
----------
+.. contents::
+
+.. Warning::
+   This FAQ was written by a non-expert so may be both fiction as well as fact!
 
 What is Sawtooth?
 -----------------

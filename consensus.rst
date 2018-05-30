@@ -1,7 +1,9 @@
 FAQ: Sawtooth Consensus Algorithms (including PoET)
 ====================
-[`PREVIOUS`_] [`NEXT`_]
------------------------
+.. contents::
+
+.. Warning::
+   This FAQ was written by a non-expert so may be both fiction as well as fact!
 
 What consensus algorithms does Sawtooth support?
 -------------------
