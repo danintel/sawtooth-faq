@@ -3,7 +3,6 @@ Preliminary FAQ: Sawtooth in General
 .. contents::
 
 .. **Warning**::
-
    This FAQ was written by a non-expert so may be both fiction and fact!
 
 What is Sawtooth?

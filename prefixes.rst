@@ -3,7 +3,6 @@ Appendix: Prefixes
 .. contents::
 
 .. **Warning**::
-
    This FAQ was written by a non-expert so may be both fiction and fact!
 
 Here is an unofficial list of some Transaction Family (TF) prefixes.
