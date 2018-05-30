@@ -76,6 +76,10 @@ What is the difference between `sawtooth-validator --peers {list}` and `sawtooth
 -------------------
 There are two peering modes in sawtooth: static and dynamic. The static peering mode requires the `--peers` arg to connect to other peer validators. Whereas, in the dynamic peering mode the `--peers` if specified will be processed and then use `--seeds` for the initial connection to the validator network and to start topology build-out (discovery and connection to more peer validators).
 
+Why does the validator create large 1TByte files?
+-------------------
+The large 1TByte files in /var/lib/sawtooth/ are "sparse" files.  They are random-access files with mostly empty blocks. They do not actually consume 1Tbyte of storage.
+
 [`PREVIOUS`_] [`NEXT`_]
 =========
 
