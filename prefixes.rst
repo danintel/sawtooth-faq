@@ -29,9 +29,11 @@ Here is an unofficial list of some Transaction Family (TF) prefixes
 +--------------------+--------+----------------------------------------------+
 | validator_registry | 6a4372 | Validator Registry                           |
 +--------------------+--------+----------------------------------------------+
-| sabre              | 00ec00 |  WebAssembly VM: NamespaceRegistry           |
-|                    | 00ec01 |      ContractRegistry                        |
-|                    | 00ec02 |      ontracts                                |
+| sabre              | 00ec00 | WebAssembly VM: NamespaceRegistry            |
+|                    |        |                                              |
+|                    | 00ec01 | ContractRegistry                             |
+|                    |        |                                              |
+|                    | 00ec02 | Contracts                                    |
 +--------------------+--------+----------------------------------------------+
 | seth               | a68b06 | SETH (Sawtooth Ethereum VM)                  |
 +--------------------+--------+----------------------------------------------+
