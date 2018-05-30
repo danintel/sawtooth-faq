@@ -1,4 +1,4 @@
-# Preliminary Sawtooth FAQ
+# Preliminary Hyperledger Sawtooth FAQ
 Frequently-asked Questions (FAQ) for Hyperledger Sawtooth.
 Many questions and answers originated from the Sawtooth chat channel at
 https://chat.hyperledger.org/channel/sawtooth
