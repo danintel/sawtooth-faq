@@ -3,8 +3,9 @@ Appendix: Prefixes
 [`PREVIOUS`_]
 -------------
 
-Here is an unofficial list of some Transaction Family (TF) prefixes
-(there is no central registry, most or all of these are on github):
+Here is an unofficial list of some Transaction Family (TF) prefixes.
+There is no central registry, most or all of these TFs are found on github.
+The prefix is either the first 6 characters of the SHA-512 hash of the namespace, or, for some base namespaces, a "hex word".
 
 +--------------------+--------+----------------------------------------------+
 | TF NAME            | PREFIX | PREFIX ENCODING                              |
