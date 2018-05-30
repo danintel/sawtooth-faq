@@ -13,7 +13,6 @@ Here is an unofficial list of some Transaction Family (TF) prefixes
 |                    |        |                                              |
 |                    |        | 000000<1st 62 chars of SHA-256(policy name)> |
 |                    |        |                                              |
-|                    |        | 000000<1st 62 chars of SHA-256(policy name)> |
 +--------------------+--------+----------------------------------------------+
 | blockinfo          | 00b10c | Validator Block Info.  Used for SETH         |
 |                    |        |                                              |
@@ -30,9 +29,9 @@ Here is an unofficial list of some Transaction Family (TF) prefixes
 +--------------------+--------+----------------------------------------------+
 | validator_registry | 6a4372 | Validator Registry                           |
 +--------------------+-------------------------------------------------------+
-| sabre              | 00ec00 |  WebAssembly VM                              |
-|                    | 00ec01 |                                              |
-|                    | 00ec02 |                                              |
+| sabre              | 00ec00 |  WebAssembly VM: NamespaceRegistry           |
+|                    | 00ec01 |      ContractRegistry                        |
+|                    | 00ec02 |      ontracts                                |
 +--------------------+--------+----------------------------------------------+
 | seth               | a68b06 | SETH (Sawtooth Ethereum VM)                  |
 +--------------------+--------+----------------------------------------------+
@@ -42,7 +41,7 @@ Here is an unofficial list of some Transaction Family (TF) prefixes
 +--------------------+--------+----------------------------------------------+
 | battleship         | 6e10df | Battleship example game                      |
 +--------------------+--------+----------------------------------------------+
-| intkey             | 1cf126 | Integer key. Full production example         |
+| intkey             | 1cf126 | Integer Key. Full production example         |
 +--------------------+--------+----------------------------------------------+
 | smallbank          | 332514 | Small Bank example app                       |
 +--------------------+--------+----------------------------------------------+
@@ -50,7 +49,7 @@ Here is an unofficial list of some Transaction Family (TF) prefixes
 +--------------------+--------+----------------------------------------------+
 | supply_chain       | 3400de | Asset (Fish) Supply Chain example app        |
 +--------------------+--------+----------------------------------------------+
-| simplewallet       | 7e2664 | Simple wallet minimal example                |
+| simplewallet       | 7e2664 | Simple Wallet minimal example                |
 +--------------------+--------+----------------------------------------------+
 | simple_supply      | 5d6af4 | Simple Supply example used for training      |
 +--------------------+--------+----------------------------------------------+
