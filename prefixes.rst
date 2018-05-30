@@ -17,6 +17,10 @@ The prefix is either the first 6 characters of the SHA-512 hash of the namespace
 |                    |        | 000000<1st 62 chars of SHA-256(policy name)> |
 |                    |        |                                              |
 +--------------------+--------+----------------------------------------------+
+| identity           | 00001d | Validator Identity for TP/Validator keys     |
++--------------------+--------+----------------------------------------------+
+| validator_registry | 6a4372 | Validator Registry, to add new validators    |
++--------------------+--------+----------------------------------------------+
 | blockinfo          | 00b10c | Validator Block Info.  Used for SETH         |
 |                    |        |                                              |
 |                    |        | 00b10c00 metadata namespace                  |
@@ -28,19 +32,15 @@ The prefix is either the first 6 characters of the SHA-512 hash of the namespace
 |                    |        | 00b10c0100....00<block # in hex>             |
 |                    |        |     info on block at block #                 |
 +--------------------+--------+----------------------------------------------+
-| identity           | 00001d | Validator Identity                           |
-+--------------------+--------+----------------------------------------------+
-| validator_registry | 6a4372 | Validator Registry                           |
-+--------------------+--------+----------------------------------------------+
 | sabre              | 00ec00 | WebAssembly VM: NamespaceRegistry            |
 |                    |        |                                              |
-|                    | 00ec01 | ContractRegistry                             |
+|                    | 00ec01 | Wasm: ContractRegistry                       |
 |                    |        |                                              |
-|                    | 00ec02 | Contracts                                    |
+|                    | 00ec02 | Wasm: Contracts                              |
 +--------------------+--------+----------------------------------------------+
 | seth               | a68b06 | SETH (Sawtooth Ethereum VM)                  |
 +--------------------+--------+----------------------------------------------+
-| rbac               | 8563d0 | NEXT Identity Platform                       |
+| rbac               | 8563d0 | T-Mobile NEXT Identity Platform              |
 +--------------------+--------+----------------------------------------------+
 |  **SOME EXAMPLE TFs**                                                      |
 +--------------------+--------+----------------------------------------------+
