@@ -1,9 +1,10 @@
-FAQ: Sawtooth Validator
+Preliminary FAQ: Sawtooth Validator
 ==================
 .. contents::
 
-.. Warning::
-   This FAQ was written by a non-expert so may be both fiction as well as fact!
+.. **Warning**::
+
+   This FAQ was written by a non-expert so may be both fiction and fact!
 
 What validation does the validator do?
 -----------------------
