@@ -2,8 +2,8 @@ Preliminary FAQ: Sawtooth REST API
 ==================
 .. contents::
 
-.. **Warning**::
-   This FAQ was written by a non-expert so may be both fiction and fact!
+.. Warning::
+   **This FAQ was written by a non-expert so may contain both fiction and fact!**
 
 What's the difference between the ``sawtooth-rest-api --bind`` and ``--connect`` options?
 -------------------

@@ -3,9 +3,9 @@ Frequently-asked Questions (FAQ) for Hyperledger Sawtooth.
 Many questions and answers originated from the Sawtooth chat channel at
 https://chat.hyperledger.org/channel/sawtooth
 
-| **Warning!**                                                           |
-|-----------------------------------------------------------------------|
-| This FAQ was written by a non-expert so may be both fiction and fact! |
+| **Warning!**    |
+|-----------------|
+| **This FAQ was written by a non-expert so may contain both fiction and fact!** |
 
 ## Preliminary FAQ
 * [Sawtooth in General](sawtooth.rst)
