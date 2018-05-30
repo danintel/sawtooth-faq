@@ -1,9 +1,10 @@
-FAQ: Using Docker with Sawtooth
+Preliminary FAQ: Using Docker with Sawtooth
 ====================
 .. contents::
 
-.. Warning::
-   This FAQ was written by a non-expert so may be both fiction as well as fact!
+.. **Warning**::
+
+   This FAQ was written by a non-expert so may be both fiction and fact!
 
 How can I run ``docker`` or ``docker-compose`` without prefixing it with ``sudo``?
 --------------------------------------
