@@ -13,6 +13,10 @@ What's the difference between the ``sawtooth-rest-api --bind`` and ``--connect``
 ``sawtooth-rest-api --connect`` (``-C``)
     specifies where your rest-api can reach to the validator. The default is http://localhost:4004
 
+Is the REST API at TCP port 8080 or 8008?
+-------------------
+TCP Port 8008. It was 8080 before the 1.0 release and old examples and diagrams may use the old port number.
+
 What REST API commands are available?
 -------------------
 
