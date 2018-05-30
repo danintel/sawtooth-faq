@@ -1,7 +1,9 @@
 Appendix: Prefixes
 ==================
-[`PREVIOUS`_]
--------------
+.. contents::
+
+.. Warning::
+   This FAQ was written by a non-expert so may be both fiction as well as fact!
 
 Here is an unofficial list of some Transaction Family (TF) prefixes.
 There is no central registry, most or all of these TFs are found on github.
