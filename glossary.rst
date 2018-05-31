@@ -9,8 +9,8 @@ Appendix: Glossary
 
 See also:
 
-* https://sawtooth.hyperledger.org/docs/core/nightly/master/glossary.html
-* https://sawtooth.hyperledger.org/docs/core/releases/1.0/architecture/poet.html#definitions
+- https://sawtooth.hyperledger.org/docs/core/nightly/master/glossary.html
+- https://sawtooth.hyperledger.org/docs/core/releases/1.0/architecture/poet.html#definitions
 
 
 Address (aka State Address)
@@ -24,7 +24,7 @@ Batch
 Block
     A set of records of permanent transactions; these blocks are linked into a blockchain.  A block is similar to a page in a ledger book, where the ledger book is a blockchain
 Blockchain
-    A single-link list of blocks.  The blockchain is immutable, distributed, and cryptographically-secured
+    A single-link list of blocks.  The blockchain is immutable, distributed, and cryptographically-secured. Located at ``/var/lib/sawtooth/block-00.lmdb``
 Block ID
     128 hex character ID (64 bytes) identifying a block in a blockchain
 BFT
@@ -75,10 +75,12 @@ K Test
     Test a block-claiming validator follows K, claim limit before another signup
 Liveness
     A consensus algorithm property where the nodes eventually must agree on a value
+LMDB
+    Lightning Memory-mapped Database are sparse random-access files in ``/var/lib/sawtooth`` . The Merkle Tree and Blockchain use LMDB.
 Marshalling
     serialization of data
 Merkle Tree (or Trie)
-    a radix search tree data structure with addressable nodes. Used to store state
+    a radix search tree data structure with addressable nodes. Used to store state.  Located at ``/var/lib/sawtooth/merkle-00.lmdb``
 n
     Nodes in a blockchain network
 Nakamoto-style Consensus
@@ -131,6 +133,10 @@ TF
     Transaction Family. Consists of the Client, State, and TP
 TP
     Transaction Processor. Processes transactions for a specific TF.  Runs on Validator. Similar to a Ethereum "smart contract" or Bitcoin "chain code"
+Transaction Receipt
+    Off-chain store about information about transaction execution. Located at ``/var/lib/sawtooth/txn_receipts-00.lmdb``
+TXN
+    Transaction
 Safety
     A consensus algorithm property where the "honest" (non-Byzantine) nodes agree on the same value
 Sawtooth
@@ -164,7 +170,7 @@ XO
 Z Test
     Test a block-claiming validator is not winning too frequently
 ZMQ (aka 0MQ, ZeroMQ)
-    Message Transport API available on Linux; used by Sawtooth Validator nodes
+    Zero Message Queue. A message transport API available on Linux; used by Sawtooth Validator nodes
 ZKP
     Zero Knowledge Proof. One party proving they know a value x without conveying x
 
