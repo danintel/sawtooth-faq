@@ -15,9 +15,6 @@ Sawtooth headers are serialized with Protobuf.
 For base" TF specifications, see
 https://sawtooth.hyperledger.org/docs/core/releases/1.0/transaction_family_specifications/
 
-validator_
-validatorescape\_
-
 +--------------+----------+--------+------------------------------------------+
 |              | SERIAL-  |        |                                          |
 | TF NAME      | IZATION  | PREFIX | PREFIX ENCODING                          |
@@ -29,7 +26,7 @@ validatorescape\_
 +--------------+----------+--------+------------------------------------------+
 | identity     | Protobuf | 00001d | Validator Identity for TP/Validator keys |
 +--------------+----------+--------+------------------------------------------+
-| validator\_   | Protobuf | 6a4372 | Validator Registry,                      |
+| validator\_   | Protobuf | 6a4372 | Validator Registry,                     |
 | registry     |          |        |    to add new validators                 |
 +--------------+----------+--------+------------------------------------------+
 | blockinfo    | Protobuf | 00b10c | Validator Block Info.  Used for SETH     |
@@ -67,7 +64,7 @@ validatorescape\_
 +--------------+----------+--------+------------------------------------------+
 | simplewallet | CSV-UTF8 | 7e2664 | Simple Wallet minimal example            |
 +--------------+----------+--------+------------------------------------------+
-| simple\_      | Protobuf | 5d6af4 | Simple Supply example used for training  |
+| simple\_      | Protobuf | 5d6af4 | Simple Supply example used for training |
 | supply       |          |        |                                          |
 +--------------+----------+--------+------------------------------------------+
 | cookie-maker | raw      | 1a5312 | Cookie Maker example                     |
