@@ -70,11 +70,7 @@ https://sawtooth.hyperledger.org/docs/core/releases/1.0/transaction_family_speci
 | cookie-maker | raw      | 1a5312 | Cookie Maker example                     |
 +--------------+----------+--------+------------------------------------------+
 
-[`PREVIOUS`_] [`HOME`_]
-=========
-[`PREVIOUS`_ | `HOME`_]
-=========
-[`PREVIOUS`_|`HOME`_]
+[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 =========
 
 .. _PREVIOUS: glossary.rst

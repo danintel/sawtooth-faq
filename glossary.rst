@@ -166,7 +166,7 @@ ZMQ (aka 0MQ, ZeroMQ)
 ZKP
     Zero Knowledge Proof. One party proving they know a value x without conveying x
 
-[`PREVIOUS`_] [`HOME`_] [`NEXT`_]
+[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 =========
 
 .. _PREVIOUS: docker.rst
