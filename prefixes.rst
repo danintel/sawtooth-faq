@@ -1,4 +1,4 @@
-Appendix: Prefixes
+Appendix: Sawtooth Transaction Family Prefixes
 ==================
 [`PREVIOUS`_ | `HOME`_]
 
