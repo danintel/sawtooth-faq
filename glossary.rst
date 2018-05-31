@@ -41,6 +41,8 @@ Classical Consensus
     Uses an agreement or voting mechanism (vs. Nakamoto-style consensus)
 Docker
     A light-weight OS-level VM technology which isolates processes into separate "containers"
+Duplicity
+	A faulty node sending deceitful or inconsistent messages to other nodes
 CSV
     Comma separated values.  E.g.: ``a,b,c,d``
 Curve325519
@@ -115,6 +117,8 @@ r
     Rate, measurement of performance in transactions per second
 Raft
     Consensus algorithm that elects a leader for a term of arbitrary time.  Raft is CFT, but not BFT
+Replica
+    Another term for node or validator
 REST
      Representational State Transfer. Industry-standard web-based API.  REST is available on a Sawtooth validator node through TCP port 8008.  For more information, see the Sawtooth REST API Reference at https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api.html
 Sabre
