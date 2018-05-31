@@ -1,4 +1,4 @@
-Appendix: Glossary
+Appendix: Sawtooth FAQ Glossary
 ==================
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 
@@ -9,8 +9,11 @@ Appendix: Glossary
 
 See also:
 
-- https://sawtooth.hyperledger.org/docs/core/nightly/master/glossary.html
-- https://sawtooth.hyperledger.org/docs/core/releases/1.0/architecture/poet.html#definitions
+* Sawtooth Glossary
+https://sawtooth.hyperledger.org/docs/core/nightly/master/glossary.html
+
+* PoET Definitions
+https://sawtooth.hyperledger.org/docs/core/releases/1.0/architecture/poet.html#definitions
 
 
 Address (aka State Address)

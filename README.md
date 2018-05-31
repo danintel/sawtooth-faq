@@ -17,8 +17,8 @@ https://chat.hyperledger.org/channel/sawtooth
 * [Using Docker with Sawtooth](docker.rst)
 
 ## Appendix
-* [Glossary](glossary.rst)
-* [Transaction Family Prefixes](prefixes.rst)
+* [Sawtooth FAQ Glossary](glossary.rst)
+* [Sawtooth Transaction Family Prefixes](prefixes.rst)
 
 ## Contributing
 
