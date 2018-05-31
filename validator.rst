@@ -11,9 +11,11 @@ What validation does the validator do?
 -----------------------
 At a high-level, the Validator verifies the following:
 
--Permission - Check the batch signing key against the allowed transactor permissions
--Signature - Check for integrity of the data
--Structure - Check structural composition of batches: duplicate transactions, extra transactions, etc.
+* Permission - Check the batch signing key against the allowed transactor permissions
+
+* Signature - Check for integrity of the data
+
+*Structure - Check structural composition of batches: duplicate transactions, extra transactions, etc.
 
 Is there a simple example to show how to run Sawtooth
 -------------------
