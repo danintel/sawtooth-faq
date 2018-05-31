@@ -93,10 +93,11 @@ I get a usage error running ``sawnet peers`` or ``sawnet list-blocks``
 
 These commands were added after the Sawtooth 1.0.4 release and are not available in earlier releases.
 
-[`PREVIOUS`_] [`NEXT`_]
+[`PREVIOUS`_] [`HOME`_] [`NEXT`_]
 =========
 
 .. _PREVIOUS: README.md
+.. _HOME: README.md
 .. _NEXT: transaction-processing.rst
 
 © Copyright 2018, Intel Corporation.
