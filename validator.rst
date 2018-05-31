@@ -104,6 +104,13 @@ What TCP ports does Sawtooth use?
 
 * 8800 is used by the Validator network to communicate with other Validators
 
+How do I create a Sawtooth Network?
+-------------------
+See *Creating a Sawtooth Network* at
+https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/creating_sawtooth_network.html
+
+Create the genesis block only one time, on the first node, and configure one or more peer Validator nodes for each node.
+
 Can I run two validators on the same machine?
 -------------------
 Yes, but it is not recommended.  You need to configure separate Sawtooth instances with different:
