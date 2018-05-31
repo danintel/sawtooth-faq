@@ -1,5 +1,7 @@
 Preliminary FAQ: Sawtooth Transaction Processing
 ==================
+[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
+---------------------------------
 .. contents::
 
 .. Warning::
@@ -56,7 +58,7 @@ What mechanism prevents a rogue TP from operating and corrupting data?
 The design is as such that rogue TPs can't harm legitimate TPs. When you run a network of validators, each validator has to have same version of TPs. If a rogue TP is modifying your TPs data, the same TP has to run in the rest of the validators in the network, to be able to affect the blockchain.  The validator where the rogue TP is working will constantly fail state validations(merkle hashes will be different with rest of the network).  Hence, the bigger the validator network, the more robust it is against such attacks.
 
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
-=========
+---------------------------------
 
 .. _PREVIOUS: sawtooth.rst
 .. _HOME: README.md

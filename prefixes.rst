@@ -1,5 +1,7 @@
 Appendix: Prefixes
 ==================
+[`PREVIOUS`_ | `HOME`_]
+-----------------------
 .. contents::
 
 .. Warning::
@@ -70,11 +72,10 @@ https://sawtooth.hyperledger.org/docs/core/releases/1.0/transaction_family_speci
 | cookie-maker | raw      | 1a5312 | Cookie Maker example                     |
 +--------------+----------+--------+------------------------------------------+
 
-[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
-=========
+[`PREVIOUS`_ | `HOME`_]
+-----------------------
 
 .. _PREVIOUS: glossary.rst
 .. _HOME: README.md
-.. _NEXT: consensus.rst
 
 © Copyright 2018, Intel Corporation.

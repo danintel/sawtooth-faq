@@ -1,5 +1,7 @@
 Preliminary FAQ: Sawtooth in General
 ========================
+[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
+---------------------------------
 .. contents::
 
 .. Warning::
@@ -94,7 +96,7 @@ I get a usage error running ``sawnet peers`` or ``sawnet list-blocks``
 These commands were added after the Sawtooth 1.0.4 release and are not available in earlier releases.
 
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
-=========
+---------------------------------
 
 .. _PREVIOUS: README.md
 .. _HOME: README.md
