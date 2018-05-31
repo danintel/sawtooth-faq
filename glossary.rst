@@ -1,5 +1,7 @@
 Appendix: Glossary
 ==================
+[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
+---------------------------------
 .. contents::
 
 .. Warning::
@@ -167,7 +169,7 @@ ZKP
     Zero Knowledge Proof. One party proving they know a value x without conveying x
 
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
-=========
+---------------------------------
 
 .. _PREVIOUS: docker.rst
 .. _HOME: README.md

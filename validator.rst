@@ -1,5 +1,7 @@
 Preliminary FAQ: Sawtooth Validator
 ==================
+[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
+---------------------------------
 .. contents::
 
 .. Warning::
@@ -81,7 +83,7 @@ Why does the validator create large 1TByte files?
 The large 1TByte files in /var/lib/sawtooth/ are "sparse" files.  They are random-access files with mostly empty blocks. They do not actually consume 1Tbyte of storage.
 
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
-=========
+---------------------------------
 
 .. _PREVIOUS: transaction-processing.rst
 .. _HOME: README.md

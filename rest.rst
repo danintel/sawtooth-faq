@@ -1,5 +1,7 @@
 Preliminary FAQ: Sawtooth REST API
 ==================
+[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
+---------------------------------
 .. contents::
 
 .. Warning::
@@ -61,7 +63,7 @@ For more information, see the Sawtooth REST API Reference at
 https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api.html
 
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
-=========
+---------------------------------
 
 .. _PREVIOUS: client.rst
 .. _HOME: README.md
