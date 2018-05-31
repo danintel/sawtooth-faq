@@ -15,7 +15,7 @@ Sawtooth headers are serialized with Protobuf.
 For base" TF specifications, see
 https://sawtooth.hyperledger.org/docs/core/releases/1.0/transaction_family_specifications/
 
-+--------------+----------+---------------------------------------------------+
++--------------+----------+--------+------------------------------------------+
 |              | SERIAL-  |        |                                          |
 | TF NAME      | IZATION  | PREFIX | PREFIX ENCODING                          |
 +==============+==========+========+==========================================+
