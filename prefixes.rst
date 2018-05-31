@@ -75,5 +75,6 @@ https://sawtooth.hyperledger.org/docs/core/releases/1.0/transaction_family_speci
 
 .. _PREVIOUS: glossary.rst
 .. _HOME: README.md
+.. _NEXT: consensus.rst
 
 © Copyright 2018, Intel Corporation.
