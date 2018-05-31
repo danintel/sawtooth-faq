@@ -15,7 +15,7 @@ At a high-level, the Validator verifies the following:
 
 * Signature - Check for integrity of the data
 
-*Structure - Check structural composition of batches: duplicate transactions, extra transactions, etc.
+* Structure - Check structural composition of batches: duplicate transactions, extra transactions, etc.
 
 Is there a simple example to show how to run Sawtooth
 -------------------
@@ -98,16 +98,19 @@ The large 1TByte files in ``/var/lib/sawtooth/`` are "sparse" files, implemented
 What TCP ports does Sawtooth use?
 -------------------
 
-- 4004 is used by the Validator component bus, which uses ZMQ. The validator listens to requests on this port from the REST API and from one or more transaction processors
-- 8008 is used by the REST API, which contects the Client to the Validator
-- 8800 is used by the Validator network to communicate with other Validators
+* 4004 is used by the Validator component bus, which uses ZMQ. The validator listens to requests on this port from the REST API and from one or more transaction processors
+
+* 8008 is used by the REST API, which contects the Client to the Validator
+
+* 8800 is used by the Validator network to communicate with other Validators
 
 Can I run two validators on the same machine?
 -------------------
 Yes, but it is not recommended.  You need to configure separate Sawtooth instances with different:
 
-- data and key directories (listed above)
-- TCP ports (8008, 4004, and 8800, listed above)
+* data and key directories (listed above)
+
+* TCP ports (8008, 4004, and 8800, listed above)
 
 Instead, consider setting up separate virtual machines (such as with VirtualBox) for each validator.  This ensures isolation of files and ports for each Validator.
 
