@@ -1,7 +1,7 @@
 Preliminary FAQ: Sawtooth Client
 ====================
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
----------------------------------
+
 .. contents::
 
 .. Warning::
@@ -26,7 +26,6 @@ A nonce is a one-time use number (never repeated).  Typically a random number is
 A nonce in this case guarantees against replay attacks by making transactions unique.
 
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
----------------------------------
 
 .. _PREVIOUS: consensus.rst
 .. _HOME: README.md

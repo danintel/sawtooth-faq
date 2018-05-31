@@ -1,7 +1,7 @@
 Preliminary FAQ: Sawtooth Consensus Algorithms (including PoET)
 ====================
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
----------------------------------
+
 .. contents::
 
 .. Warning::
@@ -54,7 +54,6 @@ We also have a version of PoET that just uses conventional software, PoET Simula
 which runs on a Sawtooth network with any processor.
 
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
----------------------------------
 
 .. _PREVIOUS: validator.rst
 .. _HOME: README.md
