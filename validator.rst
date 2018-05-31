@@ -10,9 +10,10 @@ Preliminary FAQ: Sawtooth Validator
 What validation does the validator do?
 -----------------------
 At a high-level, the Validator verifies the following:
-*Permission - Check the batch signing key against the allowed transactor permissions
-*Signature - Check for integrity of the data
-*Structure - Check structural composition of batches: duplicate transactions, extra transactions, etc.
+
+-Permission - Check the batch signing key against the allowed transactor permissions
+-Signature - Check for integrity of the data
+-Structure - Check structural composition of batches: duplicate transactions, extra transactions, etc.
 
 Is there a simple example to show how to run Sawtooth
 -------------------
@@ -78,9 +79,35 @@ What is the difference between `sawtooth-validator --peers {list}` and `sawtooth
 -------------------
 There are two peering modes in sawtooth: static and dynamic. The static peering mode requires the `--peers` arg to connect to other peer validators. Whereas, in the dynamic peering mode the `--peers` if specified will be processed and then use `--seeds` for the initial connection to the validator network and to start topology build-out (discovery and connection to more peer validators).
 
+What files does Sawtooth use?
+-------------------
+
+``/var/lib/sawtooth/``
+    contains the blockchain, Merkle tree, and transaction receipts
+``~/.sawtooth/keys/``
+    contain one or more sets of user key pairs
+``/etc/sawtooth/keys/``
+    contain the validator key pair
+
 Why does the validator create large 1TByte files?
 -------------------
-The large 1TByte files in /var/lib/sawtooth/ are "sparse" files.  They are random-access files with mostly empty blocks. They do not actually consume 1Tbyte of storage.
+The large 1TByte files in ``/var/lib/sawtooth/`` are "sparse" files, implemented with LMDB (Lightning Memory-mapped Database).  They are random-access files with mostly empty blocks. They do not actually consume 1Tbyte of storage.
+
+What TCP ports does Sawtooth use?
+-------------------
+
+- 4004 is used by the Validator component bus, which uses ZMQ. The validator listens to requests on this port from the REST API and from one or more transaction processors
+- 8008 is used by the REST API, which contects the Client to the Validator
+- 8800 is used by the Validator network to communicate with other Validators
+
+Can I run two validators on the same machine?
+-------------------
+Yes, but it is not recommended.  You need to configure separate Sawtooth instances with different:
+
+- data and key directories (listed above)
+- TCP ports (8008, 4004, and 8800, listed above)
+
+Instead, consider setting up separate virtual machines (such as with VirtualBox) for each validator.  This ensures isolation of files and ports for each Validator.
 
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 
