@@ -26,7 +26,7 @@ https://sawtooth.hyperledger.org/docs/core/releases/1.0/transaction_family_speci
 +--------------+----------+--------+------------------------------------------+
 | identity     | Protobuf | 00001d | Validator Identity for TP/Validator keys |
 +--------------+----------+--------+------------------------------------------+
-| validator\_   | Protobuf | 6a4372 | Validator Registry,                     |
+| validator\_   | Protobuf | 6a4372 | Validator Registry,                      |
 | registry     |          |        |    to add new validators                 |
 +--------------+----------+--------+------------------------------------------+
 | blockinfo    | Protobuf | 00b10c | Validator Block Info.  Used for SETH     |
