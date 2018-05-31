@@ -33,9 +33,9 @@ Block ID
 BFT
     Byzantine Fault Tolerance.  Consensus is possible with malicious actors (Byzantine Generals Problem). BFT is stronger than CFT and uses voting
 C
-    signup delay; number of blocks a validator has to wait before participating in elections (when using PoET)
+    Sign-up delay; number of blocks a validator has to wait before participating in elections (when using PoET)
 C Test
-    test that a block-claiming validator follows C, signup delay
+    test that a block-claiming validator follows C, sign-up delay
 CFT
     Crash Fault Tolerance. Consensus possible even with failed components
 Client
@@ -44,6 +44,8 @@ Consensus algorithm
     Method to decide what block to add next to a blockchain
 Classical Consensus
     Uses an agreement or voting mechanism (vs. Nakamoto-style consensus)
+Distributed Ledger
+    See Blockchain
 Docker
     A light-weight OS-level VM technology which isolates processes into separate "containers"
 Duplicity
@@ -64,18 +66,22 @@ EVM
     Ethereum Virtual Machine. Executes machine-independent code for Ethereum.  Supported by SETH on Sawtooth
 Fork
     When network nodes have two competing nodes at the head of a blockchain
+Genesis Block
+    First block in the blockchain.  Usually has initial validator settings
 Gossip
     A message broadcast mechanism that uses forwarding to random peers (Sawtooth Validator nodes)
 Hyperledger
     A family of distributed ledgers sponsored by The Linux Foundation, including Sawtooth
 IAS
     Intel Attestation Server. Used to authenticate PoET SGX keys; runs in public Internet at https://as.sgx.trustedservices.intel.com/
+In State
+    See on-chain
 IntKey
     Integer key TP. Sample Sawtooth TP that implements set/increment/decrement/show operations
-K
-    Claim limit, number of blocks a validator can publish before it must signup again (when using PoET)
+k
+    Claim limit, number of blocks a validator can publish before it must sign-up again (when using PoET)
 K Test
-    Test a block-claiming validator follows K, claim limit before another signup
+    Test a block-claiming validator follows K, claim limit before another sign-up
 Liveness
     A consensus algorithm property where the nodes eventually must agree on a value
 LMDB
@@ -94,6 +100,10 @@ Node
     See Validator
 Nonce
     A one-time number; usually random, but must not predictably repeat (such as after reboot/restart)
+Off-chain
+    Information stored externally to the blockchain
+On-chain
+    Information stored internally in the blockchain
 One-say, all-adopt
 	Strategy where only a single multicast round of messages reaches agreement
 Payload
