@@ -127,7 +127,7 @@ How do I enable and disable automatic start of docker on boot on Linux?
     $ systemctl status docker
     $ sudo systemctl disable docker
 
-[`PREVIOUS`_] [`HOME`_] [`NEXT`_]
+[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 =========
 
 .. _PREVIOUS: rest.rst

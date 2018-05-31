@@ -60,7 +60,7 @@ GET /peers
 For more information, see the Sawtooth REST API Reference at
 https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api.html
 
-[`PREVIOUS`_] [`HOME`_] [`NEXT`_]
+[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 =========
 
 .. _PREVIOUS: client.rst
