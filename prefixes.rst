@@ -18,29 +18,29 @@ For base" TF specifications, see
 https://sawtooth.hyperledger.org/docs/core/releases/1.0/transaction_family_specifications/
 
 +--------------+----------+--------+------------------------------------------+
-|              | SERIAL-  |        |                                          |
-| TF NAME      | IZATION  | PREFIX | PREFIX ENCODING                          |
+| TRANSACTION  | SERIAL-  |        |                                          |
+| FAMILY NAME  | IZATION  | PREFIX | PREFIX ENCODING                          |
 +==============+==========+========+==========================================+
 | settings     | Protobuf | 000000 | Validator settings.  Only required TF    |
 |              |          |        |                                          |
 |              |          |        | 000000<1st 62 chars of                   |
-|              |          |        |    SHA-256(policy name)>                 |
+|              |          |        | SHA-256(policy name)>                    |
 +--------------+----------+--------+------------------------------------------+
 | identity     | Protobuf | 00001d | Validator Identity for TP/Validator keys |
 +--------------+----------+--------+------------------------------------------+
 | validator\_  | Protobuf | 6a4372 | Validator Registry,                      |
-| registry     |          |        |    to add new validators                 |
+| registry     |          |        | to add new validators                    |
 +--------------+----------+--------+------------------------------------------+
 | blockinfo    | Protobuf | 00b10c | Validator Block Info.  Used for SETH     |
 |              |          |        |                                          |
 |              |          |        | 00b10c00 metadata namespace              |
-|              |          |        |     info about other namespaces          |
+|              |          |        | info about other namespaces              |
 |              |          |        |                                          |
 |              |          |        | 00b10c01 block info namespace            |
-|              |          |        |     historic block info                  |
+|              |          |        | historic block info                      |
 |              |          |        |                                          |
 |              |          |        | 00b10c0100....00<block # in hex>         |
-|              |          |        |     info on block at block #             |
+|              |          |        | info on block at block #                 |
 +--------------+----------+--------+------------------------------------------+
 | sabre        | Protobuf | 00ec00 | WebAssembly VM: NamespaceRegistry        |
 |              |          |        |                                          |
