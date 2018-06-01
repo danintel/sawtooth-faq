@@ -20,7 +20,6 @@ For details, see https://docs.docker.com/install/linux/linux-postinstall/#manage
 
 I get this error running ``docker-compose -f sawtooth-default.yaml up`` : ``Error: files exist, rerun with --force to overwrite existing files``
 -------------------
-
 This occurs when docker was not halted cleanly.  Run the following first:
 
 ::
@@ -53,8 +52,14 @@ To determine if sure docker is running and to start Docker, type:
 
 I get this error running ``docker run hello-world`` :  ``Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.37/containers/json: dial unix /var/run/docker.sock: connect: permission denied``
 -------------------
+Try running with sudo.  For example: sudo docker run hello-world.
+Here's a few aliases you can add to your ``~/.bashrc`` file:
 
-Try running with sudo.  For example: sudo docker run hello-world
+::
+
+    alias docker='sudo docker'
+    alias docker-compose='sudo docker-compose'
+
 
 I get this error running ``docker run hello-world`` : ``docker: Error response from daemon: Get https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers).``
 -------------------

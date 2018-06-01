@@ -9,14 +9,12 @@ Preliminary FAQ: Sawtooth Transaction Processing
 
 Does a client send a transaction request to all the validators in the network?
 -------------------
-
 No, it would just need to send the batch to one validator, then that validator will broadcast the batch to the rest of its peers.
 If the validator is down, your connection attempt from the app would fail.
 The app could have error handling to try again (in a retry loop) or try another validator.
 
 Does Sawtooth have a way to control what participants have access to what assets in the business network and under what conditions?
 -------------------
-
 Blockchains, including Sawtooth, can be deployed as permissioned networks, wherein transactions are visible to the participants of the permissioned network, but not visible to the general public.
 
 What transaction processors are required?

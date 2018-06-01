@@ -9,7 +9,6 @@ Appendix: Sawtooth FAQ Glossary
 
 See Also
 --------
-
 Sawtooth Glossary
     https://sawtooth.hyperledger.org/docs/core/nightly/master/glossary.html
 PoET Definitions
@@ -18,7 +17,6 @@ PoET Definitions
 
 Glossary
 --------
-
 Address (aka State Address)
     For Sawtooth, each radix address (or Node ID) into a Merkle Trie is 70 hex characters (35 bytes). The first 6 characters, the prefix, encode the name space (of the TF) and the remaining bytes are implementation-dependent.  The prefix is either the first 6 characters of the SHA-512 hash of the namespace, or a hex word for base name spaces.  See the list of TF prefixes in the Appendix
 AVR
