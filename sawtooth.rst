@@ -96,6 +96,41 @@ I get a usage error running ``sawnet peers`` or ``sawnet list-blocks``
 
 These commands were added after the Sawtooth 1.0.4 release and are not available in earlier releases.
 
+How do I list and install Sawtooth packages?
+--------------------------------------------
+See https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/installation.html
+
+Here is how to setup the stable repository and list the packages:
+
+::
+
+    $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 8AA7AF1F1091A5FD
+    $ sudo add-apt-repository 'deb http://repo.sawtooth.me/ubuntu/1.0/stable xenial universe'
+    $ sudo apt update
+    $ aptitude  search python3-sawtooth-*
+    p python3-sawtooth-block-info   - Sawtooth Block Info Transaction Processor
+    p python3-sawtooth-cli          - Sawtooth CLI
+    p python3-sawtooth-ias-client   - Sawtooth Intel Attestation Service Client
+    p python3-sawtooth-ias-proxy    - Sawtooth Intel Attestation Service Proxy
+    p python3-sawtooth-identity     - Sawtooth Identity Transaction Processor
+    p python3-sawtooth-intkey       - Sawtooth Intkey Python Example
+    p python3-sawtooth-manage       - Sawtooth Lake Management Library
+    p python3-sawtooth-poet-cli     - Sawtooth PoET CLI
+    p python3-sawtooth-poet-common  - Sawtooth PoET Common Modules
+    p python3-sawtooth-poet-core    - Sawtooth Core Consensus Module
+    p python3-sawtooth-poet-families  - Sawtooth Transaction Processor Families
+    p python3-sawtooth-poet-sgx       - Sawtooth PoET SGX Enclave
+    p python3-sawtooth-poet-simulator - Sawtooth PoET Simulator Enclave
+    p python3-sawtooth-rest-api       - Sawtooth REST API
+    p python3-sawtooth-sdk            - Sawtooth Python SDK
+    p python3-sawtooth-settings       - Sawtooth Settings Transaction Processor
+    p python3-sawtooth-signing        - Sawtooth Signing Library
+    p python3-sawtooth-validator      - Sawtooth Validator
+    p python3-sawtooth-xo             - Sawtooth XO Example
+    $ sudo apt install sawtooth
+
+
+
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 
 .. _PREVIOUS: README.md
