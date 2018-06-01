@@ -63,7 +63,6 @@ You should see a JSON response similar to this:
 
 Do all validators need to run the same transaction processors?
 -------------------
-
 Yes.  All validators must run all of the same transaction processors that are
 on the network. If a validator receives a transaction that it does not have a
 transaction processor for, the validator will wait until a transaction processor
@@ -74,7 +73,6 @@ setting.  If that setting is not set, all transaction would be accepted.
 
 I set sawtooth.validator.transaction_families as follows (from the documentation) but it's ignored
 -------------------
-
 The sawtooth.validator.transaction_families setting is ignored using dev-mode consensus and does not need to be set.
 
 What is the difference between `sawtooth-validator --peers {list}` and `sawtooth-validator --seeds {list}`?
@@ -83,7 +81,6 @@ There are two peering modes in sawtooth: static and dynamic. The static peering 
 
 What files does Sawtooth use?
 -------------------
-
 ``/var/lib/sawtooth/``
     contains the blockchain, Merkle tree, and transaction receipts
 ``~/.sawtooth/keys/``
@@ -97,7 +94,6 @@ The large 1TByte files in ``/var/lib/sawtooth/`` are "sparse" files, implemented
 
 What TCP ports does Sawtooth use?
 -------------------
-
 * 4004 is used by the Validator component bus, which uses ZMQ. The validator listens to requests on this port from the REST API and from one or more transaction processors
 
 * 8008 is used by the REST API, which contects the Client to the Validator

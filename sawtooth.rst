@@ -16,7 +16,6 @@ No special hardware is required to run Sawtooth or PoET.
 
 What are some useful Sawtooth links?
 ------------------------------------
-
 Sawtooth introduction
     https://sawtooth.hyperledger.org/docs/core/nightly/master/introduction.html
 Sawtooth introduction and download
@@ -34,7 +33,6 @@ Sawtooth FAQ
 
 What is the difference between Hyperledger and Sawtooth?
 --------------------------------------------------------
-
 * Sawtooth (or Hyperledger Sawtooth) is blockchain software sponsored by Intel Corporation, but does not require Intel hardware.
 
 * Hyperledger is a consortium of Linux blockchain software, including Sawtooth, under the Linux Foundation
@@ -65,12 +63,10 @@ For more information, see the Sawtooth CLI Command Reference at https://sawtooth
 
 Must software developed with Sawtooth be open source?
 ------------------------
-
 IANAL, but no.  Sawtooth uses the `Apache 2 license, a permissive license,so can be used with both open or closed source
 
 I get this error when running ``sawtooth setting list`` or ``xo list`` : ``Error 503: Service Unavailable``
 -----------------------------
-
 This usually occurs when there is no genesis node created.  To create, type the following:
 
 ::
@@ -88,12 +84,10 @@ Then start the validator:
 
 How to I delete previously-existing blockchain data?
 ----------------------------------
-
 Type the following: ``sudo -u sawtooth rm -rf /var/lib/sawtooth/*``
 
 I get a usage error running ``sawnet peers`` or ``sawnet list-blocks``
 ----------------------------------------------------
-
 These commands were added after the Sawtooth 1.0.4 release and are not available in earlier releases.
 
 How do I list and install Sawtooth packages?
