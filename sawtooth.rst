@@ -98,9 +98,9 @@ These commands were added after the Sawtooth 1.0.4 release and are not available
 
 How do I list and install Sawtooth packages?
 --------------------------------------------
-See https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/installation.html
-
-Here is how to setup the stable repository and list the packages:
+Here is how to setup the Sawtooth stable repository, list the packages,
+and install the three core packages
+(python3-sawtooth-cli, python3-sawtooth-sdk, python3-sawtooth-signing):
 
 ::
 
@@ -128,6 +128,9 @@ Here is how to setup the stable repository and list the packages:
     p python3-sawtooth-validator      - Sawtooth Validator
     p python3-sawtooth-xo             - Sawtooth XO Example
     $ sudo apt install sawtooth
+
+For more, up-to-date installation information see
+https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/installation.html
 
 
 
