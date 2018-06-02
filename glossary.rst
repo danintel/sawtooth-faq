@@ -11,8 +11,10 @@ See Also
 --------
 Sawtooth Glossary
     https://sawtooth.hyperledger.org/docs/core/nightly/master/glossary.html
+Sawtooth Architecture Definitions
+    https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture/permissioning_requirement.html#definitions
 PoET Definitions
-    https://sawtooth.hyperledger.org/docs/core/releases/1.0/architecture/poet.html#definitions
+    https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture/poet.html#definitions
 
 
 Glossary
