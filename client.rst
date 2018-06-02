@@ -1,4 +1,4 @@
-Preliminary FAQ: Sawtooth Client
+Unofficial FAQ: Sawtooth Client
 ====================
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 

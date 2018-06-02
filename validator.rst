@@ -1,4 +1,4 @@
-Preliminary FAQ: Sawtooth Validator
+Unofficial FAQ: Sawtooth Validator
 ==================
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 

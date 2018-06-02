@@ -1,4 +1,4 @@
-Preliminary FAQ: Using Docker with Sawtooth
+Unofficial FAQ: Using Docker with Sawtooth
 ====================
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 
