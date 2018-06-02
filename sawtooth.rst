@@ -1,4 +1,4 @@
-Preliminary FAQ: Sawtooth in General
+Unofficial FAQ: Sawtooth in General
 ========================
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 
@@ -26,9 +26,13 @@ Sawtooth documentation, with several guides and references, including:
     https://sawtooth.hyperledger.org/docs/core/nightly/master/
 Sawtooth Application Developer's Guide
     https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide.html
+Sawtooth Architecture
+	https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture.html
 Sawtooth chat main channel (several others Sawtooth channels exist here)
     https://chat.hyperledger.org/channel/sawtooth
-Sawtooth FAQ
+Official Sawtooth FAQ
+    https://www.hyperledger.org/wp-content/uploads/2018/01/Hyperledger_Sawtooth_FAQ.pdf
+Unofficial Sawtooth FAQ
     https://github.com/danintel/sawtooth-faq
 
 What is the difference between Hyperledger and Sawtooth?

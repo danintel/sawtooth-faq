@@ -1,4 +1,4 @@
-Preliminary FAQ: Sawtooth REST API
+Unofficial FAQ: Sawtooth REST API
 ==================
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 

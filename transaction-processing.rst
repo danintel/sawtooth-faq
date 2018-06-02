@@ -1,4 +1,4 @@
-Preliminary FAQ: Sawtooth Transaction Processing
+Unofficial FAQ: Sawtooth Transaction Processing
 ==================
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 

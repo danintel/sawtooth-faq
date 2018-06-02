@@ -1,4 +1,4 @@
-Preliminary FAQ: Sawtooth Consensus Algorithms (including PoET)
+Unofficial FAQ: Sawtooth Consensus Algorithms (including PoET)
 ====================
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 
