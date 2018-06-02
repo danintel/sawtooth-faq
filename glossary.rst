@@ -49,6 +49,8 @@ Classical Consensus
     Uses an agreement or voting mechanism (vs. Nakamoto-style consensus)
 Distributed Ledger
     See Blockchain
+DLT
+    Distributed Ledger Technology; see Blockchain
 Docker
     A light-weight OS-level VM technology which isolates processes into separate "containers"
 Duplicity
@@ -140,11 +142,15 @@ Raft
 Replica
     Another term for node or validator
 REST
-     Representational State Transfer. Industry-standard web-based API.  REST is available on a Sawtooth validator node through TCP port 8008.  For more information, see the Sawtooth REST API Reference at https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api.html
+    Representational State Transfer. Industry-standard web-based API.  REST is available on a Sawtooth validator node through TCP port 8008.  For more information, see the Sawtooth REST API Reference at https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api.html
+ST
+    Sawtooth
 Sabre
     TF that implements on-chain smart contracts with the WebAssembly VM.  For more information, see Sabre RFC at https://github.com/hyperledger/sawtooth-rfcs/blob/master/text/0007-wasm-smart-contracts.md
+Sawtooth
+    Hyperledger Sawtooth is a modular enterprise blockchain platform for building, deploying, and running distributed ledgers.
 Stale block
-     A block proposed to be at the head of a blockchain, but lost to a competing block that became the head as decided by the consensus algorithm
+    A block proposed to be at the head of a blockchain, but lost to a competing block that became the head as decided by the consensus algorithm
 TF
     Transaction Family. Consists of the Client, State, and TP
 TP
@@ -158,7 +164,7 @@ Safety
 Sawtooth
     Permissioned blockchain platform for running distributed ledgers
 SETH
-     Ethereum-compatible Sawtooth Transaction Processor. Suppors running Ethereum Virtual Machine
+    Ethereum-compatible Sawtooth Transaction Processor. Suppors running Ethereum Virtual Machine
 secp256k1
     An ECDSA (Elliptic Curve DSA) cryptographic algorithm used by Sawtooth with a 32-byte key. Used for Validator and TP. Bitcoin also uses this algorithm
 Serialization
