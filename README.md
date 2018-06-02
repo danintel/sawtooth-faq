@@ -7,7 +7,7 @@ https://chat.hyperledger.org/channel/sawtooth
 |-----------------|
 | **This FAQ was written by a non-expert so may contain both fiction and fact!** |
 
-## Unofficial FAQ
+## Frequently-asked Questions
 * [Sawtooth in General](sawtooth.rst)
 * [Sawtooth Transaction Processing](transaction-processing.rst)
 * [Sawtooth Validator](validator.rst)
