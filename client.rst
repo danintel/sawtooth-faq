@@ -9,8 +9,10 @@ Unofficial FAQ: Sawtooth Client
 
 What languages does the Sawtooth SDK support?
 -------------------
-Python 3, Go, Javascript, and Rust.  The "best" supported SDKs are Python 3 and Rust.
+Python 3, Go, Javascript, Rust, Java, and C++.  The "best" supported SDKs are Python 3 and Rust.
 One can also interface directly to Sawtooth without a SDK.
+See this chart of Sawtooth SDK support:
+https://sawtooth.hyperledger.org/docs/core/releases/latest/app_developers_guide/sdk_table.html
 For more information, see the Sawtooth SDK Reference at
 https://sawtooth.hyperledger.org/docs/core/releases/latest/sdks.html
 
