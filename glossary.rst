@@ -62,7 +62,7 @@ Curve325519
 Data model
     Can be any format (CSV, protobufs, etc.)
 Deterministic
-    Means consistent, or the same. For Sawtooth, serialization must be deterministic, meaning the encoding is always in the same order and always the same for the same data.  Many JSON libraries do not encode data deterministically.
+    Means consistent, or the same. For Sawtooth, serialization must be deterministic, meaning the encoding is always in the same order and always the same for the same data.  Many JSON libraries do not encode data deterministically
 EPID
     Enhanced Privacy ID. An anonymous credential system; used by PoET
 Enclave
@@ -90,7 +90,7 @@ K Test
 Liveness
     A consensus algorithm property where the nodes eventually must agree on a value
 LMDB
-    Lightning Memory-mapped Database are sparse random-access files in ``/var/lib/sawtooth`` . The Merkle Tree and Blockchain use LMDB.
+    Lightning Memory-mapped Database are sparse random-access files in ``/var/lib/sawtooth`` . The Merkle Tree and Blockchain use LMDB
 Marshalling
     serialization of data
 Merkle Tree (or Trie)
@@ -148,7 +148,9 @@ ST
 Sabre
     TF that implements on-chain smart contracts with the WebAssembly VM.  For more information, see Sabre RFC at https://github.com/hyperledger/sawtooth-rfcs/blob/master/text/0007-wasm-smart-contracts.md
 Sawtooth
-    Hyperledger Sawtooth is a modular enterprise blockchain platform for building, deploying, and running distributed ledgers.
+    Hyperledger Sawtooth is a modular enterprise blockchain platform for building, deploying, and running distributed ledgers
+Solidity
+    A contract-oriented programming language used to implement smart contracts.  Compiles into Ethereum VM code and is supported by Seth
 Stale block
     A block proposed to be at the head of a blockchain, but lost to a competing block that became the head as decided by the consensus algorithm
 TF
@@ -168,7 +170,7 @@ SETH
 secp256k1
     An ECDSA (Elliptic Curve DSA) cryptographic algorithm used by Sawtooth with a 32-byte key. Used for Validator and TP. Bitcoin also uses this algorithm
 Serialization
-    A scheme to encode data as a byte stream.  For Sawtooth the serialization must be deterministic, meaning the encoding is always in the same order and always the same for the same data.  Protobufs are often used in Sawtooth Serialization, but that is not a requirement.  A simpler alternative, for example, is CSV.
+    A scheme to encode data as a byte stream.  For Sawtooth the serialization must be deterministic, meaning the encoding is always in the same order and always the same for the same data.  Protobufs are often used in Sawtooth Serialization, but that is not a requirement.  A simpler alternative, for example, is CSV
 SGX
     Intel Software Guard Extensions. Specialized hardware that provides enclaves with protected code and data. Used to implement PoET SGX
 State
