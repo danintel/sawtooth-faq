@@ -22,7 +22,6 @@ Yes. We are in the process of adding a fourth consensus, Raft, and may add other
 
 What other consensus algorithms use SGX?
 -------------------
-
 * Microsoft Azure's Coco consensus algorithm uses SGX.
 * Corda uses SGX for Remote Attestation.
 * Prototypes for other blockchains have been completed.
@@ -33,6 +32,12 @@ Sawtooth supports unpluggable consensus, meaning you can change the consensus al
 at a block boundary.
 Changing consensus on the fly means it is done without stopping validators, flushing state,
 or starting over with a new genesis block.
+
+Can my Sawtooth network have validators with a mixture of SGX PoET or Simulator PoET?
+------------------------------------------
+No. You need to pick one consensus for all nodes.
+But you can change consensus after the network has started.
+
 
 I get this error during PoET SGX registration: "Machine requires update (probably BIOS) for SGX compliance."
 -------------------
