@@ -130,6 +130,12 @@ and install the three core packages
 For more, up-to-date installation information see
 https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/installation.html
 
+How do I report a bug?
+---------------------------
+Use the JIRA bug tracking system at
+https://jira.hyperledger.org/projects/STL/issues/STL-51?filter=allopenissues
+For security bugs only, send email to security@hyperledger.org
+
 
 
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
