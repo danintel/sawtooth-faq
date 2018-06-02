@@ -32,6 +32,11 @@ No. The set of TPs must be the same for all validator nodes in a Sawtooth networ
 The TP versions must also match--support the same set of ops.
 This is so the transaction and state validation will be successful.
 
+Can a Validator Node have multiple TPs (processes) running for the same TF?
+---------------------------------
+Yes, one or more TPs, handling the same or different Transaction Families, may be running and register with a validator. 
+This is one way to achive parallelism. Another way to write a multi-threaded TP.
+
 What happens if a validator receives a transaction but does not have a TP for it?
 ---------------------------------------------
 If a validator receives a transaction that it does not have a transaction processor for, the validator will wait until a TP connects that can handle that transaction. That validator would fall behind the rest on the network while it waits.
