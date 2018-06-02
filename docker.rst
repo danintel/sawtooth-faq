@@ -119,7 +119,7 @@ To start, run:
     $ sudo systemctl restart docker.service
 
 How do I manually start and stop docker on Linux?
--------------------------------------- 
+--------------------------------------
 ::
 
     $ sudo service docker start
@@ -127,7 +127,7 @@ How do I manually start and stop docker on Linux?
     $ sudo service docker stop
 
 How do I enable and disable automatic start of docker on boot on Linux?
--------------------------------------- 
+--------------------------------------
 ::
 
     $ sudo systemctl enable docker
