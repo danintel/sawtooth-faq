@@ -26,9 +26,11 @@ AVR
 back pressure
     flow-control technique to help prevent Denial of Service attacks; used by Sawtooth
 Batch
-    A set of transactions that must be made together (atomic commit) to maintain state consistency
+    A set of transactions that must be made together (atomic commit) to maintain state consistency. Batches are unique to Sawtooth
 Block
     A set of records of permanent transactions; these blocks are linked into a blockchain.  A block is similar to a page in a ledger book, where the ledger book is a blockchain
+Block 0 or Block Zero
+    See Genesis Block
 Blockchain
     A single-link list of blocks.  The blockchain is immutable, distributed, and cryptographically-secured. Located at ``/var/lib/sawtooth/block-00.lmdb``
 Block ID
@@ -72,7 +74,7 @@ EVM
 Fork
     When network nodes have two competing nodes at the head of a blockchain
 Genesis Block
-    First block in the blockchain.  Usually has initial validator settings
+    First block in the blockchain (block 0).  Usually has initial validator settings
 GS
     Global State or Ledger
 Gossip
