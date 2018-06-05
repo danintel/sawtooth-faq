@@ -73,6 +73,8 @@ Fork
     When network nodes have two competing nodes at the head of a blockchain
 Genesis Block
     First block in the blockchain.  Usually has initial validator settings
+GS
+    Global State or Ledger
 Gossip
     A message broadcast mechanism that uses forwarding to random peers (Sawtooth Validator nodes)
 Hyperledger
@@ -87,6 +89,8 @@ k
     Claim limit, number of blocks a validator can publish before it must sign-up again (when using PoET)
 K Test
     Test a block-claiming validator follows K, claim limit before another sign-up
+Ledger
+    Key-value store whose values are agreed on by all nodes (validators) in the network
 Liveness
     A consensus algorithm property where the nodes eventually must agree on a value
 LMDB
