@@ -26,7 +26,7 @@ AVR
 back pressure
     flow-control technique to help prevent Denial of Service attacks; used by Sawtooth
 Batch
-    A set of transactions that must be made together (atomic commit) to maintain state consistency
+    A set of transactions that must be made together (atomic commit) to maintain state consistency. Batches are unique to Sawtooth
 Block
     A set of records of permanent transactions; these blocks are linked into a blockchain.  A block is similar to a page in a ledger book, where the ledger book is a blockchain
 Blockchain
