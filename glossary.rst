@@ -78,7 +78,7 @@ Genesis Block
 GS
     Global State or Ledger
 Gossip
-    A message broadcast mechanism that uses forwarding to random peers (Sawtooth Validator nodes)
+    A decentralized message broadcast mechanism that uses forwarding to random peers (Sawtooth Validator nodes)
 Hyperledger
     A family of distributed ledgers sponsored by The Linux Foundation, including Sawtooth
 IAS
@@ -120,7 +120,7 @@ One-say, all-adopt
 Payload
     Data processed by the TP and only the TP. Can be any format (CSV, protobufs, etc.) Data model is defined by TF. Payload is encoded using MIME's Base64 (``A-Za-z0-9+/``) + ``=`` for 0 mod 4 padding
 PBFT
-    Practical Byzantine Fault Tolerance. A "classical" consensus algorithm that uses a state machine. Uses leader and block election. PBFT is a three-phase, network-intense algorithm (n^2), so is not scalable to large networks
+    Practical Byzantine Fault Tolerance. A "classical" consensus algorithm that uses a state machine. Uses leader and block election. PBFT is a three-phase, network-intense algorithm (n^2 messages), so is not scalable to large networks
 Permissioned Blockchain (aka Private Blockchain)
     participants must ID themselves to a network (e.g., Hyperledger Sawtooth or Hyperledger Fabric)
 Permissionless Blockchain (aka Public Blockchain)
@@ -155,6 +155,8 @@ Sabre
     TF that implements on-chain smart contracts with the WebAssembly VM. For more information, see Sabre RFC at https://github.com/hyperledger/sawtooth-rfcs/blob/master/text/0007-wasm-smart-contracts.md
 Sawtooth
     Hyperledger Sawtooth is a modular enterprise blockchain platform for building, deploying, and running distributed ledgers
+Seed Nodes
+    Initial hard-coded set of peers a node knows about. Quickly expands with the Gossip algorithm to all the nodes in a network
 Solidity
     A contract-oriented programming language used to implement smart contracts. Compiles into Ethereum VM code and is supported by Seth
 Stale block
