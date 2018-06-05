@@ -156,7 +156,7 @@ Sabre
 Sawtooth
     Hyperledger Sawtooth is a modular enterprise blockchain platform for building, deploying, and running distributed ledgers
 Seed Nodes
-    Initial hard-coded set of peers a node knows about. Quickly expands with the Gossip algorithm to all the nodes in a network
+    Initial hard-coded set of peers a node knows about. The list expands with the Gossip algorithm
 Solidity
     A contract-oriented programming language used to implement smart contracts. Compiles into Ethereum VM code and is supported by Seth
 Stale block
