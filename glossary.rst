@@ -20,7 +20,7 @@ PoET Definitions
 Glossary
 --------
 Address (aka State Address)
-    For Sawtooth, each radix address (or Node ID) into a Merkle Trie is 70 hex characters (35 bytes). The first 6 characters, the prefix, encode the name space (of the TF) and the remaining bytes are implementation-dependent.  The prefix is either the first 6 characters of the SHA-512 hash of the namespace, or a hex word for base name spaces.  See the list of TF prefixes in the Appendix
+    For Sawtooth, each radix address (or Node ID) into a Merkle Trie is 70 hex characters (35 bytes). The first 6 characters, the prefix, encode the name space (of the TF) and the remaining bytes are implementation-dependent. The prefix is either the first 6 characters of the SHA-512 hash of the namespace, or a hex word for base name spaces. See the list of TF prefixes in the Appendix
 AVR
     Attestation Verification Report. Response body signature, signed with the IAS Report Key
 back pressure
@@ -28,15 +28,15 @@ back pressure
 Batch
     A set of transactions that must be made together (atomic commit) to maintain state consistency. Batches are unique to Sawtooth
 Block
-    A set of records of permanent transactions; these blocks are linked into a blockchain.  A block is similar to a page in a ledger book, where the ledger book is a blockchain
+    A set of records of permanent transactions; these blocks are linked into a blockchain. A block is similar to a page in a ledger book, where the ledger book is a blockchain
 Block 0 or Block Zero
     See Genesis Block
 Blockchain
-    A single-link list of blocks.  The blockchain is immutable, distributed, and cryptographically-secured. Located at ``/var/lib/sawtooth/block-00.lmdb``
+    A single-link list of blocks. The blockchain is immutable, distributed, and cryptographically-secured. Located at ``/var/lib/sawtooth/block-00.lmdb``
 Block ID
     128 hex character ID (64 bytes) identifying a block in a blockchain
 BFT
-    Byzantine Fault Tolerance.  Consensus is possible with malicious actors (Byzantine Generals Problem). BFT is stronger than CFT and uses voting
+    Byzantine Fault Tolerance. Consensus is possible with malicious actors (Byzantine Generals Problem). BFT is stronger than CFT and uses voting
 C
     Sign-up delay; number of blocks a validator has to wait before participating in elections (when using PoET)
 C Test
@@ -44,7 +44,7 @@ C Test
 CFT
     Crash Fault Tolerance. Consensus possible even with failed components
 Client
-    Any program that creates a transaction; interfaces with the validator using REST.  Does not have to be a web-based app
+    Any program that creates a transaction; interfaces with the validator using REST. Does not have to be a web-based app
 Consensus algorithm
     Method to decide what block to add next to a blockchain
 Classical Consensus
@@ -58,23 +58,23 @@ Docker
 Duplicity
 	A faulty node sending deceitful or inconsistent messages to other nodes
 CSV
-    Comma separated values.  E.g.: ``a,b,c,d``
+    Comma separated values. E.g.: ``a,b,c,d``
 Curve325519
     An ECDH (Elliptic Curve Diffie-Hellman) key agreement protocol used by Sawtooth. Used by validators in ZMQ connections to exchange keys
 Data model
     Can be any format (CSV, protobufs, etc.)
 Deterministic
-    Means consistent, or the same. For Sawtooth, serialization must be deterministic, meaning the encoding is always in the same order and always the same for the same data.  Many JSON libraries do not encode data deterministically
+    Means consistent, or the same. For Sawtooth, serialization must be deterministic, meaning the encoding is always in the same order and always the same for the same data. Many JSON libraries do not encode data deterministically
 EPID
     Enhanced Privacy ID. An anonymous credential system; used by PoET
 Enclave
     SGX-protected area of data and code to provide confidentiality and integrity even against privileged malware
 EVM
-    Ethereum Virtual Machine. Executes machine-independent code for Ethereum.  Supported by SETH on Sawtooth
+    Ethereum Virtual Machine. Executes machine-independent code for Ethereum. Supported by SETH on Sawtooth
 Fork
     When network nodes have two competing nodes at the head of a blockchain
 Genesis Block
-    First block in the blockchain (block 0).  Usually has initial validator settings
+    First block in the blockchain (block 0). Usually has initial validator settings
 GS
     Global State or Ledger
 Gossip
@@ -100,7 +100,7 @@ LMDB
 Marshalling
     serialization of data
 Merkle Tree (or Trie)
-    a radix search tree data structure with addressable nodes. Used to store state.  Located at ``/var/lib/sawtooth/merkle-00.lmdb``
+    a radix search tree data structure with addressable nodes. Used to store state. Located at ``/var/lib/sawtooth/merkle-00.lmdb``
 n
     Nodes in a blockchain network
 Nakamoto-style Consensus
@@ -120,13 +120,13 @@ One-say, all-adopt
 Payload
     Data processed by the TP and only the TP. Can be any format (CSV, protobufs, etc.) Data model is defined by TF. Payload is encoded using MIME's Base64 (``A-Za-z0-9+/``) + ``=`` for 0 mod 4 padding
 PBFT
-    Practical Byzantine Fault Tolerance. A "classical" consensus algorithm that uses a state machine. PBFT is a three-phase, network-intense algorithm, so is not scalable to large networks
+    Practical Byzantine Fault Tolerance. A "classical" consensus algorithm that uses a state machine. Uses leader and block election. PBFT is a three-phase, network-intense algorithm (n^2), so is not scalable to large networks
 Permissioned Blockchain (aka Private Blockchain)
     participants must ID themselves to a network (e.g., Hyperledger Sawtooth or Hyperledger Fabric)
 Permissionless Blockchain (aka Public Blockchain)
     anyone can join network (e.g., Bitcoin, Ethereum)
 PoET
-    Proof of Elapsed Time (optional Nakamoto-style consensus algorithm used for Sawtooth). PoET with SGX has BFT. PoET Simulator has CFT. Not CPU-intensitve as with PoW-style algorithms, although it still can fork and have stale blocks.  See PoET specification at https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture/poet.html
+    Proof of Elapsed Time (optional Nakamoto-style consensus algorithm used for Sawtooth). PoET with SGX has BFT. PoET Simulator has CFT. Not CPU-intensitve as with PoW-style algorithms, although it still can fork and have stale blocks. See PoET specification at https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture/poet.html
 PoW
     Proof of Work. Completing work (CPU-intensive Nakamoto-style consensus algorithm). Usually used in permissionless blockchains
 PoS
@@ -144,25 +144,25 @@ Public Blockchain
 r
     Rate, measurement of performance in transactions per second
 Raft
-    Consensus algorithm that elects a leader for a term of arbitrary time.  Raft is CFT, but not BFT
+    Consensus algorithm that elects a leader for a term of arbitrary time. Leader replaced if it times-out. Raft is CFT, but not BFT
 Replica
     Another term for node or validator
 REST
-    Representational State Transfer. Industry-standard web-based API.  REST is available on a Sawtooth validator node through TCP port 8008.  For more information, see the Sawtooth REST API Reference at https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api.html
+    Representational State Transfer. Industry-standard web-based API. REST is available on a Sawtooth validator node through TCP port 8008. For more information, see the Sawtooth REST API Reference at https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api.html
 ST
     Sawtooth
 Sabre
-    TF that implements on-chain smart contracts with the WebAssembly VM.  For more information, see Sabre RFC at https://github.com/hyperledger/sawtooth-rfcs/blob/master/text/0007-wasm-smart-contracts.md
+    TF that implements on-chain smart contracts with the WebAssembly VM. For more information, see Sabre RFC at https://github.com/hyperledger/sawtooth-rfcs/blob/master/text/0007-wasm-smart-contracts.md
 Sawtooth
     Hyperledger Sawtooth is a modular enterprise blockchain platform for building, deploying, and running distributed ledgers
 Solidity
-    A contract-oriented programming language used to implement smart contracts.  Compiles into Ethereum VM code and is supported by Seth
+    A contract-oriented programming language used to implement smart contracts. Compiles into Ethereum VM code and is supported by Seth
 Stale block
     A block proposed to be at the head of a blockchain, but lost to a competing block that became the head as decided by the consensus algorithm
 TF
     Transaction Family. Consists of the Client, State, and TP
 TP
-    Transaction Processor. Processes transactions for a specific TF.  Runs on Validator. Similar to a Ethereum "smart contract" or Bitcoin "chain code"
+    Transaction Processor. Processes transactions for a specific TF. Runs on Validator. Similar to a Ethereum "smart contract" or Bitcoin "chain code"
 Transaction Receipt
     Off-chain store about information about transaction execution. Located at ``/var/lib/sawtooth/txn_receipts-00.lmdb``
 TXN
@@ -176,11 +176,11 @@ SETH
 secp256k1
     An ECDSA (Elliptic Curve DSA) cryptographic algorithm used by Sawtooth with a 32-byte key. Used for Validator and TP. Bitcoin also uses this algorithm
 Serialization
-    A scheme to encode data as a byte stream.  For Sawtooth the serialization must be deterministic, meaning the encoding is always in the same order and always the same for the same data.  Protobufs are often used in Sawtooth Serialization, but that is not a requirement.  A simpler alternative, for example, is CSV
+    A scheme to encode data as a byte stream. For Sawtooth the serialization must be deterministic, meaning the encoding is always in the same order and always the same for the same data. Protobufs are often used in Sawtooth Serialization, but that is not a requirement. A simpler alternative, for example, is CSV
 SGX
     Intel Software Guard Extensions. Specialized hardware that provides enclaves with protected code and data. Used to implement PoET SGX
 State
-    The current information for each Transaction Family.  The global state is stored in a Merkle Tree. View local validator through http://localhost:8008/state
+    The current information for each Transaction Family. The global state is stored in a Merkle Tree. View local validator through http://localhost:8008/state
 State Address
     See Address
 Sybil Attacks
