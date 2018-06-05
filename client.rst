@@ -1,4 +1,4 @@
-Preliminary FAQ: Sawtooth Client
+Unofficial FAQ: Sawtooth Client
 ====================
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 
@@ -7,13 +7,26 @@ Preliminary FAQ: Sawtooth Client
 .. Warning::
    **This FAQ was written by a non-expert so may contain both fiction and fact!**
 
+What is a Sawtooth Client?
+--------------------------
+It is an application that communicates with the Sawtooth Validator, usually using the REST API.  The application is Tranaction Family-specific and may come in various forms, such as a CLI, BUI (browser/web app), GUI, or background daemon.  The client may be written in any language supported by the Sawtooth SDK.
+
 What languages does the Sawtooth SDK support?
 -------------------
-
-Python 3, Go, Javascript, and Rust.  The "best" supported SDKs are Python 3 and Rust.
+Python 3, Go, Javascript, Rust, Java, and C++.  The "best" supported SDKs are Python 3 and Rust.
 One can also interface directly to Sawtooth without a SDK.
+Multiple languages are supported as different languages are more suited for different problem spaces and developers tend to be more comfortable with some languages more than others.
+See this chart of Sawtooth SDK support:
+https://sawtooth.hyperledger.org/docs/core/releases/latest/app_developers_guide/sdk_table.html
 For more information, see the Sawtooth SDK Reference at
 https://sawtooth.hyperledger.org/docs/core/releases/latest/sdks.html
+
+When would you want to develop without the Sawtooth SDK?
+------------------------------------------------------
+You should use the SDK whenever possible for your language.
+If your preferred development language does not have a SDK,
+or if the SDK is incomplete for something you need, then develop without a SDK.
+For details, see https://sawtooth.hyperledger.org/docs/core/releases/latest/app_developers_guide/no_sdk.html
 
 What does the client do to send a transaction?
 -------------------

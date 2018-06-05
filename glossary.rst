@@ -9,16 +9,16 @@ Appendix: Sawtooth FAQ Glossary
 
 See Also
 --------
-
 Sawtooth Glossary
     https://sawtooth.hyperledger.org/docs/core/nightly/master/glossary.html
+Sawtooth Architecture Definitions
+    https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture/permissioning_requirement.html#definitions
 PoET Definitions
-    https://sawtooth.hyperledger.org/docs/core/releases/1.0/architecture/poet.html#definitions
+    https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture/poet.html#definitions
 
 
 Glossary
 --------
-
 Address (aka State Address)
     For Sawtooth, each radix address (or Node ID) into a Merkle Trie is 70 hex characters (35 bytes). The first 6 characters, the prefix, encode the name space (of the TF) and the remaining bytes are implementation-dependent.  The prefix is either the first 6 characters of the SHA-512 hash of the namespace, or a hex word for base name spaces.  See the list of TF prefixes in the Appendix
 AVR
@@ -49,6 +49,8 @@ Classical Consensus
     Uses an agreement or voting mechanism (vs. Nakamoto-style consensus)
 Distributed Ledger
     See Blockchain
+DLT
+    Distributed Ledger Technology; see Blockchain
 Docker
     A light-weight OS-level VM technology which isolates processes into separate "containers"
 Duplicity
@@ -60,7 +62,7 @@ Curve325519
 Data model
     Can be any format (CSV, protobufs, etc.)
 Deterministic
-    Means consistent, or the same. For Sawtooth, serialization must be deterministic, meaning the encoding is always in the same order and always the same for the same data.  Many JSON libraries do not encode data deterministically.
+    Means consistent, or the same. For Sawtooth, serialization must be deterministic, meaning the encoding is always in the same order and always the same for the same data.  Many JSON libraries do not encode data deterministically
 EPID
     Enhanced Privacy ID. An anonymous credential system; used by PoET
 Enclave
@@ -88,7 +90,7 @@ K Test
 Liveness
     A consensus algorithm property where the nodes eventually must agree on a value
 LMDB
-    Lightning Memory-mapped Database are sparse random-access files in ``/var/lib/sawtooth`` . The Merkle Tree and Blockchain use LMDB.
+    Lightning Memory-mapped Database are sparse random-access files in ``/var/lib/sawtooth`` . The Merkle Tree and Blockchain use LMDB
 Marshalling
     serialization of data
 Merkle Tree (or Trie)
@@ -140,11 +142,17 @@ Raft
 Replica
     Another term for node or validator
 REST
-     Representational State Transfer. Industry-standard web-based API.  REST is available on a Sawtooth validator node through TCP port 8008.  For more information, see the Sawtooth REST API Reference at https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api.html
+    Representational State Transfer. Industry-standard web-based API.  REST is available on a Sawtooth validator node through TCP port 8008.  For more information, see the Sawtooth REST API Reference at https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api.html
+ST
+    Sawtooth
 Sabre
     TF that implements on-chain smart contracts with the WebAssembly VM.  For more information, see Sabre RFC at https://github.com/hyperledger/sawtooth-rfcs/blob/master/text/0007-wasm-smart-contracts.md
+Sawtooth
+    Hyperledger Sawtooth is a modular enterprise blockchain platform for building, deploying, and running distributed ledgers
+Solidity
+    A contract-oriented programming language used to implement smart contracts.  Compiles into Ethereum VM code and is supported by Seth
 Stale block
-     A block proposed to be at the head of a blockchain, but lost to a competing block that became the head as decided by the consensus algorithm
+    A block proposed to be at the head of a blockchain, but lost to a competing block that became the head as decided by the consensus algorithm
 TF
     Transaction Family. Consists of the Client, State, and TP
 TP
@@ -158,11 +166,11 @@ Safety
 Sawtooth
     Permissioned blockchain platform for running distributed ledgers
 SETH
-     Ethereum-compatible Sawtooth Transaction Processor. Suppors running Ethereum Virtual Machine
+    Ethereum-compatible Sawtooth Transaction Processor. Suppors running Ethereum Virtual Machine
 secp256k1
     An ECDSA (Elliptic Curve DSA) cryptographic algorithm used by Sawtooth with a 32-byte key. Used for Validator and TP. Bitcoin also uses this algorithm
 Serialization
-    A scheme to encode data as a byte stream.  For Sawtooth the serialization must be deterministic, meaning the encoding is always in the same order and always the same for the same data.  Protobufs are often used in Sawtooth Serialization, but that is not a requirement.  A simpler alternative, for example, is CSV.
+    A scheme to encode data as a byte stream.  For Sawtooth the serialization must be deterministic, meaning the encoding is always in the same order and always the same for the same data.  Protobufs are often used in Sawtooth Serialization, but that is not a requirement.  A simpler alternative, for example, is CSV
 SGX
     Intel Software Guard Extensions. Specialized hardware that provides enclaves with protected code and data. Used to implement PoET SGX
 State

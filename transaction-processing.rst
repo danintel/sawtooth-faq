@@ -1,4 +1,4 @@
-Preliminary FAQ: Sawtooth Transaction Processing
+Unofficial FAQ: Sawtooth Transaction Processing
 ==================
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 
@@ -9,14 +9,12 @@ Preliminary FAQ: Sawtooth Transaction Processing
 
 Does a client send a transaction request to all the validators in the network?
 -------------------
-
 No, it would just need to send the batch to one validator, then that validator will broadcast the batch to the rest of its peers.
 If the validator is down, your connection attempt from the app would fail.
 The app could have error handling to try again (in a retry loop) or try another validator.
 
 Does Sawtooth have a way to control what participants have access to what assets in the business network and under what conditions?
 -------------------
-
 Blockchains, including Sawtooth, can be deployed as permissioned networks, wherein transactions are visible to the participants of the permissioned network, but not visible to the general public.
 
 What transaction processors are required?
@@ -33,6 +31,11 @@ Can different Validator Nodes have different Transaction Processors running?
 No. The set of TPs must be the same for all validator nodes in a Sawtooth network.
 The TP versions must also match--support the same set of ops.
 This is so the transaction and state validation will be successful.
+
+Can a Validator Node have multiple TPs (processes) running for the same TF?
+---------------------------------
+Yes, one or more TPs, handling the same or different Transaction Families, may be running and register with a validator. 
+This is one way to achive parallelism. Another way to write a multi-threaded TP.
 
 What happens if a validator receives a transaction but does not have a TP for it?
 ---------------------------------------------

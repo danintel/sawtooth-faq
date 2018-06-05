@@ -1,4 +1,4 @@
-# Preliminary Hyperledger Sawtooth FAQ
+# Unofficial Hyperledger Sawtooth FAQ
 Frequently-asked Questions (FAQ) for Hyperledger Sawtooth.
 Many questions and answers originated from the Sawtooth chat channel at
 https://chat.hyperledger.org/channel/sawtooth
@@ -7,7 +7,7 @@ https://chat.hyperledger.org/channel/sawtooth
 |-----------------|
 | **This FAQ was written by a non-expert so may contain both fiction and fact!** |
 
-## Preliminary FAQ
+## Frequently-asked Questions
 * [Sawtooth in General](sawtooth.rst)
 * [Sawtooth Transaction Processing](transaction-processing.rst)
 * [Sawtooth Validator](validator.rst)

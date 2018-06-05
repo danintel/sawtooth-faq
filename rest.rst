@@ -1,4 +1,4 @@
-Preliminary FAQ: Sawtooth REST API
+Unofficial FAQ: Sawtooth REST API
 ==================
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 
@@ -9,7 +9,6 @@ Preliminary FAQ: Sawtooth REST API
 
 What's the difference between the ``sawtooth-rest-api --bind`` and ``--connect`` options?
 -------------------
-
 ``sawtooth-rest-api --bind`` (``-B``)
     specifies where your rest-api would listen. The default is http://localhost:8008
 ``sawtooth-rest-api --connect`` (``-C``)
@@ -21,7 +20,6 @@ TCP Port 8008. It was 8080 before the 1.0 release and old examples and diagrams 
 
 What REST API commands are available?
 -------------------
-
 Use localhost to access the REST API from the Validator Docker container or from where the Validator is running.
 For example, to get state history (equivalent to `sawtooth state list`) type:
 
