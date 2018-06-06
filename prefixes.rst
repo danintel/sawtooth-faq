@@ -74,6 +74,6 @@ https://sawtooth.hyperledger.org/docs/core/releases/1.0/transaction_family_speci
 [`PREVIOUS`_ | `HOME`_]
 
 .. _PREVIOUS: glossary.rst
-.. _HOME: README.md
+.. _HOME: README.rst
 
 © Copyright 2018, Intel Corporation.

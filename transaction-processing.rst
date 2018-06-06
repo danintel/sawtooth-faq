@@ -63,7 +63,7 @@ The design is as such that rogue TPs can't harm legitimate TPs. When you run a n
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 
 .. _PREVIOUS: sawtooth.rst
-.. _HOME: README.md
+.. _HOME: README.rst
 .. _NEXT: validator.rst
 
 © Copyright 2018, Intel Corporation.

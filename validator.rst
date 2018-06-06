@@ -120,7 +120,7 @@ Instead, consider setting up separate virtual machines (such as with VirtualBox)
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 
 .. _PREVIOUS: transaction-processing.rst
-.. _HOME: README.md
+.. _HOME: README.rst
 .. _NEXT: consensus.rst
 
 © Copyright 2018, Intel Corporation.

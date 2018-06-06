@@ -140,7 +140,7 @@ For security bugs only, send email to security@hyperledger.org
 
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 
-.. _PREVIOUS: README.md
+.. _PREVIOUS: README.rst
 .. _HOME: README.md
 .. _NEXT: transaction-processing.rst
 
