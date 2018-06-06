@@ -211,7 +211,7 @@ ZKP
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 
 .. _PREVIOUS: docker.rst
-.. _HOME: README.md
+.. _HOME: README.rst
 .. _NEXT: prefixes.rst
 
 © Copyright 2018, Intel Corporation.

@@ -41,7 +41,7 @@ A nonce in this case guarantees against replay attacks by making transactions un
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 
 .. _PREVIOUS: consensus.rst
-.. _HOME: README.md
+.. _HOME: README.rst
 .. _NEXT: rest.rst
 
 © Copyright 2018, Intel Corporation.

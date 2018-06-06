@@ -58,7 +58,7 @@ which runs on a Sawtooth network with any processor.
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 
 .. _PREVIOUS: validator.rst
-.. _HOME: README.md
+.. _HOME: README.rst
 .. _NEXT: client.rst
 
 © Copyright 2018, Intel Corporation.

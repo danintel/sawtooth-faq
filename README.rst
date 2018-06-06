@@ -10,24 +10,24 @@ https://chat.hyperledger.org/channel/sawtooth
 Frequently-asked Questions
 ------------------------------------------
 
-- `Sawtooth in General`_(sawtooth.rst)
-- `Sawtooth Transaction Processing`_(transaction-processing.rst)
-- `Sawtooth Validator`_(validator.rst)
-- `Sawtooth Consensus Algorithms (including PoET)`_(consensus.rst)
-- `Sawtooth Client`_(client.rst)
-- `Sawtooth REST API`_(rest.rst)
-- `Using Docker with Sawtooth`_(docker.rst)
+- `Sawtooth in General`_
+- `Sawtooth Transaction Processing`_
+- `Sawtooth Validator`_
+- `Sawtooth Consensus Algorithms `_
+- `Sawtooth Client`_
+- `Sawtooth REST API`_
+- `Using Docker with Sawtooth`_
 
 Appendix
 ------------------------------------------
 
-- `Sawtooth FAQ Glossary`_(glossary.rst)
-- `Sawtooth Transaction Family Prefixes`_(prefixes.rst)
+- `Sawtooth FAQ Glossary`_
+- `Sawtooth Transaction Family Prefixes`_
 
 Contributing
 ------------------------------------------
 This FAQ is Apache 2.0 licensed and accepts contributions via
-GitHub_
+`GitHub`_
 pull requests.
 Each commit must include a ``Signed-off-by:`` in the commit message (``git commit -s``). This sign-off means you agree the commit satisfies the
 `Developer Certificate of Origin (DCO)`_.]

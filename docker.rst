@@ -137,7 +137,7 @@ How do I enable and disable automatic start of docker on boot on Linux?
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 
 .. _PREVIOUS: rest.rst
-.. _HOME: README.md
+.. _HOME: README.rst
 .. _NEXT: glossary.rst
 
 © Copyright 2018, Intel Corporation.

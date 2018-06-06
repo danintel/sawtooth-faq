@@ -63,7 +63,7 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api.html
 [`PREVIOUS`_ | `HOME`_ | `NEXT`_]
 
 .. _PREVIOUS: client.rst
-.. _HOME: README.md
+.. _HOME: README.rst
 .. _NEXT: docker.rst
 
 © Copyright 2018, Intel Corporation.
