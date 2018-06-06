@@ -24,7 +24,7 @@ Address (aka State Address)
 AVR
     Attestation Verification Report. Response body signature, signed with the IAS Report Key
 back pressure
-    flow-control technique to help prevent Denial of Service attacks. Sawtooth uses this to reject unusually-frequent submissions from a client
+    Flow-control technique to help prevent denial of service attacks. Sawtooth uses this to reject unusually-frequent submissions from a client
 Batch
     A set of transactions that must be made together (atomic commit) to maintain state consistency. Batches are unique to Sawtooth
 Block
