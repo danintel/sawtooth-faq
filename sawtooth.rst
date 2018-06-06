@@ -141,7 +141,7 @@ For security bugs only, send email to security@hyperledger.org
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: README.rst
-.. _HOME: README.md
+.. _HOME: README.rst
 .. _NEXT: transaction-processing.rst
 
 © Copyright 2018, Intel Corporation.

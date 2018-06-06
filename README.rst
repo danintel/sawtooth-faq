@@ -34,8 +34,6 @@ This sign-off means you agree the commit satisfies the
 `Developer Certificate of Origin (DCO)`_.]
 
 [NEXT_]
-[HOME1_]
-[HOME2_]
 
 .. _Sawtooth in General: sawtooth.rst
 .. _Sawtooth Transaction Processing: transaction-processing.rst
@@ -49,7 +47,5 @@ This sign-off means you agree the commit satisfies the
 .. _GitHub: https://github.com/danintel/sawtooth-faq
 .. _Developer Certificate of Origin (DCO): https://developercertificate.org/
 .. _NEXT: transaction-processing.rst
-.. _HOME1: .
-.. _HOME2: ./
 
 © Copyright 2018, Intel Corporation.
