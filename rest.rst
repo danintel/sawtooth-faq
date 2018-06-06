@@ -1,6 +1,6 @@
 Unofficial FAQ: Sawtooth REST API
 ==================
-[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
+[PREVIOUS_ | HOME_ | NEXT_]
 
 .. contents::
 
@@ -60,7 +60,7 @@ GET /peers
 For more information, see the Sawtooth REST API Reference at
 https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api.html
 
-[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
+[PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: client.rst
 .. _HOME: README.rst

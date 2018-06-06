@@ -1,6 +1,6 @@
 Unofficial FAQ: Sawtooth in General
 ========================
-[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
+[PREVIOUS_ | HOME_ | NEXT_]
 
 .. contents::
 
@@ -138,7 +138,7 @@ For security bugs only, send email to security@hyperledger.org
 
 
 
-[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
+[PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: README.rst
 .. _HOME: README.md
