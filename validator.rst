@@ -1,6 +1,6 @@
 Unofficial FAQ: Sawtooth Validator
 ==================
-[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
+[PREVIOUS_ | HOME_ | NEXT_]
 
 .. contents::
 
@@ -117,7 +117,7 @@ Yes, but it is not recommended.  You need to configure separate Sawtooth instanc
 
 Instead, consider setting up separate virtual machines (such as with VirtualBox) for each validator.  This ensures isolation of files and ports for each Validator.
 
-[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
+[PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: transaction-processing.rst
 .. _HOME: README.rst

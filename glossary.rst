@@ -1,6 +1,6 @@
 Appendix: Sawtooth FAQ Glossary
 ==================
-[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
+[PREVIOUS_ | HOME_ | NEXT_]
 
 .. contents::
 
@@ -208,7 +208,7 @@ ZMQ (aka 0MQ, ZeroMQ)
 ZKP
     Zero Knowledge Proof. One party proving they know a value x without conveying x
 
-[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
+[PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: docker.rst
 .. _HOME: README.rst

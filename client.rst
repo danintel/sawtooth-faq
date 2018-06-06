@@ -1,6 +1,6 @@
 Unofficial FAQ: Sawtooth Client
 ====================
-[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
+[PREVIOUS_ | HOME_ | NEXT_]
 
 .. contents::
 
@@ -38,7 +38,7 @@ What is the nonce used for in the transaction header?
 A nonce is a one-time use number (never repeated).  Typically a random number is used for a nonce.
 A nonce in this case guarantees against replay attacks by making transactions unique.
 
-[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
+[PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: consensus.rst
 .. _HOME: README.rst

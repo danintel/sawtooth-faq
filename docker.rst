@@ -1,6 +1,6 @@
 Unofficial FAQ: Using Docker with Sawtooth
 ====================
-[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
+[PREVIOUS_ | HOME_ | NEXT_]
 
 .. contents::
 
@@ -134,7 +134,7 @@ How do I enable and disable automatic start of docker on boot on Linux?
     $ systemctl status docker
     $ sudo systemctl disable docker
 
-[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
+[PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: rest.rst
 .. _HOME: README.rst

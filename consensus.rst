@@ -1,6 +1,6 @@
 Unofficial FAQ: Sawtooth Consensus Algorithms (including PoET)
 ====================
-[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
+[PREVIOUS_ | HOME_ | NEXT_]
 
 .. contents::
 
@@ -55,7 +55,7 @@ No.  SGX is only needed if you use the hardened version of PoET, PoET SGX.
 We also have a version of PoET that just uses conventional software, PoET Simulator,
 which runs on a Sawtooth network with any processor.
 
-[`PREVIOUS`_ | `HOME`_ | `NEXT`_]
+[PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: validator.rst
 .. _HOME: README.rst
