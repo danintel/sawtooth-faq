@@ -155,12 +155,14 @@ Sabre
     TF that implements on-chain smart contracts with the WebAssembly VM. For more information, see Sabre RFC at https://github.com/hyperledger/sawtooth-rfcs/blob/master/text/0007-wasm-smart-contracts.md
 Sawtooth
     Hyperledger Sawtooth is a modular enterprise blockchain platform for building, deploying, and running distributed ledgers
-Seed Nodes
+Seed Nodes or Seed Peers
     Initial hard-coded set of peers a node knows about. The list expands with the Gossip algorithm
 Solidity
     A contract-oriented programming language used to implement smart contracts. Compiles into Ethereum VM code and is supported by Seth
 Stale block
     A block proposed to be at the head of a blockchain, but lost to a competing block that became the head as decided by the consensus algorithm
+Static Nodes or Static Peers
+    A hard-coded set of peers a node knows about, but may not change
 TF
     Transaction Family. Consists of the Client, State, and TP
 TP
