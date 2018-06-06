@@ -13,7 +13,7 @@ Frequently-asked Questions
 - `Sawtooth in General`_
 - `Sawtooth Transaction Processing`_
 - `Sawtooth Validator`_
-- `Sawtooth Consensus Algorithms `_
+- `Sawtooth Consensus Algorithms`_
 - `Sawtooth Client`_
 - `Sawtooth REST API`_
 - `Using Docker with Sawtooth`_
@@ -26,10 +26,12 @@ Appendix
 
 Contributing
 ------------------------------------------
-This FAQ is Apache 2.0 licensed and accepts contributions via
-`GitHub`_
+This FAQ is Apache 2.0 licensed and accepts contributions via `GitHub`_
+GitHub_
 pull requests.
-Each commit must include a ``Signed-off-by:`` in the commit message (``git commit -s``). This sign-off means you agree the commit satisfies the
+Each commit must include a ``Signed-off-by:`` in the commit message
+(``git commit -s``).
+This sign-off means you agree the commit satisfies the
 `Developer Certificate of Origin (DCO)`_.]
 
 [`NEXT`_]
