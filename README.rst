@@ -1,0 +1,50 @@
+Unofficial Hyperledger Sawtooth FAQ
+======================================
+Frequently-asked Questions (FAQ) for Hyperledger Sawtooth.
+Many questions and answers originated from the Sawtooth chat channel at
+https://chat.hyperledger.org/channel/sawtooth
+
+.. Warning::
+   **This FAQ was written by a non-expert so may contain both fiction and fact!**
+
+Frequently-asked Questions
+------------------------------------------
+
+- `Sawtooth in General`_(sawtooth.rst)
+- `Sawtooth Transaction Processing`_(transaction-processing.rst)
+- `Sawtooth Validator`_(validator.rst)
+- `Sawtooth Consensus Algorithms (including PoET)`_(consensus.rst)
+- `Sawtooth Client`_(client.rst)
+- `Sawtooth REST API`_(rest.rst)
+- `Using Docker with Sawtooth`_(docker.rst)
+
+Appendix
+------------------------------------------
+
+- `Sawtooth FAQ Glossary`_(glossary.rst)
+- `Sawtooth Transaction Family Prefixes`_(prefixes.rst)
+
+Contributing
+------------------------------------------
+This FAQ is Apache 2.0 licensed and accepts contributions via
+GitHub_
+pull requests.
+Each commit must include a ``Signed-off-by:`` in the commit message (``git commit -s``). This sign-off means you agree the commit satisfies the
+`Developer Certificate of Origin (DCO)`_.]
+
+[`NEXT`_]
+
+.. _Sawtooth in General: sawtooth.rst
+.. _Sawtooth Transaction Processing: transaction-processing.rst
+.. _Sawtooth Validator: validator.rst
+.. _Sawtooth Consensus Algorithms (including PoET: consensus.rst
+.. _Sawtooth Client: client.rst
+.. _Sawtooth REST API: rest.rst
+.. _Using Docker with Sawtooth: docker.rst
+.. _Sawtooth FAQ Glossary: glossary.rst
+.. _Sawtooth Transaction Family Prefixes: prefixes.rst
+.. _GitHub: https://github.com/danintel/sawtooth-faq
+.. _NEXT: transaction-processing.rst
+.. _Developer Certificate of Origin (DCO): https://developercertificate.org/
+
+© Copyright 2018, Intel Corporation.
