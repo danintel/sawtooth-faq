@@ -69,6 +69,10 @@ EPID
     Enhanced Privacy ID. An anonymous credential system; used by PoET
 Enclave
     SGX-protected area of data and code to provide confidentiality and integrity even against privileged malware
+Endpoint
+    The URL sent to the REST API.  For example ``http://localhost:8008/state``
+    For more information, see
+    https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api/endpoint_specs.html
 EVM
     Ethereum Virtual Machine. Executes machine-independent code for Ethereum. Supported by SETH on Sawtooth
 Fork
