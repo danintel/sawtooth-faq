@@ -127,6 +127,8 @@ Payload
     Data processed by the TP and only the TP. Can be any format (CSV, protobufs, etc.) Data model is defined by TF. Payload is encoded using MIME's Base64 (``A-Za-z0-9+/``) + ``=`` for 0 mod 4 padding
 PBFT
     Practical Byzantine Fault Tolerance. A "classical" consensus algorithm that uses a state machine. Uses leader and block election. PBFT is a three-phase, network-intense algorithm (n^2 messages), so is not scalable to large networks
+PDO
+    Private Data Object. Blockchain objects that are kept private through encryption
 Permissioned Blockchain (aka Private Blockchain)
     participants must ID themselves to a network (e.g., Hyperledger Sawtooth or Hyperledger Fabric)
 Permissionless Blockchain (aka Public Blockchain)
@@ -143,8 +145,8 @@ Proposal
     proposed block from a validator to add to a blockchain
 Protobuf
     Serialization/data interchange library used by Sawtooth
-PDO
-    Private Data Object. Blockchain objects that are kept private through encryption
+Pruning Queue
+    Message broadcasting optimization that reduces broadcasting of all messages to all nodes
 Public Blockchain
     See Permissionless Blockchain
 r
