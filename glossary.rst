@@ -70,7 +70,9 @@ EPID
 Enclave
     SGX-protected area of data and code to provide confidentiality and integrity even against privileged malware
 Endpoint
-    The URL sent to the REST API.  For example ``http://localhost:8008/state``
+    The URL sent to the REST API. For example ``http://localhost:8008/state`` .
+    Also refers to the validator connection.
+    For example, ``tcp://localhost:4004`` .
     For more information, see
     https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api/endpoint_specs.html
 EVM
