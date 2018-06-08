@@ -146,6 +146,10 @@ The scheduler is specified with the
 `sawtooth-validator --scheduler {parallel,serial}` option.
 The current default is `serial`, but it may change to `parallel` in the future.
 
+What does this error mean: ``[... DEBUG client_handlers] Unable to find entry at address ...``?
+-----------------------
+It means the transaction processor for this transaction is not running.
+
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: transaction-processing.rst
