@@ -38,6 +38,10 @@ What is the nonce used for in the transaction header?
 A nonce is a one-time use number (never repeated).  Typically a random number is used for a nonce.
 A nonce in this case guarantees against replay attacks by making transactions unique.
 
+What does this error mean: ``validator | [... DEBUG signature_verifier] transaction signature invalid for txn: ...``?
+-----------------------
+The client submitted a transaction with an invalid signature.
+
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: consensus.rst

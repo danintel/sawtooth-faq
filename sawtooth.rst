@@ -35,6 +35,19 @@ Official Sawtooth FAQ
 Unofficial Sawtooth FAQ
     https://github.com/danintel/sawtooth-faq
 
+Where are some good introductory videos?
+---------------------------------------
+* *Hyperledger Sawtooth 1.0: Market Significance & Technical Overview*
+(Hyperledger, 2018, 61:27)
+Free registration required
+https://gateway.on24.com/wcc/gateway/linux/1101876/1585244/hyperledger-sawtooth-v10-market-significance-and-technical-overview
+https://www.hyperledger.org/resources/webinars
+* *Hyperledger Sawtooth 1.0 Architecture and App Development*
+(Bitwise IO, 2018, 31:26)
+https://www.youtube.com/watch?v=uBebFQM49Xk
+* You can find several more at
+https://www.youtube.com/results?search_query=Hyperledger+Sawtooth
+
 What is the difference between Hyperledger and Sawtooth?
 --------------------------------------------------------
 * Sawtooth (or Hyperledger Sawtooth) is blockchain software sponsored by Intel Corporation, but does not require Intel hardware.
