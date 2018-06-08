@@ -83,10 +83,14 @@ What files does Sawtooth use?
 -------------------
 ``/var/lib/sawtooth/``
     contains the blockchain, Merkle tree, and transaction receipts
+``/var/log/sawtooth/``
+    contains log files
 ``~/.sawtooth/keys/``
     contain one or more sets of user key pairs
 ``/etc/sawtooth/keys/``
     contain the validator key pair
+``/etc/sawtooth/policy/``
+    contains policy settings, if any
 
 Why does the validator create large 1TByte files?
 -------------------
@@ -94,11 +98,14 @@ The large 1TByte files in ``/var/lib/sawtooth/`` are "sparse" files, implemented
 
 What TCP ports does Sawtooth use?
 -------------------
-* 4004 is used by the Validator component bus, which uses ZMQ. The validator listens to requests on this port from the REST API and from one or more transaction processors
+* 4004 is used by the Validator component bus, which uses ZMQ. The validator listens to requests on this port from the REST API and from one or more transaction processors.
+This port can be left closed to external hosts in a firewall configuration if all the transaction processors are on the same host as the validator (the usual case)
 
-* 8008 is used by the REST API, which contects the Client to the Validator
+* 8008 is used by the REST API, which contects the Client to the Validator.
+This port can be left closed to external hosts in a firewall configuration if the client is always on the same host as a validator (common during testing)
 
-* 8800 is used by the Validator network to communicate with other Validators
+* 8800 is used by the Validator network to communicate with other Validators.
+This port needs to be left open to external hosts in a firewall configuration to communicate with peer validators
 
 How do I create a Sawtooth Network?
 -------------------
@@ -111,11 +118,30 @@ Can I run two validators on the same machine?
 -------------------
 Yes, but it is not recommended.  You need to configure separate Sawtooth instances with different:
 
-* data and key directories (listed above)
+* data, key, log, and policy directories (default values listed above).
+If `$SAWTOOTH_HOME` is set, all these directories are under `$SAWTOOTH_HOME`.
+It's not recommended, but you can also can also change the directories in `path.toml`.
+For more information, see
+https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/configuring_sawtooth/path_configuration_file.html
 
-* TCP ports (8008, 4004, and 8800, listed above)
+* REST API TCP port (default 8008).  Change in `rest-api.toml`. For details, see
+https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/configuring_sawtooth/rest_api_configuration_file.html
+
+* Validator TCP ports (default of 8800 for the peer network and 4004 for the validator components).  Change with the `bind` setting in `validator.toml`.
+For details, see
+https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/configuring_sawtooth/validator_configuration_file.html
+
+* Genesis block. This is important. As with validators on multiple machines (the usual case), it's important to create a genesis block only with the first validator the first time it is ran.  Do not create multiple genesis blocks with subsequent validators (that is do not run `sawset genesis` or `sawadm genesis`)
 
 Instead, consider setting up separate virtual machines (such as with VirtualBox) for each validator.  This ensures isolation of files and ports for each Validator.
+
+What is the validator parallel scheduler?
+---------------------------------------
+The validator has two schedulers--parallel and serial.
+The parallel scheduler gives a performance boost because it allows multiple transactions to be processed at the same time when the transaction inputs/outputs do not conflict.
+The scheduler is specified with the
+`sawtooth-validator --scheduler {parallel,serial}` option.
+The current default is `serial`, but it may change to `parallel` in the future.
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
