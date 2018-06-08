@@ -60,6 +60,10 @@ GET /peers
 For more information, see the Sawtooth REST API Reference at
 https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api.html
 
+What does this error mean: ``[... DEBUG route_handlers] Received CLIENT_STATE_GET_RESPONSE response from validator with status NO_RESOURCE``?
+-----------------------
+It means the transaction processor for this transaction is not running.
+
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: client.rst
