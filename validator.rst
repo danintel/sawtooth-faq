@@ -27,6 +27,9 @@ Is there an example for a multiple node Sawtooth Network?
 See these instructions for setting up a 5-node Sawtooth Network with PoET Simulator Consensus using Docker:
 https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/creating_sawtooth_network.htmlow do I add a node to a Sawtooth Network?
 
+The important part about configuring multiple nodes is
+to create a genesis block only with the first validator.  Do not create multiple genesis blocks with subsequent validators (that is do not run `sawset genesis` and `sawadm genesis`).
+
 How do I add a node to a Sawtooth Network?
 -------------------
 
@@ -131,7 +134,7 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/config
 For details, see
 https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/configuring_sawtooth/validator_configuration_file.html
 
-* Genesis block. This is important. As with validators on multiple machines (the usual case), it's important to create a genesis block only with the first validator the first time it is ran.  Do not create multiple genesis blocks with subsequent validators (that is do not run `sawset genesis` or `sawadm genesis`)
+* Genesis block. This is important. As with validators on multiple machines (the usual case), it's important to create a genesis block only with the first validator.  Do not create multiple genesis blocks with subsequent validators (that is do not run `sawset genesis` and `sawadm genesis`)
 
 Instead, consider setting up separate virtual machines (such as with VirtualBox) for each validator.  This ensures isolation of files and ports for each Validator.
 
