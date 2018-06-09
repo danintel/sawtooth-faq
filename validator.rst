@@ -148,7 +148,9 @@ The current default is `serial`, but it may change to `parallel` in the future.
 
 What does this error mean: ``[... DEBUG client_handlers] Unable to find entry at address ...``?
 -----------------------
-It means the transaction processor for this transaction is not running.
+It means the address doesn't exist.
+I've seen this error when retrieving a value that should have been written, but was not written.
+The reason was because the transaction processor for the value was not running so the object at the address was never created.
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
