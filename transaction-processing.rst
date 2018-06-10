@@ -35,7 +35,7 @@ This is so the transaction and state validation will be successful.
 Can a Validator Node have multiple TPs (processes) running for the same TF?
 ---------------------------------
 Yes, one or more TPs, handling the same or different Transaction Families, may be running and register with a validator. 
-This is one way to achive parallelism.
+This is one way to achieve parallelism.
 Another way to achieve parallelism is to write a multi-threaded TP.
 The transactions are sent to transaction processors supporting the same transaction family in a round-robin fashion.
 
@@ -76,6 +76,12 @@ What does this error mean: ``processor | { AuthorizationException: Tried to get
 unauthorized address ...``?
 -----------------------
 It means a the transaction processor tried to access (get/put) a value not in the list of inputs/outputs.  This occurs when a client submits a transaction with an inaccurate list of inputs/outputs.
+
+If you have a large file to store, is it best to just record the file hash and store the file offline?
+---------------------------------------
+It depends on your use case. Storing data off-chain has a big downside.
+Although you can confirm it hasn't been tampered with with the on-chain hash, there is nothing stopping the file from disappearing.
+Also, how do you make sure everyone who needs the data can get to it?
 
 [PREVIOUS_ | HOME_ | NEXT_]
 

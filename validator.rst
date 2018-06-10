@@ -104,7 +104,7 @@ What TCP ports does Sawtooth use?
 * 4004 is used by the Validator component bus, which uses ZMQ. The validator listens to requests on this port from the REST API and from one or more transaction processors.
 This port can be left closed to external hosts in a firewall configuration if all the transaction processors are on the same host as the validator (the usual case)
 
-* 8008 is used by the REST API, which contects the Client to the Validator.
+* 8008 is used by the REST API, which connects the Client to the Validator.
 This port can be left closed to external hosts in a firewall configuration if the client is always on the same host as a validator (common during testing)
 
 * 8800 is used by the Validator network to communicate with other Validators.

@@ -126,7 +126,7 @@ One-say, all-adopt
 Payload
     Data processed by the TP and only the TP. Can be any format (CSV, protobufs, etc.) Data model is defined by TF. Payload is encoded using MIME's Base64 (``A-Za-z0-9+/``) + ``=`` for 0 mod 4 padding
 PBFT
-    Practical Byzantine Fault Tolerance. A "classical" consensus algorithm that uses a state machine. Uses leader and block election. PBFT is a three-phase, network-intense algorithm (n^2 messages), so is not scalable to large networks
+    Practical Byzantine Fault Tolerance. A "classical" consensus algorithm that uses a state machine. Uses leader and block election. PBFT is a three-phase, network-intensive algorithm (n^2 messages), so is not scalable to large networks
 PDO
     Private Data Object. Blockchain objects that are kept private through encryption
 Permissioned Blockchain (aka Private Blockchain)
