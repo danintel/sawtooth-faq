@@ -152,6 +152,11 @@ It means the address doesn't exist.
 I've seen this error when retrieving a value that should have been written, but was not written.
 The reason was because the transaction processor for the value was not running so the object at the address was never created.
 
+What does this error mean: ``
+sawtooth-validator[... ERROR cli] Cannot have a genesis_batch_file and an existing chain``?
+-----------------------
+You tried to create a new genesis block when you did not need to (because there already is a genesis block).
+
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: transaction-processing.rst
