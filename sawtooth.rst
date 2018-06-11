@@ -143,6 +143,10 @@ and install the three core packages
 For more, up-to-date installation information see
 https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/installation.html
 
+What does this error mean ``repository ... xenial InRelease' doesn't support architecture 'i386'``?
+---------------------------
+You installed on a 32-bit-only system.  Install on a 64-bit system.
+
 How do I report a bug?
 ---------------------------
 Use the JIRA bug tracking system at
