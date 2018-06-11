@@ -83,6 +83,14 @@ It depends on your use case. Storing data off-chain has a big downside.
 Although you can confirm it hasn't been tampered with with the on-chain hash, there is nothing stopping the file from disappearing.
 Also, how do you make sure everyone who needs the data can get to it?
 
+How do I add events to the transaction processor?
+--------------------
+In the TP code, call `context.add_event()`.
+In the client code (or other app for listening), subscribe to the event.
+For details, see
+https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture/events_and_transactions_receipts.html#events
+
+
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: sawtooth.rst
