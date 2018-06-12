@@ -51,7 +51,7 @@ If a validator receives a transaction that it does not have a transaction proces
 How can I limit what Transaction Processors run on a Validator Node?
 -------------------
 You can also limit which transactions are accepted on the network by setting
-`sawtooth.validator.transaction_families` If that setting is not set, all transaction processors are accepted.
+``sawtooth.validator.transaction_families`` If that setting is not set, all transaction processors are accepted.
 This setting is ignored in dev-mode consensus.
 
 Where do transactions originate?
@@ -85,7 +85,7 @@ Also, how do you make sure everyone who needs the data can get to it?
 
 How do I add events to the transaction processor?
 --------------------
-In the TP code, call `context.add_event()`.
+In the TP code, call ``context.add_event()``.
 In the client code (or other app for listening), subscribe to the event.
 For details, see
 https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture/events_and_transactions_receipts.html#events
