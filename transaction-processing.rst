@@ -90,6 +90,12 @@ In the client code (or other app for listening), subscribe to the event.
 For details, see
 https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture/events_and_transactions_receipts.html#events
 
+Why is the Apply method in the TP handler called twice?
+--------------------------------------------
+That is by design. It can be called more than twice.
+For that rason, the TP handler must be deterministic
+(have the same output results given the same input).
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
