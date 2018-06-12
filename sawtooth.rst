@@ -60,7 +60,7 @@ This includes:
 * State agreement, which assures each node has cryptographically-verifiable, identical copies of the blockchain
 * Byzantine Fault Tolerant (BFT) consensus, through PoET
 * Unpluggable consensus on-the-fly (without restarting)
-* Multi-language SDK support
+* Multi-language SDK support (Python, Go, Javascript, with more being added)
 * Parallel transaction execution
 
 Sawtooth is designed for permissioned and private blockchains. Can it work well for a public blockchain?

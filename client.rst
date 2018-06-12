@@ -13,7 +13,8 @@ It is an application that communicates with the Sawtooth Validator, usually usin
 
 What languages does the Sawtooth SDK support?
 -------------------
-Python 3, Go, Javascript, Rust, Java, and C++.  The "best" supported SDKs are Python 3 and Rust.
+Python 3, Go, and Javascript.
+Others are in the process of being added: Rust, Java, and C++.
 One can also interface directly to Sawtooth without a SDK.
 Multiple languages are supported as different languages are more suited for different problem spaces and developers tend to be more comfortable with some languages more than others.
 See this chart of Sawtooth SDK support:
