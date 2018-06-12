@@ -134,6 +134,43 @@ How do I enable and disable automatic start of docker on boot on Linux?
     $ systemctl status docker
     $ sudo systemctl disable docker
 
+Can I connect a client to the REST API running in a Docker container?
+-------------------------------
+Yes. The `docker-compose.yaml` needs the following lines for the REST container:
+
+::
+
+    expose:
+      - 8008
+    ports:
+      - '8008:8008'
+
+Then connect your client to processor to port `http://localhost:4040`
+This might be a command line option for the client
+(for example, `intkey --url http://localhost:4040`).
+Otherwise, you need to modify the source if the REST API URL is hard-coded
+for your client.
+
+
+Can I connect a transaction processor to the validator running in a Docker container?
+-------------------------------
+Yes. The `docker-compose.yaml` needs the following lines for the validator container (which maps Docker container TCP port 4004 to external port 4040):
+
+::
+
+    expose:                                                   
+      - 4004
+    ports:
+      - '4040:4004'
+
+Then connect your transaction processor to port `tcp://localhost:4040`
+If the port is mapped to 4004 (that is, not mapped to 4040), use `tcp://localhost:4040`
+The port might be a command line option for the TP.
+(for example, `intkey-tp-python -v tcp://localhost:4040` ).
+Otherwise, you need to modify the source if the validator port is hard-coded
+for your TP.
+
+
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: rest.rst
