@@ -89,7 +89,7 @@ For more information, see the Sawtooth CLI Command Reference at https://sawtooth
 
 Must software developed with Sawtooth be open source?
 ------------------------
-IANAL, but no.  Sawtooth uses the `Apache 2 license, a permissive license,so can be used with both open or closed source
+IANAL, but no.  Sawtooth uses the Apache 2 license, a permissive license,so can be used with both open or closed source
 
 I get this error when running ``sawtooth setting list`` or ``xo list`` : ``Error 503: Service Unavailable``
 -----------------------------

@@ -31,7 +31,7 @@ Here is a gist with brief instructions for a 2-node network:
 https://gist.github.com/askmish/a23bde6f2e59e4256be8afe965a9166b
 
 The important part about configuring a multi-node network is
-to create a genesis block only with the first validator.  Do not create multiple genesis blocks with subsequent validators (that is do not run `sawset genesis` and `sawadm genesis`).
+to create a genesis block only with the first validator.  Do not create multiple genesis blocks with subsequent validators (that is do not run ``sawset genesis`` and ``sawadm genesis``).
 
 How do I add a node to a Sawtooth Network?
 -------------------
@@ -74,16 +74,16 @@ on the network. If a validator receives a transaction that it does not have a
 transaction processor for, the validator will wait until a transaction processor
 connects that can handle that transaction. That validator would fall behind the
 rest on the network while it waits. You can also limit which transactions are
-accepted on the network with the `sawtooth.validator.transaction_families`
+accepted on the network with the ``sawtooth.validator.transaction_families``
 setting.  If that setting is not set, all transaction would be accepted.
 
 I set sawtooth.validator.transaction_families as follows (from the documentation) but it's ignored
 -------------------
 The sawtooth.validator.transaction_families setting is ignored using dev-mode consensus and does not need to be set.
 
-What is the difference between `sawtooth-validator --peers {list}` and `sawtooth-validator --seeds {list}`?
+What is the difference between ``sawtooth-validator --peers {list}`` and ``sawtooth-validator --seeds {list}``?
 -------------------
-There are two peering modes in sawtooth: static and dynamic. The static peering mode requires the `--peers` arg to connect to other peer validators. Whereas, in the dynamic peering mode the `--peers` if specified will be processed and then use `--seeds` for the initial connection to the validator network and to start topology build-out (discovery and connection to more peer validators).
+There are two peering modes in sawtooth: static and dynamic. The static peering mode requires the ``--peers`` arg to connect to other peer validators. Whereas, in the dynamic peering mode the ``--peers`` if specified will be processed and then use ``--seeds`` for the initial connection to the validator network and to start topology build-out (discovery and connection to more peer validators).
 
 What files does Sawtooth use?
 -------------------
@@ -125,19 +125,19 @@ Can I run two validators on the same machine?
 Yes, but it is not recommended.  You need to configure separate Sawtooth instances with different:
 
 * data, key, log, and policy directories (default values listed above).
-If `$SAWTOOTH_HOME` is set, all these directories are under `$SAWTOOTH_HOME`.
-It's not recommended, but you can also can also change the directories in `path.toml`.
+If ``$SAWTOOTH_HOME`` is set, all these directories are under ``$SAWTOOTH_HOME``.
+It's not recommended, but you can also can also change the directories in ``path.toml``.
 For more information, see
 https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/configuring_sawtooth/path_configuration_file.html
 
-* REST API TCP port (default 8008).  Change in `rest-api.toml`. For details, see
+* REST API TCP port (default 8008).  Change in ``rest-api.toml``. For details, see
 https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/configuring_sawtooth/rest_api_configuration_file.html
 
-* Validator TCP ports (default of 8800 for the peer network and 4004 for the validator components).  Change with the `bind` setting in `validator.toml`.
+* Validator TCP ports (default of 8800 for the peer network and 4004 for the validator components).  Change with the ``bind`` setting in ``validator.toml``.
 For details, see
 https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/configuring_sawtooth/validator_configuration_file.html
 
-* Genesis block. This is important. As with validators on multiple machines (the usual case), it's important to create a genesis block only with the first validator.  Do not create multiple genesis blocks with subsequent validators (that is do not run `sawset genesis` and `sawadm genesis`)
+* Genesis block. This is important. As with validators on multiple machines (the usual case), it's important to create a genesis block only with the first validator.  Do not create multiple genesis blocks with subsequent validators (that is do not run ``sawset genesis`` and ``sawadm genesis``)
 
 Instead, consider setting up separate virtual machines (such as with VirtualBox) for each validator.  This ensures isolation of files and ports for each Validator.
 
@@ -146,8 +146,8 @@ What is the validator parallel scheduler?
 The validator has two schedulers--parallel and serial.
 The parallel scheduler gives a performance boost because it allows multiple transactions to be processed at the same time when the transaction inputs/outputs do not conflict.
 The scheduler is specified with the
-`sawtooth-validator --scheduler {parallel,serial}` option.
-The current default is `serial`, but it may change to `parallel` in the future.
+``sawtooth-validator --scheduler {parallel,serial}`` option.
+The current default is ``serial``, but it may change to ``parallel`` in the future.
 
 What does this error mean: ``[... DEBUG client_handlers] Unable to find entry at address ...``?
 -----------------------
