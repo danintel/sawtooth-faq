@@ -83,6 +83,15 @@ It depends on your use case. Storing data off-chain has a big downside.
 Although you can confirm it hasn't been tampered with with the on-chain hash, there is nothing stopping the file from disappearing.
 Also, how do you make sure everyone who needs the data can get to it?
 
+How do I add a transaction processor?
+--------------------
+You just start it in for all the validator nodes.  The TP needs to connect to ``tcp://localhost:4004`` or, if you are using Docker, ``tcp://validator:4004``
+
+How do I restrict what transaction processors are allowed?
+--------------------
+By default, any TP can be added to a node without special permission (other than network access).  To restrict what TPs can be added to a validator, use ``sawset proposal create`` to set ``sawtooth.validator.transaction_families``.
+For details, see ``Configuring the List of Transaction Families`` at https://sawtooth.hyperledger.org/docs/core/releases/latest/app_developers_guide/docker.html
+
 How do I add events to the transaction processor?
 --------------------
 In the TP code, call ``context.add_event()``.
