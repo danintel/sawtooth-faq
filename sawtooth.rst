@@ -101,6 +101,18 @@ This usually occurs when there is no genesis node created.  To create, type the 
     sawset genesis
     sudo -u sawtooth sawadm genesis config-genesis.batch
 
+I get this error when running ``sudo -u sawtooth sawadm genesis config-genesis.batch`` : ``Permission denied``
+------------------------------------
+The ownership or permission is wrong.  To fix it, type:
+
+::
+
+    $ sudo chown sawtooth:sawtooth /var/lib/sawtooth
+    $ sudo chmod 750 sawtooth:sawtooth /var/lib/sawtooth
+    $ ls -ld /var/lib/sawtooth
+    drwxr-x--- 2 sawtooth sawtooth 4096 Jun  2 14:43 /var/lib/sawtooth
+
+
 Then start the validator:
 
 ::
@@ -119,8 +131,8 @@ These commands were added after the Sawtooth 1.0.4 release and are not available
 How do I list and install Sawtooth packages?
 --------------------------------------------
 Here is how to setup the Sawtooth stable repository, list the packages,
-and install the three core packages
-(python3-sawtooth-cli, python3-sawtooth-sdk, python3-sawtooth-signing):
+and install the core packages
+(sawtooth, python3-sawtooth-cli, python3-sawtooth-sdk, python3-sawtooth-signing):
 
 ::
 
@@ -151,6 +163,21 @@ and install the three core packages
 
 For more, up-to-date installation information see
 https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/installation.html
+
+I get this error installing ``sawtooth-cxx-sdk``: ``Depends: protobuf but it is not installable``
+--------------------------------------------
+The C++ SDK package is in the nightly repository.
+Until the package dependency is fixed, here's a workaround to force an install:
+
+
+::
+
+    $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 44FC67F19B2466EA
+    $ sudo apt-add-repository "deb [trusted=yes] http://repo.sawtooth.me/ubuntu/nightly xenial universe"
+    $ sudo apt update
+    $ apt download sawtooth-cxx-sdk
+    $ sudo dpkg -i  sawtooth-cxx-sdk_1.1.1.dev808_amd64.deb
+    $ pkg contents sawtooth-cxx-sdk
 
 Does Hyperledger Composer support Sawtooth?
 ---------------------------
