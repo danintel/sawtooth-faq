@@ -136,27 +136,35 @@ and install the core packages
     $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 8AA7AF1F1091A5FD
     $ sudo add-apt-repository 'deb http://repo.sawtooth.me/ubuntu/1.0/stable xenial universe'
     $ sudo apt update
-    $ aptitude  search python3-sawtooth-*
-    p python3-sawtooth-block-info   - Sawtooth Block Info Transaction Processor
-    p python3-sawtooth-cli          - Sawtooth CLI
-    p python3-sawtooth-ias-client   - Sawtooth Intel Attestation Service Client
-    p python3-sawtooth-ias-proxy    - Sawtooth Intel Attestation Service Proxy
-    p python3-sawtooth-identity     - Sawtooth Identity Transaction Processor
-    p python3-sawtooth-intkey       - Sawtooth Intkey Python Example
-    p python3-sawtooth-manage       - Sawtooth Lake Management Library
-    p python3-sawtooth-poet-cli     - Sawtooth PoET CLI
-    p python3-sawtooth-poet-common  - Sawtooth PoET Common Modules
-    p python3-sawtooth-poet-core    - Sawtooth Core Consensus Module
-    p python3-sawtooth-poet-families  - Sawtooth Transaction Processor Families
-    p python3-sawtooth-poet-sgx       - Sawtooth PoET SGX Enclave
-    p python3-sawtooth-poet-simulator - Sawtooth PoET Simulator Enclave
-    p python3-sawtooth-rest-api       - Sawtooth REST API
-    p python3-sawtooth-sdk            - Sawtooth Python SDK
-    p python3-sawtooth-settings       - Sawtooth Settings Transaction Processor
-    p python3-sawtooth-signing        - Sawtooth Signing Library
-    p python3-sawtooth-validator      - Sawtooth Validator
-    p python3-sawtooth-xo             - Sawtooth XO Example
-    $ sudo apt install sawtooth
+    $ aptitude install sawtooth python3-sawtooth-*
+    $ aptitude search sawtooth
+    p  python3-sawtooth-block-info     - Sawtooth Block Info Transaction Processor 
+    iA python3-sawtooth-cli            - Sawtooth CLI                              
+    p  python3-sawtooth-config         - Sawtooth Config Transaction Processor
+    p  python3-sawtooth-ias-client     - Sawtooth IAS Client 
+    p  python3-sawtooth-ias-proxy      - Sawtooth IAS Proxy  
+    c  python3-sawtooth-identity       - Sawtooth Identity Transaction Processor   
+    iA python3-sawtooth-intkey         - Sawtooth Intkey Python Example            
+    p  python3-sawtooth-manage         - Sawtooth Lake Management Library          
+    iA python3-sawtooth-poet-cli       - Sawtooth PoET CLI                         
+    iA python3-sawtooth-poet-common    - Sawtooth PoET Common Modules              
+    iA python3-sawtooth-poet-core      - Sawtooth Core Consensus Module            
+    iA python3-sawtooth-poet-families  - Sawtooth Transaction Processor Families   
+    p  python3-sawtooth-poet-sgx       - Sawtooth PoET SGX Enclave                 
+    iA python3-sawtooth-poet-simulator - Sawtooth PoET Simulator Enclave           
+    iA python3-sawtooth-rest-api       - Sawtooth REST API                         
+    i  python3-sawtooth-sdk            - Sawtooth Python SDK                       
+    iA python3-sawtooth-settings       - Sawtooth Settings Transaction Processor   
+    iA python3-sawtooth-signing        - Sawtooth Signing Library                  
+    iA python3-sawtooth-validator      - Sawtooth Validator                        
+    iA python3-sawtooth-xo             - Sawtooth XO Example                       
+    i  sawtooth                        - Hyperledger Sawtooth Distributed Ledger   
+    p  sawtooth-admin-tools            - Sawtooth Admin Tools                      
+    BB sawtooth-cxx-sdk                - Hyperledger Sawtooth C++ SDK
+    p  sawtooth-intkey-tp-go           - Sawtooth Intkey TP Go                     
+    p  sawtooth-noop-tp-go             - Sawtooth Noop TP Go                       
+    p  sawtooth-smallbank-tp-go        - Sawtooth Smallbank TP Go                  
+    p  sawtooth-xo-tp-go               - Sawtooth Go XO TP
 
 For more, up-to-date installation information see
 https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/installation.html
