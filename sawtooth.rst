@@ -97,9 +97,13 @@ This usually occurs when there is no genesis node created.  To create, type the 
 
 ::
 
+    # Create the genesis node:
     sawtooth keygen
     sawset genesis
     sudo -u sawtooth sawadm genesis config-genesis.batch
+    # Start the validator:
+    sudo sawadm keygen
+    sudo -u sawtooth sawtooth-validator -vv
 
 I get this error when running ``sudo -u sawtooth sawadm genesis config-genesis.batch`` : ``Permission denied``
 ------------------------------------
@@ -112,13 +116,6 @@ The ownership or permission is wrong.  To fix it, type:
     $ ls -ld /var/lib/sawtooth
     drwxr-x--- 2 sawtooth sawtooth 4096 Jun  2 14:43 /var/lib/sawtooth
 
-
-Then start the validator:
-
-::
-
-    sudo sawadm keygen
-    sudo -u sawtooth sawtooth-validator -vv
 
 How to I delete previously-existing blockchain data?
 ----------------------------------
