@@ -200,6 +200,11 @@ What does this error mean ``repository ... xenial InRelease' doesn't support arc
 ---------------------------
 You installed on a 32-bit-only system.  Install on a 64-bit system.
 
+I get this error running ``sawset``: ``ModuleNotFoundError: No module named 'colorlog'``
+-------------------------------
+Something went wrong with installing Python dependencies or they were removed.
+In this case, install ``colorlog`` with ``sudo apt install python3-colorlog`` or with``pip3 install colorlog``
+
 How do I report a bug?
 ---------------------------
 Use the JIRA bug tracking system at
