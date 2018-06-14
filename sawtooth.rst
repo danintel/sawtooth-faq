@@ -58,7 +58,7 @@ What is the difference between Hyperledger Sawtooth and Hyperledger Fabric?
 Hyperledger Sawtooth and Fabric are two independent implementations of a blockchain under the Linux Foundation's Hyperledger Blockchain project.
 Here are some differences:
 
-* Fabric's Smart Contract must be written in GoLang or Javascript.  Sawtooth transaction processors can be written in multiple languages, such as Rust, Python, or JavaScript. SDKs for other languages are being added, but a SDK is not required
+* Fabric's Smart Contract must be written in GoLang or Javascript.  Sawtooth transaction processors can be written in multiple languages, such as Rust, Python, Go, or JavaScript. SDKs for other languages are being added
 * Fabric has "endorsing peers" and ordering services to pre-process transactions. Sawtooth has a validator that handles everything from validating the transactions and distributing the transaction to peer nodes
 * Fabric stores data in a leveldb or couchdb, with a separate ledger per channel. Sawtooth stores all data in a central lmdb database with each transaction family using a separate address prefix.
 * Fabric has multiple components, including Orderers, Peers, CAs, CouchDB, adn Tools.  Sawtooth has the Sawtooth Validator and a Transaction Processor for each Transaction Family.  The Validator's REST API communicates with a client
@@ -73,8 +73,8 @@ This includes:
 * State agreement, which assures each node has cryptographically-verifiable, identical copies of the blockchain
 * Byzantine Fault Tolerant (BFT) consensus, through PoET
 * Unpluggable consensus on-the-fly (without restarting)
-* Multi-language SDK support (Python, Go, Javascript, with more being added)
-* Parallel transaction execution
+* Multi-language SDK support (Python, Go, Javascript, Rust, with more being added)
+* Parallel transaction processing
 
 How does a blockchain differ from a database?
 ------------------------------

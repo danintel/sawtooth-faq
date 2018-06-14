@@ -11,10 +11,10 @@ What is a Sawtooth Client?
 --------------------------
 It is an application that communicates with the Sawtooth Validator, usually using the REST API.  The application is Transaction Family-specific and may come in various forms, such as a CLI, BUI (browser/web app), GUI, or background daemon.  The client may be written in any language supported by the Sawtooth SDK.
 
-What languages does the Sawtooth SDK support?
+What languages does the Sawtooth Client SDK support?
 -------------------
-Python 3, Go, and Javascript.
-Others are in the process of being added: Rust, Java, and C++.
+JavaScript, Python 3, and Rust.
+Others are in the process of being added: Java and C++.
 One can also interface directly to Sawtooth without a SDK.
 Multiple languages are supported as different languages are more suited for different problem spaces and developers tend to be more comfortable with some languages more than others.
 See this chart of Sawtooth SDK support:
