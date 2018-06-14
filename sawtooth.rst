@@ -63,6 +63,12 @@ This includes:
 * Multi-language SDK support (Python, Go, Javascript, with more being added)
 * Parallel transaction execution
 
+How does a blockchain differ from a database?
+------------------------------
+* A database has one master copy. A blockchain has multiple authoriative copies
+* A database can be changed after a commit. A blockchain's records are immutable and cannot be undone after a commit
+* A database must have a trusted central authority
+
 Sawtooth is designed for permissioned and private blockchains. Can it work well for a public blockchain?
 -------------------------------------------
 Sawtooth would work for public blockchain, as well. The features we're providing in Sawtooth are designed for a permissioned, private network in mind.  For a public blockchain, you probably want to use BFT consensus (such as PoET-SGX). There is no mining.
