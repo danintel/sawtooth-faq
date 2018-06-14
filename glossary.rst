@@ -197,6 +197,8 @@ State Address
     See Address
 Sybil Attacks
     Using forged identities in a blockchain network to subvert the reputation system. Was named after the book and movie
+Transactor
+    The Sawtooth client that creates a transaction, or the part that that communicates with the validator
 Validator
     Validates transactions and sends to the appropriate TP; proposes new blocks for block chain
 Validator
