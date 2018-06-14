@@ -29,8 +29,18 @@ Also, you could right your own settings-tp, that stores the settings the same wa
 Can different Validator Nodes have different Transaction Processors running?
 -------------------
 No. The set of TPs must be the same for all validator nodes in a Sawtooth network.
-The TP versions must also match--support the same set of ops.
+The TP versions must also match across nodes--support the same set of ops.
 This is so the transaction and state validation will be successful.
+
+How do I support multiple versions of a Transaction Processor?
+---------------------
+You have two choices:
+
+* A single TP can register itself to handle multiple versions.
+When the TP receives a transaction, it looks at the transaction's version field and decides how to handle it in the Apply() method.
+* Multiple TPs, each handling a specific version.
+
+In any case, all nodes need to support the same set of versions for a specific Transaction Family.
 
 Can a Validator Node have multiple TPs (processes) running for the same TF?
 ---------------------------------
