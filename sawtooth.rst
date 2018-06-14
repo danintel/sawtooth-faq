@@ -53,7 +53,21 @@ What is the difference between Hyperledger and Sawtooth?
 * Sawtooth (or Hyperledger Sawtooth) is blockchain software sponsored by Intel Corporation, but does not require Intel hardware.
 * Hyperledger is a consortium of Linux blockchain software, including Sawtooth, under the Linux Foundation
 
-What differentiators Sawtooth from other blockchains?
+What is the difference between Hyperledger Sawtooth and Hyperledger Fabric?
+-----------------------
+Hyperledger Sawtooth and Fabric are two independent implementations of a blockchain under the Linux Foundation's Hyperledger Blockchain project.
+Here are some differences:
+
+* Fabric's Smart Contract must be written in GoLang or Javascript.  
+Sawtooth transaction processors can be written in multiple languages, such as Rust, Python, or JavaScript. SDKs for other languages are being added, but a SDK is not required
+* Fabric has "endorsing peers" and ordering services to pre-process transactions. Sawtooth has a validator that handles everything from validating the transactions and distributing the transaction to peer nodes
+* Fabric stores data in a leveldb or couchdb, with a separate ledger per channel. Sawtooth stores all data in a central lmdb database with each transaction family using a separate address prefix.
+* Fabric has multiple components, including Orderers, Peers, CAs, CouchDB, adn Tools.  Sawtooth has the Sawtooth Validator and a Transaction Processor for each Transaction Family.  The Validator's REST API communicates with a client
+
+Based on
+https://www.skcript.com/svr/hyperledger-fabric-to-sawtooth
+
+What differentiates Sawtooth from other blockchains?
 -----------------------
 This includes:
 
