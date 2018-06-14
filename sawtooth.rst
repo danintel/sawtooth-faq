@@ -125,6 +125,13 @@ I get a usage error running ``sawnet peers`` or ``sawnet list-blocks``
 ----------------------------------------------------
 These commands were added after the Sawtooth 1.0.4 release and are not available in earlier releases.
 
+How do I detect a forked blockchain in a Sawtooth network?
+-------------------------------------------------
+Use `sawnet compare-chains` and look for a different set of block(s) at
+the head of the chains.
+This is distinct from the case where one node has a blockchain that's not
+up-to-date, but has conflicting heads ("forked").
+
 How do I list and install Sawtooth packages?
 --------------------------------------------
 Here is how to setup the Sawtooth stable repository, list the packages,
