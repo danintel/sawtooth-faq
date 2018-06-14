@@ -19,7 +19,7 @@ Blockchains, including Sawtooth, can be deployed as permissioned networks, where
 
 What transaction processors are required?
 -------------------
-Just the Settings TP.  All the other TPs are optional.
+Just the Settings TP. All the other TPs are optional.
 
 What does the Settings TP do?
 -------------------
@@ -36,8 +36,7 @@ How do I support multiple versions of a Transaction Processor?
 ---------------------
 You have two choices:
 
-* A single TP can register itself to handle multiple versions.
-When the TP receives a transaction, it looks at the transaction's version field and decides how to handle it in the Apply() method.
+* A single TP can register itself to handle multiple versions. When the TP receives a transaction, it looks at the transaction's version field and decides how to handle it in the Apply() method.
 * Multiple TPs, each handling a specific version.
 
 In any case, all nodes need to support the same set of versions for a specific Transaction Family.
@@ -70,12 +69,12 @@ From the client. The client sends a transaction to a validator, in a batch with 
 
 Can the same transaction appear in multiple blocks?
 --------------------------------
-No. Each block has a unique set of transaction.  A block is composed of batches, which is composed of transactions. Each transaction has a unique ID and appears only once in a blockchain.  There may be, however, differences in ordering of blocks at a validator due to scheduling, transaction dependencies, etc.
+No. Each block has a unique set of transaction. A block is composed of batches, which is composed of transactions. Each transaction has a unique ID and appears only once in a blockchain. There may be, however, differences in ordering of blocks at a validator due to scheduling, transaction dependencies, etc.
 
 
 What mechanism prevents a rogue TP from operating and corrupting data?
 ------------------------------
-The design is as such that rogue TPs can't harm legitimate TPs. When you run a network of validators, each validator has to have same version of TPs. If a rogue TP is modifying your TPs data, the same TP has to run in the rest of the validators in the network, to be able to affect the blockchain.  The validator where the rogue TP is working will constantly fail state validations(merkle hashes will be different with rest of the network).  Hence, the bigger the validator network, the more robust it is against such attacks.
+The design is as such that rogue TPs can't harm legitimate TPs. When you run a network of validators, each validator has to have same version of TPs. If a rogue TP is modifying your TPs data, the same TP has to run in the rest of the validators in the network, to be able to affect the blockchain. The validator where the rogue TP is working will constantly fail state validations(merkle hashes will be different with rest of the network). Hence, the bigger the validator network, the more robust it is against such attacks.
 
 What does this error mean: ``processor | [... DEBUG executor] transaction processors registered for processor type cryptomoji: 0.1`?
 -----------------------
@@ -85,7 +84,7 @@ It means there is no transaction processor running for your transaction family.
 What does this error mean: ``processor | { AuthorizationException: Tried to get 
 unauthorized address ...``?
 -----------------------
-It means a the transaction processor tried to access (get/put) a value not in the list of inputs/outputs.  This occurs when a client submits a transaction with an inaccurate list of inputs/outputs.
+It means a the transaction processor tried to access (get/put) a value not in the list of inputs/outputs. This occurs when a client submits a transaction with an inaccurate list of inputs/outputs.
 
 If you have a large file to store, is it best to just record the file hash and store the file offline?
 ---------------------------------------
@@ -95,11 +94,11 @@ Also, how do you make sure everyone who needs the data can get to it?
 
 How do I add a transaction processor?
 --------------------
-You just start it in for all the validator nodes.  The TP needs to connect to ``tcp://localhost:4004`` or, if you are using Docker, ``tcp://validator:4004``
+You just start it in for all the validator nodes. The TP needs to connect to ``tcp://localhost:4004`` or, if you are using Docker, ``tcp://validator:4004``
 
 How do I restrict what transaction processors are allowed?
 --------------------
-By default, any TP can be added to a node without special permission (other than network access).  To restrict what TPs can be added to a validator, use ``sawset proposal create`` to set ``sawtooth.validator.transaction_families``.
+By default, any TP can be added to a node without special permission (other than network access). To restrict what TPs can be added to a validator, use ``sawset proposal create`` to set ``sawtooth.validator.transaction_families``.
 For details, see ``Configuring the List of Transaction Families`` at https://sawtooth.hyperledger.org/docs/core/releases/latest/app_developers_guide/docker.html
 
 How do I add events to the transaction processor?
