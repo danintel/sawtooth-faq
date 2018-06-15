@@ -86,7 +86,7 @@ GS
 Gossip
     A decentralized message broadcast mechanism that uses forwarding to random peers (Sawtooth Validator nodes)
 Hyperledger
-    A family of distributed ledgers sponsored by The Linux Foundation, including Sawtooth
+    "Hyperledger is an open source collaborative effort created to advance cross-industry blockchain technologies. It is a global collaboration, hosted by The Linux Foundation." See: https://www.hyperledger.org/
 IAS
     Intel Attestation Server. Used to authenticate PoET SGX keys; runs in public Internet at https://as.sgx.trustedservices.intel.com/
 In State
