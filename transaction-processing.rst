@@ -92,6 +92,10 @@ It depends on your use case. Storing data off-chain has a big downside.
 Although you can confirm it hasn't been tampered with with the on-chain hash, there is nothing stopping the file from disappearing.
 Also, how do you make sure everyone who needs the data can get to it?
 
+If I register a transaction processor to one validator, does the registration get transmitted to the other validators in a network?
+----------------------------
+No. Your transaction processor must be deployed to all validators.  All validators in a network must have the same set of transaction processors.
+
 How do I add a transaction processor?
 --------------------
 You just start it in for all the validator nodes. The TP needs to connect to ``tcp://localhost:4004`` or, if you are using Docker, ``tcp://validator:4004``
