@@ -151,12 +151,9 @@ Use `sawnet compare-chains` and look for a different set of block(s) at
 the head of the chains.
 This is distinct from the case where one node has a blockchain that's not
 up-to-date, but has conflicting heads ("forked").
-
-What are the reasons a Sawtooth network would fork?
--------------------------------------
-* The Genesis blocks differ (often occurs during incorrect setup)
-* The Sawtooth network is partitioned and cannot communicate
-* The transaction processor has a bug and is non-deterministic (the transactions don't serialize in the same way, for example)
+Forking can occur if the Sawtooth network is partitioned and cannot fully communicate.
+It can also be the result of a bug in transaction processing
+(for example, transactions don't serialize in a deterministic way).
 
 How do I list and install Sawtooth packages?
 --------------------------------------------
