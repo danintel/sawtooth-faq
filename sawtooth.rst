@@ -50,18 +50,18 @@ https://www.youtube.com/results?search_query=Hyperledger+Sawtooth
 
 What is the difference between Hyperledger and Sawtooth?
 --------------------------------------------------------
-* Sawtooth (or Hyperledger Sawtooth) is blockchain software sponsored by Intel Corporation, but does not require Intel hardware.
-* Hyperledger is a consortium of Linux blockchain software, including Sawtooth, under the Linux Foundation
+* Sawtooth (or Hyperledger Sawtooth) is blockchain software sponsored by Intel Corporation, but does not require Intel hardware. See https://www.hyperledger.org/projects/sawtooth
+* Hyperledger is a consortium that includes Sawtooth. "Hyperledger is an open source collaborative effort created to advance cross-industry blockchain technologies. It is a global collaboration, hosted by The Linux Foundation" See https://www.hyperledger.org/.
 
 What is the difference between Hyperledger Sawtooth and Hyperledger Fabric?
 -----------------------
 Hyperledger Sawtooth and Fabric are two independent implementations of a blockchain under the Linux Foundation's Hyperledger Blockchain project.
 Here are some differences:
 
-* Fabric's Smart Contract must be written in GoLang or Javascript.  Sawtooth transaction processors can be written in multiple languages, such as Rust, Python, Go, or JavaScript. SDKs for other languages are being added
+* Fabric's Smart Contract must be written in GoLang or Javascript. Sawtooth transaction processors can be written in multiple languages, such as Rust, Python, Go, or JavaScript. SDKs for other languages are being added
 * Fabric has "endorsing peers" and ordering services to pre-process transactions. Sawtooth has a validator that handles everything from validating the transactions and distributing the transaction to peer nodes
 * Fabric stores data in a leveldb or couchdb, with a separate ledger per channel. Sawtooth stores all data in a central lmdb database with each transaction family using a separate address prefix.
-* Fabric has multiple components, including Orderers, Peers, CAs, CouchDB, adn Tools.  Sawtooth has the Sawtooth Validator and a Transaction Processor for each Transaction Family.  The Validator's REST API communicates with a client
+* Fabric has multiple components, including Orderers, Peers, CAs, CouchDB, adn Tools. Sawtooth has the Sawtooth Validator and a Transaction Processor for each Transaction Family. The Validator's REST API communicates with a client
 
 Based on
 https://www.skcript.com/svr/hyperledger-fabric-to-sawtooth
@@ -84,7 +84,7 @@ How does a blockchain differ from a database?
 
 Sawtooth is designed for permissioned and private blockchains. Can it work well for a public blockchain?
 -------------------------------------------
-Sawtooth would work for public blockchain, as well. The features we're providing in Sawtooth are designed for a permissioned, private network in mind.  For a public blockchain, you probably want to use BFT consensus (such as PoET-SGX). There is no mining.
+Sawtooth would work for public blockchain, as well. The features we're providing in Sawtooth are designed for a permissioned, private network in mind. For a public blockchain, you probably want to use BFT consensus (such as PoET-SGX). There is no mining.
 
 How do I tell what version of Sawtooth is running?
 --------------------------------------------------
@@ -108,11 +108,11 @@ For more information, see the Sawtooth CLI Command Reference at https://sawtooth
 
 Must software developed with Sawtooth be open source?
 ------------------------
-IANAL, but no.  Sawtooth uses the Apache 2 license, a permissive license,so can be used with both open or closed source
+IANAL, but no. Sawtooth uses the Apache 2 license, a permissive license,so can be used with both open or closed source
 
 I get this error when running ``sawtooth setting list`` or ``xo list`` : ``Error 503: Service Unavailable``
 -----------------------------
-This usually occurs when there is no genesis node created.  To create, type the following:
+This usually occurs when there is no genesis node created. To create, type the following:
 
 ::
 
@@ -126,7 +126,7 @@ This usually occurs when there is no genesis node created.  To create, type the 
 
 I get this error when running ``sudo -u sawtooth sawadm genesis config-genesis.batch`` : ``Permission denied``
 ------------------------------------
-The ownership or permission is wrong.  To fix it, type:
+The ownership or permission is wrong. To fix it, type:
 
 ::
 
@@ -217,7 +217,7 @@ No.
 
 What does this error mean ``repository ... xenial InRelease' doesn't support architecture 'i386'``?
 ---------------------------
-You installed on a 32-bit-only system.  Install on a 64-bit system.
+You installed on a 32-bit-only system. Install on a 64-bit system.
 
 I get this error running ``sawset``: ``ModuleNotFoundError: No module named 'colorlog'``
 -------------------------------
