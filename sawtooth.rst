@@ -62,6 +62,7 @@ Here are some differences:
 * Fabric has "endorsing peers" and ordering services to pre-process transactions. Sawtooth has a validator that handles everything from validating the transactions and distributing the transaction to peer nodes
 * Fabric stores data in a leveldb or couchdb, with a separate ledger per channel. Sawtooth stores all data in a central lmdb database with each transaction family using a separate address prefix.
 * Fabric has multiple components, including Orderers, Peers, CAs, CouchDB, adn Tools. Sawtooth has the Sawtooth Validator and a Transaction Processor for each Transaction Family. The Validator's REST API communicates with a client
+* Sawtooth is easier to use than Fabric (which needs a team to deploy)
 
 Based on
 https://www.skcript.com/svr/hyperledger-fabric-to-sawtooth
@@ -150,6 +151,12 @@ Use `sawnet compare-chains` and look for a different set of block(s) at
 the head of the chains.
 This is distinct from the case where one node has a blockchain that's not
 up-to-date, but has conflicting heads ("forked").
+
+What are the reasons a Sawtooth network would fork?
+-------------------------------------
+* The Genesis blocks differ (often occurs during incorrect setup)
+* The Sawtooth network is partitioned and cannot communicate
+* The transaction processor has a bug and is non-deterministic (the transactions don't serialize in the same way, for example)
 
 How do I list and install Sawtooth packages?
 --------------------------------------------
