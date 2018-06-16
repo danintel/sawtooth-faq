@@ -20,12 +20,6 @@ Are there plans to add other consensus algorithms?
 -------------------
 Yes. We are in the process of adding a fourth consensus, Raft, and may add other consensus engines.
 
-What other consensus algorithms use SGX?
--------------------
-* Microsoft Azure's Coco consensus algorithm uses SGX.
-* Corda uses SGX for Remote Attestation.
-* Prototypes for other blockchains have been completed.
-
 What is unpluggable consensus?
 -------------------
 Sawtooth supports unpluggable consensus, meaning you can change the consensus algorithm on the fly,
