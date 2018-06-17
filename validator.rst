@@ -161,6 +161,13 @@ What does this error mean: ``sawtooth-validator[... ERROR cli] Cannot have a gen
 -----------------------
 You tried to create a new genesis block when you did not need to (because there already is a genesis block).
 
+I get this error when testing with a lot of validators: ``Max occupancy was not provided by transaction processor: ... Using default max occupancy: 10``
+----------------------------------
+You need to set the number of validators if it's over 10.
+For example, in ``/etc/sawtooth/validator.toml`` set ``maximum_peer_connectivity = 50``
+See https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/configuring_sawtooth/validator_configuration_file.html
+
+
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: transaction-processing.rst
