@@ -49,6 +49,8 @@ Consensus algorithm
     Method to decide what block to add next to a blockchain
 Classical Consensus
     Uses an agreement or voting mechanism (vs. Nakamoto-style consensus)
+Dapps
+    Etherium Decentralized Applications. These are written in Solidity and are supported by Sawtooth Seth
 Distributed Ledger
     See Blockchain
 DLT
@@ -76,7 +78,7 @@ Endpoint
     For more information, see
     https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api/endpoint_specs.html
 EVM
-    Ethereum Virtual Machine. Executes machine-independent code for Ethereum. Supported by SETH on Sawtooth
+    Ethereum Virtual Machine. Executes machine-independent code for Ethereum. Supported by Seth on Sawtooth
 Fork
     When network nodes have two competing nodes at the head of a blockchain
 Genesis Block
@@ -183,7 +185,7 @@ Safety
     A consensus algorithm property where the "honest" (non-Byzantine) nodes agree on the same value
 Sawtooth
     Permissioned blockchain platform for running distributed ledgers
-SETH
+Seth
     Ethereum-compatible Sawtooth Transaction Processor. Suppors running Ethereum Virtual Machine
 secp256k1
     An ECDSA (Elliptic Curve DSA) cryptographic algorithm used by Sawtooth with a 32-byte key. Used for Validator and TP. Bitcoin also uses this algorithm
