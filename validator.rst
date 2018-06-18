@@ -166,6 +166,8 @@ I get this error when testing with a lot of validators: ``Max occupancy was not 
 You need to set the number of validators if it's over 10.
 For example, in ``/etc/sawtooth/validator.toml`` set ``maximum_peer_connectivity = 50``
 See https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/configuring_sawtooth/validator_configuration_file.html
+You can also use the `sawtooth-validator --maximum-peer-connectivity`
+command line option.
 
 
 [PREVIOUS_ | HOME_ | NEXT_]
