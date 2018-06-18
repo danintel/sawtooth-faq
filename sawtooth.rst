@@ -228,6 +228,11 @@ I get this error running ``sawset``: ``ModuleNotFoundError: No module named 'col
 Something went wrong with installing Python dependencies or they were removed.
 In this case, install ``colorlog`` with ``sudo apt install python3-colorlog`` or with``pip3 install colorlog``
 
+I get this error starting Sawtooth:
+``lmdb.DiskError: /var/lib/sawtooth/poet-key-state-03efb2aa.lmdb: No space left on device``
+-----------------------------
+Besides the obvious problem of no disk space, it could be your OS or filesystem does not support sparse files.  The LMDB databases used by Sawtooth are 1TB sparse (mostly unallocated) files.
+
 How do I report a bug?
 ---------------------------
 Use the JIRA bug tracking system at
