@@ -12,9 +12,9 @@ What consensus algorithms does Sawtooth support?
 dev-mode
     Only suitable for testing TPs with single validator deployments.  Uses a simplified random-leader algorithm for development and testing.  Not for production use
 PoET Simulator
-    Simulates the SGX environment, and provides CFT similar to Fabric and some other blockchains.  Requires poet-validator-registry TP. Runs on any processor (does not use SGX).  Has Crash Fault Tolerance.
+    Simulates the SGX environment, and provides CFT similar to Fabric and some other blockchains.  Requires poet-validator-registry TP. Runs on any processor (does not use SGX).  Has Crash Fault Tolerance
 PoET SGX
-    Takes advantage of SGX in order to provide BFT like PoW algorithms do, but at very low CPU usage, it is the only algorithm that has hardware requirements (a processor supporting SGX).  Has Byzantine Fault Tolerance
+    Takes advantage of SGX in order to provide consensus with Byzantine Fault Tolerance (BFT), like PoW algorithms have, but at very low CPU usage. PoET SGX is the only algorithm that has hardware requirements (a processor supporting SGX)
 
 Are there plans to add other consensus algorithms?
 -------------------
