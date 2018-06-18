@@ -32,6 +32,12 @@ Can my Sawtooth network have validators with a mixture of SGX PoET or Simulator 
 No. You need to pick one consensus for all nodes.
 But you can change consensus after the network has started.
 
+What cloud services offer SGX?
+------------------------------
+SGX is available on IBM cloud.
+Early access was available on Microsoft Azure, but not now.
+AWS does not yet offer SGX.
+
 
 I get this error during PoET SGX registration: "Machine requires update (probably BIOS) for SGX compliance."
 -------------------
