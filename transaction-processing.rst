@@ -118,6 +118,10 @@ That is by design. It can be called more than twice.
 For that rason, the TP handler must be deterministic
 (have the same output results given the same input).
 
+Do Transaction Processors run off-chain or on-chain?
+--------------------------------
+Sawtooth TPs run off-chain, as a process (or processes).
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
