@@ -205,6 +205,7 @@ With ``.toml`` configuration files in ``/etc/sawtooth`` .
 Examples are in the directory as ``.toml.example`` .
 For details, see
 https://sawtooth.hyperledger.org/docs/core/nightly/master/sysadmin_guide/configuring_sawtooth.html
+
 Configuration files include:
 
 ``validator.toml``
