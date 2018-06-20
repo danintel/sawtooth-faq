@@ -174,7 +174,8 @@ Stale block
 Static Nodes or Static Peers
     A hard-coded set of peers a node knows about, but may not change
 TF
-    Transaction Family. Consists of the Client, State, and TP
+    Transaction Family. Consists of the Client, State, and TP.
+    See https://www.hyperledger.org/blog/2017/06/22/whats-a-transaction-family
 TP
     Transaction Processor. Processes transactions for a specific TF. Runs on Validator. Similar to a Ethereum "smart contract" or Bitcoin "chain code"
 Transaction Receipt

@@ -150,6 +150,8 @@ The parallel scheduler gives a performance boost because it allows multiple tran
 The scheduler is specified with the
 ``sawtooth-validator --scheduler {parallel,serial}`` option.
 The current default is ``serial``, but it may change to ``parallel`` in the future.
+For example:
+``sawtooth-validator --scheduler parallel -vv`` .
 
 What does this error mean: ``[... DEBUG client_handlers] Unable to find entry at address ...``?
 -----------------------

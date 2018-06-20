@@ -199,6 +199,33 @@ and install the core packages
 For more, up-to-date installation information see
 https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/installation.html
 
+How do I edit Sawtooth settings?
+------------------------------------
+With ``.toml`` configuration files in ``/etc/sawtooth`` .
+Examples are in the directory as ``.toml.example`` .
+For details, see
+https://sawtooth.hyperledger.org/docs/core/nightly/master/sysadmin_guide/configuring_sawtooth.html
+Configuration files include:
+
+``validator.toml``
+	Validator configuration file
+``rest_api.toml``
+	REST API configuration file
+``cli.toml``
+	Sawtooth CLI configuration file
+``poet_enclave.toml``
+	PoET SGX Enclave configuration file
+``path.toml``
+	Directory path configuration (or use ``$SAWTOOTH_HOME``)
+``identity.toml``
+	Identity TP configuration file
+``settings.toml``
+	Settings TP configuration file
+``log_config.toml``
+	Log configuration file
+
+More transaction-processor specific configuration files may be present.
+
 I get this error installing ``sawtooth-cxx-sdk``: ``Depends: protobuf but it is not installable``
 --------------------------------------------
 The C++ SDK package is in the nightly repository.
@@ -216,8 +243,19 @@ Until the package dependency is fixed, here's a workaround to force an install:
 
 Does Hyperledger Composer support Sawtooth?
 ---------------------------
-No.
+No, not now.
 
+Does Hyperledger Explorer support Sawtooth?
+----------------------------------
+No, not now. There is a Sawtooth Explorer at
+https://www.hyperledger.org/blog/2017/06/22/whats-a-transaction-family
+It may or may not be merged with Hyperledger Explorer in the future.
+Sawtooth Explorer provides visibility into the Sawtooth blockchain for node operators.
+
+How can I change on-chain settings without deleting the blockchain?
+------------------------------------------
+Use the ``sawset`` command.  This allows you to change settings such
+as maximum batches per block or target wait time.
 
 What does this error mean ``repository ... xenial InRelease' doesn't support architecture 'i386'``?
 ---------------------------
