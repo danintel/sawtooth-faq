@@ -122,6 +122,12 @@ Do Transaction Processors run off-chain or on-chain?
 --------------------------------
 Sawtooth TPs run off-chain, as a process (or processes).
 
+My TP throws an exception of type ``InternalError``, but the ``Apply`` method gets stuck in an endless loop 
+---------------------------------
+``InternalError`` is supposed to be a transient error (some internal fault like 'out of memory' that is temporary), and may succeed if retried.
+The validator retries the transaction with the TP and results in a loop.
+ If the transaction is invalid, you probably want to raise an ``InvalidTransaction`` error instead.
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
