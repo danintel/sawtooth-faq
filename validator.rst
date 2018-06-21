@@ -171,6 +171,11 @@ See https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/co
 You can also use the `sawtooth-validator --maximum-peer-connectivity`
 command line option.
 
+I start the validator, but it's stuck at this message: ``Waiting for transaction processor (sawtooth_settings, 1.0)``
+---------------------------------
+The Sawtooth Settings TP is mandatory.  You probably want to also start the TP for your desired application.  To start the Settings TP, type:
+``sudo -u sawtooth settings-tp -v`` 
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
