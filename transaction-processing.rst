@@ -108,9 +108,19 @@ For details, see ``Configuring the List of Transaction Families`` at https://saw
 How do I add events to the transaction processor?
 --------------------
 In the TP code, call ``context.add_event()``.
+This adds a an application-specific event.
 In the client code (or other app for listening), subscribe to the event.
 For details, see
 https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture/events_and_transactions_receipts.html#events
+
+What initial Sawtooth events are available?
+-------------------
+Besides application-specific events, the Sawtooth default events are:
+
+``sawtooth/commit-block``
+    Committed block information: block ID, number, sate root hash, and previous block ID
+``sawtooth/state-delta``
+    All state changes that occurred for a block at a specific address
 
 Why is the Apply method in the TP handler called twice?
 --------------------------------------------
