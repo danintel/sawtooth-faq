@@ -84,7 +84,7 @@ Fork
 Genesis Block
     First block in the blockchain (block 0). Usually has initial validator settings
 GS
-    Global State or Ledger
+    Global State or Ledger. For Sawtooth this is stored internally as a Merkle Tree
 Gossip
     A decentralized message broadcast mechanism that uses forwarding to random peers (Sawtooth Validator nodes)
 Hyperledger
