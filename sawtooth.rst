@@ -278,6 +278,19 @@ Use the JIRA bug tracking system at
 https://jira.hyperledger.org/projects/STL/issues/STL-51?filter=allopenissues
 For security bugs only, send email to security@hyperledger.org
 
+Can you explain Global State with an example?
+----------------------------------------------
+Global state is where sawtooth and TPs read/write blockchain data. Examples are a-plenty if you look at the github repo examples (intkey, XO, etc.)
+The "state" is implemented as a Radix Merkle Trie over the LMDB database, where the 'keys' are 35 bytes (70 characters) and the scheme for the keys is up to the TP developer.  The first 3 bytes (6 chars) of the key identifies a unique TP namespace and it is recommended to avoid colliding with other TP namespaces.
+To enable your TP to read/write (or in context parlance "get/set") data at addresses, you need to specify those addresses *a priori* in the Transaction inputs/outputs. Otherwise you will get Authorization errors. The addresses your TP will read or write to need to be deterministic.
+
+Using the SimpleWallet application as an example, tThe blockchain will contain transactions showing deposits, withdrawals and transfers between accounts. The global state will contain the balance in the different accounts corresponding at the current point in time, after all transactions in the chain have been processed.
+
+
+Why is Sawtooth capable of supporting large network populations of nodes?
+--------------------------
+One of the reasons is the homogeneous nature of Sawtooth Nodes. You don't have different nodes with specialized functions, so it's easy to setup and manage many nodes. Secondly, and more importantly, the PoET consensus mechanism has been designed for large networks. It's not very efficient in small networks and you'll likely get much better performance with other mechanisms in a small network, but PoET handles large populations easily.
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
