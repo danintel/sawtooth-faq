@@ -215,7 +215,7 @@ WebAssembly
 XO
     Example Sawtooth TP that implements the Tic-tac-toe game
 Z Test
-    Test a block-claiming validator is not winning too frequently
+    Test a block-claiming validator is not winning too frequently. It is a defense-in-depth mechanism
 ZMQ (aka 0MQ, ZeroMQ)
     Zero Message Queue. A message transport API available on Linux; used by Sawtooth Validator nodes
 ZKP
