@@ -54,7 +54,7 @@ Dapps
 Distributed Ledger
     See Blockchain
 DLT
-    Distributed Ledger Technology; see Blockchain
+    Distributed Ledger Technology; Blockchain is a DLT
 Docker
     A light-weight OS-level VM technology which isolates processes into separate "containers"
 Duplicity
