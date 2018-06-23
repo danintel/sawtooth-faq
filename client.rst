@@ -43,6 +43,14 @@ What does this error mean: ``validator | [... DEBUG signature_verifier] transact
 -----------------------
 The client submitted a transaction with an invalid signature.
 
+What does an INVALID batch status mean?
+-------------------------
+I means the transaction batch was processed by the Transaction Processor, but the TP marked it as invalid.
+
+What does a PENDING batch status mean?
+--------------------------
+It means the transaction batch never reached the Transaction Processor.  The TP may have died or have never started. Or the validator failed the Z Test (z-tested out) because it was winning too frequently.
+
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: consensus.rst
