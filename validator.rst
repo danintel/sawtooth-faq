@@ -182,6 +182,16 @@ It is from the z-test, which is a defense-in-depth mechanism to catch validators
 Probably the best way to fix that in your test network is to restart it with some different z-test settings.  This will effectively disable z-test:
 ``sawtooth.poet.ztest_minimum_win_count = 999999999``
 
+How do I generate the ``network_public_key`` and ``network_private_key`` in ``validator.toml`` ?
+----------------------------------
+These are used to securely communicate with other nodes using ZMQ.
+Here's an example in Python:
+
+:: python
+    import zmq
+    (public, secret) = zmq.curve_keypair()
+    print(public, secret)
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
