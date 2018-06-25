@@ -64,6 +64,10 @@ What does this error mean: ``[... DEBUG route_handlers] Received CLIENT_STATE_GE
 -----------------------
 It means the transaction processor for this transaction is not running.
 
+What does this REST API error mean: ``The submitted BatchList was rejected by the validator. It was poorly formed, or has an invalid signature``
+--------------------------------------------
+Most likey you are not putting the transaction into a batch or the batch in a batchlist for posting to the REST API.  This is required, even for a single transaction.
+
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: client.rst
