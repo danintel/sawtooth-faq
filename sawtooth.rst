@@ -291,6 +291,16 @@ Why is Sawtooth capable of supporting large network populations of nodes?
 --------------------------
 One of the reasons is the homogeneous nature of Sawtooth Nodes. You don't have different nodes with specialized functions, so it's easy to setup and manage many nodes. Secondly, and more importantly, the PoET consensus mechanism has been designed for large networks. It's not very efficient in small networks and you'll likely get much better performance with other mechanisms in a small network, but PoET handles large populations easily.
 
+How to I build Sawtooth from source?
+------------------------------------
+Use ``git`` to download the source, then ``build_all`` to build.  Type ``./bin/build_all`` for options.  For example:
+::
+
+    $ sawtooth --version
+    $ git clone https://github.com/hyperledger/sawtooth-core
+    $ cd sawtooth-core
+    $ ./bin/build_all -l python
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
