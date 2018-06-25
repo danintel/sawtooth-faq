@@ -301,6 +301,9 @@ Use ``git`` to download the source, then ``build_all`` to build.  Type ``./bin/b
     $ cd sawtooth-core
     $ ./bin/build_all -l python
 
+For details, see
+https://github.com/hyperledger/sawtooth-core/blob/master/BUILD.md
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
