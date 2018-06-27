@@ -98,6 +98,12 @@ The container already exists.  You need to remove or rename it. To remove:
     sudo docker stop <container ID>
     sudo docker rm <container ID>
 
+How do I display the logs for a Docker container?
+---------------------------
+Use the ``sudo docker logs`` command followed by the container name.
+The container name may be found with the ``sudo docker ps`` command.
+For example: ``sudo docker logs validator`` display the log for the container named ``validator`` .
+
 I get this error running docker-compose: ``ERROR: Version in "./docker-compose.yaml" is unsupported.``
 -------------------------------
 You may be running an old version of Docker, perhaps from your Linux package manager.  Instead, install Docker from docker.com. Sawtooth requires Docker Engine 17.03.0-ce or better. For Docker CE for Ubuntu, use https://docs.docker.com/install/linux/docker-ce/ubuntu/
