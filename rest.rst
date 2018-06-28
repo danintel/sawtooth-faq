@@ -68,6 +68,10 @@ What does this REST API error mean: ``The submitted BatchList was rejected by th
 --------------------------------------------
 Most likey you are not putting the transaction into a batch or the batch in a batchlist for posting to the REST API.  This is required, even for a single transaction.
 
+I am getting this error: ``Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:8008/batches?wait. (Reason: CORS header Access-Control-Allow-Origin missing).``
+------------------------------------
+The Sawtooth REST API doesn't support CORS.  To allow cross-origin access to the Sawtooth API, put it behind a proxy.
+
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: client.rst
