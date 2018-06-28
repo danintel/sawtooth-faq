@@ -184,7 +184,7 @@ Probably the best way to fix that in your test network is to restart it with som
 
 How do I generate the ``network_public_key`` and ``network_private_key`` in ``validator.toml`` ?
 ----------------------------------
-These are used to securely communicate with other nodes using ZMQ.
+These are the ZMQ message keys used to securely communicate with other nodes.
 Here's an example in Python:
 
 :: python

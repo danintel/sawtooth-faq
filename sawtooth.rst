@@ -286,6 +286,9 @@ To enable your TP to read/write (or in context parlance "get/set") data at addre
 
 Using the SimpleWallet application as an example, tThe blockchain will contain transactions showing deposits, withdrawals and transfers between accounts. The global state will contain the balance in the different accounts corresponding at the current point in time, after all transactions in the chain have been processed.
 
+Are 32-byte IDs within a transaction family large enough to avoid collisions?
+-------------------------------------
+Yes. If they are being generated with a random distribution, the chances are vanishingly rare. A UUID is only 16-bytes and if you generated a billion per second, it would take 100 years before you would expect 50% odds of a collision.
 
 Why is Sawtooth capable of supporting large network populations of nodes?
 --------------------------
@@ -303,6 +306,15 @@ Use ``git`` to download the source, then ``build_all`` to build.  Type ``./bin/b
 
 For details, see
 https://github.com/hyperledger/sawtooth-core/blob/master/BUILD.md
+
+Is there a Sawtooth security evaluation?
+-----------------------------
+Yes. This was required to be a part of the Linux Foundation's Hyperledger project.  See 
+https://www.hyperledger.org/blog/2018/05/22/hyperledger-sawtooth-security-audit
+
+Does Sawtooth restore state when a peer restarts or when a peer is out-of-sync with the network?
+--------------------
+Yes.
 
 
 [PREVIOUS_ | HOME_ | NEXT_]
