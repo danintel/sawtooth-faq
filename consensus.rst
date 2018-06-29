@@ -26,6 +26,7 @@ Sawtooth supports unpluggable consensus, meaning you can change the consensus al
 at a block boundary.
 Changing consensus on the fly means it is done without stopping validators, flushing state,
 or starting over with a new genesis block.
+It is also called Dynamic Consensus.
 
 Can my Sawtooth network have validators with a mixture of SGX PoET or Simulator PoET?
 ------------------------------------------
