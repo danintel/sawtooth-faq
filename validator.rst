@@ -122,6 +122,10 @@ https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/c
 
 Create the genesis block only one time, on the first node, and configure one or more peer Validator nodes for each node.
 
+I have Sawtooth running with a single node. How do I add a node?
+---------------------------------------
+You need to either start up the validator with information about the network peers using the ``sawtooth-validator --peers`` option or set ``seeds`` or ``peers`` in configuration file ``/etc/sawtooth/validator.toml``.  Then restart the node.
+
 Can I run two validators on the same machine?
 -------------------
 Yes, but it is not recommended.  You need to configure separate Sawtooth instances with different:
