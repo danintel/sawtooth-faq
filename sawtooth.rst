@@ -272,6 +272,12 @@ I get this error starting Sawtooth:
 -----------------------------
 Besides the obvious problem of no disk space, it could be your OS or filesystem does not support sparse files.  The LMDB databases used by Sawtooth are 1TB sparse (mostly unallocated) files.
 
+I get this error when running ``sawtooth sawadm genesis config-genesis.batch``:  ``Processing config-genesis.batch... Error: Unable to read config-genesis.batch``
+------------------------------
+This error can occur when there is no sawtooth user and group.
+This should have been done during package installation.
+To add, type ``sudo adduser sawtooth ; sudo adduser sawtooth sawtooth``.
+
 How do I report a bug?
 ---------------------------
 Use the JIRA bug tracking system at
