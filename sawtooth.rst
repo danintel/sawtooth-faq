@@ -288,7 +288,7 @@ Using the SimpleWallet application as an example, tThe blockchain will contain t
 
 What is the difference between the Merkle Radix Trie and the blockchain?
 -----------------------------
-The blockchain itself just stores transactions, not state, so reading the data in the last block does not say much by itself. The radix trie is a different data structure that is used to do fast queries to the state. The root of the Merkle Trie is a hash. One can easily identify if something changed when the root hash changes. The Merkle Trie addressing allows quick retrieval at an address and partial queries of address prefixes.
+The blockchain itself just stores transactions, not state, so reading the data in the last block does not say much by itself. Data in the blockchain is also immutable and can never change (except by adding new blocks). The radix trie is a different data structure that is used to make fast queries to the state. The root of the Merkle Trie is a hash. One can easily identify if something changed when the root hash changes. The Merkle Trie addressing allows quick retrieval at an address and partial queries of address prefixes.
 
 Are 32-byte IDs within a transaction family large enough to avoid collisions?
 -------------------------------------
