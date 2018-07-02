@@ -286,6 +286,10 @@ To enable your TP to read/write (or in context parlance "get/set") data at addre
 
 Using the SimpleWallet application as an example, tThe blockchain will contain transactions showing deposits, withdrawals and transfers between accounts. The global state will contain the balance in the different accounts corresponding at the current point in time, after all transactions in the chain have been processed.
 
+What is the difference between the Merkle Radix Trie and the blockchain?
+-----------------------------
+The blockchain itself just stores transactions, not state, so reading the data in the last block does not say much by itself. The radix trie is a different data structure that is used to do fast queries to the state. The root of the Merkle Trie is a hash. One can easily identify if something changed when the root hash changes. The Merkle Trie addressing allows quick retrieval at an address and partial queries of address prefixes.
+
 Are 32-byte IDs within a transaction family large enough to avoid collisions?
 -------------------------------------
 Yes. If they are being generated with a random distribution, the chances are vanishingly rare. A UUID is only 16-bytes and if you generated a billion per second, it would take 100 years before you would expect 50% odds of a collision.
