@@ -275,8 +275,8 @@ Besides the obvious problem of no disk space, it could be your OS or filesystem 
 I get this error when running ``sawtooth sawadm genesis config-genesis.batch``:  ``Processing config-genesis.batch... Error: Unable to read config-genesis.batch``
 ------------------------------
 This error can occur when there is no sawtooth user and group.
-This should have been done during package installation.
-To add, type ``sudo adduser sawtooth ; sudo adduser sawtooth sawtooth``.
+This should have been done by the package ``postinst`` script.
+To add, type ``addgroup --system sawtooth; adduser --system --ingroup sawtooth sawtooth`` .
 
 How do I report a bug?
 ---------------------------
