@@ -16,6 +16,12 @@ PoET Simulator
 PoET SGX
     Takes advantage of SGX in order to provide consensus with Byzantine Fault Tolerance (BFT), like PoW algorithms have, but at very low CPU usage. PoET SGX is the only algorithm that has hardware requirements (a processor supporting SGX)
 
+Does the PoET Simulator implement the same consensus algorithm as PoET SGX?
+------------------------------
+Yes--they are same same consensus algorithm. The difference is the
+PoET Simulator also simulates SGX hardware, allowing PoET to run on non-SGX
+hardware.
+
 Are there plans to add other consensus algorithms?
 -------------------
 Yes. We are in the process of adding a fourth consensus, Raft, and may add other consensus engines.
