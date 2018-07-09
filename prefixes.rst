@@ -65,10 +65,12 @@ https://sawtooth.hyperledger.org/docs/core/releases/1.0/transaction_family_speci
 +--------------+----------+--------+------------------------------------------+
 | simplewallet | CSV-UTF8 | 7e2664 | Simple Wallet minimal example            |
 +--------------+----------+--------+------------------------------------------+
+| cookiejar    | CSV-UTF8 | a4d219 | Cookie Jar minimal example               |
++--------------+----------+--------+------------------------------------------+
 | simple\_     | Protobuf | 5d6af4 | Simple Supply example used for training  |
 | supply       |          |        |                                          |
 +--------------+----------+--------+------------------------------------------+
-| cookie-maker | raw      | 1a5312 | Cookie Maker example                     |
+| cookie-maker | raw      | 1a5312 | Cookie Maker minimal example             |
 +--------------+----------+--------+------------------------------------------+
 
 [PREVIOUS_ | HOME_]
