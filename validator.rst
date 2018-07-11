@@ -183,6 +183,7 @@ The Sawtooth Settings TP is mandatory.  You probably want to also start the TP f
 Why am I getting this validator message: ``Reject building on block 8c5ebbea: Validator is claiming blocks too frequently.``
 ---------------------
 It is from the z-test, which is a defense-in-depth mechanism to catch validators that are publishing blocks with an improbable frequency. Unfortunately the defaults we chose for that statistical test aren't well suited for tiny networks (that feature is really intended for added security in large production networks).
+If you have only one validator, you are bound to fail the z-test eventually.
 Probably the best way to fix that in your test network is to restart it with some different z-test settings.  This will effectively disable z-test:
 ``sawtooth.poet.ztest_minimum_win_count = 999999999``
 
