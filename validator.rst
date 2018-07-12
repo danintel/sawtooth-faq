@@ -35,13 +35,16 @@ to create a genesis block only with the first validator.  Do not create multiple
 
 How do I add a node to a Sawtooth Network?
 -------------------
-
 See
 https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/creating_sawtooth_network.html#ubuntu-add-a-node-to-the-single-node-environment
 
 How do I verify the Validator is running and reachable?
 -------------------
 Run the following command from the Validator Docker container or from where the Validator is running:
+
+What do I do if some of the Sawtooth Network nodes go offline?
+---------------------------
+You can restart any failed nodes.  They should rejoin the network and will then process all blocks that were added to the blockchain since the node went down. It will be busy during this initial phase, but will return to normal after that.
 
 ::
 
