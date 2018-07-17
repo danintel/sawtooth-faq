@@ -39,6 +39,12 @@ Can my Sawtooth network have validators with a mixture of SGX PoET or Simulator 
 No. You need to pick one consensus for all nodes.
 But you can change consensus after the network has started.
 
+Can I use the PoET simulator instead of PoET SGX for production?
+------------------------------
+Yes, PoET simulator is for production use, not just for development. Both PoET Simulator and SGX have tests to guard against bad actors, such as the "Z Test" to check a validator is not winning too frequently.
+PoET Simulator simulates the SGX environment and provides CFT (similar to Fabric and other blockchain software), which is good enough to go into production.
+That said, PoET SGX is preferred because of the additional SGX protections for generating the wait time.
+
 What cloud services offer SGX?
 ------------------------------
 SGX is available on IBM cloud.
