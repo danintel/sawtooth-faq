@@ -327,6 +327,11 @@ Does Sawtooth restore state when a peer restarts or when a peer is out-of-sync w
 Yes.
 
 
+When content at an address is changed several times by the transactions in a block, what appears in the state (Merkle Tree)?
+-----------------------------
+The only thing that hits state is the aggregate (final) set of address changes due to the transactions in the block. If multiple transactions in a single block modify an address, there will only be one 'set'. You could see the transaction level changes in the receipts if you needed to.
+
+
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: README.rst
