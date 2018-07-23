@@ -27,7 +27,7 @@ Sawtooth documentation, with several guides and references, including:
 Sawtooth Application Developer's Guide
     https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide.html
 Sawtooth Architecture
-	https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture.html
+    https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture.html
 Sawtooth chat main channel (several others Sawtooth channels exist here)
     https://chat.hyperledger.org/channel/sawtooth
 Sawtooth mailing list (not as popular as the chat channel above)
@@ -52,17 +52,17 @@ https://www.youtube.com/results?search_query=Hyperledger+Sawtooth
 
 Are there any example applications based on Sawtooth?
 -----------------------------------------------------
-A example application that impliments a simple wallet application:
+* A example application that implements a simple wallet application:
 https://github.com/askmish/sawtooth-simplewallet
-A more complex example that implements a supply chain example and demostrates many of the key concepts behind the implementation of a complete aswtooth application:
+* A more complex example that implements a supply chain example and demonstrates many of the key concepts behind the implementation of a complete Sawtooth application:
 https://github.com/hyperledger/sawtooth-supply-chain
-An example application that shows how to  exchange quantities of customized "Assets" with other users on the blockchain:
+* An example application that shows how to  exchange quantities of customized "Assets" with other users on the blockchain:
 https://github.com/hyperledger/sawtooth-marketplace
 
 
 What is the difference between Hyperledger and Sawtooth?
 --------------------------------------------------------
-* Sawtooth (or Hyperledger Sawtooth) is blockchain software initially contributed by Intel Corporation and now maintianed by the Sawtooth community.  Sawtooth does not have to be deployed on Intel hardware; however, Sawtooth does include the optional PoET consensus module, which uses Intel SGX to provide an efficient, byzanteen fault tolerant consensus mechanism that does nto rely on expensive and inefficient mining algorithms. See https://www.hyperledger.org/projects/sawtooth
+* Sawtooth (or Hyperledger Sawtooth) is blockchain software initially contributed by Intel Corporation and now maintained by the Sawtooth community.  Sawtooth does not have to be deployed on Intel hardware; however, Sawtooth does include the optional PoET consensus module, which uses Intel SGX to provide an efficient, Byzantine Fault Tolerant consensus mechanism that does not rely on expensive and inefficient mining algorithms. See https://www.hyperledger.org/projects/sawtooth
 * Hyperledger is a consortium that includes Sawtooth as well as other blockchain implemntations. "Hyperledger is an open source collaborative effort created to advance cross-industry blockchain technologies. It is a global collaboration, hosted by The Linux Foundation" See https://www.hyperledger.org/.
 
 What is the difference between Hyperledger Sawtooth and Hyperledger Fabric?
@@ -73,7 +73,7 @@ Here are some differences:
 * Fabric's Smart Contract must be written in GoLang or Javascript. Sawtooth transaction processors can be written in multiple languages, such as Rust, Python, Go, or JavaScript. SDKs for other languages are being added
 * Fabric has "endorsing peers" and ordering services to pre-process transactions. Sawtooth has a validator that handles everything from validating the transactions and distributing the transaction to peer nodes
 * Fabric stores data in a leveldb or couchdb, with a separate ledger per channel. Sawtooth stores all data in a central lmdb database with each transaction family using a separate address prefix.
-* Fabric has multiple components, including Orderers, Peers, CAs, CouchDB, adn Tools. Sawtooth has the Sawtooth Validator and a Transaction Processor for each Transaction Family. The Validator's REST API communicates with a client
+* Fabric has multiple components, including Orderers, Peers, CAs, CouchDB, and Tools. Sawtooth has the Sawtooth Validator and a Transaction Processor for each Transaction Family. The Validator's REST API communicates with a client
 
 Based on
 https://www.skcript.com/svr/hyperledger-fabric-to-sawtooth
@@ -134,7 +134,7 @@ It can also be the result of a bug in transaction processing
 
 What does ``Failed to reach common ancestor`` mean from ``sawnet compare-chains``?
 --------------------------
-It means the blockchains have no blocks in common, including the genesis block.  This usually happens when a second node is added with its own genesis node.  Only the first node in a Sawtooth netowrk should be created with a genesis block.
+It means the blockchains have no blocks in common, including the genesis block.  This usually happens when a second node is added with its own genesis node.  Only the first node in a Sawtooth network should be created with a genesis block.
 
 Does Hyperledger Composer support Sawtooth?
 ---------------------------
