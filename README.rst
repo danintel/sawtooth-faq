@@ -11,6 +11,7 @@ Frequently-asked Questions
 ------------------------------------------
 
 - `Sawtooth in General`_
+- `Sawtooth Installation and Configuration`_
 - `Sawtooth Transaction Processing`_
 - `Sawtooth Validator`_
 - `Sawtooth Consensus Algorithms (including PoET)`_
@@ -36,6 +37,7 @@ This sign-off means you agree the commit satisfies the
 [NEXT_]
 
 .. _Sawtooth in General: sawtooth.rst
+.. _Sawtooth Installation and Configuration: installation.rst
 .. _Sawtooth Transaction Processing: transaction-processing.rst
 .. _Sawtooth Validator: validator.rst
 .. _Sawtooth Consensus Algorithms (including PoET): consensus.rst
