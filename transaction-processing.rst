@@ -145,7 +145,7 @@ This error has been seen when the ownerships are wrong. Try setting ownership as
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
-.. _PREVIOUS: sawtooth.rst
+.. _PREVIOUS: installation.rst
 .. _HOME: README.rst
 .. _NEXT: validator.rst
 
