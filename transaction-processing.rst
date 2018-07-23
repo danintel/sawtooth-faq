@@ -81,8 +81,7 @@ What does this error mean: ``processor | [... DEBUG executor] transaction proces
 It means there is no transaction processor running for your transaction family.
 
 
-What does this error mean: ``processor | { AuthorizationException: Tried to get 
-unauthorized address ...``?
+What does this error mean: ``processor | { AuthorizationException: Tried to get unauthorized address ...``?
 -----------------------
 It means a the transaction processor tried to access (get/put) a value not in the list of inputs/outputs. This occurs when a client submits a transaction with an inaccurate list of inputs/outputs.
 
