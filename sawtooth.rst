@@ -39,31 +39,28 @@ Unofficial Sawtooth FAQ
 
 Where are some good introductory videos?
 ---------------------------------------
-* *Hyperledger Sawtooth 1.0: Market Significance & Technical Overview*
-(Hyperledger, 2018, 61:27)
-Free registration required
-https://gateway.on24.com/wcc/gateway/linux/1101876/1585244/hyperledger-sawtooth-v10-market-significance-and-technical-overview
-https://www.hyperledger.org/resources/webinars
-* *Hyperledger Sawtooth 1.0 Architecture and App Development*
-(Bitwise IO, 2018, 31:26)
-https://www.youtube.com/watch?v=uBebFQM49Xk
-* You can find several more at
-https://www.youtube.com/results?search_query=Hyperledger+Sawtooth
+Hyperledger Sawtooth 1.0: Market Significance & Technical Overview (Hyperledger, 2018, 61:27) (free registration required):
+  https://gateway.on24.com/wcc/gateway/linux/1101876/1585244/hyperledger-sawtooth-v10-market-significance-and-technical-overview
+  https://www.hyperledger.org/resources/webinars
+Hyperledger Sawtooth 1.0 Architecture and App Development (Bitwise IO, 2018, 31:26):
+  https://www.youtube.com/watch?v=uBebFQM49Xk
+You can find several more here:
+  https://www.youtube.com/results?search_query=Hyperledger+Sawtooth
 
 Are there any example applications based on Sawtooth?
 -----------------------------------------------------
-* A example application that implements a simple wallet application:
-https://github.com/askmish/sawtooth-simplewallet
-* A more complex example that implements a supply chain example and demonstrates many of the key concepts behind the implementation of a complete Sawtooth application:
-https://github.com/hyperledger/sawtooth-supply-chain
-* An example application that shows how to  exchange quantities of customized "Assets" with other users on the blockchain:
-https://github.com/hyperledger/sawtooth-marketplace
+A example application that implements a simple wallet application:
+  https://github.com/askmish/sawtooth-simplewallet
+A more complex example that implements a supply chain example and demonstrates many of the key concepts behind the implementation of a complete Sawtooth application:
+  https://github.com/hyperledger/sawtooth-supply-chain
+An example application that shows how to  exchange quantities of customized "Assets" with other users on the blockchain:
+  https://github.com/hyperledger/sawtooth-marketplace
 
 
 What is the difference between Hyperledger and Sawtooth?
 --------------------------------------------------------
-* Sawtooth (or Hyperledger Sawtooth) is blockchain software initially contributed by Intel Corporation and now maintained by the Sawtooth community.  Sawtooth does not have to be deployed on Intel hardware; however, Sawtooth does include the optional PoET consensus module, which uses Intel SGX to provide an efficient, Byzantine Fault Tolerant consensus mechanism that does not rely on expensive and inefficient mining algorithms. See https://www.hyperledger.org/projects/sawtooth
-* Hyperledger is a consortium that includes Sawtooth as well as other blockchain implemntations. "Hyperledger is an open source collaborative effort created to advance cross-industry blockchain technologies. It is a global collaboration, hosted by The Linux Foundation" See https://www.hyperledger.org/.
+* Sawtooth (or Hyperledger Sawtooth) is a blockchain implementation initially contributed by Intel Corporation and now maintained by the Sawtooth community.  Sawtooth does not have to be deployed on Intel hardware; however, Sawtooth does include the optional PoET consensus module, which uses Intel SGX to provide an efficient, Byzantine Fault Tolerant consensus mechanism that does not rely on expensive and inefficient mining algorithms. See https://www.hyperledger.org/projects/sawtooth
+* Hyperledger is a consortium that includes Sawtooth as well as other blockchain implementations. "Hyperledger is an open source collaborative effort created to advance cross-industry blockchain technologies. It is a global collaboration, hosted by The Linux Foundation" See https://www.hyperledger.org/.
 
 What is the difference between Hyperledger Sawtooth and Hyperledger Fabric?
 -----------------------
@@ -116,7 +113,7 @@ For more information, see the Sawtooth CLI Command Reference at https://sawtooth
 
 Must software developed with Sawtooth be open source?
 ------------------------
-IANAL; however, Sawtooth is released under the Apache 2 license, a permissive license, and so should be able to be used in both open or closed source applications.
+IANAL; however, Sawtooth is released under the Apache 2 license, a permissive license, and so should be able to be used in both open and closed source applications.
 
 I get a usage error running ``sawnet peers`` or ``sawnet list-blocks``
 ----------------------------------------------------
@@ -159,7 +156,7 @@ Global state is where sawtooth and TPs read/write blockchain data. Examples are 
 The "state" is implemented as a Radix Merkle Trie over the LMDB database, where the 'keys' are 35 bytes (70 characters) and the scheme for the keys is up to the TP developer.  The first 3 bytes (6 chars) of the key identifies a unique TP namespace and it is recommended to avoid colliding with other TP namespaces.
 To enable your TP to read/write (or in context parlance "get/set") data at addresses, you need to specify those addresses *a priori* in the Transaction inputs/outputs. Otherwise you will get Authorization errors. The addresses your TP will read or write to need to be deterministic.
 
-Using the SimpleWallet application as an example (see example application links above), tThe blockchain will contain transactions showing deposits, withdrawals and transfers between accounts. The global state will contain the balance in the different accounts corresponding at the current point in time, after all transactions in the chain have been processed.
+Using the SimpleWallet application as an example (see example application links above), the blockchain will contain transactions showing deposits, withdrawals and transfers between accounts. The global state will contain the balance in the different accounts corresponding at the current point in time, after all transactions in the chain have been processed.
 
 What is the difference between the Merkle Radix Trie and the blockchain?
 -----------------------------
