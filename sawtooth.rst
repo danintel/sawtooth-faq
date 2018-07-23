@@ -157,6 +157,10 @@ Forking can occur if the Sawtooth network is partitioned and cannot fully commun
 It can also be the result of a bug in transaction processing
 (for example, transactions don't serialize in a deterministic way).
 
+What does ``Failed to reach common ancestor`` mean from ``sawnet compare-chains``?
+--------------------------
+It means the blockchains have no blocks in common, including the genesis block.  This usually happens when a second node is added with its own genesis node.  Only the first node should be created with a genesis block.
+
 How do I list and install Sawtooth packages?
 --------------------------------------------
 Here is how to setup the Sawtooth stable repository, list the packages,
