@@ -25,7 +25,7 @@ https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/i
 Is there an example for a multiple node Sawtooth Network?
 -------------------
 See these instructions for setting up a 5-node Sawtooth Network with PoET Simulator Consensus using Docker:
-https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/creating_sawtooth_network.htmlow do I add a node to a Sawtooth Network?
+https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/creating_sawtooth_network.html
 
 Here is a gist with brief instructions for a 2-node network:
 https://gist.github.com/askmish/a23bde6f2e59e4256be8afe965a9166b
