@@ -141,6 +141,11 @@ I get this error when I try to set some Sawtooth settings: ``Chain head is not s
 --------------------
 This error has been seen when the ownerships are wrong. Try setting ownership as follows: ``chown sawtooth:sawtooth /var/lib/sawtooth /var/lib/sawtooth/*``
 
+Does the Transaction Processor know the current Transaction ID?
+---------------------------------
+Yes. It is available in the header.
+The transaction header signature is the Transaction ID.
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
