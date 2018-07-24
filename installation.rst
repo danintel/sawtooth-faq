@@ -119,10 +119,16 @@ The ownership or permission is wrong. To fix it, type:
     $ ls -ld /var/lib/sawtooth
     drwxr-x--- 2 sawtooth sawtooth 4096 Jun  2 14:43 /var/lib/sawtooth
 
-
 How to I delete previously-existing blockchain data?
 ----------------------------------
 Type the following: ``sudo -u sawtooth rm -rf /var/lib/sawtooth/*``
+This deletes the entire database--for development and purposes.
+
+How do I delete or change a specific block in the blockchain?
+----------------------------------------
+You cannot delete blocks--they are immutable by design.
+You can create a new transaction (or block of transactions)
+that reverse a previous transactoin.
 
 I get a usage error running ``sawnet peers`` or ``sawnet list-blocks``
 ----------------------------------------------------
