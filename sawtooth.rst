@@ -188,6 +188,18 @@ When content at an address is changed several times by the transactions in a blo
 -----------------------------
 The only thing that hits state is the aggregate (final) set of address changes due to the transactions in the block. If multiple transactions in a single block modify an address, there will only be one 'set'. You could see the transaction level changes in the receipts if you needed to.
 
+In order to create a Sawtooth application, do I need to clone and modify the entire ``sawtooth-core`` repository?
+-----------------------
+No. It can be done that way, but it's not recommended.
+All you need to write is the client application and the Transaction Processor.
+The core Sawtooth functionality should be installed as packages instead of being built from source and integrated with your application.
+Here's some simple sample applications that are in standalone source repositories:
+
+* Simple Wallet, https://github.com/askmish/sawtooth-simplewallet
+* Cookie Jar, https://github.com/danintel/sawtooth-cookiejar
+* Cryptomoji,  https://github.com/hyperledger/education-cryptomoji
+* Simple Supply Chain, https://github.com/hyperledger/education-sawtooth-simple-supply
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
