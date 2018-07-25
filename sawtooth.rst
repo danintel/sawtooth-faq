@@ -56,11 +56,15 @@ A more complex example that implements a supply chain example and demonstrates m
 An example application that shows how to  exchange quantities of customized "Assets" with other users on the blockchain:
   https://github.com/hyperledger/sawtooth-marketplace
 
-
 What is the difference between Hyperledger and Sawtooth?
 --------------------------------------------------------
 * Sawtooth (or Hyperledger Sawtooth) is a blockchain implementation initially contributed by Intel Corporation and now maintained by the Sawtooth community.  Sawtooth does not have to be deployed on Intel hardware; however, Sawtooth does include the optional PoET consensus module, which uses Intel SGX to provide an efficient, Byzantine Fault Tolerant consensus mechanism that does not rely on expensive and inefficient mining algorithms. See https://www.hyperledger.org/projects/sawtooth
 * Hyperledger is a consortium that includes Sawtooth as well as other blockchain implementations. "Hyperledger is an open source collaborative effort created to advance cross-industry blockchain technologies. It is a global collaboration, hosted by The Linux Foundation" See https://www.hyperledger.org/.
+
+What is the difference between Sawtooth, Sawtooth Lake, and Hyperledger Sawtooth?
+-------------------------------
+Sawtooth Lake was Intel's original code name for its blockchain research project. After it was contributed to the Linux Foundation's Hyperledger consortium, the name was changed to Hyperledger Sawtooth.  Sawtooth is just shorthand for Hyperledger Sawtoot and are the same thing.
+
 
 What is the difference between Hyperledger Sawtooth and Hyperledger Fabric?
 -----------------------
