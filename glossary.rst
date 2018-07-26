@@ -50,7 +50,7 @@ Consensus algorithm
 Classical Consensus
     Uses an agreement or voting mechanism (vs. Nakamoto-style consensus)
 Dapps
-    Etherium Decentralized Applications. These are written in Solidity and are supported by Sawtooth Seth
+    Ethereum Decentralized Applications. These are written in Solidity and are supported by Sawtooth Seth
 Distributed Ledger
     See Blockchain
 DLT
@@ -138,7 +138,7 @@ Permissioned Blockchain (aka Private Blockchain)
 Permissionless Blockchain (aka Public Blockchain)
     anyone can join network (e.g., Bitcoin, Ethereum)
 PoET
-    Proof of Elapsed Time (optional Nakamoto-style consensus algorithm used for Sawtooth). PoET with SGX has BFT. PoET Simulator has CFT. Not CPU-intensitve as with PoW-style algorithms, although it still can fork and have stale blocks. See PoET specification at https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture/poet.html
+    Proof of Elapsed Time (optional Nakamoto-style consensus algorithm used for Sawtooth). PoET with SGX has BFT. PoET Simulator has CFT. Not CPU-intensive as with PoW-style algorithms, although it still can fork and have stale blocks. See PoET specification at https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture/poet.html
 PoW
     Proof of Work. Completing work (CPU-intensive Nakamoto-style consensus algorithm). Usually used in permissionless blockchains
 PoS
@@ -193,7 +193,7 @@ Safety
 Sawtooth
     Permissioned blockchain platform for running distributed ledgers
 Seth
-    Ethereum-compatible Sawtooth Transaction Processor. Suppors running Ethereum Virtual Machine
+    Ethereum-compatible Sawtooth Transaction Processor. Supports running Ethereum Virtual Machine
 secp256k1
     An ECDSA (Elliptic Curve DSA) cryptographic algorithm used by Sawtooth with a 32-byte key. Used for Validator and TP. Bitcoin also uses this algorithm
 Serialization

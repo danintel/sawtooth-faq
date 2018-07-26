@@ -26,7 +26,7 @@ and installs the core packages
     p  python3-sawtooth-ias-client     - Sawtooth IAS Client 
     p  python3-sawtooth-ias-proxy      - Sawtooth IAS Proxy  
     c  python3-sawtooth-identity       - Sawtooth Identity Transaction Processor   
-    iA python3-sawtooth-intkey         - Sawtooth Intkey Python Example            
+    iA python3-sawtooth-intkey         - Sawtooth IntKey Python Example            
     p  python3-sawtooth-manage         - Sawtooth Lake Management Library          
     iA python3-sawtooth-poet-cli       - Sawtooth PoET CLI                         
     iA python3-sawtooth-poet-common    - Sawtooth PoET Common Modules              
@@ -43,7 +43,7 @@ and installs the core packages
     i  sawtooth                        - Hyperledger Sawtooth Distributed Ledger   
     p  sawtooth-admin-tools            - Sawtooth Admin Tools                      
     BB sawtooth-cxx-sdk                - Hyperledger Sawtooth C++ SDK
-    p  sawtooth-intkey-tp-go           - Sawtooth Intkey TP Go                     
+    p  sawtooth-intkey-tp-go           - Sawtooth IntKey TP Go                     
     p  sawtooth-noop-tp-go             - Sawtooth Noop TP Go                       
     p  sawtooth-smallbank-tp-go        - Sawtooth Smallbank TP Go                  
     p  sawtooth-xo-tp-go               - Sawtooth Go XO TP
@@ -128,7 +128,7 @@ How do I delete or change a specific block in the blockchain?
 ----------------------------------------
 You cannot delete blocks--they are immutable by design.
 You can create a new transaction (or block of transactions)
-that reverse a previous transactoin.
+that reverse a previous transaction.
 
 I get a usage error running ``sawnet peers`` or ``sawnet list-blocks``
 ----------------------------------------------------

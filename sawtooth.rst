@@ -20,7 +20,7 @@ Sawtooth introduction
     https://sawtooth.hyperledger.org/docs/core/nightly/master/introduction.html
 Sawtooth introduction and download
     https://www.hyperledger.org/projects/sawtooth
-Github repository for Sawtooth Core
+GitHub repository for Sawtooth Core
     https://github.com/hyperledger/sawtooth-core
 Sawtooth documentation, with several guides and references, including:
     https://sawtooth.hyperledger.org/docs/core/nightly/master/
@@ -49,6 +49,8 @@ You can find several more here:
 
 Are there any example applications based on Sawtooth?
 -----------------------------------------------------
+A simple application that implements a cookie jar showing just the Sawtooth API:
+  https://github.com/danintel/sawtooth-cookiejar
 A example application that implements a simple wallet application:
   https://github.com/askmish/sawtooth-simplewallet
 A more complex example that implements a supply chain example and demonstrates many of the key concepts behind the implementation of a complete Sawtooth application:
@@ -63,7 +65,7 @@ What is the difference between Hyperledger and Sawtooth?
 
 What is the difference between Sawtooth, Sawtooth Lake, and Hyperledger Sawtooth?
 -------------------------------
-Sawtooth Lake was Intel's original code name for its blockchain research project. After it was contributed to the Linux Foundation's Hyperledger consortium, the name was changed to Hyperledger Sawtooth.  Sawtooth is just shorthand for Hyperledger Sawtoot and are the same thing.
+Sawtooth Lake was Intel's original code name for its blockchain research project. After it was contributed to the Linux Foundation's Hyperledger consortium, the name was changed to Hyperledger Sawtooth.  Sawtooth is just shorthand for Hyperledger Sawtooth and are the same thing.
 
 
 What is the difference between Hyperledger Sawtooth and Hyperledger Fabric?
@@ -84,14 +86,17 @@ What differentiates Sawtooth from other blockchains?
 This includes:
 
 * State agreement, which assures each node has cryptographically-verifiable, identical copies of the blockchain
-* Byzantine Fault Tolerant (BFT) consensus, through PoET
+* novel Byzantine Fault Tolerant (BFT) consensus, through PoET
 * Unpluggable consensus on-the-fly (without restarting)
 * Multi-language SDK support (Python, Go, Javascript, Rust, with more being added)
 * Parallel transaction processing
 
+For more on Sawtooth differentiation and philosophy, see
+https://www.hyperledger.org/blog/2016/11/02/meet-sawtooth-lake
+
 How does a blockchain differ from a database?
 ------------------------------
-* A database has one master copy. A blockchain has multiple authoriative copies
+* A database has one master copy. A blockchain has multiple authoritative copies
 * A database can be changed after a commit. A blockchain's records are immutable and cannot be undone after a commit
 * A database must have a trusted central authority
 
