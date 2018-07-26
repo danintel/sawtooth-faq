@@ -53,9 +53,19 @@ Why use round-robin if the transaction processors are identical?
 This is useful when the when the validator's parallel scheduler is used.
 Multiple transactions can be processed in parallel when the inputs/outputs do not conflict.
 
+Where do I deplay transaction processors?
+------------------------------------
+Each validator node runs all transaction processors supported for the Sawtooth network.
+Sawtooth includes features for asynchronously deploying and upgrading the Transaction Processors.
+In a typical deployment you will have multiple Transaction Processors.
+
 What happens if a validator receives a transaction but does not have a TP for it?
 ---------------------------------------------
-If a validator receives a transaction that it does not have a transaction processor for, the validator will wait until a TP connects that can handle that transaction. That validator would fall behind the rest on the network while it waits.
+If a validator receives a transaction that it does not have a transaction processor for, the validator will wait until a TP connects that can handle that transaction.
+The validator will stay online and participate with the network and other services, but it will not be able to validate transactions for which it does not have the associated Transaction Processor.
+ That validator would fall behind the rest on the network while it waits.
+Hence it will not update state for any state transitions that include or depend on such transactions *until* the transaction processor is deployed for that node.
+Once deployed on that validator, the validator will be able to catch up with the network.
 
 How can I limit what Transaction Processors run on a Validator Node?
 -------------------
@@ -145,6 +155,10 @@ Does the Transaction Processor know the current Transaction ID?
 ---------------------------------
 Yes. It is available in the header.
 The transaction header signature is the Transaction ID.
+
+Can I run two different Transaction Processors on the same Sawtooth Network?
+---------------------
+Yes, you can run any number of transaction families, for example, you can r un the Seafood Supply Chain app and Bond Asset Settlement app on the same network.
 
 
 [PREVIOUS_ | HOME_ | NEXT_]

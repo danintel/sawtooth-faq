@@ -160,6 +160,16 @@ The current default is ``serial``, but it may change to ``parallel`` in the futu
 For example:
 ``sawtooth-validator --scheduler parallel -vv`` .
 
+How can I improve Sawtooth performance?
+-----------------------------
+* First, for performance measurement or tuning, do not run the default "dev mode" consensus algorithm.  Run another one, such as PoET or PoET simulator. Dev mode is not for production use and excessive forks under heavy use degrades performance
+* Batch multiple transactions together as much as possible in a Batch of transaction or a BatchList of multiple transactions (or both)
+* Run the validator in parallel mode, not serial mode
+* Write the transaction processor in a thread-friendly programming language such as Rust or C++, not Python. Python is an interpretive language and therefore slower. It also suffers from the Global Interpreter Lock (GIL), which locks executing multiple threads to one thread at-a-time
+* Run multiple transaction processors per validator node for the same transaction family.  This is especially useful for TPs written in Python
+* Consider increasing the on-chain setting ``sawtooth.publisher.max_batches_per_block`` . Try a value of 200 batches per block to start with. This and other on-chain settings can be changed on-the-fly without impacting older blocks.
+* As you make changes, measure the impact with a performance tool such as Hyperledger Caliper
+
 What does this error mean: ``[... DEBUG client_handlers] Unable to find entry at address ...``?
 -----------------------
 It means the address doesn't exist.

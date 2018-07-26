@@ -171,6 +171,14 @@ Use ``git`` to download the source, then ``build_all`` to build.  Type ``./bin/b
 For details, see
 https://github.com/hyperledger/sawtooth-core/blob/master/BUILD.md
 
+How do I install Sawtooth on FreeBSD?
+------------------------------
+Sawtooth is supported for Ubuntu Linux and should run on other \*IX-like systems.  The following blog may help:
+https://wiki.freebsd.org/HyperledgerSawtooth
+This is based on FreeBSD 11.1. Docker is not required to run Sawtooth.
+See also this bug for the status of the FreeBSD Sawtooth port:
+https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=228581
+
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: sawtooth.rst
