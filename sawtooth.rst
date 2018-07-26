@@ -65,7 +65,7 @@ What is the difference between Hyperledger and Sawtooth?
 
 What is the difference between Sawtooth, Sawtooth Lake, and Hyperledger Sawtooth?
 -------------------------------
-Sawtooth Lake was Intel's original code name for its blockchain research project. After it was contributed to the Linux Foundation's Hyperledger consortium, the name was changed to Hyperledger Sawtooth.  Sawtooth is just shorthand for Hyperledger Sawtooth and are the same thing.
+Sawtooth Lake was Intel's original code name for its blockchain research project, named after a lake in the Sawtooth Mountains of central Idaho. After it was contributed to the Linux Foundation's Hyperledger consortium, the name was changed to Hyperledger Sawtooth.  Sawtooth is just shorthand for Hyperledger Sawtooth and are the same thing.
 
 
 What is the difference between Hyperledger Sawtooth and Hyperledger Fabric?
