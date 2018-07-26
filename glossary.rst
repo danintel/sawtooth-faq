@@ -167,6 +167,8 @@ Sabre
     TF that implements on-chain smart contracts with the WebAssembly VM. For more information, see Sabre RFC at https://github.com/hyperledger/sawtooth-rfcs/blob/master/text/0007-wasm-smart-contracts.md
 Sawtooth
     Hyperledger Sawtooth is a modular enterprise blockchain platform for building, deploying, and running distributed ledgers
+Sawtooth Lake
+    Sawtooth's original code name before Intel contributed Sawtooth to the Linux Foundation's Hyperledger consortium
 Seed Nodes or Seed Peers
     Initial hard-coded set of peers a node knows about. The list expands with the Gossip algorithm
 Solidity
