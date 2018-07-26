@@ -75,7 +75,7 @@ This setting is ignored in dev-mode consensus.
 
 Where do transactions originate?
 --------------------------------
-From the client. The client sends a transaction to a validator, in a batch with one or more transactions. The tranactions are sent to the validator, via the REST API, for the validator to add to the blockchain.
+From the client. The client sends a transaction to a validator, in a batch with one or more transactions. The transactions are sent to the validator, via the REST API, for the validator to add to the blockchain.
 
 Can the same transaction appear in multiple blocks?
 --------------------------------
@@ -84,7 +84,7 @@ No. Each block has a unique set of transaction. A block is composed of batches, 
 
 What mechanism prevents a rogue TP from operating and corrupting data?
 ------------------------------
-The design is as such that rogue TPs can't harm legitimate TPs. When you run a network of validators, each validator has to have same version of TPs. If a rogue TP is modifying your TPs data, the same TP has to run in the rest of the validators in the network, to be able to affect the blockchain. The validator where the rogue TP is working will constantly fail state validations(merkle hashes will be different with rest of the network). Hence, the bigger the validator network, the more robust it is against such attacks.
+The design is as such that rogue TPs can't harm legitimate TPs. When you run a network of validators, each validator has to have same version of TPs. If a rogue TP is modifying your TPs data, the same TP has to run in the rest of the validators in the network, to be able to affect the blockchain. The validator where the rogue TP is working will constantly fail state validations(Merkle hashes will be different with rest of the network). Hence, the bigger the validator network, the more robust it is against such attacks.
 
 What does this error mean: ``processor | [... DEBUG executor] transaction processors registered for processor type cryptomoji: 0.1`?
 -----------------------
@@ -134,7 +134,7 @@ Besides application-specific events, the Sawtooth default events are:
 Why is the Apply method in the TP handler called twice?
 --------------------------------------------
 That is by design. It can be called more than twice.
-For that rason, the TP handler must be deterministic
+For that reason, the TP handler must be deterministic
 (have the same output results given the same input).
 
 Do Transaction Processors run off-chain or on-chain?
