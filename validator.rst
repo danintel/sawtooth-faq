@@ -168,6 +168,7 @@ How can I improve Sawtooth performance?
 * Write the transaction processor in a thread-friendly programming language such as Rust or C++, not Python. Python is an interpretive language and therefore slower. It also suffers from the Global Interpreter Lock (GIL), which locks executing multiple threads to one thread at-a-time
 * Run multiple transaction processors per validator node for the same transaction family.  This is especially useful for TPs written in Python
 * Consider increasing the on-chain setting ``sawtooth.publisher.max_batches_per_block`` . Try a value of 200 batches per block to start with. This and other on-chain settings can be changed on-the-fly without impacting older blocks.
+* When available in the future, substitute PoET consensus with RAFT consensus.  RAFT is BFT instead of CFT, but it should perform better in exchange for lower fault tolerance
 * As you make changes, measure the impact with a performance tool such as Hyperledger Caliper
 
 What does this error mean: ``[... DEBUG client_handlers] Unable to find entry at address ...``?
