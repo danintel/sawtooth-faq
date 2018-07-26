@@ -40,7 +40,7 @@ BFT
 C
     Sign-up delay; number of blocks a validator has to wait before participating in elections (when using PoET)
 C Test
-    test that a block-claiming validator follows C, sign-up delay
+    A node must wait C blocks after admission before its blocks will be accepted. This is to prevent trying to game identities and some obscure corner scenarios
 CFT
     Crash Fault Tolerance. Consensus possible even with failed components
 Client
@@ -98,7 +98,7 @@ IntKey
 k
     Claim limit, number of blocks a validator can publish before it must sign-up again (when using PoET)
 K Test
-    Test a block-claiming validator follows K, claim limit before another sign-up
+    The node can publish at most K blocks before its peers require it to recertify itself
 Ledger
     Key-value store whose values are agreed on by all nodes (validators) in the network
 Liveness
@@ -173,6 +173,8 @@ Stale block
     A block proposed to be at the head of a blockchain, but lost to a competing block that became the head as decided by the consensus algorithm
 Static Nodes or Static Peers
     A hard-coded set of peers a node knows about, but may not change
+TEE
+    Trusted Execution Environment. Secure area of a microprocessor that guarantees confidentiality and integrity of code and data loaded.  SGX is an example of a TEE
 TF
     Transaction Family. Consists of the Client, State, and TP.
     See https://www.hyperledger.org/blog/2017/06/22/whats-a-transaction-family

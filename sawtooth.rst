@@ -200,6 +200,45 @@ Here's some simple sample applications that are in standalone source repositorie
 * Cryptomoji,  https://github.com/hyperledger/education-cryptomoji
 * Simple Supply Chain, https://github.com/hyperledger/education-sawtooth-simple-supply
 
+What is Sawtooth "global state agreement"?
+--------------------------------------------
+Sawtooth writes state to a verifiable structure called a "Radix Merkle Trie" and the verification part (the root hash) is included in the consensus process. That means that agreement is not just on the ordering of transactions but also on the resulting contents of the entire database.
+
+This guards against a variety of possible failures during the application of a transaction (e.g. different library version installed, a write failure, a local database corruption, numerical representation differences).
+
+Of course the feature is mainly targeted at protecting the integrity of a production network, but it is also helpful during development. Running applications over test networks can help identify nondeterminism and that will only be apparent if you form consensus over state.
+
+How can CPU vulnerabilities such as Spectre and Meltdown impact Sawtooth?
+-----------------------------------
+Sawtooth is a CPU-agnostic blockchain platform. It includes an optional TEE/SGX feature which enhances BFT protections for PoET.  PoET is designed following a defense-in-depth approach. There are three or so mechanisms that work in different aspects of the protocol independently from the TEE. This includes three tests performed by PoET:
+
+* c-test: A node must wait c blocks after admission before its blocks will be accepted - this is to prevent trying to game identities and some obscure corner scenarios.
+* K-test: The node can publish at most K blocks before its peers require it to recertify itself.
+* z-test: And perhaps most importantly a node may not publish at frequency greater than z
+
+Finally, should a node run a compromised consensus protocol, the main characteristic at risk would be *fairness*. It would not be able to impact *correctness* network-wide. That is, it cannot publish invalid transactions. If it does the other nodes will just reject those transactions and the associated block(s) and they will not commit network-wide.
+
+Are Docker containers required to run Sawtooth?
+--------------------------
+Docker is a quick and easy way to get Sawtooth up and running.
+However, unlike other Hyperledger ledgers, Sawtooth does not require Docker.
+Follow the instructions to run on Ubuntu at
+https://sawtooth.hyperledger.org/docs/core/releases/latest/app_developers_guide/ubuntu.html
+For specific apps, you can run without docker by manually running commands in a ``Dockerfile`` as follows:
+
+* Install Sawtooth on an Ubuntu following the instructions in the *Sawtooth Applications Developer's Guide*
+* Create the Genesis Block. See Guide in previous step
+* Install required packages listed under the RUN line in the ``Dockerfile`` for each container
+* Install your application's transaction processor and client.
+* Make sure your client app connects to the REST API at ``http://localhost:8008`` instead of ``http://rest-api:8008``
+* Make sure your transaction processor connects to ``tcp://localhost:4004`` instead of ``tcp://validator:4004``
+* Start the Validator, REST API, and Settings TP:
+- ``sudo -u sawtooth sawtooth-validator -vv &``
+- ``sudo -u sawtooth sawtooth-rest-api -vvv &``
+- ``sudo -u sawtooth settings-tp -vv &``
+* Start your application-specific transaction processor(s)
+* Start your application client
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
