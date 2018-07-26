@@ -160,6 +160,10 @@ Can I run two different Transaction Processors on the same Sawtooth Network?
 ---------------------
 Yes, you can run any number of transaction families, for example, you can r un the Seafood Supply Chain app and Bond Asset Settlement app on the same network.
 
+What happens if someone writes a fake Transaction Processor (with the same name, version, and address space) that can access and modify state data?
+---------------------------------
+The fake TP will cause the node to fork and it will be ignored by the rest of the network.
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
