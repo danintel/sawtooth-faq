@@ -83,10 +83,12 @@ Fork
     When network nodes have two competing nodes at the head of a blockchain
 Genesis Block
     First block in the blockchain (block 0). Usually has initial validator settings
-GS
-    Global State or Ledger. For Sawtooth this is stored internally as a Merkle Tree
+Global State Agreement
+    Verification of the global state (ledger) contents among peers. It is included in the Sawtooth consensus process
 Gossip
     A decentralized message broadcast mechanism that uses forwarding to random peers (Sawtooth Validator nodes)
+GS
+    Global State or Ledger. For Sawtooth this is stored internally as a Merkle Tree
 Hyperledger
     "Hyperledger is an open source collaborative effort created to advance cross-industry blockchain technologies. It is a global collaboration, hosted by The Linux Foundation." See: https://www.hyperledger.org/
 IAS
@@ -221,7 +223,7 @@ Z Test
 ZMQ (aka 0MQ, ZeroMQ)
     Zero Message Queue. A message transport API available on Linux; used by Sawtooth Validator nodes
 ZKP
-    Zero Knowledge Proof. One party proving they know a value x without conveying x
+    Zero Knowledge Proof. One party proving they know a value *x* without conveying *x*
 
 [PREVIOUS_ | HOME_ | NEXT_]
 

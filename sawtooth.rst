@@ -200,9 +200,9 @@ Here's some simple sample applications that are in standalone source repositorie
 * Cryptomoji,  https://github.com/hyperledger/education-cryptomoji
 * Simple Supply Chain, https://github.com/hyperledger/education-sawtooth-simple-supply
 
-What is Sawtooth "global state agreement"?
+What is Sawtooth *global state agreement*?
 --------------------------------------------
-Sawtooth writes state to a verifiable structure called a "Radix Merkle Trie" and the verification part (the root hash) is included in the consensus process. That means that agreement is not just on the ordering of transactions but also on the resulting contents of the entire database.
+Sawtooth writes state to a verifiable structure called a *Radix Merkle Trie* and the verification part (the root hash) is included in the consensus process. That means that agreement is not just on the ordering of transactions but also on the resulting contents of the entire database.
 
 This guards against a variety of possible failures during the application of a transaction (e.g. different library version installed, a write failure, a local database corruption, numerical representation differences).
 
@@ -233,9 +233,9 @@ For specific apps, you can run without docker by manually running commands in a 
 * Make sure your client app connects to the REST API at ``http://localhost:8008`` instead of ``http://rest-api:8008``
 * Make sure your transaction processor connects to ``tcp://localhost:4004`` instead of ``tcp://validator:4004``
 * Start the Validator, REST API, and Settings TP:
-- ``sudo -u sawtooth sawtooth-validator -vv &``
-- ``sudo -u sawtooth sawtooth-rest-api -vvv &``
-- ``sudo -u sawtooth settings-tp -vv &``
+  * ``sudo -u sawtooth sawtooth-validator -vv &``
+  * ``sudo -u sawtooth sawtooth-rest-api -vvv &``
+  * ``sudo -u sawtooth settings-tp -vv &``
 * Start your application-specific transaction processor(s)
 * Start your application client
 
