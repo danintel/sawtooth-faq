@@ -124,6 +124,11 @@ Must software developed with Sawtooth be open source?
 ------------------------
 IANAL; however, Sawtooth is released under the Apache 2 license, a permissive license, and so should be able to be used in both open and closed source applications.
 
+Can I copy a Sawtooth Core source file to include with my project?
+-----------------------------------
+Yes, if you follow the Apache 2 license terms, which include requiring preserving copyright and license notices.
+Sawtooth depends on other runtime software that has separate terms.
+
 I get a usage error running ``sawnet peers`` or ``sawnet list-blocks``
 ----------------------------------------------------
 These commands were added after the Sawtooth 1.0.4 release and are not available in earlier releases.
