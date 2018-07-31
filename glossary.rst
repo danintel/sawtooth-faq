@@ -100,7 +100,7 @@ IntKey
 Journal
     A group of Sawtooth Validator components that work together to handle batches and proposed blocks. This includes validating proposed blocks and publishing batches into blocks. See https://sawtooth.hyperledger.org/docs/core/nightly/master/architecture/journal.html
 k
-    Claim limit, number of blocks a validator can publish before it must sign-up again (when using PoET)
+    Claim limit, number of blocks a validator can publish before it must sign-up again (when using PoET). The default is k=50
 K Test
     The node can publish at most K blocks before its peers require it to recertify itself
 Ledger
