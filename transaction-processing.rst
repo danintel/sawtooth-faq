@@ -43,7 +43,7 @@ In any case, all nodes need to support the same set of versions for a specific T
 
 Can a Validator Node have multiple TPs (processes) running for the same TF?
 ---------------------------------
-Yes, one or more TPs, handling the same or different Transaction Families, may be running and register with a validator. 
+Yes, one or more TPs, handling the same or different Transaction Families, may be running and register with a validator.
 This is one way to achieve parallelism.
 Another way to achieve parallelism is to write a multi-threaded TP.
 The transactions are sent to transaction processors supporting the same transaction family in a round-robin fashion.
@@ -141,7 +141,7 @@ Do Transaction Processors run off-chain or on-chain?
 --------------------------------
 Sawtooth TPs run off-chain, as a process (or processes).
 
-My TP throws an exception of type ``InternalError``, but the ``Apply`` method gets stuck in an endless loop 
+My TP throws an exception of type ``InternalError``, but the ``Apply`` method gets stuck in an endless loop
 ---------------------------------
 ``InternalError`` is supposed to be a transient error (some internal fault like 'out of memory' that is temporary), and may succeed if retried.
 The validator retries the transaction with the TP and results in a loop.

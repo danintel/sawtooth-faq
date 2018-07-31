@@ -20,32 +20,32 @@ and installs the core packages
     $ sudo apt update
     $ aptitude install sawtooth python3-sawtooth-*
     $ aptitude search sawtooth
-    p  python3-sawtooth-block-info     - Sawtooth Block Info Transaction Processor 
-    iA python3-sawtooth-cli            - Sawtooth CLI                              
+    p  python3-sawtooth-block-info     - Sawtooth Block Info Transaction Processor
+    iA python3-sawtooth-cli            - Sawtooth CLI
     p  python3-sawtooth-config         - Sawtooth Config Transaction Processor
-    p  python3-sawtooth-ias-client     - Sawtooth IAS Client 
-    p  python3-sawtooth-ias-proxy      - Sawtooth IAS Proxy  
-    c  python3-sawtooth-identity       - Sawtooth Identity Transaction Processor   
-    iA python3-sawtooth-intkey         - Sawtooth IntKey Python Example            
-    p  python3-sawtooth-manage         - Sawtooth Lake Management Library          
-    iA python3-sawtooth-poet-cli       - Sawtooth PoET CLI                         
-    iA python3-sawtooth-poet-common    - Sawtooth PoET Common Modules              
-    iA python3-sawtooth-poet-core      - Sawtooth Core Consensus Module            
-    iA python3-sawtooth-poet-families  - Sawtooth Transaction Processor Families   
-    p  python3-sawtooth-poet-sgx       - Sawtooth PoET SGX Enclave                 
-    iA python3-sawtooth-poet-simulator - Sawtooth PoET Simulator Enclave           
-    iA python3-sawtooth-rest-api       - Sawtooth REST API                         
-    i  python3-sawtooth-sdk            - Sawtooth Python SDK                       
-    iA python3-sawtooth-settings       - Sawtooth Settings Transaction Processor   
-    iA python3-sawtooth-signing        - Sawtooth Signing Library                  
-    iA python3-sawtooth-validator      - Sawtooth Validator                        
-    iA python3-sawtooth-xo             - Sawtooth XO Example                       
-    i  sawtooth                        - Hyperledger Sawtooth Distributed Ledger   
-    p  sawtooth-admin-tools            - Sawtooth Admin Tools                      
+    p  python3-sawtooth-ias-client     - Sawtooth IAS Client
+    p  python3-sawtooth-ias-proxy      - Sawtooth IAS Proxy
+    c  python3-sawtooth-identity       - Sawtooth Identity Transaction Processor
+    iA python3-sawtooth-intkey         - Sawtooth IntKey Python Example
+    p  python3-sawtooth-manage         - Sawtooth Lake Management Library
+    iA python3-sawtooth-poet-cli       - Sawtooth PoET CLI
+    iA python3-sawtooth-poet-common    - Sawtooth PoET Common Modules
+    iA python3-sawtooth-poet-core      - Sawtooth Core Consensus Module
+    iA python3-sawtooth-poet-families  - Sawtooth Transaction Processor Families
+    p  python3-sawtooth-poet-sgx       - Sawtooth PoET SGX Enclave
+    iA python3-sawtooth-poet-simulator - Sawtooth PoET Simulator Enclave
+    iA python3-sawtooth-rest-api       - Sawtooth REST API
+    i  python3-sawtooth-sdk            - Sawtooth Python SDK
+    iA python3-sawtooth-settings       - Sawtooth Settings Transaction Processor
+    iA python3-sawtooth-signing        - Sawtooth Signing Library
+    iA python3-sawtooth-validator      - Sawtooth Validator
+    iA python3-sawtooth-xo             - Sawtooth XO Example
+    i  sawtooth                        - Hyperledger Sawtooth Distributed Ledger
+    p  sawtooth-admin-tools            - Sawtooth Admin Tools
     BB sawtooth-cxx-sdk                - Hyperledger Sawtooth C++ SDK
-    p  sawtooth-intkey-tp-go           - Sawtooth IntKey TP Go                     
-    p  sawtooth-noop-tp-go             - Sawtooth Noop TP Go                       
-    p  sawtooth-smallbank-tp-go        - Sawtooth Smallbank TP Go                  
+    p  sawtooth-intkey-tp-go           - Sawtooth IntKey TP Go
+    p  sawtooth-noop-tp-go             - Sawtooth Noop TP Go
+    p  sawtooth-smallbank-tp-go        - Sawtooth Smallbank TP Go
     p  sawtooth-xo-tp-go               - Sawtooth Go XO TP
 
 For more, up-to-date installation information see

@@ -164,7 +164,7 @@ Yes. The ``docker-compose.yaml`` needs the following lines for the validator con
 
 ::
 
-    expose:                                                   
+    expose:
       - 4004
     ports:
       - '4040:4004'

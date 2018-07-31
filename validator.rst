@@ -192,7 +192,7 @@ command line option.
 I start the validator, but it's stuck at this message: ``Waiting for transaction processor (sawtooth_settings, 1.0)``
 ---------------------------------
 The Sawtooth Settings TP is mandatory.  You probably want to also start the TP for your desired application.  To start the Settings TP, type:
-``sudo -u sawtooth settings-tp -v`` 
+``sudo -u sawtooth settings-tp -v``
 
 Why am I getting this validator message: ``Reject building on block 8c5ebbea: Validator is claiming blocks too frequently.``
 ---------------------
@@ -203,7 +203,7 @@ Probably the best way to fix that in your test network is to restart it with som
 
 Why do I get a ``Block validation failed`` message from the validator?
 ----------------
-Usually block validation fails because of something non-deterministic in the transaction processor.  This is usually because of the serialization method, which is usually because someone used JSON (use something like Protobufs or CBOR instead). Other common sources of non-determinism are relying on system time in the transaction processor logic. 
+Usually block validation fails because of something non-deterministic in the transaction processor.  This is usually because of the serialization method, which is usually because someone used JSON (use something like Protobufs or CBOR instead). Other common sources of non-determinism are relying on system time in the transaction processor logic.
 
 
 How do I generate the ``network_public_key`` and ``network_private_key`` in ``validator.toml`` ?
