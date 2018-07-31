@@ -82,7 +82,7 @@ EVM
 Fork
     When network nodes have two competing nodes at the head of a blockchain
 Genesis Block
-    First block in the blockchain (block 0). Usually has initial validator settings
+    First block in the blockchain (block 0). Has initial on-chain settings, such as the consensus algorithm and configuration information
 Global State Agreement
     Verification of the global state (ledger) contents among peers. It is included in the Sawtooth consensus process
 Gossip
