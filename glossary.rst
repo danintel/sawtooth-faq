@@ -97,6 +97,8 @@ In State
     See on-chain
 IntKey
     Integer key TP. Sample Sawtooth TP that implements set/increment/decrement/show operations
+Journal
+    A group of Sawtooth Validator components that work together to handle batches and proposed blocks. This includes validating proposed blocks and publishing batches into blocks.
 k
     Claim limit, number of blocks a validator can publish before it must sign-up again (when using PoET)
 K Test
