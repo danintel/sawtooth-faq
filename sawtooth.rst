@@ -94,6 +94,10 @@ This includes:
 For more on Sawtooth differentiation and philosophy, see
 https://www.hyperledger.org/blog/2016/11/02/meet-sawtooth-lake
 
+Should I use Sawtooth or other blockchain software for my application?
+---------------------------------------
+You should look for existing blockchain platforms that will fit your use case, sort them out by features, maturity (are they production ready?), and community support.  We hope Sawtooth fits your needs.
+
 How does a blockchain differ from a database?
 ------------------------------
 * A database has one master copy. A blockchain has multiple authoritative copies

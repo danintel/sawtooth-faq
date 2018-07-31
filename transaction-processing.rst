@@ -154,7 +154,7 @@ This error has been seen when the ownerships are wrong. Try setting ownership as
 Does the Transaction Processor know the current Transaction ID?
 ---------------------------------
 Yes. It is available in the header.
-The transaction header signature is the Transaction ID.
+The transaction header_signature is the Transaction ID.
 
 Can I run two different Transaction Processors on the same Sawtooth Network?
 ---------------------
