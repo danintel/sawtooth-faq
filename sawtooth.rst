@@ -190,7 +190,7 @@ One of the reasons is the homogeneous nature of Sawtooth Nodes. You don't have d
 
 Is there a Sawtooth security evaluation?
 -----------------------------
-Yes. This was required to be a part of the Linux Foundation's Hyperledger project.  See 
+Yes. This was required to be a part of the Linux Foundation's Hyperledger project.  See
 https://www.hyperledger.org/blog/2018/05/22/hyperledger-sawtooth-security-audit
 
 Does Sawtooth restore state when a peer restarts or when a peer is out-of-sync with the network?
