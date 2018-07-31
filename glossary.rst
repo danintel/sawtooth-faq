@@ -137,6 +137,9 @@ PDO
     Private Data Object. Blockchain objects that are kept private through encryption
 Permissioned Blockchain (aka Private Blockchain)
     participants must ID themselves to a network (e.g., Hyperledger Sawtooth or Hyperledger Fabric)
+Permissioning
+    For the validator, controls what nodes are allowed to connect.
+    For the transaction processor, controls what transactions and batches are accepted, based on signing keys. See https://sawtooth.hyperledger.org/docs/core/nightly/master/architecture/permissioning_requirement.html
 Permissionless Blockchain (aka Public Blockchain)
     anyone can join network (e.g., Bitcoin, Ethereum)
 PoET
