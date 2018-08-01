@@ -88,6 +88,12 @@ What is the difference between ``sawtooth-validator --peers {list}`` and ``sawto
 -------------------
 There are two peering modes in sawtooth: static and dynamic. The static peering mode requires the ``--peers`` arg to connect to other peer validators. Whereas, in the dynamic peering mode the ``--peers`` if specified will be processed and then use ``--seeds`` for the initial connection to the validator network and to start topology build-out (discovery and connection to more peer validators).
 
+For static peering do I need to specify all validator nodes, or just some of them?
+-------------------------------------
+For static, you need to specify all nodes. I recommend dynamic peering where you don't need to specify all of them, just a good sampling (with --seeds). The rest will be discovered. All dynamic peers have to specified by at least one other node (and perferably multiple).
+
+
+
 What files does Sawtooth use?
 -------------------
 ``/var/lib/sawtooth/``
