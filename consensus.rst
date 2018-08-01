@@ -47,11 +47,18 @@ That said, PoET SGX is preferred because of the additional SGX protections for g
 
 What cloud services offer SGX?
 ------------------------------
-SGX is available on IBM cloud.
+SGX is available on IBM cloud and Alibaba.
 Early access was available on Microsoft Azure, but not now.
-AWS does not yet offer SGX.
-For PoET SGX to function, one also needs Platform Services (PSW), which is not available from any cloud provider.
-Instead, one can use PoET Simulator, which is production-ready and provides CFT instead of BFT.
+
+Does PoET SGX function with SGX on cloud services?
+---------------------------------------------
+No. For PoET SGX to function, one also needs Platform Services (PSW), which is not available from any cloud provider.
+Instead, one can use PoET Simulator, which is also production-ready.
+But other software software that requires SGX may be deployed on cloud services.
+
+What cloud services support Sawtooth Blockchain?
+---------------
+AWS offers Sawtooth, and other cloud providers plan to offer Sawtooth on their cloud service.
 
 I get this error during PoET SGX registration: "Machine requires update (probably BIOS) for SGX compliance."
 -------------------
