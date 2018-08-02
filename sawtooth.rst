@@ -158,7 +158,7 @@ No, not now.
 Does Hyperledger Explorer support Sawtooth?
 ----------------------------------
 No, not now. There is a Sawtooth Explorer at
-https://www.hyperledger.org/blog/2017/06/22/whats-a-transaction-family
+https://github.com/hyperledger/sawtooth-explorer
 It may or may not be merged with Hyperledger Explorer in the future.
 Sawtooth Explorer provides visibility into the Sawtooth blockchain for node operators.
 
