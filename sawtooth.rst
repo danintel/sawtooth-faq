@@ -51,7 +51,7 @@ Are there any Sawtooth courses available?
 -----------------------------------------
 Yes.  EdX has a "Blockchain for Business" course that reviews Blockchain technology and includes an introduction to Sawtooth and other Hyperledger blockchain software.  See
 https://www.edx.org/course/blockchain-business-introduction-linuxfoundationx-lfs171x-0
-An intermediate course dedicated to Sawtooth Application developmentis under review for release.
+An intermediate course, edx @01 "Hyperledger Sawtooth for Application Developers" is under final review for release.
 
 Are there any example applications based on Sawtooth?
 -----------------------------------------------------
