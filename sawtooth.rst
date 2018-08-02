@@ -47,6 +47,12 @@ Hyperledger Sawtooth 1.0 Architecture and App Development (Bitwise IO, 2018, 31:
 You can find several more here:
   https://www.youtube.com/results?search_query=Hyperledger+Sawtooth
 
+Are there any Sawtooth courses available?
+-----------------------------------------
+Yes.  EdX has a "Blockchain for Business" course that reviews Blockchain technology and includes an introduction to Sawtooth and other Hyperledger blockchain software.  See
+https://www.edx.org/course/blockchain-business-introduction-linuxfoundationx-lfs171x-0
+An intermediate course dedicated to Sawtooth Application developmentis under review for release.
+
 Are there any example applications based on Sawtooth?
 -----------------------------------------------------
 A simple application that implements a cookie jar showing just the Sawtooth API:
