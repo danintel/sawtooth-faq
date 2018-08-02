@@ -26,6 +26,11 @@ What does the Settings TP do?
 The settings-tp provides on-chain configs to be applied to the Sawtooth Validators, so that you can change operational parameters without restarting the validators or the whole sawtooth network.
 Also, you could right your own settings-tp, that stores the settings the same way but enforces different rules on how they are updated.
 
+Is there an example where the Settings TP is used in another TP?
+------------------------------------
+Yes. check out ``sawtooth.identity.allowed_keys`` in the Identity TP:
+https://github.com/hyperledger/sawtooth-core/blob/master/families/identity/sawtooth_identity/processor/handler.py
+
 Can different Validator Nodes have different Transaction Processors running?
 -------------------
 No. The set of TPs must be the same for all validator nodes in a Sawtooth network.
