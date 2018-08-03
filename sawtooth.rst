@@ -47,11 +47,12 @@ Hyperledger Sawtooth 1.0 Architecture and App Development (Bitwise IO, 2018, 31:
 You can find several more here:
   https://www.youtube.com/results?search_query=Hyperledger+Sawtooth
 
-Are there any Sawtooth courses available?
+What courses are available on Hyperledger Sawtooth?
 -----------------------------------------
-Yes.  EdX has a "Blockchain for Business" course that reviews Blockchain technology and includes an introduction to Sawtooth and other Hyperledger blockchain software.  See
+* EdX has a "Blockchain for Business" course that reviews Blockchain technology and includes an introduction to Sawtooth and other Hyperledger blockchain software.  See
 https://www.edx.org/course/blockchain-business-introduction-linuxfoundationx-lfs171x-0
-An intermediate course, edx @01 "Hyperledger Sawtooth for Application Developers" is under final review for release.
+* An intermediate EdX course, edx 201 "Hyperledger Sawtooth for Application Developers" is under final review for release.  It will use Simple Supply Chain as an example, https://github.com/hyperledger/education-sawtooth-simple-supply
+* A self-paced course is Cryptomoji, which where students extend a Cryptokitties clone,  https://github.com/hyperledger/education-cryptomoji
 
 Are there any example applications based on Sawtooth?
 -----------------------------------------------------
@@ -217,8 +218,8 @@ Here's some simple sample applications that are in standalone source repositorie
 
 * Simple Wallet, https://github.com/askmish/sawtooth-simplewallet
 * Cookie Jar, https://github.com/danintel/sawtooth-cookiejar
-* Cryptomoji,  https://github.com/hyperledger/education-cryptomoji
-* Simple Supply Chain, https://github.com/hyperledger/education-sawtooth-simple-supply
+* Cryptomoji,  https://github.com/hyperledger/education-cryptomoji A self-pacsed course using a Cryptokitties clone written in Sawtooth
+* Simple Supply Chain, https://github.com/hyperledger/education-sawtooth-simple-supply  This will be the example in a future edX.org course on Sawtooth app development
 
 What is Sawtooth *global state agreement*?
 --------------------------------------------
