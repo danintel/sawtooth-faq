@@ -56,10 +56,6 @@ No. For PoET SGX to function, one also needs Platform Services (PSW), which is n
 Instead, one can use PoET Simulator, which is also production-ready.
 But other software software that requires SGX may be deployed on cloud services.
 
-What cloud services support Sawtooth Blockchain?
----------------
-AWS offers Sawtooth, and other cloud providers plan to offer Sawtooth on their cloud service.
-
 I get this error during PoET SGX registration: "Machine requires update (probably BIOS) for SGX compliance."
 -------------------
 During EPID provisioning your computer is trying to get an anonymous credential from Intel. If that process is failing one possibility is that there's a network issue like a proxy. A second possibility is that there's some firmware out of date and so the protocol isn't doing what the backend expects it to. You can check for a firmware / BIOS update for that platform.

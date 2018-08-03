@@ -260,6 +260,10 @@ For specific apps, you can run without docker by manually running commands in a 
 * Start your application-specific transaction processor(s). See the ``CMD`` line in the ``Dockerfile`` for your TP
 * Start your application client (see ``CMD`` in your client ``Dockerfile``)
 
+What cloud services support Sawtooth Blockchain?
+---------------
+AWS offers Sawtooth, and other cloud providers plan to offer Sawtooth on their cloud service.
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
