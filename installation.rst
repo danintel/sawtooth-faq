@@ -179,6 +179,12 @@ This is based on FreeBSD 11.1. Docker is not required to run Sawtooth.
 See also this bug for the status of the FreeBSD Sawtooth port:
 https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=228581
 
+I get this error while installing Sawtooth: ``Error starting userland proxy: listen tcp 0.0.0.0:8080: bind: address already in use``
+-----------------------------
+You already have a program running that uses TCP port 8080.  Either kill it or change the port you use to something else.
+To find the process(es) that have port 8080 open, type ``sudo lsof -t -i:8080``
+Then kill the processes. Check again that they have not restarted.  Also check that they are not Docker containers that have restarted.
+
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: sawtooth.rst
