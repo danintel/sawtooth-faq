@@ -22,6 +22,10 @@ Yes--they are same same consensus algorithm. The difference is the
 PoET Simulator also simulates SGX hardware, allowing PoET to run on non-SGX
 hardware.
 
+Is PoET Simulator suitable for production use?
+----------------------
+Yes.  It is for systems that do not have SGX and is intended for use in production.
+
 Are there plans to add other consensus algorithms?
 -------------------
 Yes. We are in the process of adding a fourth consensus, Raft, and may add other consensus engines.
