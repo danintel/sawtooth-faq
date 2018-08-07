@@ -222,6 +222,10 @@ Here's an example in Python:
     (public, secret) = zmq.curve_keypair()
     print(public, secret)
 
+I am seeing only one transaction per block in my blockchain. Why?
+------------------------------------
+The Sawtooth Validator combines transaciton batches when possible.  If you are using dev mode consensus, it is producing blocks as fast as possible, which will typically only contain one transaction. You can simulate what would happen on a real network by setting min and max block times for devmode. If you set min to 10 and max to 20, it will include many more transactions per block.  You can also combine transactions from your client by submitting multiple transactions in a batch.
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
