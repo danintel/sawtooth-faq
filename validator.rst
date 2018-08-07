@@ -107,6 +107,8 @@ What files does Sawtooth use?
 ``/etc/sawtooth/policy/``
     contains policy settings, if any
 
+If set these files are placed under directory ``$SAWTOOTH_HOME`` (except files under your home directory, ``~``.
+
 Why does the validator create large 1TByte files?
 -------------------
 The large 1TByte files in ``/var/lib/sawtooth/`` are "sparse" files, implemented with LMDB (Lightning Memory-mapped Database).  They are random-access files with mostly empty blocks. They do not actually consume 1Tbyte of storage.
