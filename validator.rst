@@ -113,6 +113,10 @@ Why does the validator create large 1TByte files?
 -------------------
 The large 1TByte files in ``/var/lib/sawtooth/`` are "sparse" files, implemented with LMDB (Lightning Memory-mapped Database).  They are random-access files with mostly empty blocks. They do not actually consume 1Tbyte of storage.
 
+How do I backup a large sparse file?
+-----------------------
+One method to backup it up is to use the ```tar -S``` option (sparse option). For example: ```tar cSf merkle-00.tar merkle-00.*``` . Some of the Linux file tools have similar options, such as ```cp --sparse``.
+
 What TCP ports does Sawtooth use?
 -------------------
 * 4004 is used by the Validator component bus, which uses ZMQ. The validator listens to requests on this port from the REST API and from one or more transaction processors.
