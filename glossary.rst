@@ -211,6 +211,8 @@ State Address
     See Address
 Sybil Attacks
     Using forged identities in a blockchain network to subvert the reputation system. Was named after the book and movie
+Transaction
+    A single entry in a the distributed ledger (blockchain). The contents are TF-dependent
 Transactor
     The Sawtooth client that creates a transaction, or the part that that communicates with the validator
 Validator
