@@ -29,6 +29,7 @@ Yes.  It is for systems that do not have SGX and is intended for use in producti
 Are there plans to add other consensus algorithms?
 -------------------
 Yes. We are in the process of adding a fourth consensus, Raft, and may add other consensus engines.
+Raft is CFT instead of BFT, and does not fork.
 
 What is unpluggable consensus?
 -------------------
