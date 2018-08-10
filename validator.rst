@@ -191,7 +191,7 @@ The reason was because the transaction processor for the value was not running s
 
 What does this error mean: ``sawtooth-validator[... ERROR cli] Cannot have a genesis_batch_file and an existing chain``?
 -----------------------
-You tried to create a new genesis block when you did not need to (because there already is a genesis block).
+You tried to create a new genesis block when you did not need to (because there already is a genesis block). To solve, this remove file ``/var/lib/sawtooth/genesis.batch.file`` and restart ``sawtooth-validator`` .
 
 I get this error when testing with a lot of validators: ``Max occupancy was not provided by transaction processor: ... Using default max occupancy: 10``
 ----------------------------------
