@@ -53,6 +53,7 @@ What courses are available on Hyperledger Sawtooth?
 https://www.edx.org/course/blockchain-business-introduction-linuxfoundationx-lfs171x-0
 * An intermediate EdX course, edx 201 "Hyperledger Sawtooth for Application Developers" is under final review for release.  It will use Simple Supply Chain as an example, https://github.com/hyperledger/education-sawtooth-simple-supply
 * A self-paced course is Cryptomoji, which where students extend a Cryptokitties clone,  https://github.com/hyperledger/education-cryptomoji
+* The Kerala Blockchain Academy offers a Certified Hyperledger Sawtooth Developer (CHD) program at IITMK, India. See http://www.iiitmk.ac.in/kba/
 
 Are there any example applications based on Sawtooth?
 -----------------------------------------------------
