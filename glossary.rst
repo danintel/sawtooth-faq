@@ -49,6 +49,8 @@ Consensus algorithm
     Method to decide what block to add next to a blockchain
 Classical Consensus
     Uses an agreement or voting mechanism (vs. Nakamoto-style consensus)
+Crypto
+    Cryptography--encryption, authentication, and hashing. It does not mean blockchain or digital currency
 Dapps
     Ethereum Decentralized Applications. These are written in Solidity and are supported by Sawtooth Seth
 Distributed Ledger
