@@ -92,6 +92,23 @@ Where is PoET 1.0 Specification?
 ----------------------------------
 https://sawtooth.hyperledger.org/docs/core/releases/1.0/architecture/poet.html
 
+Where is the PoET SGX Enclave configuration file?
+----------------------
+It is at ``/etc/sawtooth/poet_enclave_sgx.toml`` .
+It is only for configuring PoET SGX Enclave, not the PoET simulator (without SGX).
+A sample file is at
+https://github.com/hyperledger/sawtooth-poet/blob/master/sgx/packaging/poet_enclave_sgx.toml.example
+The configuration is documented at
+https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/configuring_sawtooth/poet_sgx_enclave_configuration_file.html
+
+What does ``Consensus not ready to build candidate block`` mean?
+---------------------------------
+This message is usually innocuous, it usually means that the validator isn't yet registered in the validator registry or that its previous registration has expired and it's waiting for the new one to commit. However, if that message is rampant in the logs on all but one node, that might mean that none of them can register. There's a few things that can cause that. 
+
+Unlikely but worth mentioning: are you mapping volumes into the containers? If all the validators are trying to use the same data file that would be bad. I doubt that's what is happening, but since you mentioned these are all on the same host it came to mind.
+
+More commonly, the defense-in-depth checks are too stringent during the initial launch.
+
 
 
 [PREVIOUS_ | HOME_ | NEXT_]
