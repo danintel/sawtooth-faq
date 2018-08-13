@@ -162,6 +162,12 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/config
 
 Instead, consider setting up separate virtual machines (such as with VirtualBox) for each validator.  This ensures isolation of files and ports for each Validator.
 
+What TCP ports should I restrict or allow through a firewall?
+-----------------------------------------------
+* TCP Port 4004 is used for internal validator / transaction processor communications. Restrict from outside use
+* TCP Port 8008 is used by the REST API for validator / client communications. Restrict from outside use if the client resides on the host
+* TCP Port 8080 is used to communicate between validator nodes. Allow
+
 What is the validator parallel scheduler?
 ---------------------------------------
 The validator has two schedulers--parallel and serial.
@@ -217,6 +223,7 @@ It is from the z-test, which is a defense-in-depth mechanism to catch validators
 If you have only one validator, you are bound to fail the z-test eventually.
 Probably the best way to fix that in your test network is to restart it with some different z-test settings.  This will effectively disable z-test:
 ``sawtooth.poet.ztest_minimum_win_count = 999999999``
+
 
 Why do I get a ``Block validation failed`` message from the validator?
 ----------------
