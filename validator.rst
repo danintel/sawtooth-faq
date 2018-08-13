@@ -172,6 +172,11 @@ The current default is ``serial``, but it may change to ``parallel`` in the futu
 For example:
 ``sawtooth-validator --scheduler parallel -vv`` .
 
+After a failed transaction, the validator stops processing further transactions. What can I do?
+-------------------------------
+You can run the validator in parallel processing mode. 
+For a serial scheduler, a failed transaction will be retried and no further transactions can be processed until the blocked transaction is processed successfully. Parallel scheduling will cause non-dependent transactions to be scheduled irrespective of the failed transaction.
+
 How can I improve Sawtooth performance?
 -----------------------------
 * First, for performance measurement or tuning, do not run the default "dev mode" consensus algorithm.  Run another one, such as PoET or PoET simulator. Dev mode is not for production use and excessive forks under heavy use degrades performance

@@ -1,4 +1,5 @@
 Unofficial FAQ: Sawtooth Transaction Processing
+
 ==================
 [PREVIOUS_ | HOME_ | NEXT_]
 
@@ -46,6 +47,10 @@ You have two choices:
 
 In any case, all nodes need to support the same set of versions for a specific Transaction Family.
 
+How do I upgrade a transaction processor version?
+---------------------------------
+Bump up the version number of the TP and register with the validator. Submit transactions to the TP with the updated version number. If you want to reuse the existing TP, then you'll need to stop the existing one and register the new one.
+
 Can a Validator Node have multiple TPs (processes) running for the same TF?
 ---------------------------------
 Yes, one or more TPs, handling the same or different Transaction Families, may be running and register with a validator.
@@ -58,7 +63,7 @@ Why use round-robin if the transaction processors are identical?
 This is useful when the when the validator's parallel scheduler is used.
 Multiple transactions can be processed in parallel when the inputs/outputs do not conflict.
 
-Where do I deplay transaction processors?
+Where do I deploy transaction processors?
 ------------------------------------
 Each validator node runs all transaction processors supported for the Sawtooth network.
 Sawtooth includes features for asynchronously deploying and upgrading the Transaction Processors.
