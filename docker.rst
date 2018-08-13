@@ -18,8 +18,9 @@ Sometimes, adding your login to group ``docker`` is recommended, such as with co
 
 For details, see https://docs.docker.com/install/linux/linux-postinstall/#manage-docker-as-a-non-root-user
 
+
 I get this error running ``docker-compose -f sawtooth-default.yaml up`` : ``Error: files exist, rerun with --force to overwrite existing files``
--------------------
+--------------------------------------
 This occurs when docker was not halted cleanly.  Run the following first:
 
 ::
@@ -87,8 +88,7 @@ Proxy configurations are firewall-dependent, but this might serve as a pattern:
     Environment="FTP_PROXY=http://proxy.mycompany.com:911/"
     Environment="NO_PROXY=.mycompany.com,10.0.0.0/8,192.168.0.0/16,localhost,127.0.0.0/8"
 
-I get this error running docker-compose:
-``ERROR: for validator  Cannot create container for service validator: Conflict. The container name "/validator" is already in use by container ...``
+I get this error running docker-compose: ``ERROR: for validator  Cannot create container for service validator: Conflict. The container name "/validator" is already in use by container ...``
 -------------------------------
 The container already exists.  You need to remove or rename it. To remove:
 
