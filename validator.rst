@@ -107,7 +107,7 @@ What files does Sawtooth use?
 ``/etc/sawtooth/policy/``
     contains policy settings, if any
 
-If set these files are placed under directory ``$SAWTOOTH_HOME`` (except files under your home directory, ``~``.
+If set these files are placed under directory ``$SAWTOOTH_HOME`` (except files under your home directory, ``~`` ).
 
 Why does the validator create large 1TByte files?
 -------------------
