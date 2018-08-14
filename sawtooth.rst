@@ -116,6 +116,8 @@ What does an immutable blockchain mean?
 ----------------------------------
 It means that blocks already committed cannot be "undone" or deleted. The block's transactions are in the blockchain forever. The only way to undo a transaction is to add another transaction to reverse a previous transaction. So if the value of ``a=1`` and a transaction sets ``a=2``, the only way to undo it is to set ``a=1`` again.  However regardless of what the current value of ``a`` is, all three of those transactions are permanently a part of the blockchain. The record of them will never be lost, and in fact you could rewind state to what it was in previous blocks if you needed.
 
+This is different from immutable variables. The difference is that with blockchain *transactions* are immutable.  With some programming languages (such as Rust), *variables* are immutable.
+
 How do I tell what version of Sawtooth is running?
 --------------------------------------------------
 ::
