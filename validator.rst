@@ -244,21 +244,6 @@ I am seeing only one transaction per block in my blockchain. Why?
 ------------------------------------
 The Sawtooth Validator combines transaciton batches when possible.  If you are using dev mode consensus, it is producing blocks as fast as possible, which will typically only contain one transaction. You can simulate what would happen on a real network by setting min and max block times for devmode. If you set min to 10 and max to 20, it will include many more transactions per block.  You can also combine transactions from your client by submitting multiple transactions in a batch.
 
-I get this error after setting up a Sawtooth network: ``Can't send message PING_RESPONSE back to ... because connection OutboundConnectionThread- tcp://192.168.0.100:8800 not in dispatcher``
-----------------------------------------------------
-The usual problem when you get this message is configuring the peer endpoints
-
-* If you are using Ubuntu directly instead of Docker, use the Validator's hostname or IP address instead of the default (``validator``), which only works with Docker, or ``localhost``, which may not be routable
-
-* If you are using Docker, make sure the Docker ports are mapped to the Ubuntu OS, and that the OS IP address/port is routable between the two machines. Check the ``expose:`` and ``ports:`` entries in your ``docker-compose.yaml`` file or similar file
-
-* Verify network connectivity to the remote machine with ``ping``
-
-* Verify port connectivity ``telnet aremotehostname 8800`` (replace ``aremotehostname`` with the remote peer's hostname or IP address). Control-c out if it connects
-
-* Verify network and port connectivity in the other direction (remote to local)
-
-* Check peer configuration in your local and remote ``/etc/sawtooth/validator.toml`` files. Check the ``peering`` and ``endpoint`` lines. Check the ``seeds`` line (for dynamic peering) or ``peers`` line (for static peering)
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
