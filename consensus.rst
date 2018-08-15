@@ -101,6 +101,11 @@ https://github.com/hyperledger/sawtooth-poet/blob/master/sgx/packaging/poet_encl
 The configuration is documented at
 https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/configuring_sawtooth/poet_sgx_enclave_configuration_file.html
 
+I run ``sudo -u sawtooth poet registration create . . .`` and get ``Permission denied: 'poet_genesis.batch'`` error
+-----------------------------------------
+Change to a sawtooth user-writable directory before running the command: ``cd /tmp``
+
+
 What does ``Consensus not ready to build candidate block`` mean?
 ---------------------------------
 This message is usually innocuous, it usually means that the validator isn't yet registered in the validator registry or that its previous registration has expired and it's waiting for the new one to commit. However, if that message is rampant in the logs on all but one node, that might mean that none of them can register. There's a few things that can cause that. 
