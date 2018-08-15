@@ -173,7 +173,9 @@ https://github.com/hyperledger/sawtooth-core/blob/master/BUILD.md
 
 How do I install Sawtooth on FreeBSD?
 ------------------------------
-Sawtooth is supported for Ubuntu Linux and should run on other \*IX-like systems.  The following blog may help:
+Sawtooth is supported for Ubuntu Linux with binary packages.
+For other other \*IX-like systems, including FreeBSD, you can build from source.
+The following blog may help:
 https://wiki.freebsd.org/HyperledgerSawtooth
 This is based on FreeBSD 11.1. Docker is not required to run Sawtooth.
 See also this bug for the status of the FreeBSD Sawtooth port:
