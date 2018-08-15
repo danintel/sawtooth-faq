@@ -274,6 +274,10 @@ What cloud services support Sawtooth Blockchain?
 ---------------
 AWS offers Sawtooth, and other cloud providers plan to offer Sawtooth on their cloud service.
 
+Does Sawtooth support Ethereum?
+-------------------------
+Yes, through Seth, Sawtooth's Ethereum-compatible Transaction Processor. It implements a Ethereum Virtual Machine (EVM) so Seth can run Ethereum Dapps written in Solidity.  Seth uses Hyperledger Burrow as the code base.
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
