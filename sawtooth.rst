@@ -28,6 +28,8 @@ Sawtooth Application Developer's Guide
     https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide.html
 Sawtooth Architecture
     https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture.html
+Sawtooth White Paper
+    https://www.hyperledger.org/wp-content/uploads/2018/01/Hyperledger_Sawtooth_WhitePaper.pdf
 Sawtooth chat main channel (several others Sawtooth channels exist here)
     https://chat.hyperledger.org/channel/sawtooth
 Sawtooth mailing list (not as popular as the chat channel above)
