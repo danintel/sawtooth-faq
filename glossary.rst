@@ -63,7 +63,7 @@ Duplicity
 	A faulty node sending deceitful or inconsistent messages to other nodes
 CSV
     Comma separated values. E.g.: ``a,b,c,d``
-Curve325519
+Curve25519
     An ECDH (Elliptic Curve Diffie-Hellman) key agreement protocol used by Sawtooth. Used by validators in ZMQ connections to exchange keys
 Data model
     Can be any format (CSV, protobufs, etc.)
