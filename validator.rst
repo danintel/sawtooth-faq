@@ -92,8 +92,6 @@ For static peering do I need to specify all validator nodes, or just some of the
 -------------------------------------
 For static, you need to specify all nodes. I recommend dynamic peering where you don't need to specify all of them, just a good sampling (with --seeds). The rest will be discovered. All dynamic peers have to specified by at least one other node (and perferably multiple).
 
-
-
 What files does Sawtooth use?
 -------------------
 ``/var/lib/sawtooth/``
