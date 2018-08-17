@@ -68,7 +68,7 @@ Curve25519
 Data model
     Can be any format (CSV, protobufs, etc.)
 Deterministic
-    Means consistent, or the same. For Sawtooth, serialization must be deterministic, meaning the encoding is always in the same order and always the same for the same data. Many JSON libraries do not encode data deterministically
+    Means consistent, or the same. For Sawtooth, serialization must be deterministic, meaning the encoding is always in the same order and always the same for the same data. This excludes timestamps and counters in your data. Many JSON libraries do not encode data deterministically
 EPID
     Enhanced Privacy ID. An anonymous credential system; used by PoET
 Enclave
