@@ -176,6 +176,11 @@ The port might be a command line option for the TP.
 Otherwise, you need to modify the source if the validator port is hard-coded
 for your TP.
 
+I get ``You cannot remove a running container`` error removing docker containers
+-------------------
+Before running ``docker rm $(docker ps -aq)``, first stop the running containers with 
+``sudo docker stop $(docker ps -q)``
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
