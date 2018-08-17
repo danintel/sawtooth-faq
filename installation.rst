@@ -203,6 +203,12 @@ The usual problem when you get this message is configuring the peer endpoints
 
 * Check peer configuration in your local and remote ``/etc/sawtooth/validator.toml`` files. Check the ``peering`` and ``endpoint`` lines. Check the ``seeds`` line (for dynamic peering) or ``peers`` line (for static peering)
 
+I get ``unmet dependencies`` errors installing Sawtooth on Ubuntu 18.04 LTS.
+---------------------------
+Ubuntu 18.04 LTS is not supported yet.  Use Ubuntu 16.04 LTS for now.
+You can also install Sawtooth with Docker.  See:
+https://sawtooth.hyperledger.org/docs/core/releases/latest/app_developers_guide/docker.html
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
