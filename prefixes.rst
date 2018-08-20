@@ -16,8 +16,8 @@ The remainder of the address is TF-specific and defined for each TF.
 All data payloads are encoded in base64 after serializing.
 Sawtooth headers are serialized with Protobuf.
 
-For base" TF specifications, see
-https://sawtooth.hyperledger.org/docs/core/releases/1.0/transaction_family_specifications/
+For base TF specifications, see
+https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_specifications/
 
 +---------------+-----------+--------+-----------------------------------------+
 | TRANSACTION   | SERIAL-   |        |                                         |
