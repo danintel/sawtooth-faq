@@ -25,7 +25,7 @@ Just the Settings TP. All the other TPs are optional.
 What does the Settings TP do?
 -------------------
 The settings-tp provides on-chain configs to be applied to the Sawtooth Validators, so that you can change operational parameters without restarting the validators or the whole sawtooth network.
-Also, you could right your own settings-tp, that stores the settings the same way but enforces different rules on how they are updated.
+Also, you could write your own settings-tp, that stores the settings the same way but enforces different rules on how they are updated.
 
 Is there an example where the Settings TP is used in another TP?
 ------------------------------------

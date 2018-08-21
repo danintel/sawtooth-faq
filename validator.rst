@@ -215,6 +215,10 @@ I start the validator, but it's stuck at this message: ``Waiting for transaction
 The Sawtooth Settings TP is mandatory.  You probably want to also start the TP for your desired application.  To start the Settings TP, type:
 ``sudo -u sawtooth settings-tp -v``
 
+Can I change Sawtooth settings after genesis?
+-------------------------------
+Yes, but you are limited to using the rule that is currently set for changing settings. This is handled by the Settings TP.
+
 Why am I getting this validator message: ``Reject building on block 8c5ebbea: Validator is claiming blocks too frequently.``
 ---------------------
 It is from the z-test, which is a defense-in-depth mechanism to catch validators that are publishing blocks with an improbable frequency. Unfortunately the defaults we chose for that statistical test aren't well suited for tiny networks (that feature is really intended for added security in large production networks).
@@ -241,6 +245,10 @@ Here's an example in Python:
 I am seeing only one transaction per block in my blockchain. Why?
 ------------------------------------
 The Sawtooth Validator combines transaciton batches when possible.  If you are using dev mode consensus, it is producing blocks as fast as possible, which will typically only contain one transaction. You can simulate what would happen on a real network by setting min and max block times for devmode. If you set min to 10 and max to 20, it will include many more transactions per block.  You can also combine transactions from your client by submitting multiple transactions in a batch.
+
+What does ``Block publishing suspended until new chain head arrives'' mean?
+---------------------
+It means that a new block arrived and the receiving validator wants to stop creating the block it was working on until it finds the new chain head.
 
 
 [PREVIOUS_ | HOME_ | NEXT_]
