@@ -216,7 +216,7 @@ Are there any examples of Sawtooth permissions?
 * transaction key permissioning controls what clients can submit transactions, based on signing keys (``transactor.transaction_signer``, ``transaction.transaction_signer.<name of TP>``, ``transactor.batch_signer`` )
 * validation key permissioning controls what nodes are allowed to connect to the Sawtooth network (``sawtooth.identity.allowed_keys``
 * transaction family permissioning controls what TFs are supported by this Sawtooth network, ``sawtooth.validator.transaction_families``
-* then there are policies and roles from the optional Sawtooth Identity Transaciton Processor, documented at https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_specifications/identity_transaction_family.html
+* then there are policies and roles from the optional Sawtooth Identity Transaction Processor, documented at https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_specifications/identity_transaction_family.html
 
 Does Sawtooth restore state when a peer restarts or when a peer is out-of-sync with the network?
 --------------------
