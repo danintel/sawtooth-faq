@@ -184,7 +184,7 @@ The fake TP will cause the node to fork and it will be ignored by the rest of th
 
 Why is there no timestamp in a transaction header or block?
 --------------------------------------------------
-Using timestamps in a distributed network is troublesome--mostly due to complex clock synchronization issues among peers. You could add a timestamp in your transaction family's tranaction payload. If you want timestamps with blocks, refer to the BlockInfo Transaction Family. See: https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_specifications/blockinfo_transaction_family.html
+Using timestamps in a distributed network is troublesome--mostly due to complex clock synchronization issues among peers. You could add a timestamp in your transaction family's transaction payload. If you want timestamps with blocks, refer to the BlockInfo Transaction Family. See: https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_specifications/blockinfo_transaction_family.html
 
 
 [PREVIOUS_ | HOME_ | NEXT_]
