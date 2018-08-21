@@ -64,6 +64,7 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_sp
 | supply_chain  | Protobuf  | 3400de | Asset (Fish) Supply Chain example app   |
 +---------------+-----------+--------+-----------------------------------------+
 | transfer-chain| JSON-UTF8 | 19d832 | Simple Tuna Supply Chain app            |
+|               |           |        | Used for edX LFS171x class              |
 +---------------+-----------+--------+-----------------------------------------+
 | simplewallet  | CSV-UTF8  | 7e2664 | Simple Wallet minimal example           |
 +---------------+-----------+--------+-----------------------------------------+
