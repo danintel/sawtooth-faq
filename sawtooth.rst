@@ -68,6 +68,17 @@ A more complex example that implements a supply chain example and demonstrates m
 An example application that shows how to  exchange quantities of customized "Assets" with other users on the blockchain:
   https://github.com/hyperledger/sawtooth-marketplace
 
+What is the Hyperledger Sawtooth Application Developers Forum?
+--------------------------------------
+It is to provide opportunities to discuss technical application development questions with developers experienced with Hyperledger Sawtooth.
+The forum is held on Wednesdays 9-10am Central Time using Zoom video conferencing.
+
+* Join from PC, Mac, Linux, iOS or Android: https://zoom.us/j/560395876
+* Or iPhone one-tap : US: +16699006833,,560395876# or +14086380968,,560395876# 
+* Or Telephone: Dial (for higher quality, dial a number based on your current location): US: +1 669 900 6833 or +1 408 638 0968 or +1 646 876 9923 
+* Zoom Meeting ID: 560 395 876
+* International numbers available: https://zoom.us/u/eAsMx0wpc
+
 What is the difference between Hyperledger and Sawtooth?
 --------------------------------------------------------
 * Sawtooth (or Hyperledger Sawtooth) is a blockchain implementation initially contributed by Intel Corporation and now maintained by the Sawtooth community.  Sawtooth does not have to be deployed on Intel hardware; however, Sawtooth does include the optional PoET consensus module, which uses Intel SGX to provide an efficient, Byzantine Fault Tolerant consensus mechanism that does not rely on expensive and inefficient mining algorithms. See https://www.hyperledger.org/projects/sawtooth
