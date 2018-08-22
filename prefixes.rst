@@ -11,6 +11,7 @@ Here is an unofficial list of some Transaction Family (TF) prefixes.
 There is no central registry, most or all of these TFs are found on github.
 Sawtooth addresses are 70 hex characters.
 The prefix is either the first 6 characters of the SHA-512 hash of the namespace, or, for some base namespaces, a "hex word".
+The validator_registry uses a SHA-256 hash.
 The remainder of the address is TF-specific and defined for each TF.
 
 All data payloads are encoded in base64 after serializing.
@@ -27,8 +28,8 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_sp
 +---------------+-----------+--------+-----------------------------------------+
 | identity      | Protobuf  | 00001d | Validator Identity for TP/Validator keys|
 +---------------+-----------+--------+-----------------------------------------+
-| validator\_   | Protobuf  | 6a4372 | Validator Registry,                     |
-| registry      |           |        | to add new validators                   |
+| validator\_   | Protobuf  | 6a4372 | PoET Validator Registry. Used by PoET   |
+| registry      |           |        | consensus to track other validators     |
 +---------------+-----------+--------+-----------------------------------------+
 | blockinfo     | Protobuf  | 00b10c | Validator Block Info.  Used for SETH    |
 |               |           |        |                                         |
