@@ -114,6 +114,11 @@ Unlikely but worth mentioning: are you mapping volumes into the containers? If a
 
 More commonly, the defense-in-depth checks are too stringent during the initial launch.
 
+How do I change the Sawtooth consensus algorithm?
+---------------------------
+Use the ``sawset proposal create`` subcommand to modify ``sawtooth.consensus.algorithm``.  For an example, see https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/creating_sawtooth_network.html
+The initial default algorithm is "dev mode", which is not for production use.
+
 
 
 [PREVIOUS_ | HOME_ | NEXT_]
