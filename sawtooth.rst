@@ -136,7 +136,7 @@ How do I tell what version of Sawtooth is running?
 ::
 
     $ sawtooth --version
-    sawtooth-cli (Hyperledger Sawtooth) version 1.0.4
+    sawtooth-cli (Hyperledger Sawtooth) version 1.0.5
 
 What's the difference between the ``sawtooth``, ``sawadm``, ``sawnet``, and ``sawset`` commands?
 -------------------------------
@@ -162,7 +162,7 @@ Sawtooth depends on other runtime software that has separate terms.
 
 I get a usage error running ``sawnet peers`` or ``sawnet list-blocks``
 ----------------------------------------------------
-These commands were added after the Sawtooth 1.0.4 release and are not available in earlier releases.
+These commands were added after the Sawtooth 1.0.5 release and are not available in earlier releases.
 
 How do I detect a forked blockchain in a Sawtooth network?
 -------------------------------------------------
