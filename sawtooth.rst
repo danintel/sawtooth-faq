@@ -71,7 +71,7 @@ An example application that shows how to  exchange quantities of customized "Ass
 What is the Hyperledger Sawtooth Application Developers Forum?
 --------------------------------------
 It is to provide opportunities to discuss technical application development questions with developers experienced with Hyperledger Sawtooth.
-The forum is held on Wednesdays 9-10am Central Time (15:00 UTC) using Zoom video conferencing.
+The forum is held on Wednesdays 9-10am Central Time using Zoom video conferencing.
 
 * Join from PC, Mac, Linux, iOS or Android: https://zoom.us/j/560395876
 * Or iPhone one-tap : US: +16699006833,,560395876# or +14086380968,,560395876# 
