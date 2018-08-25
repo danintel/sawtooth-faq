@@ -110,7 +110,7 @@ What does ``Consensus not ready to build candidate block`` mean?
 ---------------------------------
 This message is usually innocuous, it usually means that the validator isn't yet registered in the validator registry or that its previous registration has expired and it's waiting for the new one to commit. However, if that message is rampant in the logs on all but one node, that might mean that none of them can register. There's a few things that can cause that. 
 
-Unlikely but worth mentioning: are you mapping volumes into the containers? If all the validators are trying to use the same data file that would be bad. I doubt that's what is happening, but since you mentioned these are all on the same host it came to mind.
+Unlikely but worth mentioning: are you mapping volumes into the containers? If all the validators are trying to use the same data file that would be bad. That would not happen unless all the nodes are on the same host.
 
 More commonly, the defense-in-depth checks are too stringent during the initial launch.
 
