@@ -115,6 +115,10 @@ How do I backup a large sparse file?
 -----------------------
 One method to backup it up is to use the ```tar -S``` option (sparse option). For example: ```tar cSf merkle-00.tar merkle-00.*``` . Some of the Linux file tools have similar options, such as ```cp --sparse``.
 
+For LMDB databases, the database should be backed up when it is quiet (no updates). If the database is "live", it's best to do a backup by dumping it to a file. That will avoid inconsistencies from backups during the middle of updates. Use ``mdb_dump`` from package ``lmdb-utils`` . For example,
+``mdb_dump -n /var/lib/sawtooth/block-00.lmdb >block-00.lmdb.dump``
+Use ``mdb_load -n -f block-00.lmdb.dump`` to restore the database.
+
 What TCP ports does Sawtooth use?
 -------------------
 * 4004 is used by the Validator component bus, which uses ZMQ. The validator listens to requests on this port from the REST API and from one or more transaction processors.
