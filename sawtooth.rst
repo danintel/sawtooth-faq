@@ -298,6 +298,11 @@ Does Sawtooth support Ethereum?
 -------------------------
 Yes, through Seth, Sawtooth's Ethereum-compatible Transaction Processor. It implements a Ethereum Virtual Machine (EVM) so Seth can run Ethereum Dapps written in Solidity.  Seth uses Hyperledger Burrow as the code base.
 
+What is the "head node" or "master node" in Sawtooth?
+---------------
+Sawtooth has no concept of a "head node" or "master node".
+Once multiple nodes are up and running, each node has the same genesis block (block 0) and treats all other nodes as peers.
+The first validator node on the network has no special meaning, other than being the node that created the genesis block.
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
