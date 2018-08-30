@@ -183,7 +183,9 @@ Before running ``docker rm $(docker ps -aq)``, first stop the running containers
 
 How do I run Sawtooth with Kubernetes?
 -------------------------------------------
-Using Sawtooth with Kubernetes documentation is available here:
+Kubernetes requires VirtualBox or some other virtual machine software.
+You need to install Kubernetes on the host machine, not a guest virtual machine. For example, you cannot install Kubernetes on a VirtualBox VM.
+Documentation on using Kubernetes for Sawtooth on Linux or Mac hosts is available here:
 https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/kubernetes.html
 https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/creating_sawtooth_network.html#kubernetes-start-a-multiple-node-sawtooth-network
 
