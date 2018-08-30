@@ -180,7 +180,8 @@ It means the blockchains have no blocks in common, including the genesis block. 
 
 Does Hyperledger Composer support Sawtooth?
 ---------------------------
-No, not now.
+No.  IBM has also reduced Composer development to maintenance mode. See:
+https://lists.hyperledger.org/g/composer/message/125
 
 Does Hyperledger Explorer support Sawtooth?
 ----------------------------------
