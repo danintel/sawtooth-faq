@@ -58,6 +58,10 @@ This is one way to achieve parallelism.
 Another way to achieve parallelism is to write a multi-threaded TP.
 The transactions are sent to transaction processors supporting the same transaction family in a round-robin fashion.
 
+What are inputs and outputs in Sawtooth?
+-------------------------------------
+In a Sawtooth transaction, inputs list what are the inputs for the transaction (what addresses the TP can read). Outputs list what are the outputs for the transaction (what addresses the TP can modify). The inputs and outputs lists are specific to a transaction. See https://sawtooth.hyperledger.org/docs/core/releases/1.0/architecture/transactions_and_batches.html
+
 Why use round-robin if the transaction processors are identical?
 --------------------------------------------------------
 This is useful when the when the validator's parallel scheduler is used.
