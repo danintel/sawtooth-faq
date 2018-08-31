@@ -141,6 +141,15 @@ Besides application-specific events, the Sawtooth default events are:
 ``sawtooth/state-delta``
     All state changes that occurred for a block at a specific address
 
+How do I subscribe to Sawtooth events?
+-----------------------------
+See the documentation at
+https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/event_subscriptions.html
+Here are examples in Python and Javascript:
+
+* https://github.com/danintel/sawtooth-cookiejar/blob/master/events/events_client.py
+* https://github.com/hyperledger/sawtooth-supply-chain/blob/master/ledger_sync/subscriber/index.js
+
 Why is the Apply method in the TP handler called twice?
 --------------------------------------------
 That is by design. It can be called more than twice.
