@@ -24,13 +24,21 @@ sawtooth.config.authorization_type
     Example setting--never used
 
 sawtooth.consensus.algorithm
-    Consensus algorithm (e.g., ``poet``)
+    Consensus algorithm (e.g., ``poet`` or ``devmode`` or ``raft``)
 sawtooth.consensus.block_validation_rules
     Consensus validation rules
 sawtooth.consensus.max_wait_time
     Maximum consensus wait time, in seconds
 sawtooth.consensus.min_wait_time
     Minimum consensus wait time, in seconds
+sawtooth.consensus.raft.peers
+    JSON list of each peer node's public key. Only required RAFT setting.
+sawtooth.consensus.raft.heartbeat_tick
+    RAFT consensus heartbeat tick, in seconds. E.g., 150
+sawtooth.consensus.raft.election_tick.
+    RAFT consensus election tick, in seconds. E.g., 1500
+sawtooth.consensus.raft.period
+    RAFT consensus period, in microseconds. E.g., 3
 sawtooth.consensus.valid_block_publishers
     List of valid block publishers
 
