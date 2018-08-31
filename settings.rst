@@ -24,74 +24,84 @@ sawtooth.config.authorization_type
     Example setting--never used
 
 sawtooth.consensus.algorithm
-    Consensus algorithm (e.g., ``poet`` or ``devmode`` or ``raft``)
+    Consensus algorithm (e.g., ``poet`` (SGX or simulator) or ``devmode`` (default) or ``raft`` or any other pluggable consensus engine you provide)
 sawtooth.consensus.block_validation_rules
-    Consensus validation rules
+    Lists validation rules to use in deciding what blocks to add to the blockchain.
+    See https://sawtooth.hyperledger.org/docs/core/nightly/master/architecture/injecting_batches_block_validation_rules.html
 sawtooth.consensus.max_wait_time
-    Maximum consensus wait time, in seconds
+    Maximum devmode consensus wait time, in seconds
 sawtooth.consensus.min_wait_time
-    Minimum consensus wait time, in seconds
-sawtooth.consensus.raft.peers
-    JSON list of each peer node's public key. Only required RAFT setting.
+    Minimum devmode consensus wait time, in seconds
+sawtooth.consensus.raft.election_tick
+    RAFT consensus election tick, in seconds. E.g., 1500
 sawtooth.consensus.raft.heartbeat_tick
     RAFT consensus heartbeat tick, in seconds. E.g., 150
-sawtooth.consensus.raft.election_tick.
-    RAFT consensus election tick, in seconds. E.g., 1500
+sawtooth.consensus.raft.peers
+    JSON list of each peer node's public key. Only required RAFT setting
 sawtooth.consensus.raft.period
     RAFT consensus period, in microseconds. E.g., 3
 sawtooth.consensus.valid_block_publishers
-    List of valid block publishers
+    List of public keys for allowed block publishers. For devmode
 
 sawtooth.gossip.time_to_live
-    Expiration time for the Gossip node communication protocol 
+    Expiration time for the Gossip node communication protocol
 
 sawtooth.identity.allowed_keys
     List of nodes allowed to connect to the Sawtooth network
 
 sawtooth.poet.enclave_module_name
-    Python module name implementing the PoET enclave.  Set to ``sawtooth_poet_sgx.poet_enclave_sgx.poet_enclave -o config.batch``
+    Python module name implementing the PoET enclave.
+    Set to ``sawtooth_poet_sgx.poet_enclave_sgx.poet_enclave -o config.batch``
 sawtooth.poet.initial_wait_time
-    Initial time to wait in seconds before proposing a block (e.g., 25)
+    For C Test: initial time to wait in seconds before proposing a block (e.g., 25; default 3000)
 sawtooth.poet.key_block_claim_limit
-    Initial time to wait in seconds before proposing a block (e.g., 25)
+    For K Test: maximum number of blocks a validator may claim with a PoET keypair before it needs to refresh its signup information (default 250)
 sawtooth.poet.population_estimate_sample_size
-    Number of blocks in the chain to take a population sample (e.g., 50)
+    Sample size, in blocks, to compute the local mean wait time (default 50).
+    The local mean wait time multipled by random_float(0,1) yields the PoET duration time
 sawtooth.poet.report_public_key_pem
-    Public key used by Validator Registry TP to verify attestation reports. From ``/etc/sawtooth/ias_rk_pub.pem``
+    Public key used by Validator Registry TP to verify attestation reports.
+    From ``/etc/sawtooth/ias_rk_pub.pem`` or (for simulator) ``/etc/sawtooth/simulator_rk_pub.pem``
 sawtooth.poet.target_wait_time
-    Target time to wait in seconds before proposing a block (e.g., 5)
-sawtooth.poet.valid_enclave_measurements
-    Adds the enclave measurement for your enclave to the blockchain for the validator registry transaction processor to use to check signup information. From ``poet enclave --enclave-module sgx measurement``
+    Target time to wait in seconds before proposing a block (e.g., 5; default 20)
 sawtooth.poet.valid_enclave_basenames
-    Adds the enclave basename for your enclave to the blockchain for the validator registry transaction processor to use to check signup information. From ``poet enclave --enclave-module sgx basename``
+    Adds the enclave basename for your enclave to the blockchain for the validator registry transaction processor to use to check signup information.
+    From ``poet enclave --enclave-module sgx basename``
+sawtooth.poet.valid_enclave_measurements
+    Adds the enclave measurement for your enclave to the blockchain for the validator registry transaction processor to use to check signup information.
+    From ``poet enclave --enclave-module sgx measurement`` or (for simulator) ``poet enclave measurement``
 sawtooth.poet.ztest_minimum_win_count
-    Minimum win count for Z Test, to test a node is not winning too frequently
+    For Z Test: minimum win count, to test a node is not winning too frequently
 
 sawtooth.publisher.max_batches_per_block
     Maximum batches allowed per block (e.g., 100)
 
-sawtooth.settings.vote.authorized_keys
-    List of public keys for authorized voters for on-chain settings. The initial setting is in the Genesis Block, Block 0
-sawtooth.settings.vote.proposals
-    List of proposals to make changes to settings (``SettingCandidates`` protobuf base64-encoded)
 sawtooth.settings.vote.approval_threshold
     Minimum number of votes required to accept or reject a proposal (default 1)
+sawtooth.settings.vote.authorized_keys
+    List of public keys for authorized voters for on-chain settings.
+    The initial setting is in the Genesis Block, Block 0
+sawtooth.settings.vote.proposals
+    List of proposals to make changes to settings (base64-encoded ``SettingCandidates`` protobuf)
 
 sawtooth.validator.batch_injectors
-    Comma-separated list of batch injectors to load. Parsed by validator at beginning of block publishing for each block
+    Comma-separated list of batch injectors to load.
+    Parsed by validator at beginning of block publishing for each block
 sawtooth.validator.block_validation_rules
     On-chain validation rules; enforced by the block validator
-sawtooth.validator.transaction_families
-    List of permitted transaction families
 sawtooth.validator.max_transactions_per_block
     Maximum transactions allowed per block
+sawtooth.validator.transaction_families
+    List of permitted transaction families
 
 transactor.batch_signer
     Public keys of authorized batch signers
 transactor.transaction_signer
     Public keys of authorized transaction signers
 transactor.transaction_signer.<transaction family name>
-    Public keys of authorized transaction signers for a transaction processor.  For a partial list of transaction family names, see https://github.com/danintel/sawtooth-faq/blob/master/prefixes.rst 
+    Public keys of authorized transaction signers for a transaction processor.
+    For a partial list of transaction family names,
+    see https://github.com/danintel/sawtooth-faq/blob/master/prefixes.rst
 transactor.transaction_signer.intkey
     Public keys of authorized intkey TF signers
 transactor.transaction_signer.sawtooth_identity
