@@ -164,6 +164,8 @@ This error can occur when there is no sawtooth user and group.
 This should have been done by the package ``postinst`` script.
 To add, type ``addgroup --system sawtooth; adduser --system --ingroup sawtooth sawtooth`` .
 
+Another cause is the file doesn't exist.  Create it with ``sawset genesis`` .
+
 How to I build Sawtooth from source?
 ------------------------------------
 Use ``git`` to download the source, then ``build_all`` to build.  Type ``./bin/build_all`` for options.  For example:
