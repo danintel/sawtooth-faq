@@ -24,6 +24,7 @@ Appendix
 
 - `Sawtooth FAQ Glossary`_
 - `Sawtooth Transaction Family Prefixes`_
+- `Sawtooth Settings`_
 
 Contributing
 ------------------------------------------
@@ -46,6 +47,7 @@ This sign-off means you agree the commit satisfies the
 .. _Using Docker with Sawtooth: docker.rst
 .. _Sawtooth FAQ Glossary: glossary.rst
 .. _Sawtooth Transaction Family Prefixes: prefixes.rst
+.. _Sawtooth Settings: settings.rst
 .. _GitHub: https://github.com/danintel/sawtooth-faq
 .. _Developer Certificate of Origin (DCO): https://developercertificate.org/
 .. _NEXT: sawtooth.rst
