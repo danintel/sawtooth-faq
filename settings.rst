@@ -66,7 +66,7 @@ sawtooth.settings.vote.authorized_keys
     List of public keys for authorized voters for on-chain settings. The initial setting is in the Genesis Block, Block 0
 sawtooth.settings.vote.proposals
     List of proposals to make changes to settings (``SettingCandidates`` protobuf base64-encoded)
-sawtooth.settings.vote.approval_threashold
+sawtooth.settings.vote.approval_threshold
     Minimum number of votes required to accept or reject a proposal (default 1)
 
 sawtooth.validator.batch_injectors
@@ -82,7 +82,7 @@ transactor.batch_signer
     Public keys of authorized batch signers
 transactor.transaction_signer
     Public keys of authorized transaction signers
-transactor.transaction_signer.*<transaction family name>*
+transactor.transaction_signer.<transaction family name>
     Public keys of authorized transaction signers for a transaction processor.  For a partial list of transaction family names, see https://github.com/danintel/sawtooth-faq/blob/master/prefixes.rst 
 transactor.transaction_signer.intkey
     Public keys of authorized intkey TF signers
