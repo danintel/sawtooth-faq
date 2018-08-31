@@ -191,7 +191,7 @@ https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/c
 
 Can Docker run inside a virtual machine?
 ----------------------
-Yes. I run Docker containers on a VirtualBox virtual machine instance on a Windows 10 host.
+Yes. For example, I run Docker with Sawtooth containers on a VirtualBox virtual machine instance on a Windows 10 host.
 
 
 [PREVIOUS_ | HOME_ | NEXT_]
