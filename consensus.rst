@@ -15,6 +15,8 @@ PoET Simulator
     Simulates the SGX environment, and provides CFT similar to Fabric and some other blockchains.  Requires poet-validator-registry TP. Runs on any processor (does not use SGX).  Has Crash Fault Tolerance
 PoET SGX
     Takes advantage of SGX in order to provide consensus with Byzantine Fault Tolerance (BFT), like PoW algorithms have, but at very low CPU usage. PoET SGX is the only algorithm that has hardware requirements (a processor supporting SGX)
+RAFT
+    Consensus algorithm that elects a leader for a term of arbitrary time. Leader replaced if it times-out. Raft is faster than PoET, but is CFT, not BFT. Also Raft does not fork.
 
 Does the PoET Simulator implement the same consensus algorithm as PoET SGX?
 ------------------------------
@@ -25,11 +27,6 @@ hardware.
 Is PoET Simulator suitable for production use?
 ----------------------
 Yes.  It is for systems that do not have SGX and is intended for use in production.
-
-Are there plans to add other consensus algorithms?
--------------------
-Yes. We are in the process of adding a fourth consensus, Raft, and may add other consensus engines.
-Raft is CFT instead of BFT, and does not fork.
 
 What is unpluggable consensus?
 -------------------
