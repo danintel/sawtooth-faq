@@ -1,13 +1,13 @@
 Appendix: Sawtooth Transaction Family Prefixes
 ==================
-[PREVIOUS_ | HOME_]
+[PREVIOUS_ | HOME_ | NEXT_]
 
 .. contents::
 
 .. Warning::
    **This FAQ was written by a non-expert so may contain both fiction and fact!**
 
-Here is an unofficial list of some Transaction Family (TF) prefixes.
+This is an unofficial list of some Transaction Family (TF) prefixes.
 There is no central registry, most or all of these TFs are found on github.
 Sawtooth addresses are 70 hex characters.
 The prefix is either the first 6 characters of the SHA-512 hash of the namespace, or, for some base namespaces, a "hex word".
@@ -77,9 +77,10 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_sp
 | cookie-maker  | raw       | 1a5312 | Cookie Maker minimal example            |
 +---------------+-----------+--------+-----------------------------------------+
 
-[PREVIOUS_ | HOME_]
+[PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: glossary.rst
 .. _HOME: README.rst
+.. _NEXT: settings.rst
 
 © Copyright 2018, Intel Corporation.
