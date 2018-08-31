@@ -196,6 +196,13 @@ Use the JIRA bug tracking system at
 https://jira.hyperledger.org/projects/STL/issues/STL-51?filter=allopenissues
 For security bugs only, send email to security@hyperledger.org
 
+What encryption algorithms are used by Sawtooth?
+------------------------
+* Transaction signing with ECDSA 256-bit key using curve secp256k1 (same as Bitcoin)
+* ZeroMQ (ZMQ or 0MQ) used for communications. ZMQ uses CurveZMQ for encryption and authentication, which uses ECDH 256-bit key with curve Curve25519 for key agreement.
+* PoET uses AES-GCM to encrypt its monotonic counter
+* Names are hashed with SHA-512 or SHA-256
+
 Can you explain Global State with an example?
 ----------------------------------------------
 Global state is where sawtooth and TPs read/write blockchain data. Examples are a-plenty if you look at the github repo examples (intkey, XO, etc.)
