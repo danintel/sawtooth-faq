@@ -189,6 +189,10 @@ Documentation on using Kubernetes for Sawtooth on Linux or Mac hosts is availabl
 https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/kubernetes.html
 https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/creating_sawtooth_network.html#kubernetes-start-a-multiple-node-sawtooth-network
 
+Can Docker run inside a virtual machine?
+----------------------
+Yes. I run Docker containers on a VirtualBox virtual machine instance on a Windows 10 host.
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
