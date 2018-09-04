@@ -116,6 +116,17 @@ How do I change the Sawtooth consensus algorithm?
 Use the ``sawset proposal create`` subcommand to modify ``sawtooth.consensus.algorithm``.  For an example, see https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/creating_sawtooth_network.html
 The initial default algorithm is "dev mode", which is not for production use.
 
+Where can I find information on the proposed PoET2 algorithm?
+------------------------------------
+PoET2 is different from PoET in that it supports SGX without relying on Intel Platform Services Enclave (PSE), making it suitable in cloud environments.
+PoET2 no longer saves anything across reboots (such as the clock, monotonic counters, or a saved ECDSA keypair).
+The PoET2 SGX enclave still generates a signed, random duration value.
+More details and changes are documented in the PoET2 RFC at
+https://github.com/hyperledger/sawtooth-rfcs/pull/20/files
+A video presentation (2018-08-23) is at
+https://drive.google.com/drive/folders/0B_NJV6eJXAA1VnFUakRzaG1raXc
+(starting at 7:45)
+
 
 
 [PREVIOUS_ | HOME_ | NEXT_]
