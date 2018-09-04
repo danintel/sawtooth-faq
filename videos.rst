@@ -34,6 +34,15 @@ Hyperledger Videos
 Hyperledger Sawtooth 1.0: Market Significance and Technical Overview. Free registration required (61:27, Hyperledger, 2018)
     https://gateway.on24.com/wcc/gateway/linux/1101876/1585244/hyperledger-sawtooth-v10-market-significance-and-technical-overview
 
+Intel Chip Chat Audio
+----------------------
+Why Enterprises Should Be Moving Blockchain Forward. Ep. 576 (9:51, Mike Reed, Intel, 2018)
+    https://connectedsocialmedia.com/16399/why-enterprises-should-be-moving-blockchain-forward-intel-chip-chat-episode-576/
+
+Where We've Been and Where We're going -- Intel's Blockchain Journey. Ep. 559 (11:05, Mike Reed, Intel, 2017)
+    https://connectedsocialmedia.com/16112/where-weve-been-and-where-were-going-intels-blockchain-journey-intel-chip-chat-episode-559/
+
+
 
 Sawtooth Technical Forum
 --------------------------
