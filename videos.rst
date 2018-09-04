@@ -7,14 +7,43 @@ Appendix: Sawtooth Videos
 .. Warning::
    **This FAQ was written by a non-expert so may contain both fiction and fact!**
 
-This is an list of recordgins of past Hyperledger Sawtooth Technical Forums.
+
+Selected YouTube Videos
+--------------
+
+2018 YouTube Videos
+--------------
+Hyperledger Sawtooth Seafood Supply Chain Demo (3:21, Bitwise, 2018)
+    https://www.youtube.com/watch?v=q0T8qAyzY30
+Intel: Building Blockchain for the Enterprise. Shows how Sawtooth builds are done on AWS (5:33, Ryan Beck-Buysse, Bitwise, Lana Kalashnyk, AWS, 2018)
+    https://www.youtube.com/watch?v=B_L_PjlSywA
+Sawtooth 1.0 Architecture and App Development (31:26, Zac Delventhal, Bitwise, 2018)
+    https://www.youtube.com/watch?v=uBebFQM49Xk
+Blockchain and Hyperledger Sawtooth Overview (6:15, Daniel Homlund Martin Kronberg and Daniel Homlund, Intel, 2018)
+    https://www.youtube.com/watch?v=HwFItjV6Czo
+
+2017 YouTube Videos
+--------------
+Intel's Dan Middleton Explains the Vision for Hyperledger's Sawtooth Distributed Ledger (2:03, Hyperledger, 2017)
+    https://www.youtube.com/watch?v=gjAHjX0RmOw
+Introduction to Hyperledger Sawtooth. Mostly about Seafood Supply Chain PoC app (3:40, Hyperledger, 2017)
+    https://www.youtube.com/watch?v=8nrVlICgiYM
+
+Hyperledger Videos
+--------------
+Hyperledger Sawtooth 1.0: Market Significance and Technical Overview. Free registration required (61:27, Hyperledger, 2018)
+    https://gateway.on24.com/wcc/gateway/linux/1101876/1585244/hyperledger-sawtooth-v10-market-significance-and-technical-overview
+
+
+Sawtooth Technical Forum
+--------------------------
+This is an list of recordings of past Hyperledger Sawtooth Technical Forums.
 Most are in mp4 (video) format, but a few are available in audio only (m4a).
 They are all located at
 https://drive.google.com/drive/folders/0B_NJV6eJXAA1VnFUakRzaG1raXc
 For 2017 Technical Forums, click on "2017" at the above link.
 
-
-2018
+2018 Sawtooth Technical Forum
 ----
 
 20180823-sawtooth-tech-forum.mp4 (starts at 9:00)
@@ -30,7 +59,7 @@ For 2017 Technical Forums, click on "2017" at the above link.
 20180215-sawtooth-tech-forum.m4a (audio only, starts at 23:40)
     Sawtooth Rust SDK (Peter Schwarz, Bitwise)
 
-2017
+2017 Sawtooth Technical Forum
 ----
 
 201712140sawtooth-tech-forum-trimmed.mp4 (starts at 1:00)
