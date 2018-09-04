@@ -1,6 +1,6 @@
 Appendix: Sawtooth Settings
 ==================
-[PREVIOUS_ | HOME_]
+[PREVIOUS_ | HOME_ | NEXT_]
 
 .. contents::
 
@@ -113,9 +113,10 @@ transactor.transaction_signer.validator_registry
 transactor.transaction_signer.xo
     Public keys of authorized xo TF signers
 
-[PREVIOUS_ | HOME_]
+[PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: prefixes.rst
 .. _HOME: README.rst
+.. _NEXT: videos.rst
 
 © Copyright 2018, Intel Corporation.

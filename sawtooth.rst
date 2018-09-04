@@ -49,6 +49,11 @@ Hyperledger Sawtooth 1.0 Architecture and App Development (Bitwise IO, 2018, 31:
 You can find several more here:
   https://www.youtube.com/results?search_query=Hyperledger+Sawtooth
 
+Where are some good advanced videos?
+-------------------------------------
+A list of Hyperledger Sawtooth _videos (mostly Sawtooth Technical Forum recordings) are at
+https://github.com/danintel/sawtooth-faq/blob/master/settings.rst
+
 What courses are available on Hyperledger Sawtooth?
 -----------------------------------------
 * EdX has a "Blockchain for Business" course that reviews Blockchain technology and includes an introduction to Sawtooth and other Hyperledger blockchain software.  See
@@ -326,5 +331,6 @@ The first validator node on the network has no special meaning, other than being
 .. _PREVIOUS: README.rst
 .. _HOME: README.rst
 .. _NEXT: installation.rst
+.. _videos: videos.rst
 
 © Copyright 2018, Intel Corporation.
