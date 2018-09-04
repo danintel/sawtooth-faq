@@ -88,6 +88,14 @@ Proxy configurations are firewall-dependent, but this might serve as a pattern:
     Environment="FTP_PROXY=http://proxy.mycompany.com:911/"
     Environment="NO_PROXY=.mycompany.com,10.0.0.0/8,192.168.0.0/16,localhost,127.0.0.0/8"
 
+I get this error: ``ERROR: repository . . . not found: does not exist or no pull access``
+------------
+Also a proxy problem--see the answer above.
+
+I get this error: `` ERROR: Service . . . failed to build: Get . . . net/http: request canceled while waiting for connection
+------------
+Also a proxy problem--see the answer above.
+
 I get this error running docker-compose: ``ERROR: for validator  Cannot create container for service validator: Conflict. The container name "/validator" is already in use by container ...``
 -------------------------------
 The container already exists.  You need to remove or rename it. To remove:
