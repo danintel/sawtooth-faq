@@ -136,7 +136,7 @@ Payload
 PBFT
     Practical Byzantine Fault Tolerance. A "classical" consensus algorithm that uses a state machine. Uses leader and block election. PBFT is a three-phase, network-intensive algorithm (n^2 messages), so is not scalable to large networks
 PDO
-    Private Data Object. Blockchain objects that are kept private through encryption
+    Private Data Object. Blockchain objects that are kept private through encryption. See links to paper, code, and presentation at https://twitter.com/kellymolson/status/1019299515646406656
 Permissioned Blockchain (aka Private Blockchain)
     participants must ID themselves to a network (e.g., Hyperledger Sawtooth or Hyperledger Fabric)
 Permissioning
