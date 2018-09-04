@@ -217,6 +217,11 @@ Ubuntu 18.04 LTS is not supported yet.  Use Ubuntu 16.04 LTS for now.
 You can also install Sawtooth with Docker.  See:
 https://sawtooth.hyperledger.org/docs/core/releases/latest/app_developers_guide/docker.html
 
+I get this error installing Sawtooth: ``No matching distribution found for sawtooth_rest_api``
+--------------------------
+You tried to install Sawtooth using Python pip.
+I don't know if could work. I know installing Sawtooth using Ubuntu/Debian installation tools (such as apt, apt-get, dpkg, aptitude) works OK
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
