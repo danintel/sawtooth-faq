@@ -24,14 +24,14 @@ Blockchain and Hyperledger Sawtooth Overview (6:15, Daniel Homlund Martin Kronbe
 
 2017 YouTube Videos
 --------------
-Intel's Dan Middleton Explains the Vision for Hyperledger's Sawtooth Distributed Ledger (2:03, Hyperledger, 2017)
+Vision for Hyperledger's Sawtooth Distributed Ledger (2:03, Dan Middleton, Intel, 2017)
     https://www.youtube.com/watch?v=gjAHjX0RmOw
-Introduction to Hyperledger Sawtooth. Mostly about Seafood Supply Chain PoC app (3:40, Hyperledger, 2017)
+Introduction to Hyperledger Sawtooth (Seafood Supply Chain) (3:40, Hyperledger, 2017)
     https://www.youtube.com/watch?v=8nrVlICgiYM
 
 Hyperledger Videos
 --------------
-Hyperledger Sawtooth 1.0: Market Significance and Technical Overview. Free registration required (61:27, Hyperledger, 2018)
+Hyperledger Sawtooth 1.0: Market Significance and Technical Overview. Free registration required (61:27, Dan Middleton, Intel, 2018)
     https://gateway.on24.com/wcc/gateway/linux/1101876/1585244/hyperledger-sawtooth-v10-market-significance-and-technical-overview
 
 Intel Chip Chat Audio
@@ -41,7 +41,6 @@ Why Enterprises Should Be Moving Blockchain Forward. Ep. 576 (9:51, Mike Reed, I
 
 Where We've Been and Where We're going -- Intel's Blockchain Journey. Ep. 559 (11:05, Mike Reed, Intel, 2017)
     https://connectedsocialmedia.com/16112/where-weve-been-and-where-were-going-intels-blockchain-journey-intel-chip-chat-episode-559/
-
 
 
 Sawtooth Technical Forum
