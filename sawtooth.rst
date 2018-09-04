@@ -51,7 +51,7 @@ You can find several more here:
 
 Where are some good advanced videos?
 -------------------------------------
-A list of Hyperledger Sawtooth _videos (mostly Sawtooth Technical Forum recordings) are at
+A list of Hyperledger Sawtooth videos_ (mostly Sawtooth Technical Forum recordings) are at
 https://github.com/danintel/sawtooth-faq/blob/master/settings.rst
 
 What courses are available on Hyperledger Sawtooth?
