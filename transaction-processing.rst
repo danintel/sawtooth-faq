@@ -199,6 +199,17 @@ Why is there no timestamp in a transaction header or block?
 --------------------------------------------------
 Using timestamps in a distributed network is troublesome--mostly due to complex clock synchronization issues among peers. You could add a timestamp in your transaction family's transaction payload. If you want timestamps with blocks, refer to the BlockInfo Transaction Family. See: https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_specifications/blockinfo_transaction_family.html
 
+Does Sawtooth allow multiple digital signatures on a single transaction?
+-------------------------
+In Sawtooth the "batch" is the atomic unit of change. This is a collection of one or more individually signed transactions. You could have multiple transactions, each signed by a different party, combined in one batch. This would have a similar effect to what you are talking about I think.
+You can also build whatever app logic you like. So you can require transactions from multiple parties before an action is taken.
+The individual transactions themselves have only one signer.
+
+Here is one solution on implementing multi-signature transactions through cryptographically-secure addresses:
+*Inter-Family Communications in Hyperledger Sawtooth and its Application to a General Token Functionality*
+at
+https://pokitdok.com/wp-content/themes/pokitdok2017/dokchain/static/data/inter_family_communication.pdf
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
