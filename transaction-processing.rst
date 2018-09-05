@@ -205,11 +205,6 @@ In Sawtooth the "batch" is the atomic unit of change. This is a collection of on
 You can also build whatever app logic you like. So you can require transactions from multiple parties before an action is taken.
 The individual transactions themselves have only one signer.
 
-Here is one solution on implementing multi-signature transactions through cryptographically-secure addresses:
-*Inter-Family Communications in Hyperledger Sawtooth and its Application to a General Token Functionality*
-at
-https://pokitdok.com/wp-content/themes/pokitdok2017/dokchain/static/data/inter_family_communication.pdf
-
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
