@@ -193,6 +193,8 @@ TP
     Transaction Processor. Processes transactions for a specific TF. Runs on Validator. Similar to a Ethereum "smart contract" or Bitcoin "chain code"
 Transaction Receipt
     Off-chain store about information about transaction execution. Located at ``/var/lib/sawtooth/txn_receipts-00.lmdb``
+Truffle
+    Popular Ethereum development environment
 TXN
     Transaction
 Safety
