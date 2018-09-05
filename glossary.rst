@@ -53,6 +53,8 @@ Crypto
     Cryptography--encryption, authentication, and hashing. It does not mean blockchain or digital currency
 Dapps
     Ethereum Decentralized Applications. These are written in Solidity and are supported by Sawtooth Seth
+DAML
+    Digital Asset Modeling Language. Codifies financial agreements.
 Distributed Ledger
     See Blockchain
 DLT
