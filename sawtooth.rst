@@ -62,6 +62,12 @@ https://www.edx.org/course/blockchain-business-introduction-linuxfoundationx-lfs
 * A self-paced course is Cryptomoji, which where students extend a Cryptokitties clone,  https://github.com/hyperledger/education-cryptomoji
 * The Kerala Blockchain Academy offers a Certified Hyperledger Sawtooth Developer (CHD) program at IITM-K, India. See http://www.iiitmk.ac.in/kba/
 
+What Sawtooth exams are available?
+-------------------------------------
+A Certified Hyperledger Sawtooth Administrator exam will be available in late 2018. See https://www.hyperledger.org/blog/2018/09/05/hyperledger-fabric-sawtooth-certification-exams-coming-soon
+and the exam outline at
+https://www.hyperledger.org/resources/training/hyperledger-sawtooth-certification
+
 Are there any example applications based on Sawtooth?
 -----------------------------------------------------
 A simple application that implements a cookie jar showing just the Sawtooth API:
