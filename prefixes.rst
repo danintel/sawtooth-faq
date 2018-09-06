@@ -76,6 +76,8 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_sp
 | simple\_      | Protobuf  | 5d6af4 | Simple Supply example used for training |
 | supply        |           |        |                                         |
 +---------------+-----------+--------+-----------------------------------------+
+| pirate-talk   | UTF8      | aaaaaa | Pirate Talk minimal example             |
++---------------+-----------+--------+-----------------------------------------+
 | cookie-maker  | raw       | 1a5312 | Cookie Maker minimal example            |
 +---------------+-----------+--------+-----------------------------------------+
 
