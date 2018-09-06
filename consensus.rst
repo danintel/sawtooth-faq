@@ -108,8 +108,10 @@ Change to a sawtooth user-writable directory before running the command: ``cd /t
 
 
 What does ``Consensus not ready to build candidate block`` mean?
----------------------------------
-This message is usually innocuous, it usually means that the validator isn't yet registered in the validator registry or that its previous registration has expired and it's waiting for the new one to commit. However, if that message is rampant in the logs on all but one node, that might mean that none of them can register. There's a few things that can cause that. 
+--------------------------------- This message is usually an innocuous information message. It usually means that the validator isn't yet registered in the validator registry or that its previous registration has expired and it's waiting for the new one to commit.
+The message occurs after the block publisher polls the consensus interface asking if it is time to build the block. If not enough time has elapsed, it logs that message.
+
+However, if that message is rampant in the logs on all but one node, that might mean that none of them can register. There's a few things that can cause that. 
 
 Unlikely but worth mentioning: are you mapping volumes into the containers? If all the validators are trying to use the same data file that would be bad. That would not happen unless all the nodes are on the same host.
 
