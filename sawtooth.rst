@@ -211,7 +211,12 @@ How do I report a bug?
 ---------------------------
 Use the JIRA bug tracking system at
 https://jira.hyperledger.org/projects/STL/issues/STL-51?filter=allopenissues
-For security bugs only, send email to security@hyperledger.org
+You need an account, which you create with the Linux foundation at
+https://identity.linuxfoundation.org/, then login with that account.
+
+How do I report a security bug?
+---------------------------------
+For security bugs only, send an email to security@hyperledger.org
 
 What encryption algorithms are used by Sawtooth?
 ------------------------
