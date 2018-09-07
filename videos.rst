@@ -21,6 +21,8 @@ Sawtooth 1.0 Architecture and App Development (31:26, Zac Delventhal, Bitwise, 2
     https://www.youtube.com/watch?v=uBebFQM49Xk
 Blockchain and Hyperledger Sawtooth Overview (6:15, Daniel Homlund Martin Kronberg and Daniel Homlund, Intel, 2018)
     https://www.youtube.com/watch?v=HwFItjV6Czo
+Several Sawtooth application development tutorials by John S.
+    https://www.youtube.com/channel/UC4YOKxLGKFcaq4duRhH75qw
 
 2017 YouTube Videos
 --------------
