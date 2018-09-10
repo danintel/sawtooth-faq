@@ -202,8 +202,13 @@ Yes. For example, I run Docker with Sawtooth containers on a VirtualBox virtual 
 
 How do I persist data on Docker containers?
 ----------------------------
-You add an external volume. You make a directory for your volume and add it using ``volumes:`` in your Docker .yaml file. For a tutorial, see this blog: http://goshtastic.blogspot.com/2018/04/making-new-transaction-family-on.html
+You add an external volume. You make a directory for your volume and add it using ``volumes:`` in your Docker .yaml file. For a Sawtooth-specific tutorial, see this blog: http://goshtastic.blogspot.com/2018/04/making-new-transaction-family-on.html 
+Also see the Docker storage documentation at https://docs.docker.com/storage/
 
+If you do not ``down`` the container or reboot the Docker host, the container will not be destroyed.
+
+For a list of directories used by Sawtooth, see https://github.com/danintel/sawtooth-faq/blob/master/validator.rst#what-files-does-sawtooth-use
+It is best to set `$SAWTOOTH_HOME` so all the configuration and data is under one root directory.
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
