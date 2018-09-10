@@ -343,6 +343,7 @@ Sawtooth has no concept of a "head node" or "master node".
 Once multiple nodes are up and running, each node has the same genesis block (block 0) and treats all other nodes as peers.
 The first validator node on the network has no special meaning, other than being the node that created the genesis block.
 
+
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: README.rst

@@ -205,6 +205,12 @@ In Sawtooth the "batch" is the atomic unit of change. This is a collection of on
 You can also build whatever app logic you like. So you can require transactions from multiple parties before an action is taken.
 The individual transactions themselves have only one signer.
 
+What is the size limit for a Sawtooth transaction?
+----------------------------------------
+There is no size limit, barring any memory and storage limits for your Sawtooth nodes.
+
+If you don't want to write a large transaction, you can reference some external source (and also save a checksum). The disadvantage of storing data externally is it's not replicated across nodes and may be lost.
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
