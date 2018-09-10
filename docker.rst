@@ -200,6 +200,10 @@ Can Docker run inside a virtual machine?
 ----------------------
 Yes. For example, I run Docker with Sawtooth containers on a VirtualBox virtual machine instance on a Windows 10 host.
 
+How do I persist data on Docker containers?
+----------------------------
+You add an external volume. You make a directory for your volume and add it using ``volumes:`` in your Docker .yaml file. For a tutorial, see this blog: http://goshtastic.blogspot.com/2018/04/making-new-transaction-family-on.html
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
