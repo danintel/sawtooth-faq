@@ -216,6 +216,12 @@ There is no size limit, barring any memory and storage limits for your Sawtooth 
 
 If you don't want to write a large transaction, you can reference some external source (and also save a checksum). The disadvantage of storing data externally is it's not replicated across nodes and may be lost.
 
+What does this message mean: ``Did not respond to the ping, removing transaction processor``?
+-----------------------------------
+This is a message from the Hyperledger Sawtooth blockchain's Validator. A timeout occurred when the Validator was checking connections with all the registered transaction processors. If a transaction processor does not respond, it is removed from the list.
+
+Some possible causes: the transaction processor (TP) died. Check that the TP process is still running (check in the Docker container if you are running docker). Check network connectivity if the TP is on another host or another virtual machine. Check the message logs. Perhaps the TP is "frozen" or hanging or has a bug. Add logging messages (using LOGGER).
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
