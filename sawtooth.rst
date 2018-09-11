@@ -337,6 +337,10 @@ Does Sawtooth support Ethereum?
 -------------------------
 Yes, through Seth, Sawtooth's Ethereum-compatible Transaction Processor. It implements a Ethereum Virtual Machine (EVM) so Seth can run Ethereum Dapps written in Solidity.  Seth uses Hyperledger Burrow as the code base.
 
+Does Sawtooth use blockchain mining?
+--------------------------
+No. There is no inherent need to incentivize miners in a private/permissioned blockchain. Part of the permissioned model is that everyone involved has a personal stake in the verifying the data, so you do not need to pay them. This contrasts with a public deployment where you are asking strangers to verify the data for you. In that case you probably do need to incentivize them somehow, and a currency is a common way to do so.
+
 What is the "head node" or "master node" in Sawtooth?
 ---------------
 Sawtooth has no concept of a "head node" or "master node".
