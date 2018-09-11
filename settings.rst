@@ -93,7 +93,7 @@ sawtooth.validator.max_transactions_per_block
     Maximum transactions allowed per block
 sawtooth.validator.transaction_families
     List of permitted transaction families.
-    *Dan's ProTip*: ``settings`` is a required TF.
+    *Dan's ProTip*: ``settings`` is a required TF.  ``sawtooth_validator_registry`` is required if you use PoET.
 
 transactor.batch_signer
     Public keys of authorized batch signers
