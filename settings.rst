@@ -92,7 +92,8 @@ sawtooth.validator.block_validation_rules
 sawtooth.validator.max_transactions_per_block
     Maximum transactions allowed per block
 sawtooth.validator.transaction_families
-    List of permitted transaction families
+    List of permitted transaction families.
+    *Dan's ProTip*: ``sawtooth_validator_registry`` is a required TF.
 
 transactor.batch_signer
     Public keys of authorized batch signers
