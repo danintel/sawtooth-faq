@@ -20,7 +20,7 @@ Blockchains, including Sawtooth, can be deployed as permissioned networks, where
 
 What transaction processors are required?
 -------------------
-Just the Settings TP, ``sawtooth_validator_registry`` .
+Just the Settings TP, ``settings`` .
 
 What does the Settings TP do?
 -------------------
