@@ -239,6 +239,8 @@ ZMQ (aka 0MQ, ZeroMQ)
     Zero Message Queue. A message transport API available on Linux; used by Sawtooth Validator nodes
 ZKP
     Zero Knowledge Proof. One party proving they know a value *x* without conveying *x*
+zkSNARKS
+    Zero Knowledge Succinct Non-interactive Arguments of Knowledge, which allow proof of correctness, given public and private input
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
