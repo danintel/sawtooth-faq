@@ -109,6 +109,10 @@ What does this error mean: ``processor | { AuthorizationException: Tried to get 
 -----------------------
 It means a the transaction processor tried to access (get/put) a value not in the list of inputs/outputs. This occurs when a client submits a transaction with an inaccurate list of inputs/outputs.
 
+What does this error mean: ``applicator->Apply errorState Get Authorization error. Check transaction inputs.``
+--------------------
+See the answer above.
+
 If you have a large file to store, is it best to just record the file hash and store the file offline?
 ---------------------------------------
 It depends on your use case. Storing data off-chain has a big downside.
