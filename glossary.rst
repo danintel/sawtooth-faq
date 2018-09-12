@@ -166,6 +166,8 @@ r
     Rate, measurement of performance in transactions per second
 Raft
     Consensus algorithm that elects a leader for a term of arbitrary time. Leader replaced if it times-out. Raft is faster than PoET, but is not BFT (Raft is CFT). Also Raft does not fork.
+Remix
+    A popular web-based IDE for Solidity
 Replica
     Another term for node or validator
 REST
