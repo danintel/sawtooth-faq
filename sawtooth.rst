@@ -263,7 +263,6 @@ Does Sawtooth restore state when a peer restarts or when a peer is out-of-sync w
 --------------------
 Yes.
 
-
 When content at an address is changed several times by the transactions in a block, what appears in the state (Merkle Tree)?
 -----------------------------
 The only thing that hits state is the aggregate (final) set of address changes due to the transactions in the block. If multiple transactions in a single block modify an address, there will only be one 'set'. You could see the transaction level changes in the receipts if you needed to.
@@ -346,6 +345,26 @@ What is the "head node" or "master node" in Sawtooth?
 Sawtooth has no concept of a "head node" or "master node".
 Once multiple nodes are up and running, each node has the same genesis block (block 0) and treats all other nodes as peers.
 The first validator node on the network has no special meaning, other than being the node that created the genesis block.
+
+What is a Sawtooth Role?
+------------------------
+A Role is a set if permissions.  Identities could be assigned one or more roles. A role is a convenient shorthand because role(s) can be assigned to several identities rather than tediously assigning individual permissions to each identity.
+See https://sawtooth.hyperledger.org/docs/core/nightly/master/sysadmin_guide/configuring_permissions.html
+
+What Sawtooth Roles are defined?
+---------------------------------
+transactor
+    who can sign transactions and batches
+transactor.batch_signer
+    who can sign batches
+transactor.transaction_signer
+    who can sign transactions
+transaction.transaction_signer.<transaction processor name>
+    who can sign transactions for a specific TP
+network
+    nodes authorized to make peer requests
+network.consensus
+    noodes authorized to broadcast new blocks with Gossip
 
 
 [PREVIOUS_ | HOME_ | NEXT_]
