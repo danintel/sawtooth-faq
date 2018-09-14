@@ -47,7 +47,7 @@ sawtooth.gossip.time_to_live
     Expiration time for the Gossip node communication protocol
 
 sawtooth.identity.allowed_keys
-    List of nodes allowed to connect to the Sawtooth network
+    List of keys allowed to make identity transactions to the identity TP
 
 sawtooth.poet.enclave_module_name
     Python module name implementing the PoET enclave.
