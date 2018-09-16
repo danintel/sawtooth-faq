@@ -255,7 +255,7 @@ Are there any examples of Sawtooth permissions?
 * off-chain permissioning is in ``/etc/sawtooth/validator.toml`` (see ``validator.toml.example`` )
 * on-chaining permissioning is recorded on-chain. See block 0 for examples, such as ``sawtooth.settings.vote.authorized_keys`` 
 * transaction key permissioning controls what clients can submit transactions, based on signing keys (``transactor.transaction_signer``, ``transaction.transaction_signer.<name of TP>``, ``transactor.batch_signer`` )
-* validation key permissioning controls what nodes are allowed to connect to the Sawtooth network (``sawtooth.identity.allowed_keys``
+* validation key permissioning controls what nodes are allowed to connect to the Sawtooth network
 * transaction family permissioning controls what TFs are supported by this Sawtooth network, ``sawtooth.validator.transaction_families``
 * then there are policies and roles from the optional Sawtooth Identity Transaction Processor, documented at https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_specifications/identity_transaction_family.html
 
