@@ -119,6 +119,12 @@ For LMDB databases, the database should be backed up when it is quiet (no update
 ``mdb_dump -n /var/lib/sawtooth/block-00.lmdb >block-00.lmdb.dump``
 Use ``mdb_load -n -f block-00.lmdb.dump`` to restore the database.
 
+What does ``lmdb.CorruptedError: mdb_put: MDB_CORRUPTED: Located page was wrong type`` mean?
+---------------------------------------
+The LMDB database, which stores the blockchain, is corrupted.
+The blockchain is backed-up automatically with multiple nodes.
+There are no published recovery tools, but you could clean out the data on the failed machine and restart and then allow the chain to be rebuilt from its peers.
+
 What TCP ports does Sawtooth use?
 -------------------
 * 4004 is used by the Validator component bus, which uses ZMQ. The validator listens to requests on this port from the REST API and from one or more transaction processors.
