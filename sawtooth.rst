@@ -142,6 +142,10 @@ How does a blockchain differ from a database?
 * A database can be changed after a commit. A blockchain's records are immutable and cannot be undone after a commit
 * A database must have a trusted central authority
 
+Does Sawtooth focus on developing blockchain solutions for sustainable fishing?
+-----------------------------------------------
+No. The Seafood Supply Chain application is a proof-of-concept. Sawtooth is a general-purpose enterprise blockchain platform.
+
 What does an immutable blockchain mean?
 ----------------------------------
 It means that blocks already committed cannot be "undone" or deleted. The block's transactions are in the blockchain forever. The only way to undo a transaction is to add another transaction to reverse a previous transaction. So if the value of ``a=1`` and a transaction sets ``a=2``, the only way to undo it is to set ``a=1`` again.  However regardless of what the current value of ``a`` is, all three of those transactions are permanently a part of the blockchain. The record of them will never be lost, and in fact you could rewind state to what it was in previous blocks if you needed.
