@@ -106,7 +106,7 @@ What does this error mean: ``processor | [... DEBUG executor] transaction proces
 It means there is no transaction processor running for your transaction family.
 
 
-What does this error mean: ``processor | { AuthorizationException: Tried to get unauthorized address ...``?
+What does this error mean: ``processor | { AuthorizationException: Tried to get unauthorized address ...`` ?
 -----------------------
 It means a the transaction processor tried to access (get/put) a value not in the list of inputs/outputs. This occurs when a client submits a transaction with an inaccurate list of inputs/outputs.
 
@@ -216,11 +216,15 @@ There is no size limit, barring any memory and storage limits for your Sawtooth 
 
 If you don't want to write a large transaction, you can reference some external source (and also save a checksum). The disadvantage of storing data externally is it's not replicated across nodes and may be lost.
 
-What does this message mean: ``Did not respond to the ping, removing transaction processor``?
+What does this message mean: ``Did not respond to the ping, removing transaction processor`` ?
 -----------------------------------
 This is a message from the Hyperledger Sawtooth blockchain's Validator. A timeout occurred when the Validator was checking connections with all the registered transaction processors. If a transaction processor does not respond, it is removed from the list.
 
 Some possible causes: the transaction processor (TP) died. Check that the TP process is still running (check in the Docker container if you are running docker). Check network connectivity if the TP is on another host or another virtual machine. Check the message logs. Perhaps the TP is "frozen" or hanging or has a bug. Add logging messages (using LOGGER).
+
+What does this message mean: ``Block(. . .) rejected due to state root hash mismatch: `` ?
+----------------------------
+You have a transaction processor that implements some non-deterministic behavior, such as generating a random number in a calculation, or a timestamp, etc.
 
 
 [PREVIOUS_ | HOME_ | NEXT_]
