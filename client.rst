@@ -51,6 +51,11 @@ What does a PENDING batch status mean?
 --------------------------
 It means the transaction batch never reached the Transaction Processor.  The TP may have died or have never started. Or the validator failed the Z Test (z-tested out) because it was winning too frequently.
 
+Can I use partial address prefixes (say the 6-character prefix) in a transaction's input or output list?
+------------------------
+Yes.  You can use full addresses or partial addresses or empty (no address).  The full addresses are preferred as this allows the parallel scheduler to process non-conflicting transactions in parallel.
+
+
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: consensus.rst
