@@ -226,6 +226,10 @@ What does this message mean: ``Block(. . .) rejected due to state root hash mism
 ----------------------------
 You have a transaction processor that implements some non-deterministic behavior, such as generating a random number in a calculation, or a timestamp, etc.
 
+What does this message mean: ``Have not received a chain head from peers.``
+-----------------------------
+This message has been seen when a node is not running a transaction processor.
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
