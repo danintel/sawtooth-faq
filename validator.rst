@@ -202,6 +202,12 @@ How can I improve Sawtooth performance?
 * When available in the future, substitute PoET consensus with Raft consensus.  Raft is CFT instead of BFT, but it should perform better in exchange for lower fault tolerance
 * As you make changes, measure the impact with a performance tool such as Hyperledger Caliper
 
+Is there any way to get real-time Sawtooth statistics?
+---------------------------
+Yes. Sawtooth has Telegraf/InfluxDB/Grafana to gather and display metrics.
+Installl the packages and follow these instructions:
+https://sawtooth.hyperledger.org/docs/core/nightly/master/sysadmin_guide/grafana_configuration.html
+
 What does this error mean: ``[... DEBUG client_handlers] Unable to find entry at address ...``?
 -----------------------
 It means the address doesn't exist.
