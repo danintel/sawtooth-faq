@@ -143,7 +143,7 @@ https://drive.google.com/drive/folders/0B_NJV6eJXAA1VnFUakRzaG1raXc
 
 What are the minimum number of nodes needed for PoET?
 ------------------------------------------
-PoET needs at least 3 nodes, but works best with at least 4 or 5 nodes. This is to avoid Z Test failures (a node winning too frequently).  In production, to keep a blockchain safe, more nodes are always better, regardless of the consensus.
+PoET needs at least 3 nodes, but works best with at least 4 or 5 nodes. This is to avoid Z Test failures (a node winning too frequently).  In production, to keep a blockchain safe, more nodes are always better, regardless of the consensus. 10 nodes are good for internal testing. For production, have 2 nodes per identity.
 
 
 [PREVIOUS_ | HOME_ | NEXT_]
