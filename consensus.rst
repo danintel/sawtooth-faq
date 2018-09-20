@@ -116,7 +116,7 @@ However, if that message is rampant in the logs on all but one node, that might 
 
 Unlikely but worth mentioning: are you mapping volumes into the containers? If all the validators are trying to use the same data file that would be bad. That would not happen unless all the nodes are on the same host.
 
-More commonly, the defense-in-depth checks are too stringent during the initial launch.
+More commonly, the defense-in-depth checks are too stringent during the initial launch. You can relax these parameters (see Settings_ in this FAQ) or, easier yet, relaunch the network.
 
 How do I change the Sawtooth consensus algorithm?
 ---------------------------
@@ -152,5 +152,6 @@ PoET needs at least 3 nodes, but works best with at least 4 or 5 nodes. This is 
 .. _PREVIOUS: validator.rst
 .. _HOME: README.rst
 .. _NEXT: client.rst
+.. _Settings: settings.rst
 
 © Copyright 2018, Intel Corporation.
