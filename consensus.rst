@@ -141,6 +141,10 @@ See also the "Sawtooth Consensus Engines" video at
 in directory
 https://drive.google.com/drive/folders/0B_NJV6eJXAA1VnFUakRzaG1raXc
 
+What are the minimum number of nodes needed for PoET?
+------------------------------------------
+PoET works best with at least 4 or 5 nodes. This is to avoid Z Test failures (a node winning too frequently).
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
