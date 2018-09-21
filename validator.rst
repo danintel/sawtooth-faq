@@ -256,21 +256,20 @@ If you've installed sawtooth already, python3 and python3-zmq would have been al
 Here's an example to create the keypair in Python:
 
 :: python
-    >>>import zmq
 
-    >>>(public, secret) = zmq.curve_keypair()
+    import zmq
+    (public, secret) = zmq.curve_keypair()
+    print("network_public_key =", public.decode("utf-8"),
+          "\nnetwork_private_key =", secret.decode("utf-8"))
 
-    >>>print("network_public_key =",public.decode("utf-8"),"\\nnetwork_private_key =",secret.decode("utf-8"))
+Also, if you can use a compiled binary tool:
 
-Also, if you'd want to use a compiled binary tool:
+:: sh
 
-   $sudo apt-get install g++ libzmq3-dev
-
-   $wget https://raw.githubusercontent.com/zeromq/libzmq/master/tools/curve_keygen.cpp
-
-   $g++ curve_keygen.cpp -o curve_keygen -lzmq
-
-   $./curve_keygen
+   $ sudo apt-get install g++ libzmq3-dev
+   $ wget https://raw.githubusercontent.com/zeromq/libzmq/master/tools/curve_keygen.cpp
+   $ g++ curve_keygen.cpp -o curve_keygen -lzmq
+   $ ./curve_keygen
 
 Copy the corresponding public key output to ``network_public_key`` and the private key output to ``network_private_key`` fields in ``validator.toml``
 
