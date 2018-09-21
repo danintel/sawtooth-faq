@@ -48,7 +48,8 @@ Client
 Consensus algorithm
     Method to decide what block to add next to a blockchain
 Classical Consensus
-    Uses an agreement or voting mechanism (vs. Nakamoto-style consensus)
+    Uses an agreement or voting mechanism to select a leader (vs. Nakamoto-style consensus)
+    E.g., PBFT and Raft
 Crypto
     Cryptography--encryption, authentication, and hashing. It does not mean blockchain or digital currency
 Dapps
@@ -120,7 +121,8 @@ Merkle Tree (or Trie)
 n
     Nodes in a blockchain network
 Nakamoto-style Consensus
-    uses some sort of lottery-based mechanism, such as Proof of Work (vs. Classical Consensus)
+    Uses some sort of lottery-based mechanism, such as Proof of Work (vs. Classical Consensus) to win the right to commit a block.
+     E.g., PoW or PoET.
 Node ID
     Address
 Node
