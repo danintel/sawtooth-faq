@@ -255,7 +255,7 @@ These are the ZMQ message keys used to securely communicate with other nodes.
 If you've installed sawtooth already, python3 and python3-zmq would have been already installed and available in your system.
 Here's an example to create the keypair in Python:
 
-:: python
+.. code:: python
 
     import zmq
     (public, secret) = zmq.curve_keypair()
@@ -264,7 +264,7 @@ Here's an example to create the keypair in Python:
 
 Also, if you can use a compiled binary tool:
 
-:: sh
+.. code:: sh
 
    $ sudo apt-get install g++ libzmq3-dev
    $ wget https://raw.githubusercontent.com/zeromq/libzmq/master/tools/curve_keygen.cpp
