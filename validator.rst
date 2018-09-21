@@ -251,12 +251,28 @@ Usually block validation fails because of something non-deterministic in the tra
 How do I generate the ``network_public_key`` and ``network_private_key`` in ``validator.toml`` ?
 ----------------------------------
 These are the ZMQ message keys used to securely communicate with other nodes.
-Here's an example in Python:
+
+If you've installed sawtooth already, python3 and python3-zmq would have been already installed and available in your system.
+Here's an example to create the keypair in Python:
 
 :: python
-    import zmq
-    (public, secret) = zmq.curve_keypair()
-    print(public, secret)
+    >>>import zmq
+
+    >>>(public, secret) = zmq.curve_keypair()
+
+    >>>print("network_public_key =",public.decode("utf-8"),"\\nnetwork_private_key =",secret.decode("utf-8"))
+
+Also, if you'd want to use a compiled binary tool:
+
+   $sudo apt-get install g++ libzmq3-dev
+
+   $wget https://raw.githubusercontent.com/zeromq/libzmq/master/tools/curve_keygen.cpp
+
+   $g++ curve_keygen.cpp -o curve_keygen -lzmq
+
+   $./curve_keygen
+
+Copy the corresponding public key output to ``network_public_key`` and the private key output to ``network_private_key`` fields in ``validator.toml``
 
 I am seeing only one transaction per block in my blockchain. Why?
 ------------------------------------
