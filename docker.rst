@@ -11,7 +11,7 @@ How can I run ``docker`` or ``docker-compose`` without prefixing it with ``sudo`
 --------------------------------------
 Sometimes, adding your login to group ``docker`` is recommended, such as with command: ``sudo usermod -aG docker $USER`` . However, this gives ``$USER`` root-equivalent permissions.  A better alternate is to define an alias for docker and docker-compose and add to your ~/.bashrc file:
 
-::
+.. code:: sh
 
     alias docker='sudo docker'
     alias docker-compose='sudo docker-compose'
@@ -23,19 +23,19 @@ I get this error running ``docker-compose -f sawtooth-default.yaml up`` : ``Erro
 --------------------------------------
 This occurs when docker was not halted cleanly.  Run the following first:
 
-::
+.. code:: sh
 
     sudo docker-compose -f sawtooth-default.yaml down
 
 Then this:
 
-::
+.. code:: sh
 
     sudo docker-compose -f sawtooth-default.yaml up
 
 An alternate solution is to force it to ignore the existing files:
 
-::
+.. code:: sh
 
     docker-compose -f docker/compose/sawtooth-default.yaml up --force
 
@@ -46,7 +46,7 @@ If it's at a non-standard location, specify the URL with the DOCKER_HOST environ
 You may not have enough permission to run. Try prefixing with sudo: ``sudo docker-compose ...``
 To determine if sure docker is running and to start Docker, type:
 
-::
+.. code:: sh
 
     service docker status
     sudo service docker start
@@ -56,7 +56,7 @@ I get this error running ``docker run hello-world`` :  ``Got permission denied w
 Try running with sudo.  For example: sudo docker run hello-world.
 Here's a few aliases you can add to your ``~/.bashrc`` file:
 
-::
+.. code:: sh
 
     alias docker='sudo docker'
     alias docker-compose='sudo docker-compose'
@@ -66,7 +66,7 @@ I get this error running ``docker run hello-world`` : ``docker: Error response f
 -------------------
 If it worked before, first try restarting docker:
 
-::
+.. code:: sh
 
    sudo service docker start; sudo service docker stop
 
@@ -100,7 +100,7 @@ I get this error running docker-compose: ``ERROR: for validator  Cannot create c
 -------------------------------
 The container already exists.  You need to remove or rename it. To remove:
 
-::
+.. code:: sh
 
     sudo docker ps -a # list container IDs
     sudo docker stop <container ID>
@@ -122,19 +122,19 @@ If I run ``docker`` or ``docker-compose`` it hangs and does nothing.
 --------------------------------------
 The docker daemons may not be running.  To check, run:
 
-::
+.. code:: sh
 
      $ ps -ef | grep dockerd
 
 To start, run:
 
-::
+.. code:: sh
 
     $ sudo systemctl restart docker.service
 
 How do I manually start and stop docker on Linux?
 --------------------------------------
-::
+.. code:: sh
 
     $ sudo service docker start
     $ service docker status
@@ -142,7 +142,7 @@ How do I manually start and stop docker on Linux?
 
 How do I enable and disable automatic start of docker on boot on Linux?
 --------------------------------------
-::
+.. code:: sh
 
     $ sudo systemctl enable docker
     $ systemctl status docker

@@ -23,12 +23,12 @@ What REST API commands are available?
 Use localhost to access the REST API from the Validator Docker container or from where the Validator is running.
 For example, to get state history (equivalent to ``sawtooth state list``) type:
 
-::
+.. code:: sh
 
     curl http://localhost:8008/state
 From the Client Docker container, access from rest-api.  For example:
 
-::
+.. code:: sh
 
     curl http://rest-api:8008/state
 

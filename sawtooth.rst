@@ -154,7 +154,7 @@ This is different from immutable variables. The difference is that with blockcha
 
 How do I tell what version of Sawtooth is running?
 --------------------------------------------------
-::
+.. code:: sh
 
     $ sawtooth --version
     sawtooth-cli (Hyperledger Sawtooth) version 1.0.5
