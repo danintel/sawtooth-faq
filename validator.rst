@@ -46,7 +46,7 @@ What do I do if some of the Sawtooth Network nodes go offline?
 ---------------------------
 You can restart any failed nodes.  They should rejoin the network and will then process all blocks that were added to the blockchain since the node went down. It will be busy during this initial phase, but will return to normal after that.
 
-::
+.. code:: sh
 
         curl http://localhost:8008/blocks
 
@@ -54,7 +54,7 @@ This verifies the REST API is available.
 
 From the Client Docker container run this:
 
-::
+.. code:: sh
 
         curl http://rest-api:8008/blocks
 

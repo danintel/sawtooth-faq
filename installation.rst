@@ -13,7 +13,7 @@ The following setups the Sawtooth stable repository, lists the packages,
 and installs the core packages
 (sawtooth, python3-sawtooth-cli, python3-sawtooth-sdk, python3-sawtooth-signing):
 
-::
+.. code:: sh
 
     $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 8AA7AF1F1091A5FD
     $ sudo add-apt-repository 'deb http://repo.sawtooth.me/ubuntu/1.0/stable xenial universe'
@@ -91,7 +91,7 @@ The C++ SDK package is in the nightly repository.
 Until the package dependency is fixed, here's a workaround to force an install:
 
 
-::
+.. code:: sh
 
     $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 44FC67F19B2466EA
     $ sudo apt-add-repository "deb [trusted=yes] http://repo.sawtooth.me/ubuntu/nightly xenial universe"
@@ -104,7 +104,7 @@ I get this error when running ``sawtooth setting list`` or ``xo list`` : ``Error
 -----------------------------
 This usually occurs when there is no genesis node created. To create, type the following:
 
-::
+.. code:: sh
 
     # Create the genesis node:
     sawtooth keygen
@@ -118,7 +118,7 @@ I get this error when running ``sudo -u sawtooth sawadm genesis config-genesis.b
 ------------------------------------
 The ownership or permission is wrong. To fix it, type:
 
-::
+.. code:: sh
 
     $ sudo chown sawtooth:sawtooth /var/lib/sawtooth
     $ sudo chmod 750 sawtooth:sawtooth /var/lib/sawtooth
@@ -171,7 +171,7 @@ Another cause is the file doesn't exist.  Create it with ``sawset genesis`` .
 How to I build Sawtooth from source?
 ------------------------------------
 Use ``git`` to download the source, then ``build_all`` to build.  Type ``./bin/build_all`` for options.  For example:
-::
+.. code:: sh
 
     $ sawtooth --version
     $ git clone https://github.com/hyperledger/sawtooth-core
