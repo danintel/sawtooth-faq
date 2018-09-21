@@ -186,6 +186,12 @@ The current default is ``serial``, but it may change to ``parallel`` in the futu
 For example:
 ``sawtooth-validator --scheduler parallel -vv`` .
 
+What are the verbosity levels of the various Sawtooth CLIs?
+-----------------------
+* ``-v`` means warning messages
+* ``-vv`` means information + warning messages
+* ``-vvv`` means debug + information + warning messages
+
 After a failed transaction, the validator stops processing further transactions. What can I do?
 -------------------------------
 You can run the validator in parallel processing mode. 
