@@ -147,7 +147,11 @@ as maximum batches per block or target wait time.
 
 What does this error mean ``repository ... xenial InRelease' doesn't support architecture 'i386'``?
 ---------------------------
-You installed on a 32-bit-only system. Install on a 64-bit system.
+Following could be possibilities:
+
+#. You installed on a 32-bit-only system. Install on a 64-bit system.
+
+#. You are using 64-bit system, but your linux variant has enabled additional architecture i386. ``apt`` is expecting the repository for all configured architectures on your machine. One safe way to solve this error would be to tell ``apt`` to get only 64-bit repository. For example, ``sudo add-apt-repository 'deb [arch=amd64] http://repo.sawtooth.me/ubuntu.....'``.
 
 I get this error running ``sawset``: ``ModuleNotFoundError: No module named 'colorlog'``
 -------------------------------
