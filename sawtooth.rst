@@ -56,9 +56,9 @@ https://github.com/danintel/sawtooth-faq/blob/master/settings.rst
 
 What courses are available on Hyperledger Sawtooth?
 -----------------------------------------
-* EdX has a "Blockchain for Business" course that reviews Blockchain technology and includes an introduction to Sawtooth and other Hyperledger blockchain software.  See
+* EdX has a "Blockchain for Business" course that reviews Blockchain technology and includes an introduction to Sawtooth and other Hyperledger blockchain software. See
 https://www.edx.org/course/blockchain-business-introduction-linuxfoundationx-lfs171x-0
-* An intermediate EdX course, edx 201 "Hyperledger Sawtooth for Application Developers" is under final review for release.  It will use Simple Supply Chain as an example, https://github.com/hyperledger/education-sawtooth-simple-supply
+* An intermediate EdX course, edx 201 "Hyperledger Sawtooth for Application Developers" is under final review for release. It will use Simple Supply Chain as an example, https://github.com/hyperledger/education-sawtooth-simple-supply
 * A self-paced course is Cryptomoji, which where students extend a Cryptokitties clone,  https://github.com/hyperledger/education-cryptomoji
 * The Kerala Blockchain Academy offers a Certified Hyperledger Sawtooth Developer (CHD) program at IITM-K, India. See http://www.iiitmk.ac.in/kba/
 
@@ -81,7 +81,7 @@ An example application that shows how to  exchange quantities of customized "Ass
 
 Are there any live demos of a Sawtooth Application?
 ---------------------------
-Yes.  A Sawtooth Supply Chain demo, AssetTrack is at https://demo.bitwise.io/
+Yes. A Sawtooth Supply Chain demo, AssetTrack is at https://demo.bitwise.io/
 A Sawbucks demo is at https://demo.bitwise.io/sawbucks/
 The source and docs are at https://github.com/hyperledger/sawtooth-marketplace/
 
@@ -98,12 +98,12 @@ The forum is held on Wednesdays 9-10am Central Time using Zoom video conferencin
 
 What is the difference between Hyperledger and Sawtooth?
 --------------------------------------------------------
-* Sawtooth (or Hyperledger Sawtooth) is a blockchain implementation initially contributed by Intel Corporation and now maintained by the Sawtooth community.  Sawtooth does not have to be deployed on Intel hardware; however, Sawtooth does include the optional PoET consensus module, which uses Intel SGX to provide an efficient, Byzantine Fault Tolerant consensus mechanism that does not rely on expensive and inefficient mining algorithms. See https://www.hyperledger.org/projects/sawtooth
+* Sawtooth (or Hyperledger Sawtooth) is a blockchain implementation initially contributed by Intel Corporation and now maintained by the Sawtooth community. Sawtooth does not have to be deployed on Intel hardware; however, Sawtooth does include the optional PoET consensus module, which uses Intel SGX to provide an efficient, Byzantine Fault Tolerant consensus mechanism that does not rely on expensive and inefficient mining algorithms. See https://www.hyperledger.org/projects/sawtooth
 * Hyperledger is a consortium that includes Sawtooth as well as other blockchain implementations. "Hyperledger is an open source collaborative effort created to advance cross-industry blockchain technologies. It is a global collaboration, hosted by The Linux Foundation" See https://www.hyperledger.org/.
 
 What is the difference between Sawtooth, Sawtooth Lake, and Hyperledger Sawtooth?
 -------------------------------
-Sawtooth Lake was Intel's original code name for its blockchain research project, named after a lake in the Sawtooth Mountains of central Idaho. After it was contributed to the Linux Foundation's Hyperledger consortium, the name was changed to Hyperledger Sawtooth.  Sawtooth is just shorthand for Hyperledger Sawtooth and are the same thing.
+Sawtooth Lake was Intel's original code name for its blockchain research project, named after a lake in the Sawtooth Mountains of central Idaho. After it was contributed to the Linux Foundation's Hyperledger consortium, the name was changed to Hyperledger Sawtooth. Sawtooth is just shorthand for Hyperledger Sawtooth and are the same thing.
 
 
 What is the difference between Hyperledger Sawtooth and Hyperledger Fabric?
@@ -134,7 +134,7 @@ https://www.hyperledger.org/blog/2016/11/02/meet-sawtooth-lake
 
 Should I use Sawtooth or other blockchain software for my application?
 ---------------------------------------
-You should look for existing blockchain platforms that will fit your use case, sort them out by features, maturity (are they production ready?), and community support.  We hope Sawtooth fits your needs.
+You should look for existing blockchain platforms that will fit your use case, sort them out by features, maturity (are they production ready?), and community support. We hope Sawtooth fits your needs.
 
 How does a blockchain differ from a database?
 ------------------------------
@@ -148,9 +148,9 @@ No. The Seafood Supply Chain application is a proof-of-concept. Sawtooth is a ge
 
 What does an immutable blockchain mean?
 ----------------------------------
-It means that blocks already committed cannot be "undone" or deleted. The block's transactions are in the blockchain forever. The only way to undo a transaction is to add another transaction to reverse a previous transaction. So if the value of ``a=1`` and a transaction sets ``a=2``, the only way to undo it is to set ``a=1`` again.  However regardless of what the current value of ``a`` is, all three of those transactions are permanently a part of the blockchain. The record of them will never be lost, and in fact you could rewind state to what it was in previous blocks if you needed.
+It means that blocks already committed cannot be "undone" or deleted. The block's transactions are in the blockchain forever. The only way to undo a transaction is to add another transaction to reverse a previous transaction. So if the value of ``a=1`` and a transaction sets ``a=2``, the only way to undo it is to set ``a=1`` again. However regardless of what the current value of ``a`` is, all three of those transactions are permanently a part of the blockchain. The record of them will never be lost, and in fact you could rewind state to what it was in previous blocks if you needed.
 
-This is different from immutable variables. The difference is that with blockchain *transactions* are immutable.  With some programming languages (such as Rust), *variables* are immutable.
+This is different from immutable variables. The difference is that with blockchain *transactions* are immutable. With some programming languages (such as Rust), *variables* are immutable.
 
 How do I tell what version of Sawtooth is running?
 --------------------------------------------------
@@ -197,11 +197,11 @@ It can also be the result of a bug in transaction processing
 
 What does ``Failed to reach common ancestor`` mean from ``sawnet compare-chains``?
 --------------------------
-It means the blockchains have no blocks in common, including the genesis block.  This usually happens when a second node is added with its own genesis node.  Only the first node in a Sawtooth network should be created with a genesis block.
+It means the blockchains have no blocks in common, including the genesis block. This usually happens when a second node is added with its own genesis node. Only the first node in a Sawtooth network should be created with a genesis block.
 
 Does Hyperledger Composer support Sawtooth?
 ---------------------------
-No.  IBM has also reduced Composer development to maintenance mode. See:
+No. IBM has also reduced Composer development to maintenance mode. See:
 https://lists.hyperledger.org/g/composer/message/125
 
 Does Hyperledger Explorer support Sawtooth?
@@ -232,7 +232,7 @@ What encryption algorithms are used by Sawtooth?
 Can you explain Global State with an example?
 ----------------------------------------------
 Global state is where sawtooth and TPs read/write blockchain data. Examples are a-plenty if you look at the github repo examples (intkey, XO, etc.)
-The "state" is implemented as a Radix Merkle Trie over the LMDB database, where the 'keys' are 35 bytes (70 characters) and the scheme for the keys is up to the TP developer.  The first 3 bytes (6 chars) of the key identifies a unique TP namespace and it is recommended to avoid colliding with other TP namespaces.
+The "state" is implemented as a Radix Merkle Trie over the LMDB database, where the 'keys' are 35 bytes (70 characters) and the scheme for the keys is up to the TP developer. The first 3 bytes (6 chars) of the key identifies a unique TP namespace and it is recommended to avoid colliding with other TP namespaces.
 To enable your TP to read/write (or in context parlance "get/set") data at addresses, you need to specify those addresses *a priori* in the Transaction inputs/outputs. Otherwise you will get Authorization errors. The addresses your TP will read or write to need to be deterministic.
 
 Using the SimpleWallet application as an example (see example application links above), the blockchain will contain transactions showing deposits, withdrawals and transfers between accounts. The global state will contain the balance in the different accounts corresponding at the current point in time, after all transactions in the chain have been processed.
@@ -251,7 +251,7 @@ One of the reasons is the homogeneous nature of Sawtooth Nodes. You don't have d
 
 Is there a Sawtooth security evaluation?
 -----------------------------
-Yes. This is a pre-1.0 release audit, that was required to be a part of the Linux Foundation's Hyperledger project.  See
+Yes. This is a pre-1.0 release audit, that was required to be a part of the Linux Foundation's Hyperledger project. See
 https://www.hyperledger.org/blog/2018/05/22/hyperledger-sawtooth-security-audit
 
 Are there any examples of Sawtooth permissions?
@@ -280,7 +280,7 @@ Here's some simple sample applications that are in standalone source repositorie
 
 * Simple Wallet, https://github.com/askmish/sawtooth-simplewallet
 * Cookie Jar, https://github.com/danintel/sawtooth-cookiejar
-* Cryptomoji,  https://github.com/hyperledger/education-cryptomoji A self-pacsed course using a Cryptokitties clone written in Sawtooth
+* Cryptomoji,  https://github.com/hyperledger/education-cryptomoji A self-paced course using a Cryptokitties clone written in Sawtooth
 * Simple Supply Chain, https://github.com/hyperledger/education-sawtooth-simple-supply  This will be the example in a future edX.org course on Sawtooth app development
 
 What is Sawtooth *global state agreement*?
@@ -293,7 +293,7 @@ Of course the feature is mainly targeted at protecting the integrity of a produc
 
 How can CPU vulnerabilities such as Spectre and Meltdown impact Sawtooth?
 -----------------------------------
-Sawtooth is a CPU-agnostic blockchain platform. It includes an optional TEE/SGX feature which enhances BFT protections for PoET.  PoET is designed following a defense-in-depth approach. There are three or so mechanisms that work in different aspects of the protocol independently from the TEE. This includes three tests performed by PoET:
+Sawtooth is a CPU-agnostic blockchain platform. It includes an optional TEE/SGX feature which enhances BFT protections for PoET. PoET is designed following a defense-in-depth approach. There are three or so mechanisms that work in different aspects of the protocol independently from the TEE. This includes three tests performed by PoET:
 
 * c-test: A node must wait c blocks after admission before its blocks will be accepted - this is to prevent trying to game identities and some obscure corner scenarios.
 * K-test: The node can publish at most K blocks before its peers require it to recertify itself.
@@ -338,7 +338,7 @@ https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/a
 
 Does Sawtooth support Ethereum?
 -------------------------
-Yes, through Seth, Sawtooth's Ethereum-compatible Transaction Processor. It implements a Ethereum Virtual Machine (EVM) so Seth can run Ethereum Dapps written in Solidity.  Seth uses Hyperledger Burrow as the code base.
+Yes, through Seth, Sawtooth's Ethereum-compatible Transaction Processor. It implements a Ethereum Virtual Machine (EVM) so Seth can run Ethereum Dapps written in Solidity. Seth uses Hyperledger Burrow as the code base.
 
 Does Sawtooth use blockchain mining?
 --------------------------
@@ -352,7 +352,7 @@ The first validator node on the network has no special meaning, other than being
 
 What is a Sawtooth Role?
 ------------------------
-A Role is a set if permissions.  Identities could be assigned one or more roles. A role is a convenient shorthand because role(s) can be assigned to several identities rather than tediously assigning individual permissions to each identity.
+A Role is a set if permissions. Identities could be assigned one or more roles. A role is a convenient shorthand because role(s) can be assigned to several identities rather than tediously assigning individual permissions to each identity.
 See https://sawtooth.hyperledger.org/docs/core/nightly/master/sysadmin_guide/configuring_permissions.html
 
 What Sawtooth Roles are defined?
@@ -368,7 +368,7 @@ transaction.transaction_signer.<transaction processor name>
 network
     nodes authorized to make peer requests
 network.consensus
-    noodes authorized to broadcast new blocks with Gossip
+    nodes authorized to broadcast new blocks with Gossip
 
 
 [PREVIOUS_ | HOME_ | NEXT_]

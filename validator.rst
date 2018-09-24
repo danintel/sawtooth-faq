@@ -90,7 +90,7 @@ There are two peering modes in sawtooth: static and dynamic. The static peering 
 
 For static peering do I need to specify all validator nodes, or just some of them?
 -------------------------------------
-For static, you need to specify all nodes. I recommend dynamic peering where you don't need to specify all of them, just a good sampling (with --seeds). The rest will be discovered. All dynamic peers have to specified by at least one other node (and perferably multiple).
+For static, you need to specify all nodes. I recommend dynamic peering where you don't need to specify all of them, just a good sampling (with --seeds). The rest will be discovered. All dynamic peers have to specified by at least one other node (and preferably multiple nodes).
 
 What files does Sawtooth use?
 -------------------
@@ -211,7 +211,7 @@ How can I improve Sawtooth performance?
 Is there any way to get real-time Sawtooth statistics?
 ---------------------------
 Yes. Sawtooth has Telegraf/InfluxDB/Grafana to gather and display metrics.
-Installl the packages and follow these instructions:
+Install the packages and follow these instructions:
 https://sawtooth.hyperledger.org/docs/core/nightly/master/sysadmin_guide/grafana_configuration.html
 
 What does this error mean: ``[... DEBUG client_handlers] Unable to find entry at address ...``?
