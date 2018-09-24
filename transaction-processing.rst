@@ -1,5 +1,4 @@
 Unofficial FAQ: Sawtooth Transaction Processing
-
 ==================
 [PREVIOUS_ | HOME_ | NEXT_]
 
