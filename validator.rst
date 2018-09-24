@@ -31,7 +31,7 @@ Here is a gist with brief instructions for a 2-node network:
 https://gist.github.com/askmish/a23bde6f2e59e4256be8afe965a9166b
 
 The important part about configuring a multi-node network is
-to create a genesis block only with the first validator.  Do not create multiple genesis blocks with subsequent validators (that is do not re-run ``sawset genesis`` and ``sawadm genesis``).
+to create a genesis block only with the first validator. Do not create multiple genesis blocks with subsequent validators (that is do not re-run ``sawset genesis`` and ``sawadm genesis``).
 
 How do I add a node to a Sawtooth Network?
 -------------------
@@ -44,7 +44,7 @@ Run the following command from the Validator Docker container or from where the 
 
 What do I do if some of the Sawtooth Network nodes go offline?
 ---------------------------
-You can restart any failed nodes.  They should rejoin the network and will then process all blocks that were added to the blockchain since the node went down. It will be busy during this initial phase, but will return to normal after that.
+You can restart any failed nodes. They should rejoin the network and will then process all blocks that were added to the blockchain since the node went down. It will be busy during this initial phase, but will return to normal after that.
 
 .. code:: sh
 
@@ -72,13 +72,13 @@ You should see a JSON response similar to this:
 
 Do all validators need to run the same transaction processors?
 -------------------
-Yes.  All validators must run all of the same transaction processors that are
+Yes. All validators must run all of the same transaction processors that are
 on the network. If a validator receives a transaction that it does not have a
 transaction processor for, the validator will wait until a transaction processor
 connects that can handle that transaction. That validator would fall behind the
 rest on the network while it waits. You can also limit which transactions are
 accepted on the network with the ``sawtooth.validator.transaction_families``
-setting.  If that setting is not set, all transaction would be accepted.
+setting. If that setting is not set, all transaction would be accepted.
 
 I set sawtooth.validator.transaction_families as follows (from the documentation) but it's ignored
 -------------------
@@ -109,7 +109,7 @@ If set these files are placed under directory ``$SAWTOOTH_HOME`` (except files u
 
 Why does the validator create large 1TByte files?
 -------------------
-The large 1TByte files in ``/var/lib/sawtooth/`` are "sparse" files, implemented with LMDB (Lightning Memory-mapped Database).  They are random-access files with mostly empty blocks. They do not actually consume 1Tbyte of storage.
+The large 1TByte files in ``/var/lib/sawtooth/`` are "sparse" files, implemented with LMDB (Lightning Memory-mapped Database). They are random-access files with mostly empty blocks. They do not actually consume 1Tbyte of storage.
 
 How do I backup a large sparse file?
 -----------------------
@@ -147,11 +147,11 @@ Create the genesis block only one time, on the first node, and configure one or 
 
 I have Sawtooth running with a single node. How do I add a node?
 ---------------------------------------
-You need to either start up the validator with information about the network peers using the ``sawtooth-validator --peers`` option or set ``seeds`` or ``peers`` in configuration file ``/etc/sawtooth/validator.toml``.  Then restart the node.
+You need to either start up the validator with information about the network peers using the ``sawtooth-validator --peers`` option or set ``seeds`` or ``peers`` in configuration file ``/etc/sawtooth/validator.toml``. Then restart the node.
 
 Can I run two validators on the same machine?
 -------------------
-Yes, but it is not recommended.  You need to configure separate Sawtooth instances with different:
+Yes, but it is not recommended. You need to configure separate Sawtooth instances with different:
 
 * data, key, log, and policy directories (default values listed above).
 If ``$SAWTOOTH_HOME`` is set, all these directories are under ``$SAWTOOTH_HOME``.
@@ -159,16 +159,16 @@ It's not recommended, but you can also can also change the directories in ``path
 For more information, see
 https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/configuring_sawtooth/path_configuration_file.html
 
-* REST API TCP port (default 8008).  Change in ``rest-api.toml``. For details, see
+* REST API TCP port (default 8008). Change in ``rest-api.toml``. For details, see
 https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/configuring_sawtooth/rest_api_configuration_file.html
 
-* Validator TCP ports (default of 8800 for the peer network and 4004 for the validator components).  Change with the ``bind`` setting in ``validator.toml``.
+* Validator TCP ports (default of 8800 for the peer network and 4004 for the validator components). Change with the ``bind`` setting in ``validator.toml``.
 For details, see
 https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/configuring_sawtooth/validator_configuration_file.html
 
-* Genesis block. This is important. As with validators on multiple machines (the usual case), it's important to create a genesis block only with the first validator.  Do not create multiple genesis blocks with subsequent validators (that is do not run ``sawset genesis`` and ``sawadm genesis``)
+* Genesis block. This is important. As with validators on multiple machines (the usual case), it's important to create a genesis block only with the first validator. Do not create multiple genesis blocks with subsequent validators (that is do not run ``sawset genesis`` and ``sawadm genesis``)
 
-Instead, consider setting up separate virtual machines (such as with VirtualBox) for each validator.  This ensures isolation of files and ports for each Validator.
+Instead, consider setting up separate virtual machines (such as with VirtualBox) for each validator. This ensures isolation of files and ports for each Validator.
 
 What TCP ports should I restrict or allow through a firewall?
 -----------------------------------------------
@@ -199,13 +199,13 @@ For a serial scheduler, a failed transaction will be retried and no further tran
 
 How can I improve Sawtooth performance?
 -----------------------------
-* First, for performance measurement or tuning, do not run the default "dev mode" consensus algorithm.  Run another one, such as PoET or PoET simulator. Dev mode is not for production use and excessive forks under heavy use degrades performance
+* First, for performance measurement or tuning, do not run the default "dev mode" consensus algorithm. Run another one, such as PoET or PoET simulator. Dev mode is not for production use and excessive forks under heavy use degrades performance
 * Batch multiple transactions together as much as possible in a Batch of transaction or a BatchList of multiple transactions (or both)
 * Run the validator in parallel mode, not serial mode
 * Write the transaction processor in a thread-friendly programming language such as Rust or C++, not Python. Python is an interpretive language and therefore slower. It also suffers from the Global Interpreter Lock (GIL), which locks executing multiple threads to one thread at-a-time
-* Run multiple transaction processors per validator node for the same transaction family.  This is especially useful for TPs written in Python
+* Run multiple transaction processors per validator node for the same transaction family. This is especially useful for TPs written in Python
 * Consider increasing the on-chain setting ``sawtooth.publisher.max_batches_per_block`` . Try a value of 200 batches per block to start with. This and other on-chain settings can be changed on-the-fly without impacting older blocks.
-* When available in the future, substitute PoET consensus with Raft consensus.  Raft is CFT instead of BFT, but it should perform better in exchange for lower fault tolerance
+* When available in the future, substitute PoET consensus with Raft consensus. Raft is CFT instead of BFT, but it should perform better in exchange for lower fault tolerance
 * As you make changes, measure the impact with a performance tool such as Hyperledger Caliper
 
 Is there any way to get real-time Sawtooth statistics?
@@ -234,7 +234,7 @@ command line option.
 
 I start the validator, but it's stuck at this message: ``Waiting for transaction processor (sawtooth_settings, 1.0)``
 ---------------------------------
-The Sawtooth Settings TP is mandatory.  You probably want to also start the TP for your desired application.  To start the Settings TP, type:
+The Sawtooth Settings TP is mandatory. You probably want to also start the TP for your desired application. To start the Settings TP, type:
 ``sudo -u sawtooth settings-tp -v``
 
 Can I change Sawtooth settings after genesis?
@@ -245,13 +245,13 @@ Why am I getting this validator message: ``Reject building on block 8c5ebbea: Va
 ---------------------
 It is from the z-test, which is a defense-in-depth mechanism to catch validators that are publishing blocks with an improbable frequency. Unfortunately the defaults we chose for that statistical test aren't well suited for tiny networks (that feature is really intended for added security in large production networks).
 If you have only one validator, you are bound to fail the z-test eventually.
-Probably the best way to fix that in your test network is to restart it with some different z-test settings.  This will effectively disable z-test:
+Probably the best way to fix that in your test network is to restart it with some different z-test settings. This will effectively disable z-test:
 ``sawtooth.poet.ztest_minimum_win_count = 999999999``
 
 
 Why do I get a ``Block validation failed`` message from the validator?
 ----------------
-Usually block validation fails because of something non-deterministic in the transaction processor.  This is usually because of the serialization method, which is usually because someone used JSON (use something like Protobufs or CBOR instead). Other common sources of non-determinism are relying on system time in the transaction processor logic.
+Usually block validation fails because of something non-deterministic in the transaction processor. This is usually because of the serialization method, which is usually because someone used JSON (use something like Protobufs or CBOR instead). Other common sources of non-determinism are relying on system time in the transaction processor logic.
 
 
 How do I generate the ``network_public_key`` and ``network_private_key`` in ``validator.toml`` ?
@@ -281,11 +281,15 @@ Copy the corresponding public key output to ``network_public_key`` and the priva
 
 I am seeing only one transaction per block in my blockchain. Why?
 ------------------------------------
-The Sawtooth Validator combines transaction batches when possible.  If you are using dev mode consensus, it is producing blocks as fast as possible, which will typically only contain one transaction. You can simulate what would happen on a real network by setting min and max block times for devmode. If you set min to 10 and max to 20, it will include many more transactions per block.  You can also combine transactions from your client by submitting multiple transactions in a batch.
+The Sawtooth Validator combines transaction batches when possible. If you are using dev mode consensus, it is producing blocks as fast as possible, which will typically only contain one transaction. You can simulate what would happen on a real network by setting min and max block times for devmode. If you set min to 10 and max to 20, it will include many more transactions per block. You can also combine transactions from your client by submitting multiple transactions in a batch.
 
 What does ``Block publishing suspended until new chain head arrives'' mean?
 ---------------------
 It means that a new block arrived and the receiving validator wants to stop creating the block it was working on until it finds the new chain head.
+
+After adding 100,000 blockchain state variables, I run out of memory. Why?
+----------------------------------------------------
+Sawtooth stores the blockchain in a LMDB database at ``/var/lib/Sawtooth/block-00.lmdb`` . The LMDB database is a "sparse" file meaning no storage is allocated for the file until it is used (written to). The database should not run out of memory, as long as filesystem storage is available. The memory error could happen in Kubernetes or Docker or other virtual machine environments where there are no storage volumes mapped to the VM.
 
 
 [PREVIOUS_ | HOME_ | NEXT_]
