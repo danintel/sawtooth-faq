@@ -54,7 +54,7 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_sp
 +---------------+-----------+--------+-----------------------------------------+
 | pdo\_         | Protobuf  | aa2a93 | Private Data Objects (PDO)              |
 | contract\_    |           |        | Contract Instance Registry              |
-| instance_\_   |           |        |                                         |
+| instance\_    |           |        |                                         |
 | registry      |           |        |                                         |
 +---------------+-----------+--------+-----------------------------------------+
 | pdo\_         | Protobuf  | 0b936f | Private Data Objects (PDO)              |
