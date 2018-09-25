@@ -229,6 +229,10 @@ What does this message mean: ``Have not received a chain head from peers.``
 -----------------------------
 This message has been seen when a node is not running a transaction processor.
 
+How do I debug a transaction processor?
+---------------------------
+One way is to add logging messages (using LOGGER) and sprinkle your code with debug messages, such as ``LOGGER.info("Action = %s.", action)`` in Python (or another language you use for the TP). Start the transaction processor with the ``-vv`` or ``-vvv`` flags and look for console output.
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
