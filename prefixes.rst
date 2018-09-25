@@ -52,6 +52,22 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_sp
 +---------------+-----------+--------+-----------------------------------------+
 | rbac          | Protobuf  | 8563d0 | T-Mobile NEXT Identity Platform         |
 +---------------+-----------+--------+-----------------------------------------+
+| pdo\_         | Protobuf  | aa2a93 | Private Data Objects (PDO)              |
+| contract\_    |           |        | Contract Instance Registry              |
+| instance\_    |           |        |                                         |
+| registry      |           |        |                                         |
++---------------+-----------+--------+-----------------------------------------+
+| pdo\_         | Protobuf  | 0b936f | Private Data Objects (PDO)              |
+| contract\_    |           |        | Contract Enclave Registry               |
+| enclave\_     |           |        |                                         |
+| registry      |           |        |                                         |
++---------------+-----------+--------+-----------------------------------------+
+| ccl\_         | Protobuf  | db13a2 | Private Data Objects (PDO)              |
+| contract\_    |           |        | Coordination and Commit Log (CCL)       |
+| contract\_    |           |        | Contract State Registry                 |
+| state\_       |           |        |                                         |
+| registry      |           |        |                                         |
++---------------+-----------+--------+-----------------------------------------+
 |  **SOME EXAMPLE TFs**                                                        |
 +---------------+-----------+--------+-----------------------------------------+
 | battleship    | JSON      | 6e10df | Battleship example game                 |
