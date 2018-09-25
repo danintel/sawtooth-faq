@@ -8,7 +8,10 @@ Appendix: Sawtooth Transaction Family Prefixes
    **This FAQ was written by a non-expert so may contain both fiction and fact!**
 
 This is an unofficial list of some Transaction Family (TF) prefixes.
-There is no central registry, most or all of these TFs are found on github.
+There is no central registry, most or all of these TFs are found on GitHub
+( https://github.com/ especially https://github.com/hyperledger and
+https://github.com/hyperledger-labs ).
+
 Sawtooth addresses are 70 hex characters.
 The prefix is either the first 6 characters of the SHA-512 hash of the namespace, or, for some base namespaces, a "hex word".
 The validator_registry uses a SHA-256 hash.
