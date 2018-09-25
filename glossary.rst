@@ -41,6 +41,8 @@ C
     Sign-up delay; number of blocks a validator has to wait before participating in elections (when using PoET)
 C Test
     A node must wait C blocks after admission before its blocks will be accepted. This is to prevent trying to game identities and some obscure corner scenarios
+CCL
+    Coordination and Commit Log (used by PDO)
 CFT
     Crash Fault Tolerance. Consensus possible even with failed components
 Client
