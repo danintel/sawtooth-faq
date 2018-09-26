@@ -24,6 +24,10 @@ Blockchain and Hyperledger Sawtooth Overview (6:15, Daniel Homlund Martin Kronbe
 Several Sawtooth application development tutorials by John S.
     https://www.youtube.com/channel/UC4YOKxLGKFcaq4duRhH75qw
 
+Hyperledger Sawtooth 1.0 at Hyperledger Hong Kong meetup. (Duncan Johnston-Watt, Blockchain Technology Partners, 2018)
+    https://www.youtube.com/watch?v=d4tf5Ps4VLw
+    Slides: https://bit.ly/2PR1Oub
+
 2017 YouTube Videos
 --------------
 Vision for Hyperledger's Sawtooth Distributed Ledger (2:03, Dan Middleton, Intel, 2017)
