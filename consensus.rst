@@ -24,6 +24,13 @@ Yes. With pluggable consensus, the idea is to have a meaningful set of consensus
 
 REMME.io has independently implemented Algorand Byzantine Agreement on Sawtooth.
 
+Where is Raft documented?
+------------------------
+https://sawtooth.hyperledger.org/docs/raft/nightly/master/
+To use, basically set ``sawtooth.consensus.algorithm`` to ``raft`` and
+``sawtooth.consensus.raft.peers`` to a list of peer nodes (network public keys).
+
+
 Does the PoET Simulator implement the same consensus algorithm as PoET SGX?
 ------------------------------
 Yes--they are same same consensus algorithm. The difference is the
