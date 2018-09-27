@@ -60,6 +60,12 @@ For 2017 Technical Forums, click on "2017" at the above link.
 2018 Sawtooth Technical Forum
 ----
 
+REMME REMChain (Roman Kravchenko, Eugene Babichenko, and Andrii Fedotov, REMME)
+    20180927-sawtooth-forum.mp4 (starts at 11:00)
+Sawtooth RAFT Consensus (Adam Ludvik, Bitwise)
+    20180927-sawtooth-forum.mp4 (starts at 1:01:00)
+Sawtooth NEXT Directory (RBAC) (, T-Mobile)
+    20180913-sawtooth-tech-forum.mp4 (starts at 0:00)
 PSE-Free PoET2 Consensus Algorithm (Amol Kulkarni, Intel)
     20180823-sawtooth-tech-forum.mp4 (starts at 9:00)
 MinBFT consensus algorithm (Sergey Fedorov, NEC Labs Europe)
