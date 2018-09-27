@@ -13,6 +13,10 @@ There is no central registry, most or all of these can be found found on github.
 The following are some Sawtooth settings.
 Since Sawtooth settings are extensible and include transaction family-specific settings, this list is incomplete.
 
+You can list existing settings with the
+``sawtooth settings list --url http://localhost:8008`` command.
+For options, append ``help`` to the command.
+
 * Some baseline settings are documented at https://sawtooth.hyperledger.org/docs/core/releases/1.0/transaction_family_specifications/settings_transaction_family.html
 * Transactor settings are documented at https://sawtooth.hyperledger.org/docs/core/nightly/master/sysadmin_guide/configuring_permissions.html
   and at https://sawtooth.hyperledger.org/docs/core/nightly/master/transaction_family_specifications/settings_transaction_family.html
