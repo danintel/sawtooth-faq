@@ -104,10 +104,10 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_sp
 +---------------+-----------+--------+-----------------------------------------+
 | pub_key       | Protobuf  | a23be1 | REMME REMChain                          |
 +---------------+-----------+--------+-----------------------------------------+
-| bitagora\-    | Protobuf  | b42861 | Bitagora voting ballot                  |
+| bitagora\-    | JSON      | b42861 | Bitagora voting ballot                  |
 | ballots       |           |        |                                         |
 +---------------+-----------+--------+-----------------------------------------+
-| bitagora\-    | Protobuf  | 154f9c | Bitagora voting polls                   |
+| bitagora\-    | JSON      | 154f9c | Bitagora voting polls                   |
 | polls         |           |        |                                         |
 +---------------+-----------+--------+-----------------------------------------+
 
