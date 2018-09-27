@@ -16,6 +16,7 @@ Sawtooth addresses are 70 hex characters.
 The prefix is either the first 6 characters of the SHA-512 hash of the namespace, or, for some base namespaces, a "hex word".
 The validator_registry uses a SHA-256 hash.
 The remainder of the address is TF-specific and defined for each TF.
+Listing of a TF does not imply endorsement.
 
 All data payloads are encoded in base64 after serializing.
 Sawtooth headers are serialized with Protobuf.
@@ -97,11 +98,17 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_sp
 +---------------+-----------+--------+-----------------------------------------+
 | cookie-maker  | raw       | 1a5312 | Cookie Maker minimal example            |
 +---------------+-----------+--------+-----------------------------------------+
-|  **SOME PRODUCTION TFs**                                                        |
+|  **SOME THIRD-PARTY PRODUCTION TFs**                                                        |
 +---------------+-----------+--------+-----------------------------------------+
 | rbac          | Protobuf  | 8563d0 | T-Mobile NEXT Identity Platform         |
 +---------------+-----------+--------+-----------------------------------------+
 | pub_key       | Protobuf  | a23be1 | REMME REMChain                          |
++---------------+-----------+--------+-----------------------------------------+
+| bitagora\-    | Protobuf  | b42861 | Bitagora voting ballot                  |
+| ballots       |           |        |                                         |
++---------------+-----------+--------+-----------------------------------------+
+| bitagora\-    | Protobuf  | 154f9c | Bitagora voting polls                   |
+| polls         |           |        |                                         |
 +---------------+-----------+--------+-----------------------------------------+
 
 [PREVIOUS_ | HOME_ | NEXT_]
