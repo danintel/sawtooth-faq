@@ -101,7 +101,7 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_sp
 +---------------+-----------+--------+-----------------------------------------+
 | rbac          | Protobuf  | 8563d0 | T-Mobile NEXT Identity Platform         |
 +---------------+-----------+--------+-----------------------------------------+
-| pub_key       | ?         | a23be1 | REMME REMChain                          |
+| pub_key       | Protobuf  | a23be1 | REMME REMChain                          |
 +---------------+-----------+--------+-----------------------------------------+
 
 [PREVIOUS_ | HOME_ | NEXT_]
