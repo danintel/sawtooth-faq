@@ -7,6 +7,10 @@ Unofficial FAQ: Using Docker with Sawtooth
 .. Warning::
    **This FAQ was written by a non-expert so may contain both fiction and fact!**
 
+Can I run Sawtooth without Docker?
+--------------------------
+Yes.
+
 How can I run ``docker`` or ``docker-compose`` without prefixing it with ``sudo``?
 --------------------------------------
 Sometimes, adding your login to group ``docker`` is recommended, such as with command: ``sudo usermod -aG docker $USER`` . However, this gives ``$USER`` root-equivalent permissions.  A better alternate is to define an alias for docker and docker-compose and add to your ~/.bashrc file:
