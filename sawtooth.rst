@@ -88,13 +88,9 @@ The source and docs are at https://github.com/hyperledger/sawtooth-marketplace/
 What is the Hyperledger Sawtooth Application Developers Forum?
 --------------------------------------
 It is to provide opportunities to discuss technical application development questions with developers experienced with Hyperledger Sawtooth.
-The forum is held on Wednesdays 9-10am Central Time using Zoom video conferencing.
-
-* Join from PC, Mac, Linux, iOS or Android: https://zoom.us/j/560395876
-* Or iPhone one-tap : US: +16699006833,,560395876# or +14086380968,,560395876# 
-* Or Telephone: Dial (for higher quality, dial a number based on your current location): US: +1 669 900 6833 or +1 408 638 0968 or +1 646 876 9923 
-* Zoom Meeting ID: 560 395 876
-* International numbers available: https://zoom.us/u/eAsMx0wpc
+The forum is held on Wednesdays 9-10am Central Time using Zoom video conferencing.  An Asia-time friendly Developers Forum is held Thursday at 2pm India Time.
+For details and current contact information for both forums, see
+ https://chat.hyperledger.org/channel/sawtooth for details.
 
 What is the difference between Hyperledger and Sawtooth?
 --------------------------------------------------------
@@ -257,7 +253,7 @@ https://www.hyperledger.org/blog/2018/05/22/hyperledger-sawtooth-security-audit
 Are there any examples of Sawtooth permissions?
 -----------------------------
 * off-chain permissioning is in ``/etc/sawtooth/validator.toml`` (see ``validator.toml.example`` )
-* on-chaining permissioning is recorded on-chain. See block 0 for examples, such as ``sawtooth.settings.vote.authorized_keys`` 
+* on-chaining permissioning is recorded on-chain. See block 0 for examples, such as ``sawtooth.settings.vote.authorized_keys``
 * transaction key permissioning controls what clients can submit transactions, based on signing keys (``transactor.transaction_signer``, ``transaction.transaction_signer.<name of TP>``, ``transactor.batch_signer`` )
 * validation key permissioning controls what nodes are allowed to connect to the Sawtooth network
 * transaction family permissioning controls what TFs are supported by this Sawtooth network, ``sawtooth.validator.transaction_families``

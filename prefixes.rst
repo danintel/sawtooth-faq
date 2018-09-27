@@ -53,8 +53,6 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_sp
 +---------------+-----------+--------+-----------------------------------------+
 | seth          | Protobuf  | a68b06 | SETH (Sawtooth Ethereum VM)             |
 +---------------+-----------+--------+-----------------------------------------+
-| rbac          | Protobuf  | 8563d0 | T-Mobile NEXT Identity Platform         |
-+---------------+-----------+--------+-----------------------------------------+
 | pdo\_         | Protobuf  | aa2a93 | Private Data Objects (PDO)              |
 | contract\_    |           |        | Contract Instance Registry              |
 | instance\_    |           |        |                                         |
@@ -92,12 +90,18 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_sp
 +---------------+-----------+--------+-----------------------------------------+
 | cookiejar     | CSV-UTF8  | a4d219 | Cookie Jar minimal example              |
 +---------------+-----------+--------+-----------------------------------------+
-| simple\_      | Protobuf  | 5d6af4 | Simple Supply example used for training |
-| supply        |           |        |                                         |
+| simple\_      | Protobuf  | 5d6af4 | Simple Supply example used for future   |
+| supply        |           |        | edX LFS201 class                        |
 +---------------+-----------+--------+-----------------------------------------+
 | pirate-talk   | UTF8      | aaaaaa | Pirate Talk minimal example             |
 +---------------+-----------+--------+-----------------------------------------+
 | cookie-maker  | raw       | 1a5312 | Cookie Maker minimal example            |
++---------------+-----------+--------+-----------------------------------------+
+|  **SOME PRODUCTION TFs**                                                        |
++---------------+-----------+--------+-----------------------------------------+
+| rbac          | Protobuf  | 8563d0 | T-Mobile NEXT Identity Platform         |
++---------------+-----------+--------+-----------------------------------------+
+| pub_key       | Protobuf  | a23be1 | REMME REMChain                          |
 +---------------+-----------+--------+-----------------------------------------+
 
 [PREVIOUS_ | HOME_ | NEXT_]
