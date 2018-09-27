@@ -84,8 +84,8 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_sp
 +---------------+-----------+--------+-----------------------------------------+
 | marketplace   | Protobuf  | cd6744 | Marketplace example app                 |
 +---------------+-----------+--------+-----------------------------------------+
-| transfer-chain| JSON-UTF8 | 19d832 | Simple Tuna Supply Chain app.           |
-|               |           |        | Used for edX LFS171x class              |
+| transfer\-    | JSON-UTF8 | 19d832 | Simple Tuna Supply Chain app.           |
+| chain         |           |        | Used for edX LFS171x class              |
 +---------------+-----------+--------+-----------------------------------------+
 | simplewallet  | CSV-UTF8  | 7e2664 | Simple Wallet minimal example           |
 +---------------+-----------+--------+-----------------------------------------+
@@ -98,7 +98,7 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_sp
 +---------------+-----------+--------+-----------------------------------------+
 | cookie-maker  | raw       | 1a5312 | Cookie Maker minimal example            |
 +---------------+-----------+--------+-----------------------------------------+
-|  **SOME THIRD-PARTY PRODUCTION TFs**                                                        |
+|  **SOME THIRD-PARTY PRODUCTION TFs**                                         |
 +---------------+-----------+--------+-----------------------------------------+
 | rbac          | Protobuf  | 8563d0 | T-Mobile NEXT Identity Platform         |
 +---------------+-----------+--------+-----------------------------------------+
