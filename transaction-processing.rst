@@ -47,6 +47,11 @@ You have two choices:
 
 In any case, all nodes need to support the same set of versions for a specific Transaction Family.
 
+How do I support multiple Transaction Families in a Transaction Processor?
+--------------------------------
+This is usually not a preferred best practice.
+But if the functionality of the different TFs are closley related, you can have a TP support multiple TFs.  Just have the TP register multiple TFs at startup, instead of just one TF.
+
 How do I upgrade a transaction processor version?
 ---------------------------------
 Bump up the version number of the TP and register with the validator. Submit transactions to the TP with the updated version number. If you want to reuse the existing TP, then you'll need to stop the existing one and register the new one.
