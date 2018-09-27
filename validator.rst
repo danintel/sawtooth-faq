@@ -194,7 +194,7 @@ What are the verbosity levels of the various Sawtooth CLIs?
 
 After a failed transaction, the validator stops processing further transactions. What can I do?
 -------------------------------
-You can run the validator in parallel processing mode. 
+You can run the validator in parallel processing mode.
 For a serial scheduler, a failed transaction will be retried and no further transactions can be processed until the blocked transaction is processed successfully. Parallel scheduling will cause non-dependent transactions to be scheduled irrespective of the failed transaction.
 
 How can I improve Sawtooth performance?

@@ -82,7 +82,7 @@ More transaction-processor specific configuration files may be present.
 I get this error installing Ubuntu packages: ``Could not get lock /var/lib/dpkg/lock``
 ----------------------------
 The file lock is probably left over from a previous failed install.
-The solution is ``sudo rm  /var/lib/dpkg/lock`` . 
+The solution is ``sudo rm  /var/lib/dpkg/lock`` .
 This assumes you're not multitasking and installing something else in another terminal on the same host.
 
 I get this error installing ``sawtooth-cxx-sdk``: ``Depends: protobuf but it is not installable``

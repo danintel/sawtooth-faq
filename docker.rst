@@ -190,7 +190,7 @@ for your TP.
 
 I get ``You cannot remove a running container`` error removing docker containers
 -------------------
-Before running ``docker rm $(docker ps -aq)``, first stop the running containers with 
+Before running ``docker rm $(docker ps -aq)``, first stop the running containers with
 ``sudo docker stop $(docker ps -q)``
 
 How do I run Sawtooth with Kubernetes?
@@ -206,7 +206,7 @@ Yes. For example, I run Docker with Sawtooth containers on a VirtualBox virtual 
 
 How do I persist data on Docker containers?
 ----------------------------
-You add an external volume. You make a directory for your volume and add it using ``volumes:`` in your Docker .yaml file. For a Sawtooth-specific tutorial, see this blog: http://goshtastic.blogspot.com/2018/04/making-new-transaction-family-on.html 
+You add an external volume. You make a directory for your volume and add it using ``volumes:`` in your Docker .yaml file. For a Sawtooth-specific tutorial, see this blog: http://goshtastic.blogspot.com/2018/04/making-new-transaction-family-on.html
 Also see the Docker storage documentation at https://docs.docker.com/storage/
 
 If you do not ``down`` the container or reboot the Docker host, the container will not be destroyed.

@@ -57,7 +57,7 @@ Yes.  You can use full addresses or partial addresses or empty (no address).  Th
 
 How do I debug a Sawtooth client?
 ---------------------------
-* Add debug messages (such as 
+* Add debug messages (such as
 ``print("Action = {}".format(action))`` in Python).
 * Start the REST API with the ```sawtooth-rest-api -vvv`` for the most verbosity.
 * Set the trace parameter to true when calling method ``Batch``. In Python: ``batch_pb2.Batch(trace=True)`` .
