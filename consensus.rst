@@ -22,6 +22,8 @@ Will Sawtooth support more consensus algorithms in the future?
 ------------------------------------------
 Yes. With pluggable consensus, the idea is to have a meaningful set of consensus algorithms so the "best fit" can be applied to an application's use case.  RAFT is a recent addition--still being stabilized. There is a PBFT prototype in the works.  Others are being planned.
 
+REMME.io has independently implemented Algorand Byzantine Agreement on Sawtooth.
+
 Does the PoET Simulator implement the same consensus algorithm as PoET SGX?
 ------------------------------
 Yes--they are same same consensus algorithm. The difference is the
