@@ -43,7 +43,7 @@ sawtooth.consensus.raft.heartbeat_tick
 sawtooth.consensus.raft.peers
     JSON list of each peer node's public key. Only required RAFT setting
 sawtooth.consensus.raft.period
-    RAFT consensus period, in seconds. E.g., 3
+    RAFT consensus period, in seconds. E.g., 3. Higher settings cause larger blocks, small settings have faster performance with smaller, quicker block publication, but causes more network traffic.
 sawtooth.consensus.valid_block_publishers
     List of public keys for allowed block publishers. For devmode
 
