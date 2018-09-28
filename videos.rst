@@ -61,7 +61,7 @@ For 2017 Technical Forums, click on "2017" at the above link.
 ----
 
 REMME REMChain (Roman Kravchenko, Eugene Babichenko, and Andrii Fedotov, REMME)
-    20180927-sawtooth-forum.mp4 (starts at 11:00)
+    20180927-sawtooth-forum.mp4_ (starts at 11:00)
     https://drive.google.com/file/d/1-XP-DflRJvAekACYv0tAQsbyl2VnN80o/view
 Sawtooth RAFT Consensus (Adam Ludvik, Bitwise)
     20180927-sawtooth-forum.mp4 (starts at 1:01:00)
@@ -128,9 +128,11 @@ PoET Consensus on Sawtooth Lake (Jamie Jason, Intel)
     20170622-sawtooth-tech-forum.mp4 (starts at 12:00)
     https://drive.google.com/file/d/0B_NJV6eJXAA1TGdfMjJlT0Qtb0U/view
 
+
 [PREVIOUS_ | HOME_]
 
 .. _PREVIOUS: settings.rst
 .. _HOME: README.rst
+.. _20180927-sawtooth-forum.mp4: https://drive.google.com/file/d/1-XP-DflRJvAekACYv0tAQsbyl2VnN80o/view
 
 © Copyright 2018, Intel Corporation.
