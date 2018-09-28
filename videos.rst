@@ -64,68 +64,68 @@ REMME REMChain (Roman Kravchenko, Eugene Babichenko, and Andrii Fedotov, REMME)
     20180927-sawtooth-forum.mp4_ (starts at 11:00)
     https://drive.google.com/file/d/1-XP-DflRJvAekACYv0tAQsbyl2VnN80o/view
 Sawtooth RAFT Consensus (Adam Ludvik, Bitwise)
-    20180927-sawtooth-forum.mp4 (starts at 1:01:00)
+    20180927-sawtooth-forum.mp4_ (starts at 1:01:00)
     https://drive.google.com/file/d/1-XP-DflRJvAekACYv0tAQsbyl2VnN80o/view
 Sawtooth NEXT Identity Platform (Chris Spanton, T-Mobile)
-    20180913-sawtooth-tech-forum.mp4 (starts at 0:00)
+    20180913-sawtooth-tech-forum.mp4_ (starts at 0:00)
     https://drive.google.com/file/d/1jnL4nhYgY7zSqKF-WolNdYQJQa68m0al/view
 PSE-Free PoET2 Consensus Algorithm (Amol Kulkarni, Intel)
-    20180823-sawtooth-tech-forum.mp4 (starts at 9:00)
+    20180823-sawtooth-tech-forum.mp4_ (starts at 9:00)
     https://drive.google.com/file/d/1IvwMExtAkrCTyO29X6_qaqtpAS1b1wpu/view
 MinBFT consensus algorithm (Sergey Fedorov, NEC Labs Europe)
-    20180802-sawtooth-minbft.mp4 (starts at 20:00)
+    20180802-sawtooth-minbft.mp4_ (starts at 20:00)
     https://drive.google.com/file/d/12A4x4NBQpcHPh9uzKOfDpZ8aHUPhYyPU/view
 PoET 2.0 Preview (Ashish Mishra, Intel)
-    20180524-sawtooth-tech-forum.mp4 (starts at 9:20)
+    20180524-sawtooth-tech-forum.mp4_ (starts at 9:20)
     https://drive.google.com/file/d/1TG29bCQ9hRX8TB3r5vjVVD7aET3qy_Sd/view
 Sawtooth Consensus Engines (Adam Ludvik, Bitwise)
-    20180426-sawtooth-tech-forum.mp4 (starts at 10:00)
+    20180426-sawtooth-tech-forum.mp4_ (starts at 10:00)
     https://drive.google.com/file/d/1W_4rnlrgO211BOkQVh8f0mZYJYOZsMT0/view
 Sawtooth Explorer Demo (Joe Wright, PokitDok)
-    20180413-sawtooth-explorer-demo.mp4 (starts at 11:30)
+    20180413-sawtooth-explorer-demo.mp4_ (starts at 11:30)
     https://drive.google.com/file/d/12hBrRSQTaP7jsQGEooPMvpFGSCRmJMY4/view
 Sawtooth Rust SDK (Peter Schwarz, Bitwise)
-    20180215-sawtooth-tech-forum.m4a (audio only, starts at 23:40)
+    20180215-sawtooth-tech-forum.m4a_ (audio only, starts at 23:40)
     https://drive.google.com/file/d/1Lr2Ik3HjFU5tODce2chED5oR3Vhci6-G/view
 
 2017 Sawtooth Technical Forum
 ----
 
 Sawtooth API 1.0 Stabilization (Adam Ludvik, Bitwise)
-    20171214-sawtooth-tech-forum-trimmed.mp4 (starts at 0:00)
+    20171214-sawtooth-tech-forum-trimmed.mp4_ (starts at 0:00)
     https://drive.google.com/file/d/1XE9RuWPaI5en2UgJJqNLrJJcZi0TZuJk/view
 Sawtooth Events (Adam Ludvik, Bitwise)
-    20171102-sawtooth-tech-forum.mp4 (starts at 15:00)
+    20171102-sawtooth-tech-forum.mp4_ (starts at 15:00)
     https://drive.google.com/file/d/0B_NJV6eJXAA1ODFrbjhINWpCZHM/view
 Tractable Commodities with Sawtooth Supply Chain (Zac Delventhal, Bitwise)
-    20171019-sawtooth-tech-forum-2.mp4 (starts at 0:00)
+    20171019-sawtooth-tech-forum-2.mp4_ (starts at 0:00)
     https://drive.google.com/file/d/0ByXbfT5DHjNjRDhiUFYzc011VHM/view
 OpenSSL Key with Seth (Adam Ludvik, Bitwise)
-    20171019-sawtooth-tech-forum-2.mp4 (starts at 36:00)
+    20171019-sawtooth-tech-forum-2.mp4_ (starts at 36:00)
     https://drive.google.com/file/d/0ByXbfT5DHjNjRDhiUFYzc011VHM/view
 Transactor Key and Validator Key Permissioning (Andrea Gunderson, Bitwise)
-    20171005-sawtooth-tech-forum.mp4 (starts at 0:00)
+    20171005-sawtooth-tech-forum.mp4_ (starts at 0:00)
     https://drive.google.com/file/d/0B_NJV6eJXAA1R3BLQlZsM2xMMTg/view
 Sawtooth Unit Testing with the Mock Validator (Ryan Banks, Bitwise)
-    20170914-sawtooth-tech-forum.mp4 (starts at 13:20)
+    20170914-sawtooth-tech-forum.mp4_ (starts at 13:20)
     https://drive.google.com/file/d/0B_NJV6eJXAA1cGpQaTZ1dTIySFE/view
 Hyperledger Burrow (Adam Ludvik, Bitwise, and Benjamin Bollen, Monax)
-    20170608-sawtooth-tech-forum.mp3 (audio only, starts at 15:00)
+    20170608-sawtooth-tech-forum.mp3_ (audio only, starts at 15:00)
     https://drive.google.com/file/d/0B_NJV6eJXAA1WElXd2JXNW1jbVU/view
 Sawtooth Blockchain App Development with Javascript (Zac Delventhal, Bitwise))
-    20170831-sawtooth-tech-forum.mp4 (starts at 44:00)
+    20170831-sawtooth-tech-forum.mp4_ (starts at 44:00)
     https://drive.google.com/file/d/0B_NJV6eJXAA1OWNGMlM5blZHMUE/view
 Sawtooth State Delta Subscriptions (Peter Schwarz, Bitwise)
-    20170727-sawtooth-tech-forum.mp4 (starts at 10:50)
+    20170727-sawtooth-tech-forum.mp4_ (starts at 10:50)
     https://drive.google.com/file/d/0B_NJV6eJXAA1b0FzQTd5NHpnd1U/view
 Sawtooth Serial and Parallel Scheduler (Boyd Johnson, Bitwise)
-    20170713-sawtooth-tech-forum.mp4 (starts at 12:50)
+    20170713-sawtooth-tech-forum.mp4_ (starts at 12:50)
     https://drive.google.com/file/d/0B_NJV6eJXAA1aGlVemNUSEFiZEU/view
 Hyperledger Composer (Simon Stone, IBM)
-    20170629-composer-sawtooth.mp4 (starts at 13:00)
+    20170629-composer-sawtooth.mp4_ (starts at 13:00)
     https://drive.google.com/file/d/0B_NJV6eJXAA1OHFkMW82UlJNaXc/view
 PoET Consensus on Sawtooth Lake (Jamie Jason, Intel)
-    20170622-sawtooth-tech-forum.mp4 (starts at 12:00)
+    20170622-sawtooth-tech-forum.mp4_ (starts at 12:00)
     https://drive.google.com/file/d/0B_NJV6eJXAA1TGdfMjJlT0Qtb0U/view
 
 
@@ -134,5 +134,25 @@ PoET Consensus on Sawtooth Lake (Jamie Jason, Intel)
 .. _PREVIOUS: settings.rst
 .. _HOME: README.rst
 .. _20180927-sawtooth-forum.mp4: https://drive.google.com/file/d/1-XP-DflRJvAekACYv0tAQsbyl2VnN80o/view
+.. _20180927-sawtooth-forum.mp4: https://drive.google.com/file/d/1-XP-DflRJvAekACYv0tAQsbyl2VnN80o/view
+.. _20180913-sawtooth-tech-forum.mp4: https://drive.google.com/file/d/1jnL4nhYgY7zSqKF-WolNdYQJQa68m0al/view
+.. _20180823-sawtooth-tech-forum.mp4: https://drive.google.com/file/d/1IvwMExtAkrCTyO29X6_qaqtpAS1b1wpu/view
+.. _20180802-sawtooth-minbft.mp4: https://drive.google.com/file/d/12A4x4NBQpcHPh9uzKOfDpZ8aHUPhYyPU/view
+.. _20180524-sawtooth-tech-forum.mp4: https://drive.google.com/file/d/1TG29bCQ9hRX8TB3r5vjVVD7aET3qy_Sd/view
+.. _20180426-sawtooth-tech-forum.mp4: https://drive.google.com/file/d/1W_4rnlrgO211BOkQVh8f0mZYJYOZsMT0/view
+.. _20180413-sawtooth-explorer-demo.mp4: https://drive.google.com/file/d/12hBrRSQTaP7jsQGEooPMvpFGSCRmJMY4/view
+.. _20180215-sawtooth-tech-forum.m4a: https://drive.google.com/file/d/1Lr2Ik3HjFU5tODce2chED5oR3Vhci6-G/view
+.. _20171214-sawtooth-tech-forum-trimmed.mp4: https://drive.google.com/file/d/1XE9RuWPaI5en2UgJJqNLrJJcZi0TZuJk/view
+.. _20171102-sawtooth-tech-forum.mp4: https://drive.google.com/file/d/0B_NJV6eJXAA1ODFrbjhINWpCZHM/view
+.. _20171019-sawtooth-tech-forum-2.mp4: https://drive.google.com/file/d/0ByXbfT5DHjNjRDhiUFYzc011VHM/view
+.. _20171019-sawtooth-tech-forum-2.mp4: https://drive.google.com/file/d/0ByXbfT5DHjNjRDhiUFYzc011VHM/view
+.. _20171005-sawtooth-tech-forum.mp4: https://drive.google.com/file/d/0B_NJV6eJXAA1R3BLQlZsM2xMMTg/view
+.. _20170914-sawtooth-tech-forum.mp4: https://drive.google.com/file/d/0B_NJV6eJXAA1cGpQaTZ1dTIySFE/view
+.. _20170608-sawtooth-tech-forum.mp3: https://drive.google.com/file/d/0B_NJV6eJXAA1WElXd2JXNW1jbVU/view
+.. _20170831-sawtooth-tech-forum.mp4: https://drive.google.com/file/d/0B_NJV6eJXAA1OWNGMlM5blZHMUE/view
+.. _20170727-sawtooth-tech-forum.mp4: https://drive.google.com/file/d/0B_NJV6eJXAA1b0FzQTd5NHpnd1U/view
+.. _20170713-sawtooth-tech-forum.mp4: https://drive.google.com/file/d/0B_NJV6eJXAA1aGlVemNUSEFiZEU/view
+.. _20170629-composer-sawtooth.mp4: https://drive.google.com/file/d/0B_NJV6eJXAA1OHFkMW82UlJNaXc/view
+.. _20170622-sawtooth-tech-forum.mp4: https://drive.google.com/file/d/0B_NJV6eJXAA1TGdfMjJlT0Qtb0U/view
 
 © Copyright 2018, Intel Corporation.
