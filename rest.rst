@@ -72,6 +72,12 @@ I am getting this error: ``Cross-Origin Request Blocked: The Same Origin Policy 
 ------------------------------------
 The Sawtooth REST API doesn't support CORS.  To allow cross-origin access to the Sawtooth API, put it behind a proxy.
 
+What is the back pressure test?
+-------------------------------
+Back pressure is a flow-control technique to help prevent DoS attacks.
+It results in a ``Status.QUEUE_FULL`` client batch submit response or a 429 "Too Many Requests" REST API error.
+If the validator is overwhelmed it will stop accepting new batches until it can handle more work. The number of batches that validator can accept is based on a multiplier (currently 2) of a rolling average of the number of published batches.
+
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. _PREVIOUS: client.rst
