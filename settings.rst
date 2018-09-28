@@ -62,7 +62,8 @@ sawtooth.poet.key_block_claim_limit
     For K Test: maximum number of blocks a validator may claim with a PoET keypair before it needs to refresh its signup information (default 250)
 sawtooth.poet.population_estimate_sample_size
     Sample size, in blocks, to compute the local mean wait time (default 50).
-    The local mean wait time multiplied by random_float(0,1) yields the PoET duration time
+    The local mean wait time multiplied by random_float(0,1) yields the PoET duration time.
+    For production, we recommend 500 to get stable population estimates. Most enterprise networks have stable populations and so a long sample length is preferable. 
 sawtooth.poet.report_public_key_pem
     Public key used by Validator Registry TP to verify attestation reports.
     From ``/etc/sawtooth/ias_rk_pub.pem`` or (for simulator) ``/etc/sawtooth/simulator_rk_pub.pem``
@@ -98,7 +99,7 @@ sawtooth.validator.max_transactions_per_block
 sawtooth.validator.transaction_families
     List of permitted transaction families.
     If not set, all transaction families are permitted.
-    *Dan's ProTip*: ``settings`` is a required TF.  ``sawtooth_validator_registry`` is required if you use PoET.
+    *Dan's ProTip*: ``settings`` is a required TF. ``sawtooth_validator_registry`` is required if you use PoET.
 
 transactor.batch_signer
     Public keys of authorized batch signers
