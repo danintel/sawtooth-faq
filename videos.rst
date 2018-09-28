@@ -24,7 +24,7 @@ Blockchain and Hyperledger Sawtooth Overview (6:15, Daniel Homlund Martin Kronbe
 Several Sawtooth application development tutorials by John S.
     https://www.youtube.com/channel/UC4YOKxLGKFcaq4duRhH75qw
 
-Hyperledger Sawtooth and Kubernetes at Hyperledger Hong Kong meetup. (Duncan Johnston-Watt, Blockchain Technology Partners, 2018)
+Hyperledger Sawtooth and Kubernetes at Hyperledger Hong Kong meetup. (1:38:24, Duncan Johnston-Watt, Blockchain Technology Partners, 2018)
     https://www.youtube.com/watch?v=d4tf5Ps4VLw
     Slides: https://bit.ly/2PR1Oub
 
