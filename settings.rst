@@ -47,7 +47,8 @@ sawtooth.consensus.raft.peers
     JSON list of each peer node's public key. Only required RAFT setting.
     Key is from ``/etc/sawtooth/keys/validator.pub`` .
     Example:
-    ``["0276f8fed116837eb7646f800e2dad6d13ad707055923e49df08f47a963547b631", "035d8d519a200cdb8085c62d6fb9f2678cf71cbde738101d61c4c8c2e9f2919aa"]``
+    ``["0276f8fed116837eb7646f800e2dad6d13ad707055923e49df08f47a963547b631",\\
+    "035d8d519a200cdb8085c62d6fb9f2678cf71cbde738101d61c4c8c2e9f2919aa"]``
 sawtooth.consensus.raft.period
     RAFT consensus period, in seconds. E.g., 3. Higher settings cause larger blocks, small settings have faster performance with smaller, quicker block publication, but causes more network traffic.
 sawtooth.consensus.valid_block_publishers
