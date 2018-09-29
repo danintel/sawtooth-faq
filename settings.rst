@@ -62,7 +62,7 @@ sawtooth.identity.allowed_keys
 
 sawtooth.poet.enclave_module_name
     Python module name implementing the PoET enclave.
-    Set to ``sawtooth_poet_sgx.poet_enclave_sgx.poet_enclave -o config.batch``
+    Set to ``sawtooth_poet_sgx.poet_enclave_sgx.poet_enclave``
 sawtooth.poet.initial_wait_time
     For C Test: initial time to wait in seconds before proposing a block (e.g., 25; default 3000)
 sawtooth.poet.key_block_claim_limit
