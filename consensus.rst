@@ -137,11 +137,10 @@ PoET requires the ``sawtooth_validator_registry`` TP).
 The initial default consensus algorithm is ``devmode``, which is not for production use.
 
 Here is an example that changes the consensus to Raft:
-
-``sawset proposal create --url http://localhost:8008 \\
-  --key /etc/sawtooth/keys/validator.priv sawtooth.consensus.algorithm=raft \\
-  sawtooth.consensus.raft.peers=\\
-  '["0276f8fed116837eb7646f800e2dad6d13ad707055923e49df08f47a963547b631", \\
+  ``sawset proposal create --url http://localhost:8008 \
+  --key /etc/sawtooth/keys/validator.priv sawtooth.consensus.algorithm=raft \
+  sawtooth.consensus.raft.peers=\
+  '["0276f8fed116837eb7646f800e2dad6d13ad707055923e49df08f47a963547b631", \
   "035d8d519a200cdb8085c62d6fb9f2678cf71cbde738101d61c4c8c2e9f2919aa"]'``
 
 Where can I find information on the proposed PoET2 algorithm?
