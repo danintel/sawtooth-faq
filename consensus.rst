@@ -129,8 +129,19 @@ More commonly, the defense-in-depth checks are too stringent during the initial 
 
 How do I change the Sawtooth consensus algorithm?
 ---------------------------
-Use the ``sawset proposal create`` subcommand to modify ``sawtooth.consensus.algorithm``.  For an example, see https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/creating_sawtooth_network.html
-The initial default algorithm is "dev mode", which is not for production use.
+* Start any consensus-required TPs, if any, on all nodes (for example
+PoET requires the ``sawtooth_validator_registry`` TP).
+* Use the ``sawset proposal create`` subcommand to modify ``sawtooth.consensus.algorithm`` (along with any consensus-required settings).  For an example, see https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/creating_sawtooth_network.html
+
+The initial default consensus algorithm is ``devmode``, which is not for production use.
+
+Here is an example that changes the consensus to Raft:
+
+``sawset proposal create --url http://localhost:8008 \
+  --key /etc/sawtooth/keys/validator.priv sawtooth.consensus.algorithm=raft \
+  sawtooth.consensus.raft.peers=\
+  '["0276f8fed116837eb7646f800e2dad6d13ad707055923e49df08f47a963547b631", \
+  "035d8d519a200cdb8085c62d6fb9f2678cf71cbde738101d61c4c8c2e9f2919aa"]'``
 
 Where can I find information on the proposed PoET2 algorithm?
 ------------------------------------

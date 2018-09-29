@@ -13,9 +13,12 @@ There is no central registry, most or all of these can be found found on github.
 The following are some Sawtooth settings.
 Since Sawtooth settings are extensible and include transaction family-specific settings, this list is incomplete.
 
-You can list existing settings with the
+* You can list existing settings with the
 ``sawtooth settings list --url http://localhost:8008`` command.
 For options, append ``help`` to the command.
+
+* You can set a setting with the ``sawset proposal create --url http://localhost:8008`` command.  For example,
+``sawset proposal create --url http://localhost:8008 --key /etc/sawtooth/keys/validator.priv sawtooth.publisher.max_batches_per_block=200``
 
 * Some baseline settings are documented at https://sawtooth.hyperledger.org/docs/core/releases/1.0/transaction_family_specifications/settings_transaction_family.html
 * Transactor settings are documented at https://sawtooth.hyperledger.org/docs/core/nightly/master/sysadmin_guide/configuring_permissions.html
@@ -41,7 +44,10 @@ sawtooth.consensus.raft.election_tick
 sawtooth.consensus.raft.heartbeat_tick
     RAFT consensus heartbeat tick, in seconds. E.g., 150
 sawtooth.consensus.raft.peers
-    JSON list of each peer node's public key. Only required RAFT setting
+    JSON list of each peer node's public key. Only required RAFT setting.
+    Key is from ``/etc/sawtooth/keys/validator.pub`` .
+    Example:
+    ``["0276f8fed116837eb7646f800e2dad6d13ad707055923e49df08f47a963547b631", "035d8d519a200cdb8085c62d6fb9f2678cf71cbde738101d61c4c8c2e9f2919aa"]``
 sawtooth.consensus.raft.period
     RAFT consensus period, in seconds. E.g., 3. Higher settings cause larger blocks, small settings have faster performance with smaller, quicker block publication, but causes more network traffic.
 sawtooth.consensus.valid_block_publishers
