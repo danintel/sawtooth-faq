@@ -71,12 +71,14 @@ MinBFT consensus algorithm (Sergey Fedorov, NEC Labs Europe)
     20180802-sawtooth-minbft.mp4_ (starts at 20:00)
 PoET 2.0 Preview (Ashish Mishra, Intel)
     20180524-sawtooth-tech-forum.mp4_ (starts at 9:20)
+Private Data Objects (Eugene Yarmosh, Intel)
+    20180510-sawtooth-tech-forum.m4a_ (audio only; starts at 25:40)
 Sawtooth Consensus Engines (Adam Ludvik, Bitwise)
     20180426-sawtooth-tech-forum.mp4_ (starts at 10:00)
 Sawtooth Explorer Demo (Joe Wright, PokitDok)
     20180413-sawtooth-explorer-demo.mp4_ (starts at 11:30)
 Sawtooth Rust SDK (Peter Schwarz, Bitwise)
-    20180215-sawtooth-tech-forum.m4a_ (audio only, starts at 23:40)
+    20180215-sawtooth-tech-forum.m4a_ (audio only; starts at 23:40)
 
 2017 Sawtooth Technical Forum
 ----
@@ -96,7 +98,7 @@ Transactor Key and Validator Key Permissioning (Andrea Gunderson, Bitwise)
 Sawtooth Unit Testing with the Mock Validator (Ryan Banks, Bitwise)
     20170914-sawtooth-tech-forum.mp4_ (starts at 13:20)
 Hyperledger Burrow (Adam Ludvik, Bitwise, and Benjamin Bollen, Monax)
-    20170608-sawtooth-tech-forum.mp3_ (audio only, starts at 15:00)
+    20170608-sawtooth-tech-forum.mp3_ (audio only; starts at 15:00)
 Sawtooth Blockchain App Development with Javascript (Zac Delventhal, Bitwise))
     20170831-sawtooth-tech-forum.mp4_ (starts at 44:00)
 Sawtooth State Delta Subscriptions (Peter Schwarz, Bitwise)
@@ -119,6 +121,7 @@ PoET Consensus on Sawtooth Lake (Jamie Jason, Intel)
 .. _20180823-sawtooth-tech-forum.mp4: https://drive.google.com/file/d/1IvwMExtAkrCTyO29X6_qaqtpAS1b1wpu/view
 .. _20180802-sawtooth-minbft.mp4: https://drive.google.com/file/d/12A4x4NBQpcHPh9uzKOfDpZ8aHUPhYyPU/view
 .. _20180524-sawtooth-tech-forum.mp4: https://drive.google.com/file/d/1TG29bCQ9hRX8TB3r5vjVVD7aET3qy_Sd/view
+.. _20180510-sawtooth-tech-forum.m4a: https://drive.google.com/file/d/10ykcVpXqRBEN1l9JmHIauNBhx00Ue61N/view
 .. _20180426-sawtooth-tech-forum.mp4: https://drive.google.com/file/d/1W_4rnlrgO211BOkQVh8f0mZYJYOZsMT0/view
 .. _20180413-sawtooth-explorer-demo.mp4: https://drive.google.com/file/d/12hBrRSQTaP7jsQGEooPMvpFGSCRmJMY4/view
 .. _20180215-sawtooth-tech-forum.m4a: https://drive.google.com/file/d/1Lr2Ik3HjFU5tODce2chED5oR3Vhci6-G/view
