@@ -142,7 +142,7 @@ These commands were added after the Sawtooth 1.0.4 release and are not available
 
 How can I change on-chain settings without deleting the blockchain?
 ------------------------------------------
-Use the ``sawset`` command.  This allows you to change settings such
+Use the ``sawset`` command. This allows you to change settings such
 as maximum batches per block or target wait time.
 
 What does this error mean ``repository ... xenial InRelease' doesn't support architecture 'i386'``?
@@ -160,7 +160,7 @@ In this case, install ``colorlog`` with ``sudo apt install python3-colorlog`` or
 
 I get this error starting Sawtooth: ``lmdb.DiskError: /var/lib/sawtooth/poet-key-state-03efb2aa.lmdb: No space left on device``
 -----------------------------
-Besides the obvious problem of no disk space, it could be your OS or filesystem does not support sparse files.  The LMDB databases used by Sawtooth are 1TB sparse (mostly unallocated) files.
+Besides the obvious problem of no disk space, it could be your OS or filesystem does not support sparse files. The LMDB databases used by Sawtooth are 1TB sparse (mostly unallocated) files.
 
 I get this error when running ``sawtooth sawadm genesis config-genesis.batch``:  ``Processing config-genesis.batch... Error: Unable to read config-genesis.batch``
 ------------------------------
@@ -168,13 +168,13 @@ This error can occur when there is no sawtooth user and group.
 This should have been done by the package ``postinst`` script.
 To add, type ``addgroup --system sawtooth; adduser --system --ingroup sawtooth sawtooth`` .
 
-It could be a file or directory permission problem--try changing the file ownership with ``chown sawtooth:sawtooth config-genesis.batch`` and move it to a sawtooth-writable directory.  For example ``mv config-genesis.batch /tmp; cd /tmp``
+It could be a file or directory permission problem--try changing the file ownership with ``chown sawtooth:sawtooth config-genesis.batch`` and move it to a sawtooth-writable directory. For example ``mv config-genesis.batch /tmp; cd /tmp``
 
-Another cause is the file doesn't exist.  Create it with ``sawset genesis`` .
+Another cause is the file doesn't exist. Create it with ``sawset genesis`` .
 
 How to I build Sawtooth from source?
 ------------------------------------
-Use ``git`` to download the source, then ``build_all`` to build.  Type ``./bin/build_all`` for options.  For example:
+Use ``git`` to download the source, then ``build_all`` to build. Type ``./bin/build_all`` for options. For example:
 .. code:: sh
 
     $ sawtooth --version
@@ -197,9 +197,9 @@ https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=228581
 
 I get this error while installing Sawtooth: ``Error starting userland proxy: listen tcp 0.0.0.0:8080: bind: address already in use``
 -----------------------------
-You already have a program running that uses TCP port 8080.  Either kill it or change the port you use to something else.
+You already have a program running that uses TCP port 8080. Either kill it or change the port you use to something else.
 To find the process(es) that have port 8080 open, type ``sudo lsof -t -i:8080``
-Then kill the processes. Check again that they have not restarted.  Also check that they are not Docker containers that have restarted.
+Then kill the processes. Check again that they have not restarted. Also check that they are not Docker containers that have restarted.
 
 I get this error after setting up a Sawtooth network: ``Can't send message PING_RESPONSE back to ... because connection OutboundConnectionThread- tcp://192.168.0.100:8800 not in dispatcher``
 ----------------------------------------------------
@@ -219,8 +219,8 @@ The usual problem when you get this message is configuring the peer endpoints
 
 I get ``unmet dependencies`` errors installing Sawtooth on Ubuntu 18.04 LTS.
 ---------------------------
-Ubuntu 18.04 LTS is not supported yet.  Use Ubuntu 16.04 LTS for now.
-You can also install Sawtooth with Docker.  See:
+Ubuntu 18.04 LTS is not supported yet. Use Ubuntu 16.04 LTS for now.
+You can also install Sawtooth with Docker. See:
 https://sawtooth.hyperledger.org/docs/core/releases/latest/app_developers_guide/docker.html
 
 I get this error installing Sawtooth: ``No matching distribution found for sawtooth_rest_api``
@@ -231,6 +231,10 @@ I don't know if could work. I know installing Sawtooth using Ubuntu/Debian insta
 I get this error with ``add-apt-repository``: Couldn't connect to accessibility bus: Failed to connect to socket . . . Connection refused
 ----------------------------
 It is just a warning and you can ignore it. Verify the Sawtooth repository was added in ``/etc/apt/sources.list`` The cause is the command tried to start a graphic display (probably over SSH) when it was not available. A workaround to remove the warning is to add ``export NO_AT_BRIDGE=1``` to ``~/.bashrc``
+
+How do I list sawtooth command line options?
+--------------------------------------------
+For the Sawtooth CLIs (sawadm, sawset, sawnet, sawtooth), append ``-h`` after the command to list subcommands (for example, ``sawadm -h`` ). For the Sawtooth subcommands, append ``-h`` after the subcommand (for example, ``sawadm keygen -h`` ).
 
 
 [PREVIOUS_ | HOME_ | NEXT_]
