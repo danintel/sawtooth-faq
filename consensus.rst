@@ -11,8 +11,8 @@ What consensus algorithms does Sawtooth support?
 -------------------
 dev-mode
     Only suitable for testing TPs with single validator deployments.  Uses a simplified random-leader algorithm for development and testing.  Not for production use
-PoET Simulator
-    Simulates the SGX environment, and provides CFT similar to Fabric and some other blockchains.  Requires poet-validator-registry TP. Runs on any processor (does not use SGX).  Has Crash Fault Tolerance and can be used for production networks
+PoET CFT
+    PoET with a simulated SGX environment. Provides CFT similar to Fabric and some other blockchains.  Requires poet-validator-registry TP. Runs on any processor (does not require Intel or SGX).  Has Crash Fault Tolerance and can be used for production networks
 PoET SGX
     Takes advantage of SGX in order to provide consensus with Byzantine Fault Tolerance (BFT), like PoW algorithms have, but at very low CPU usage. PoET SGX is the only algorithm that has hardware requirements (a processor supporting SGX)
 RAFT
@@ -31,15 +31,11 @@ To use, basically set ``sawtooth.consensus.algorithm`` to ``raft`` and
 ``sawtooth.consensus.raft.peers`` to a list of peer nodes (network public keys).
 
 
-Does the PoET Simulator implement the same consensus algorithm as PoET SGX?
+Does the PoET CFT implement the same consensus algorithm as PoET SGX?
 ------------------------------
 Yes--they are same same consensus algorithm. The difference is the
-PoET Simulator also simulates SGX hardware, allowing PoET to run on non-SGX
+PoET CFT also simulates SGX hardware, allowing PoET to run on non-SGX
 hardware.
-
-Is PoET Simulator suitable for production use?
-----------------------
-Yes.  It is for systems that do not have SGX and is intended for use in production.
 
 What is unpluggable consensus?
 -------------------
@@ -49,15 +45,15 @@ Changing consensus on the fly means it is done without stopping validators, flus
 or starting over with a new genesis block.
 It is also called Dynamic Consensus.
 
-Can my Sawtooth network have validators with a mixture of SGX PoET or Simulator PoET?
+Can my Sawtooth network have validators with a mixture of PoET SGX and PoET CFT?
 ------------------------------------------
 No. You need to pick one consensus for all nodes.
-But you can change consensus after the network has started.
+But you can change consensus after the Sawtooth network has started.
 
-Can I use the PoET simulator instead of PoET SGX for production?
-------------------------------
-Yes, PoET simulator is for production use, not just for development. Both PoET Simulator and SGX have tests to guard against bad actors, such as the "Z Test" to check a validator is not winning too frequently.
-PoET Simulator simulates the SGX environment and provides CFT (similar to Fabric and other blockchain software), which is good enough to go into production.
+Is PoET CFT suitable for production use?
+----------------------
+Yes.  It is for systems that do not have SGX and is intended for use in production.  Both PoET CFT and PoET SGX have tests to guard against bad actors, such as the "Z Test" to check a validator is not winning too frequently.
+PoET CFT simulates the SGX environment and provides CFT (similar to Fabric and other blockchain software), which is good enough to go into production.
 That said, PoET SGX is preferred because of the additional SGX protections for generating the wait time.
 
 What cloud services offer SGX?
@@ -68,7 +64,7 @@ Early access was available on Microsoft Azure, but not now.
 Does PoET SGX function with SGX on cloud services?
 ---------------------------------------------
 No. For PoET SGX to function, one also needs Platform Services (PSW), which is not available from any cloud provider.
-Instead, one can use PoET Simulator, which is also production-ready.
+Instead, one can use PoET CFT, which is also production-ready.
 But other software software that requires SGX may be deployed on cloud services.
 
 I get this error during PoET SGX registration: "Machine requires update (probably BIOS) for SGX compliance."
@@ -84,7 +80,7 @@ No.  If you use PoET SGX consensus you need a processor that supports SGX.
 Does Sawtooth require SGX?
 -------------------
 No.  SGX is only needed if you use the hardened version of PoET, PoET SGX.
-We also have a version of PoET that just uses conventional software, PoET Simulator,
+We also have a version of PoET that just uses conventional software, PoET CFT,
 which runs on a Sawtooth network with any processor.
 
 How is PoET duration time computed?
@@ -105,7 +101,7 @@ https://sawtooth.hyperledger.org/docs/core/releases/1.0/architecture/poet.html
 Where is the PoET SGX Enclave configuration file?
 ----------------------
 It is at ``/etc/sawtooth/poet_enclave_sgx.toml`` .
-It is only for configuring PoET SGX Enclave, not the PoET simulator (without SGX).
+It is only for configuring PoET SGX Enclave, not the PoET CFT (PoET without SGX).
 A sample file is at
 https://github.com/hyperledger/sawtooth-poet/blob/master/sgx/packaging/poet_enclave_sgx.toml.example
 The configuration is documented at

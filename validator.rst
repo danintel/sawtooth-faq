@@ -24,7 +24,7 @@ https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/i
 
 Is there an example for a multiple node Sawtooth Network?
 -------------------
-See these instructions for setting up a 5-node Sawtooth Network with PoET Simulator Consensus using Docker:
+See these instructions for setting up a 5-node Sawtooth Network with PoET CFT Consensus using Docker:
 https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/creating_sawtooth_network.html
 
 Here is a gist with brief instructions for a 2-node network:
@@ -199,7 +199,7 @@ For a serial scheduler, a failed transaction will be retried and no further tran
 
 How can I improve Sawtooth performance?
 -----------------------------
-* First, for performance measurement or tuning, do not run the default "dev mode" consensus algorithm. Run another one, such as PoET or PoET simulator. Dev mode is not for production use and excessive forks under heavy use degrades performance
+* First, for performance measurement or tuning, do not run the default "dev mode" consensus algorithm. Run another one, such as PoET SGX or PoET CFT. Dev mode is not for production use and excessive forks under heavy use degrades performance
 * Batch multiple transactions together as much as possible in a Batch of transaction or a BatchList of multiple transactions (or both)
 * Run the validator in parallel mode, not serial mode
 * Write the transaction processor in a thread-friendly programming language such as Rust or C++, not Python. Python is an interpretive language and therefore slower. It also suffers from the Global Interpreter Lock (GIL), which locks executing multiple threads to one thread at-a-time
