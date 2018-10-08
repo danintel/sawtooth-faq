@@ -31,7 +31,7 @@ sawtooth.config.authorization_type
     Example setting--never used
 
 sawtooth.consensus.algorithm
-    Consensus algorithm (e.g., ``poet`` (SGX or simulator) or ``devmode`` (default) or ``raft`` or any other pluggable consensus engine you provide)
+    Consensus algorithm (e.g., ``poet`` (PoET SGX or PoET CFT) or ``devmode`` (default) or ``raft`` or any other pluggable consensus engine you provide)
 sawtooth.consensus.block_validation_rules
     Lists validation rules to use in deciding what blocks to add to the blockchain.
     See https://sawtooth.hyperledger.org/docs/core/nightly/master/architecture/injecting_batches_block_validation_rules.html
@@ -73,7 +73,7 @@ sawtooth.poet.population_estimate_sample_size
     For production, we recommend 500 to get stable population estimates. Most enterprise networks have stable populations and so a long sample length is preferable. 
 sawtooth.poet.report_public_key_pem
     Public key used by Validator Registry TP to verify attestation reports.
-    From ``/etc/sawtooth/ias_rk_pub.pem`` or (for simulator) ``/etc/sawtooth/simulator_rk_pub.pem``
+    From ``/etc/sawtooth/ias_rk_pub.pem`` or (for PoET CFT) ``/etc/sawtooth/simulator_rk_pub.pem``
 sawtooth.poet.target_wait_time
     Target time to wait in seconds before proposing a block (e.g., 5; default 20)
 sawtooth.poet.valid_enclave_basenames
@@ -81,7 +81,7 @@ sawtooth.poet.valid_enclave_basenames
     From ``poet enclave --enclave-module sgx basename``
 sawtooth.poet.valid_enclave_measurements
     Adds the enclave measurement for your enclave to the blockchain for the validator registry transaction processor to use to check signup information.
-    From ``poet enclave --enclave-module sgx measurement`` or (for simulator) ``poet enclave measurement``
+    From ``poet enclave --enclave-module sgx measurement`` or (for PoET CFT) ``poet enclave measurement``
 sawtooth.poet.ztest_minimum_win_count
     For Z Test: minimum win count, to test a node is not winning too frequently
 
