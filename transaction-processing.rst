@@ -114,6 +114,8 @@ What does this error mean: ``processor | { AuthorizationException: Tried to get 
 -----------------------
 It means a the transaction processor tried to access (get/put) a value not in the list of inputs/outputs. This occurs when a client submits a transaction with an inaccurate list of inputs/outputs.
 
+Make sure the Sawtooth address is the correct length--the address is 70 hex characters, which represent a 35 byte address (including the 6 hex character or 3 byte Transaction Family prefix).
+
 What does this error mean: ``applicator->Apply errorState Get Authorization error. Check transaction inputs.``
 --------------------
 See the answer above.
