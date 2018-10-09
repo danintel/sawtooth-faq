@@ -148,6 +148,11 @@ A video presentation (2018-08-23) is at
 https://drive.google.com/drive/folders/0B_NJV6eJXAA1VnFUakRzaG1raXc
 (starting at 7:45)
 
+What is the Intel Platform Developers Kit for Blockchain - Ubuntu?
+-----------------------------
+The PDK is a small form factor computer with SGX with Ubuntu, Hyperledger Sawtooth, and development software pre-installed.  For information, see
+https://designintools.intel.com/Intel_Platform_Developers_Kit_for_Blockchain_p/q6uidcbkcpdk.htm
+
 Where is the Consensus Engine API documented?
 ---------------------------------------------
 At https://github.com/hyperledger/sawtooth-rfcs/pull/4
