@@ -331,7 +331,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/launch-marketplace-console.h
 * Then follow the instructions for using your Sawtooth AWS instance at
 https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/aws.html
 
-The AWS Free Tier is free for qualifying developers. This gives you 1 Micro instance (or any combination of instances up to 750 hours/month).
+The AWS Free Tier is free for qualifying developers. This gives you 1 Micro instance (or any combination of instances up to 750 hours/month) for 12 months.
 
 
 Does Sawtooth support Ethereum?
