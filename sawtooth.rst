@@ -88,9 +88,9 @@ The source and docs are at https://github.com/hyperledger/sawtooth-marketplace/
 What is the Hyperledger Sawtooth Application Developers Forum?
 --------------------------------------
 It is to provide opportunities to discuss technical application development questions with developers experienced with Hyperledger Sawtooth.
-The forum is held on Wednesdays 9-10am Central Time using Zoom video conferencing.  An Asia-time friendly Developers Forum is held Thursday at 2pm India Time.
+The forum is held on Wednesdays 9-10am Central Time using Zoom video conferencing. An Asia-time friendly Developers Forum is held Thursday at 2pm India Time.
 For details and current contact information for both forums, see
- https://chat.hyperledger.org/channel/sawtooth for details.
+https://chat.hyperledger.org/channel/sawtooth for details.
 
 What is the difference between Hyperledger and Sawtooth?
 --------------------------------------------------------
@@ -325,17 +325,18 @@ AWS offers Sawtooth, and other cloud providers plan to offer Sawtooth on their c
 
 How do I use Sawtooth with AWS?
 ----------------
+* Sign up for a free AWS Free Tier account, if you don't have an account. The AWS Free Tier is free for qualifying developers. This gives you 1 Micro instance (or any combination of instances up to 750 hours/month) for 12 months. See https://aws.amazon.com/free/
 * Create your instance from the Hyperledger Sawtooth product page on AWS Marketplace, at https://aws.amazon.com/marketplace/pp/B075TKQCC2
 * Follow instructions to launch an AWS Marketplace instance at
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/launch-marketplace-console.html
 * Then follow the instructions for using your Sawtooth AWS instance at
 https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/aws.html
 
-The AWS Free Tier is free for qualifying developers. This gives you 1 Micro instance (or any combination of instances up to 750 hours/month) for 12 months.
 
 
 Does Sawtooth support Ethereum?
 -------------------------
+
 Yes, through Seth, Sawtooth's Ethereum-compatible Transaction Processor. It implements a Ethereum Virtual Machine (EVM) so Seth can run Ethereum Dapps written in Solidity. Seth uses Hyperledger Burrow as the code base.
 
 Does Sawtooth use blockchain mining?
