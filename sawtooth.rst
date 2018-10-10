@@ -323,20 +323,8 @@ What cloud services support Sawtooth Blockchain?
 ---------------
 AWS offers Sawtooth, and other cloud providers plan to offer Sawtooth on their cloud service.
 
-How do I use Sawtooth with AWS?
-----------------
-* Sign up for a free AWS Free Tier account, if you don't have an account. The AWS Free Tier is free for qualifying developers. This gives you 1 Micro instance (or any combination of instances up to 750 hours/month) for 12 months. See https://aws.amazon.com/free/
-* Create your instance from the Hyperledger Sawtooth product page on AWS Marketplace, at https://aws.amazon.com/marketplace/pp/B075TKQCC2
-* Follow instructions to launch an AWS Marketplace instance at
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/launch-marketplace-console.html
-* Then follow the instructions for using your Sawtooth AWS instance at
-https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/aws.html
-
-
-
 Does Sawtooth support Ethereum?
 -------------------------
-
 Yes, through Seth, Sawtooth's Ethereum-compatible Transaction Processor. It implements a Ethereum Virtual Machine (EVM) so Seth can run Ethereum Dapps written in Solidity. Seth uses Hyperledger Burrow as the code base.
 
 Does Sawtooth use blockchain mining?

@@ -172,6 +172,24 @@ It could be a file or directory permission problem--try changing the file owners
 
 Another cause is the file doesn't exist. Create it with ``sawset genesis`` .
 
+
+How do I install Sawtooth on AWS?
+----------------
+* Sign up for a free AWS Free Tier account, if you don't have an account. The AWS Free Tier is free for qualifying developers. This gives you 1 Micro instance (or any combination of instances up to 750 hours/month) for 12 months. See https://aws.amazon.com/free/
+* Create your instance from the Hyperledger Sawtooth product page on AWS Marketplace, at https://aws.amazon.com/marketplace/pp/B075TKQCC2
+* Follow instructions to launch an AWS Marketplace instance at
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/launch-marketplace-console.html
+* Then follow the instructions for using your Sawtooth AWS instance at
+https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/aws.html
+
+How do I use ssh with AWS?
+--------------------
+By default ssh access to AWS instances are disabled.
+To enable, first paste the contents of your public key, at `` ~/.ssh/id_rsa.pub`` , to ``Key Pairs``  under your EC2 Dashboard.  Use this key when creating your Sawtooth instance.
+
+After creating your AWS Sawtooth instance, go to your EC2 Dashboard and click on the security group for your instance (usually ``default``). Select the ``Inbound`` tab and  ``Edit``. Add ``SSH`` (TCP port 22) and Source ``Anywhere`` (or ``My IP`` and your IP address) and save.  I had to reboot the instance (Actions --> InstanceState --> Reboot) to get it to work.
+
+
 How to I build Sawtooth from source?
 ------------------------------------
 Use ``git`` to download the source, then ``build_all`` to build. Type ``./bin/build_all`` for options. For example:
