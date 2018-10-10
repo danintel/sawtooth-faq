@@ -192,6 +192,7 @@ The validator retries the transaction with the TP and results in a loop.
 I get this error when I try to set some Sawtooth settings: ``Chain head is not set yet. Permit all``
 --------------------
 This error has been seen when the ownerships are wrong. Try setting ownership as follows: ``chown sawtooth:sawtooth /var/lib/sawtooth /var/lib/sawtooth/*``
+Another cause could be because there is no genesis block.
 
 Does the Transaction Processor know the current Transaction ID?
 ---------------------------------
@@ -234,7 +235,7 @@ You have a transaction processor that implements some non-deterministic behavior
 
 What does this message mean: ``Have not received a chain head from peers.``
 -----------------------------
-This message has been seen when a node is not running a transaction processor.
+This message has been seen when a node is not running a needed transaction processor.  A new node needs to run all the transaction processors required for all the supported transaction families in this Sawtooth blockchain network.
 
 How do I debug a transaction processor?
 ---------------------------
