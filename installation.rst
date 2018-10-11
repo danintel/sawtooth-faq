@@ -248,7 +248,7 @@ I don't know if could work. I know installing Sawtooth using Ubuntu/Debian insta
 
 I get this error with ``add-apt-repository``: Couldn't connect to accessibility bus: Failed to connect to socket . . . Connection refused
 ----------------------------
-It is just a warning and you can ignore it. Verify the Sawtooth repository was added in ``/etc/apt/sources.list`` The cause is the command tried to start a graphic display (probably over SSH) when it was not available. A workaround to remove the warning is to add ``export NO_AT_BRIDGE=1``` to ``~/.bashrc``
+It is just a warning and you can ignore it. Verify the Sawtooth repository was added in ``/etc/apt/sources.list`` The cause is the command tried to start a graphic display (probably over SSH) when it was not available. A workaround to remove the warning is to add ``export NO_AT_BRIDGE=1`` to ``~/.bashrc``
 
 How do I list sawtooth command line options?
 --------------------------------------------
