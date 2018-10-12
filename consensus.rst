@@ -11,7 +11,7 @@ What consensus algorithms does Sawtooth support?
 -------------------
 dev-mode
     Only suitable for testing TPs with single validator deployments.  Uses a simplified random-leader algorithm for development and testing.  Not for production use
-PoET CFT
+PoET CFT (also known as PoET Simulator)
     PoET with a simulated SGX environment. Provides CFT similar to Fabric and some other blockchains.  Requires poet-validator-registry TP. Runs on any processor (does not require Intel or SGX).  Has Crash Fault Tolerance and can be used for production networks
 PoET SGX
     Takes advantage of SGX in order to provide consensus with Byzantine Fault Tolerance (BFT), like PoW algorithms have, but at very low CPU usage. PoET SGX is the only algorithm that has hardware requirements (a processor supporting SGX)
@@ -30,12 +30,15 @@ https://sawtooth.hyperledger.org/docs/raft/nightly/master/
 To use, basically set ``sawtooth.consensus.algorithm`` to ``raft`` and
 ``sawtooth.consensus.raft.peers`` to a list of peer nodes (network public keys).
 
-
 Does the PoET CFT implement the same consensus algorithm as PoET SGX?
 ------------------------------
 Yes--they are same same consensus algorithm. The difference is the
 PoET CFT also simulates SGX hardware, allowing PoET to run on non-SGX
 hardware.
+
+For PoET CFT (PoET Simulator), should I generate my own ``simulator_rk_pub.pem`` file or do I use the one in ``/etc/sawtooth/`` ?
+---------------------------------------
+No, you use the one that is installed. It must match the private key that is in the PoET Simulator. The public key is needed to verify attestation verification reports from PoET.
 
 What is unpluggable consensus?
 -------------------
