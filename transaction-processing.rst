@@ -50,7 +50,7 @@ In any case, all nodes need to support the same set of versions for a specific T
 How do I support multiple Transaction Families in a Transaction Processor?
 --------------------------------
 This is usually not a preferred best practice.
-But if the functionality of the different TFs are closley related, you can have a TP support multiple TFs.  Just have the TP register multiple TFs at startup, instead of just one TF.
+But if the functionality of the different TFs are closely related, you can have a TP support multiple TFs.  Just have the TP register multiple TFs at startup, instead of just one TF.
 
 How do I upgrade a transaction processor version?
 ---------------------------------
