@@ -65,7 +65,7 @@ DLT
 Docker
     A light-weight OS-level VM technology which isolates processes into separate "containers"
 Duplicity
-	A faulty node sending deceitful or inconsistent messages to other nodes
+    A faulty node sending deceitful or inconsistent messages to other nodes
 CSV
     Comma separated values. E.g.: ``a,b,c,d``
 Curve25519
@@ -136,7 +136,9 @@ Off-chain
 On-chain
     Information stored internally in the blockchain
 One-say, all-adopt
-	Strategy where only a single multicast round of messages reaches agreement
+    Strategy where only a single multicast round of messages reaches agreement
+Oracle
+    An agent that finds and verifies real world occurrences and submits this information to a blockchain for use by smart contracts. Oracles are 3rd-party services.
 Payload
     Data processed by the TP and only the TP. Can be any format (CSV, protobufs, etc.) Data model is defined by TF. Payload is encoded using MIME's Base64 (``A-Za-z0-9+/``) + ``=`` for 0 mod 4 padding
 PBFT
