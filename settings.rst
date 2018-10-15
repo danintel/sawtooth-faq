@@ -110,6 +110,8 @@ sawtooth.validator.transaction_families
     ``[{"family":"sawtooth_settings", "version":"1.0"}, {"family":"xo", "version":"1.0"}]``
     *Dan's ProTip*: ``sawtooth_settings`` is a required TF. ``sawtooth_validator_registry`` is required if you use PoET.
 
+transactor
+    Public keys of authorized signers (of any kind, batch or transaction)
 transactor.batch_signer
     Public keys of authorized batch signers
 transactor.transaction_signer
