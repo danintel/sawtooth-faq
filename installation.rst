@@ -148,7 +148,7 @@ as maximum batches per block or target wait time.
 I got error ``gpg: keyserver receive failed: keyserver error`` when executing ``sudo apt-key adv --keyserver hkp://keyserver...``
 ------------------------------
 This error means your machine couldn't add the supplied key to trusted list. This key is later used to authenticate and get sawtooth package.
-One of the possible reason for this error is that your machine is trying to connect to keyserver through a proxy server. Add proxy server details in the command to solve this issue. For examople, ``sudo apt-key adv --keyserver-options http-proxy=http://[username:password]@<proxyserver>:<port> --keyserver hkp://keyse...`` (notice usage of flag ``--keyserver-options`` here).
+One of the possible reason for this error is that your machine is trying to connect to keyserver through a proxy server. Add proxy server details in the command to solve this issue. For example, ``sudo apt-key adv --keyserver-options http-proxy=http://[username:password]@<proxyserver>:<port> --keyserver hkp://keyse...`` (notice usage of flag ``--keyserver-options`` here).
 
 What does this error mean ``repository ... xenial InRelease' doesn't support architecture 'i386'``?
 ---------------------------
