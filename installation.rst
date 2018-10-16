@@ -255,6 +255,10 @@ I get this error with ``add-apt-repository``: Couldn't connect to accessibility 
 ----------------------------
 It is just a warning and you can ignore it. Verify the Sawtooth repository was added in ``/etc/apt/sources.list`` The cause is the command tried to start a graphic display (probably over SSH) when it was not available. A workaround to remove the warning is to add ``export NO_AT_BRIDGE=1`` to ``~/.bashrc``
 
+I get this error starting Sawtooth on Docker: ``No response from ... beginning heartbeat pings``
+-----------------------------
+This means there is a problem with the genesis node and peer nodes connecting.
+
 How do I list sawtooth command line options?
 --------------------------------------------
 For the Sawtooth CLIs (sawadm, sawset, sawnet, sawtooth), append ``-h`` after the command to list subcommands (for example, ``sawadm -h`` ). For the Sawtooth subcommands, append ``-h`` after the subcommand (for example, ``sawadm keygen -h`` ).
