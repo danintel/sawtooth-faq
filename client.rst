@@ -43,13 +43,20 @@ What does this error mean: ``validator | [... DEBUG signature_verifier] transact
 -----------------------
 The client submitted a transaction with an invalid signature.
 
+What are the various batch_statuses REST API result values?
+-----------------------------------
+* ``PENDING`` - batch validation has started on this validator. This ends when the batch is either committed or invalidated
+* ``COMMITTED`` - batch is in the blockchain
+* ``INVALID`` - batch has recently been invalidated by this validator and is still in the invalid batch cache
+* ``UNKNOWN`` - batch is not in any of the above categories, it is not currently being validated by this validator, not in the blockchain, and not in this validator's invalid cache
+
 What does an INVALID batch status mean?
 -------------------------
-I means the transaction batch was processed by the Transaction Processor, but the TP marked it as invalid.
+I means the transaction batch was processed by the Transaction Processor, but the TP marked it as invalid. The INVALID batch information is not stored on the blockchain. Validators will keep a local cache of invalid batch info around for awhile (I think 10 minutes), so clients can query it, but that data is ephemeral.
 
-What does a PENDING batch status mean?
+What does it mean if a batch status result remains PENDING?
 --------------------------
-It means the transaction batch never reached the Transaction Processor.  The TP may have died or have never started. Or the validator failed the Z Test (z-tested out) because it was winning too frequently.
+It means processing has not completed on the batch. If it stays that way, it means the transaction batch never reached the Transaction Processor.  The transaction remains in the validator queue waiting for the TP to appear online. The TP may have died or may have never started. Or the validator failed the PoET Z Test (z-tested out) because it was winning too frequently.
 
 Can I use partial address prefixes (say the 6-character prefix) in a transaction's input or output list?
 ------------------------
