@@ -28,7 +28,7 @@ For options, append ``help`` to the command.
   and https://sawtooth.hyperledger.org/docs/core/nightly/master/architecture/injecting_batches_block_validation_rules.html#on-chain-configuration
 
 sawtooth.config.authorization_type
-    Example setting--never used
+    Example setting--never used.  To set authorization type, use command line option ``sawtooth-validator --network-auth {trust|challenge}``
 
 sawtooth.consensus.algorithm
     Consensus algorithm (e.g., ``poet`` (PoET SGX or PoET CFT) or ``devmode`` (default) or ``raft`` or any other pluggable consensus engine you provide)
