@@ -232,7 +232,7 @@ This is a message from the Hyperledger Sawtooth blockchain's Validator. A timeou
 
 Some possible causes: the transaction processor (TP) died. Check that the TP process is still running (check in the Docker container if you are running docker). Check network connectivity if the TP is on another host or another virtual machine. Check the message logs. Perhaps the TP is "frozen" or hanging or has a bug. Add logging messages (using LOGGER).
 
-What does this message mean: ``Block(. . .) rejected due to state root hash mismatch: `` ?
+What does this message mean: ``Block(. . .) rejected due to state root hash mismatch:`` ?
 ----------------------------
 You have a transaction processor that implements some non-deterministic behavior, such as generating a random number in a calculation, or a timestamp, etc.
 
