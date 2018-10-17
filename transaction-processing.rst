@@ -211,6 +211,9 @@ Why is there no timestamp in a transaction header or block?
 --------------------------------------------------
 Using timestamps in a distributed network is troublesome--mostly due to complex clock synchronization issues among peers. You could add a timestamp in your transaction family's transaction payload. If you want timestamps with blocks, refer to the BlockInfo Transaction Family. See: https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_specifications/blockinfo_transaction_family.html
 
+
+Sawtooth stores a timestamp in the block if the network is setup to inject BlockInfo transactions using the BlockInfo Transaction Family (which is used for EVM compatibility).
+
 Does Sawtooth allow multiple digital signatures on a single transaction?
 -------------------------
 In Sawtooth the "batch" is the atomic unit of change. This is a collection of one or more individually signed transactions. You could have multiple transactions, each signed by a different party, combined in one batch. This would have a similar effect to what you are talking about I think.
