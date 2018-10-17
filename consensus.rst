@@ -168,6 +168,12 @@ What are the minimum number of nodes needed for PoET?
 ------------------------------------------
 PoET needs at least 3 nodes, but works best with at least 4 or 5 nodes. This is to avoid Z Test failures (a node winning too frequently).  In production, to keep a blockchain safe, more nodes are always better, regardless of the consensus. 10 nodes are good for internal testing. For production, have 2 nodes per identity.
 
+How should peer nodes be distributed?
+-------------------
+Blockchain achieves fault tolerance by having its state (data) completely duplicated among the peer nodes.  Best practice means distibuting your nodes--geographically and organizationally.
+Distributing nodes on virtual machines sharing the same host does nothing to guard against hardware faults.
+Distributing nodes at the same site does not protect against site outages.
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
