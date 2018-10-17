@@ -263,6 +263,10 @@ How do I list sawtooth command line options?
 --------------------------------------------
 For the Sawtooth CLIs (sawadm, sawset, sawnet, sawtooth), append ``-h`` after the command to list subcommands (for example, ``sawadm -h`` ). For the Sawtooth subcommands, append ``-h`` after the subcommand (for example, ``sawadm keygen -h`` ).
 
+Why do I get a ``No module named ...`` error running a Sawtooth program?
+--------------------------
+The ``No module named`` error occurs in Python when a Python module is missing. The usual fix is to install the corresponding Python package.  Something you need to prepend ``python3-`` to the name.  So, for example, if you get a ``No module named 'netifaces'`` error, install the missing package with something like ``apt install python3-netifaces``
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
