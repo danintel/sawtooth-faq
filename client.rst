@@ -70,6 +70,11 @@ How do I debug a Sawtooth client?
 * Set the trace parameter to true when calling method ``Batch``. In Python: ``batch_pb2.Batch(trace=True)`` .
 This prints additional logging information in the Sawtooth REST API and Validator components.
 
+How do I delete or change a specific value in state?
+---------------------------------
+Use the ``delete_state`` in the SDK to delete a specific state variable.
+The data will remain in previously-created blocks (which are immutable),
+but will not be in the current blockchain state.
 
 
 [PREVIOUS_ | HOME_ | NEXT_]

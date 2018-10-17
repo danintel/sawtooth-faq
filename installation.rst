@@ -125,7 +125,7 @@ The ownership or permission is wrong. To fix it, type:
     $ ls -ld /var/lib/sawtooth
     drwxr-x--- 2 sawtooth sawtooth 4096 Jun  2 14:43 /var/lib/sawtooth
 
-How to I delete previously-existing blockchain data?
+How to I delete all blockchain data?
 ----------------------------------
 Type the following: ``sudo -u sawtooth rm -rf /var/lib/sawtooth/*``
 This deletes the entire database--for development and purposes.
