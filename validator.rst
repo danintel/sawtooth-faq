@@ -214,6 +214,8 @@ Yes. Sawtooth has Telegraf/InfluxDB/Grafana to gather and display metrics.
 Install the packages and follow these instructions:
 https://sawtooth.hyperledger.org/docs/core/nightly/master/sysadmin_guide/grafana_configuration.html
 
+Here is a Sawtooth Grafana screenshot: https://twitter.com/liedenavilla/status/1042792583221653504
+
 What does this error mean: ``[... DEBUG client_handlers] Unable to find entry at address ...``?
 -----------------------
 It means the address doesn't exist.
