@@ -165,6 +165,11 @@ Here are examples in Python and Javascript:
 * https://github.com/danintel/sawtooth-cookiejar/blob/master/events/events_client.py
 * https://github.com/hyperledger/sawtooth-supply-chain/blob/master/ledger_sync/subscriber/index.js
 
+How do I handle forks while subscribing to Sawtooth events?
+-------------------------
+If you get ``fork_detected: true`` in the ``state_changes`` object,
+you delete or undo events labeled with the blocks that have been removed from history. For example, if you added the events to a local database, remove the rows labeled with the removed blocks.  Then apply events forward from the most recent common block.
+
 Why is the Apply method in the TP handler called twice?
 --------------------------------------------
 That is by design. It can be called more than twice.
