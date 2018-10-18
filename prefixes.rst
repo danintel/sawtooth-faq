@@ -102,6 +102,8 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_sp
 +---------------+-----------+--------+-----------------------------------------+
 | rbac          | Protobuf  | 8563d0 | T-Mobile NEXT Identity Platform         |
 +---------------+-----------+--------+-----------------------------------------+
+| sawtoothekyc  | Protobuf  | dbf420 | Primechain Blockchain-eKYC bank records |
++---------------+-----------+--------+-----------------------------------------+
 | pub_key       | Protobuf  | a23be1 | REMME REMChain                          |
 +---------------+-----------+--------+-----------------------------------------+
 | bitagora\-    | JSON      | b42861 | Bitagora voting ballot                  |
