@@ -128,15 +128,21 @@ There are no published recovery tools, but you could clean out the data on the f
 What TCP ports does Sawtooth use?
 -------------------
 * 4004 is used by the Validator component bus, which uses ZMQ. The validator listens to requests on this port from the REST API and from one or more transaction processors.
-This port can be left closed to external hosts in a firewall configuration if all the transaction processors are on the same host as the validator (the usual case)
+This port can be closed to external hosts in a firewall configuration if all the transaction processors are on the same host as the validator (the usual case)
 
 Port 4004 is sometimes exported to port 4040 in Sawtooth Docker containers for the validator.
 
 * 8008 is used by the REST API, which connects the Client to the Validator.
-This port can be left closed to external hosts in a firewall configuration if the client is always on the same host as a validator (common during testing)
+This port can be closed to external hosts in a firewall configuration if the client is always on the same host as a validator
 
 * 8800 is used by the Validator network to communicate with other Validators.
-This port needs to be left open to external hosts in a firewall configuration to communicate with peer validators
+This port needs to be open to external hosts in a firewall configuration to communicate with peer validators
+
+* 5050 is used by the consensus engine (such as PoET or RAFT).
+This port should be closed to external hosts in a firewall configuration
+
+* 3030 is used by the Seth TP (if you have Seth running).
+This port can be closed to external hosts in a firewall configuration if the client is always on the same host as a validator
 
 How do I create a Sawtooth Network?
 -------------------
