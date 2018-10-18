@@ -30,6 +30,10 @@ https://sawtooth.hyperledger.org/docs/raft/nightly/master/
 To use, basically set ``sawtooth.consensus.algorithm`` to ``raft`` and
 ``sawtooth.consensus.raft.peers`` to a list of peer nodes (network public keys).
 
+Does the PBFT implementation follow the original paper?
+---------------------------------
+Yes, it follows the original 1999 Castro and Liskov paper without modifications or optimizations.
+
 Does the PoET CFT implement the same consensus algorithm as PoET SGX?
 ------------------------------
 Yes--they are same same consensus algorithm. The difference is the
