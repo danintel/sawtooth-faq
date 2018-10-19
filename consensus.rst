@@ -37,7 +37,7 @@ Yes, it follows the original 1999 Castro and Liskov paper without modifications 
 Does the PoET CFT implement the same consensus algorithm as PoET SGX?
 ------------------------------
 Yes--they are same same consensus algorithm. The difference is the
-PoET CFT also simulates SGX hardware, allowing PoET to run on non-SGX
+PoET CFT also simulates the enclave module, allowing PoET to run on non-SGX
 hardware.
 
 For PoET CFT (PoET Simulator), should I generate my own ``simulator_rk_pub.pem`` file or do I use the one in ``/etc/sawtooth/`` ?
