@@ -61,7 +61,7 @@ https://drive.google.com/drive/folders/0B_NJV6eJXAA1VnFUakRzaG1raXc
 
 REMME REMChain (Roman Kravchenko, Eugene Babichenko, and Andrii Fedotov, REMME)
     20180927-sawtooth-forum.mp4_ (starts at 11:00)
-Sawtooth RAFT Consensus (Adam Ludvik, Bitwise)
+Sawtooth Raft Consensus (Adam Ludvik, Bitwise)
     20180927-sawtooth-forum.mp4_ (starts at 1:01:00)
 Sawtooth NEXT Identity Platform (Chris Spanton, T-Mobile)
     20180913-sawtooth-tech-forum.mp4_ (starts at 0:00)

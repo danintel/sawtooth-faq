@@ -138,7 +138,7 @@ This port can be closed to external hosts in a firewall configuration if the cli
 * 8800 is used by the Validator network to communicate with other Validators.
 This port needs to be open to external hosts in a firewall configuration to communicate with peer validators
 
-* 5050 is used by the consensus engine (such as PoET or RAFT).
+* 5050 is used by the consensus engine (such as PoET or Raft).
 This port should be closed to external hosts in a firewall configuration
 
 * 3030 is used by the Seth TP (if you have Seth running).
@@ -211,7 +211,7 @@ How can I improve Sawtooth performance?
 * Write the transaction processor in a thread-friendly programming language such as Rust or C++, not Python. Python is an interpretive language and therefore slower. It also suffers from the Global Interpreter Lock (GIL), which locks executing multiple threads to one thread at-a-time
 * Run multiple transaction processors per validator node for the same transaction family. This is especially useful for TPs written in Python
 * Consider increasing the on-chain setting ``sawtooth.publisher.max_batches_per_block`` . Try a value of 200 batches per block to start with. This and other on-chain settings can be changed on-the-fly without impacting older blocks.
-* When available in the future, substitute PoET consensus with Raft consensus. Raft is CFT instead of BFT, but it should perform better in exchange for lower fault tolerance
+* When fully stabilized, substitute PoET consensus with Raft consensus. Raft is CFT instead of BFT, but it should perform better in exchange for lower fault tolerance
 * As you make changes, measure the impact with a performance tool such as Hyperledger Caliper
 
 Is there any way to get real-time Sawtooth statistics?

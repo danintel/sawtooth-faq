@@ -12,15 +12,15 @@ What consensus algorithms does Sawtooth support?
 dev-mode
     Only suitable for testing TPs with single validator deployments.  Uses a simplified random-leader algorithm for development and testing.  Not for production use
 PoET CFT (also known as PoET Simulator)
-    PoET with a simulated SGX environment. Provides CFT similar to Fabric and some other blockchains.  Requires poet-validator-registry TP. Runs on any processor (does not require Intel or SGX).  Has Crash Fault Tolerance and can be used for production networks
+    PoET with a simulated SGX environment. Provides CFT similar to Fabric and some other blockchains.  Requires poet-validator-registry TP. Runs on any processor (does not require Intel or SGX).  Has Crash Fault Tolerance and can be used for production networks if BFT is not required
 PoET SGX
     Takes advantage of SGX in order to provide consensus with Byzantine Fault Tolerance (BFT), like PoW algorithms have, but at very low CPU usage. PoET SGX is the only algorithm that has hardware requirements (a processor supporting SGX)
-RAFT
-    Consensus algorithm that elects a leader for a term of arbitrary time. Leader replaced if it times-out. Raft is faster than PoET, but is CFT, not BFT. Also Raft does not fork.  For Sawtooth RAFT is new and still being stabilized.
+Raft
+    Consensus algorithm that elects a leader for a term of arbitrary time. Leader replaced if it times-out. Raft is faster than PoET, but is CFT, not BFT. Also Raft does not fork.  For Sawtooth Raft is new and still being stabilized.
 
 Will Sawtooth support more consensus algorithms in the future?
 ------------------------------------------
-Yes. With pluggable consensus, the idea is to have a meaningful set of consensus algorithms so the "best fit" can be applied to an application's use case.  RAFT is a recent addition--still being stabilized. There is a PBFT prototype in the works.  Others are being planned.
+Yes. With pluggable consensus, the idea is to have a meaningful set of consensus algorithms so the "best fit" can be applied to an application's use case.  Raft is a recent addition--still being stabilized. There is a PBFT prototype in the works.  Others are being planned.
 
 REMME.io has independently implemented Algorand Byzantine Agreement on Sawtooth.
 
