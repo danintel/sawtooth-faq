@@ -196,7 +196,8 @@ The validator retries the transaction with the TP and results in a loop.
 
 I get this error when I try to set some Sawtooth settings: ``Chain head is not set yet. Permit all``
 --------------------
-This error has been seen when the ownerships are wrong. Try setting ownership as follows: ``chown sawtooth:sawtooth /var/lib/sawtooth /var/lib/sawtooth/*``
+This error has been seen when the directory or file ownerships are wrong. Try setting ownership as follows: ``chown sawtooth:sawtooth /var/lib/sawtooth /var/lib/sawtooth/*`` .
+Then verify with ``ls -la /var/lib/sawtooth`` .
 Another cause could be because there is no genesis block.
 
 Does the Transaction Processor know the current Transaction ID?

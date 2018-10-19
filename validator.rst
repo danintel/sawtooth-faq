@@ -242,8 +242,7 @@ command line option.
 
 I start the validator, but it's stuck at this message: ``Waiting for transaction processor (sawtooth_settings, 1.0)``
 ---------------------------------
-The Sawtooth Settings TP is mandatory. You probably want to also start the TP for your desired application. To start the Settings TP, type:
-``sudo -u sawtooth settings-tp -v``
+The Sawtooth Settings TP is mandatory for all Sawtooth nodes--even if you don't add or change any settings. You probably want to also start the TP for your desired application. To start the Settings TP, type: ``sudo -u sawtooth settings-tp -v``
 
 Can I change Sawtooth settings after genesis?
 -------------------------------
@@ -261,6 +260,9 @@ Why do I get a ``Block validation failed`` message from the validator?
 ----------------
 Usually block validation fails because of something non-deterministic in the transaction processor. This is usually because of the serialization method, which is usually because someone used JSON (use something like Protobufs or CBOR instead). Other common sources of non-determinism are relying on system time in the transaction processor logic.
 
+What does this error mean: ``Network communications between validators will not be authenticated or encrypted.``
+-------------------------------
+It means you did not configure your ``network_public_key`` and ``network_private_key`` in ``validator.toml``.
 
 How do I generate the ``network_public_key`` and ``network_private_key`` in ``validator.toml`` ?
 ----------------------------------

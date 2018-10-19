@@ -267,6 +267,11 @@ Why do I get a ``No module named ...`` error running a Sawtooth program?
 --------------------------
 The ``No module named`` error occurs in Python when a Python module is missing. The usual fix is to install the corresponding Python package.  Something you need to prepend ``python3-`` to the name.  So, for example, if you get a ``No module named 'netifaces'`` error, install the missing package with something like ``apt install python3-netifaces``
 
+How do I fix this error: ``no transaction processors registered for processor type sawtooth_settings: 1.0`` ??
+-----------------------------
+You start the Settings TP, as follows ``sudo -u sawtooth settings-tp -v`` .
+The Settings TP is always required for all Sawtooth nodes, even if you did not add or change any settings.
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
