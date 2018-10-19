@@ -71,7 +71,7 @@ Early access was available on Microsoft Azure, but not now.
 Does PoET SGX function with SGX on cloud services?
 ---------------------------------------------
 No. For PoET SGX to function, one also needs Platform Services (PSW), which is not available from any cloud provider.
-Instead, one can use PoET CFT, which is also production-ready.
+Instead, one can use PoET CFT, which is also supported.
 But other software software that requires SGX may be deployed on cloud services.
 
 I get this error during PoET SGX registration: "Machine requires update (probably BIOS) for SGX compliance."
