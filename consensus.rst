@@ -132,8 +132,8 @@ More commonly, the defense-in-depth checks are too stringent during the initial 
 
 How do I change the Sawtooth consensus algorithm?
 ---------------------------
+* Install the software package containing the consensus engine you wish to use on all nodes, if it is not already installed.
 * Start any consensus-required TPs, if any, on all nodes (for example PoET requires the ``sawtooth_validator_registry`` TP).
-
 * Use the ``sawset proposal create`` subcommand to modify ``sawtooth.consensus.algorithm`` (along with any consensus-required settings).  For an example, see https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/creating_sawtooth_network.html
 
 The initial default consensus algorithm is ``devmode``, which is not for production use.

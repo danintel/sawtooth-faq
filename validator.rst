@@ -104,6 +104,8 @@ What files does Sawtooth use?
     contain the validator key pair
 ``/etc/sawtooth/policy/``
     contains policy settings, if any
+``/var/lib/sawtooth-raft/``
+    Optional Raft consensus-specific files.  Present only if you use Raft.  Directory can be changed with ``$SAWTOOTH_RAFT_HOME``
 
 If set these files are placed under directory ``$SAWTOOTH_HOME`` (except files under your home directory, ``~`` ).
 
