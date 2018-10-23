@@ -250,6 +250,10 @@ How do I debug a transaction processor?
 ---------------------------
 One way is to add logging messages (using LOGGER) and sprinkle your code with debug messages, such as ``LOGGER.info("Action = %s.", action)`` in Python (or another language you use for the TP). Start the transaction processor with the ``-vv`` or ``-vvv`` flags and look for console output.
 
+What does this message mean: ``failing transaction ... since it isn't required in the configuration`` ?
+----------------------------
+It means you set the ``sawtooth.validator.transaction_families`` setting with the Settings TP and did not include the TP name and version for the transaction that failed.  The fix is to add the TP name and version to the setting.
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
