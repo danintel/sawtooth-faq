@@ -60,6 +60,26 @@ GET /peers
 For more information, see the Sawtooth REST API Reference at
 https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api.html
 
+What is a transaction receipt?
+-------------------------------
+Transaction receipts are transaction execution information that is not stored in state, such as how the transaction changed state, TF-specific data, and if the transaction was valid.
+To access a transaction receipt use the REST API ``http://localhost:8008/receipts?id=yourtransactionids`` where ``yourtransactionids are 1 or more comma-separated 128 hex character transaction IDs.
+For more information, see
+https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture/events_and_transactions_receipts.html#transaction-receipts
+
+How do I retrieve a transaction receipt?
+----------------------------
+Use the REST API.  Here's a sample request (The ID is the transaction ID, listed with `sawtooth transaction list`):
+``wget http://localhost:8008/receipts?id=yourtransactionidshere``
+Replace ``yourtransactionidshere`` with 1 or more comma-separated 128 hex character transaction IDs.
+Change `localhost` to `rest-api` for Docker.
+The response is several lines.  For example, 
+https://gist.github.com/danintel/0f878141c60bb566237e8db11226aa4e .
+For more than 15 IDs, use ``POST /receipts`` .
+For REST API details, see ``receipts`` at
+https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api/endpoint_specs.html
+
+
 What does this error mean: ``[... DEBUG route_handlers] Received CLIENT_STATE_GET_RESPONSE response from validator with status NO_RESOURCE``?
 -----------------------
 It means the transaction processor for this transaction is not running.
