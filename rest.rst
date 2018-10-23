@@ -68,7 +68,7 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api.html
 
 What is a transaction receipt?
 -------------------------------
-Transaction receipts are transaction execution information that is not stored in state, such as how the transaction changed state, TF-specific data, and if the transaction was valid.
+Transaction receipts are transaction execution information that is not stored in state, such as how the transaction changed state, transaction-related events, and if the transaction was valid.
 To access transaction receipts, use the REST API.
 For more information, see
 https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture/events_and_transactions_receipts.html#transaction-receipts
