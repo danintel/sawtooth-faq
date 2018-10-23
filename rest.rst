@@ -40,8 +40,10 @@ GET /batches
     Fetch a paginated list of batches from the validator
 GET /batches/{batch_id}
     Fetch the specified batch
-GET /batch_status
+GET /batch_statuses
     Fetch the committed statuses for a set of batches
+POST /batch_statuses
+    Same as GET /batch_statuses except can be used for > 15 IDs
 GET /state
     Fetch a paginated list of leaves for the current state, or relative to a particular head block
 GET /state/{address}
@@ -54,6 +56,10 @@ GET /transactions
     Fetch a paginated list of transactions from the validator.
 GET /transactions/{transaction_id}
     Fetch the specified transaction
+GET /receipts?id={transaction_ids}
+    Fetch receipts for 1 or more transactions
+POST /receipts
+    Same as GET /receipts except can be used for > 15 IDs
 GET /peers
     Fetch a list of current peered validators
 
