@@ -26,7 +26,7 @@ For example, to get state history (equivalent to ``sawtooth state list``) type:
 .. code:: sh
 
     curl http://localhost:8008/state
-From the Client Docker container, access from rest-api.  For example:
+From the Client Docker container, access from rest-api. For example:
 
 .. code:: sh
 
@@ -63,20 +63,20 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api.html
 What is a transaction receipt?
 -------------------------------
 Transaction receipts are transaction execution information that is not stored in state, such as how the transaction changed state, TF-specific data, and if the transaction was valid.
-To access a transaction receipt use the REST API ``http://localhost:8008/receipts?id=yourtransactionids`` where ``yourtransactionids are 1 or more comma-separated 128 hex character transaction IDs.
+To access transaction receipts, use the REST API.
 For more information, see
 https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture/events_and_transactions_receipts.html#transaction-receipts
 
 How do I retrieve a transaction receipt?
 ----------------------------
-Use the REST API.  Here's a sample request (The ID is the transaction ID, listed with `sawtooth transaction list`):
-``wget http://localhost:8008/receipts?id=yourtransactionidshere``
-Replace ``yourtransactionidshere`` with 1 or more comma-separated 128 hex character transaction IDs.
+Use the REST API. Here's a sample request (The ID is the transaction ID, listed with `sawtooth transaction list`):
+``wget http://localhost:8008/receipts?id=YourTransactionIDsHere``
+Replace ``YourTransactionIDsHere`` with 1 or more comma-separated 128 hex character transaction IDs.
 Change `localhost` to `rest-api` for Docker.
-The response is several lines.  For example, 
+The response is several lines of JSON format output. For example, 
 https://gist.github.com/danintel/0f878141c60bb566237e8db11226aa4e .
 For more than 15 IDs, use ``POST /receipts`` .
-For REST API details, see ``receipts`` at
+For Receipts REST API details, see ``receipts`` at
 https://sawtooth.hyperledger.org/docs/core/releases/latest/rest_api/endpoint_specs.html
 
 
@@ -86,11 +86,11 @@ It means the transaction processor for this transaction is not running.
 
 What does this REST API error mean: ``The submitted BatchList was rejected by the validator. It was poorly formed, or has an invalid signature``
 --------------------------------------------
-Most likey you are not putting the transaction into a batch or the batch in a batchlist for posting to the REST API.  This is required, even for a single transaction.
+Most likey you are not putting the transaction into a batch or the batch in a batchlist for posting to the REST API. This is required, even for a single transaction.
 
 I am getting this error: ``Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:8008/batches?wait. (Reason: CORS header 'Access-Control-Allow-Origin' missing).``
 ------------------------------------
-The Sawtooth REST API doesn't support CORS.  To allow cross-origin access to the Sawtooth API, put it behind a proxy.
+The Sawtooth REST API doesn't support CORS. To allow cross-origin access to the Sawtooth API, put it behind a proxy.
 
 What is the back pressure test?
 -------------------------------
