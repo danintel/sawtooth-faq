@@ -174,7 +174,7 @@ PoET needs at least 3 nodes, but works best with at least 4 or 5 nodes. This is 
 
 How should peer nodes be distributed?
 -------------------
-Blockchain achieves fault tolerance by having its state (data) completely duplicated among the peer nodes.  Best practice means distibuting your nodes--geographically and organizationally.
+Blockchain achieves fault tolerance by having its state (data) completely duplicated among the peer nodes.  Best practice means distributing your nodes--geographically and organizationally.
 Distributing nodes on virtual machines sharing the same host does nothing to guard against hardware faults.
 Distributing nodes at the same site does not protect against site outages.
 

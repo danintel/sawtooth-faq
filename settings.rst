@@ -97,7 +97,7 @@ sawtooth.settings.vote.proposals
     List of proposals to make changes to settings (base64-encoded ``SettingCandidates`` protobuf)
 
 sawtooth.swa.administrators
-    List of public keys for authorized admistrators to create, change, or delete Sabre contract and namespace registries.
+    List of public keys for authorized administrators to create, change, or delete Sabre contract and namespace registries.
 
 sawtooth.validator.batch_injectors
     Comma-separated list of batch injectors to load.
