@@ -13,7 +13,7 @@ Yes.
 
 How can I run ``docker`` or ``docker-compose`` without prefixing it with ``sudo``?
 --------------------------------------
-Sometimes, adding your login to group ``docker`` is recommended, such as with command: ``sudo usermod -aG docker $USER`` . However, this gives ``$USER`` root-equivalent permissions.  A better alternate is to define an alias for docker and docker-compose and add to your ~/.bashrc file:
+Sometimes, adding your login to group ``docker`` is recommended, such as with command: ``sudo usermod -aG docker $USER`` . However, this gives ``$USER`` root-equivalent permissions. A better alternate is to define an alias for docker and docker-compose and add to your ~/.bashrc file:
 
 .. code:: sh
 
@@ -25,7 +25,7 @@ For details, see https://docs.docker.com/install/linux/linux-postinstall/#manage
 
 I get this error running ``docker-compose -f sawtooth-default.yaml up`` : ``Error: files exist, rerun with --force to overwrite existing files``
 --------------------------------------
-This occurs when docker was not halted cleanly.  Run the following first:
+This occurs when docker was not halted cleanly. Run the following first:
 
 .. code:: sh
 
@@ -57,7 +57,7 @@ To determine if sure docker is running and to start Docker, type:
 
 I get this error running ``docker run hello-world`` :  ``Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.37/containers/json: dial unix /var/run/docker.sock: connect: permission denied``
 -------------------
-Try running with sudo.  For example: sudo docker run hello-world.
+Try running with sudo. For example: sudo docker run hello-world.
 Here's a few aliases you can add to your ``~/.bashrc`` file:
 
 .. code:: sh
@@ -102,7 +102,7 @@ Also a proxy problem--see the answer above.
 
 I get this error running docker-compose: ``ERROR: for validator  Cannot create container for service validator: Conflict. The container name "/validator" is already in use by container ...``
 -------------------------------
-The container already exists.  You need to remove or rename it. To remove:
+The container already exists. You need to remove or rename it. To remove:
 
 .. code:: sh
 
@@ -118,13 +118,13 @@ For example: ``sudo docker logs validator`` display the log for the container na
 
 I get this error running docker-compose: ``ERROR: Version in "./docker-compose.yaml" is unsupported.``
 -------------------------------
-You may be running an old version of Docker, perhaps from your Linux package manager.  Instead, install Docker from docker.com. Sawtooth requires Docker Engine 17.03.0-ce or better. For Docker CE for Ubuntu, use https://docs.docker.com/install/linux/docker-ce/ubuntu/
+You may be running an old version of Docker, perhaps from your Linux package manager. Instead, install Docker from docker.com. Sawtooth requires Docker Engine 17.03.0-ce or better. For Docker CE for Ubuntu, use https://docs.docker.com/install/linux/docker-ce/ubuntu/
 Here's a sample script that installs Docker CE on Ubuntu:
 https://gist.github.com/askmish/76e348e34d93fc22926d7d9379a0fd08
 
 If I run ``docker`` or ``docker-compose`` it hangs and does nothing.
 --------------------------------------
-The docker daemons may not be running.  To check, run:
+The docker daemons may not be running. To check, run:
 
 .. code:: sh
 
@@ -213,6 +213,10 @@ If you do not ``down`` the container or reboot the Docker host, the container wi
 
 For a list of directories used by Sawtooth, see https://github.com/danintel/sawtooth-faq/blob/master/validator.rst#what-files-does-sawtooth-use
 It is best to set `$SAWTOOTH_HOME` so all the configuration and data is under one root directory.
+
+I get this error running Docker: ``ERROR: manifest for hyperledger/sawtooth-validator:1.1 not found``
+----------------------------------
+You are following instructions for the unreleased ``nightly`` build, Sawtooth 1.1. There are no Docker images for the unreleased Sawtooth 1.1 release. Instead use the ``latest`` build documentation at https://sawtooth.hyperledger.org/docs/core/releases/latest/app_developers_guide.html
 
 [PREVIOUS_ | HOME_ | NEXT_]
 
