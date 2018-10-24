@@ -22,6 +22,13 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/app_developers_guide/
 For more information, see the Sawtooth SDK Reference at
 https://sawtooth.hyperledger.org/docs/core/releases/latest/sdks.html
 
+Does Sawtooth have a .NET SDK?
+------------------------------------
+Yes, there is a Sawtooth SDK for .NET Core described here:
+https://tomislav.tech/2018-03-02-sawtooth-sdk-net-core/
+The source is here:
+https://github.com/hyperledger/sawtooth-sdk-dotnet
+
 When would you want to develop without the Sawtooth SDK?
 ------------------------------------------------------
 You should use the SDK whenever possible for your language.
