@@ -27,10 +27,12 @@ Appendix
 
 Contributing
 ------------------------------------------
-This FAQ is Apache 2.0 licensed and accepts contributions via
-GitHub_ pull requests.
-Each commit must include a ``Signed-off-by:`` in the commit message
-(``git commit -s``).
+This FAQ is licensed under Creative Commons Attribution 4.0 International
+License. You may obtain a copy of the license at:
+http://creativecommons.org/licenses/by/4.0/.
+
+We accept contributions via GitHub_ pull requests. Each commit must include a
+``Signed-off-by:`` in the commit message (``git commit -s``).
 This sign-off means you agree the commit satisfies the
 `Developer Certificate of Origin (DCO)`_.]
 
