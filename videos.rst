@@ -12,18 +12,28 @@ Selected YouTube Videos
 --------------
 Hyperledger Sawtooth Seafood Supply Chain Demo (3:21, Bitwise, 2018)
     https://www.youtube.com/watch?v=q0T8qAyzY30
+
 Intel: Building Blockchain for the Enterprise. Shows how Sawtooth builds are done on AWS (5:33, Ryan Beck-Buysse, Bitwise, Lana Kalashnyk, AWS, 2018)
     https://www.youtube.com/watch?v=B_L_PjlSywA
+
 Sawtooth 1.0 Architecture and App Development (31:26, Zac Delventhal, Bitwise, 2018)
     https://www.youtube.com/watch?v=uBebFQM49Xk
+
 Blockchain and Hyperledger Sawtooth Overview (6:15, Daniel Homlund Martin Kronberg and Daniel Homlund, Intel, 2018)
     https://www.youtube.com/watch?v=HwFItjV6Czo
+
 Several Sawtooth application development tutorials by John S.
     https://www.youtube.com/channel/UC4YOKxLGKFcaq4duRhH75qw
 
 Hyperledger Sawtooth and Kubernetes at Hyperledger Hong Kong meetup. (1:38:24, Duncan Johnston-Watt, Blockchain Technology Partners, 2018)
     https://www.youtube.com/watch?v=d4tf5Ps4VLw
     Slides: https://bit.ly/2PR1Oub
+
+Introducción a Hyperledger VII - Sawtooth (Español) (7:36, Sergio Torres, Blocknitive)
+    https://www.youtube.com/watch?v=b-VVNLce6MI
+
+Qué es Hyperledger Sawtooth (Español) (2:00, Angel Berniz)
+    https://www.youtube.com/watch?v=_YkKaDXLVPg
 
 2017 YouTube Videos
 --------------
