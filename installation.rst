@@ -94,7 +94,7 @@ Until the package dependency is fixed, here's a workaround to force an install:
 .. code:: sh
 
     $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 44FC67F19B2466EA
-    $ sudo apt-add-repository "deb [trusted=yes] http://repo.sawtooth.me/ubuntu/nightly xenial universe"
+    $ sudo apt-add-repository "deb [trusted=yes] http://repo.sawtooth.me/ubuntu/nightly bionic universe"
     $ sudo apt update
     $ apt download sawtooth-cxx-sdk
     $ sudo dpkg -i  sawtooth-cxx-sdk_1.1.1.dev808_amd64.deb
@@ -242,7 +242,7 @@ The usual problem when you get this message is configuring the peer endpoints
 
 I get ``unmet dependencies`` errors installing Sawtooth on Ubuntu 18.04 LTS.
 ---------------------------
-Ubuntu 18.04 LTS is not supported yet. Use Ubuntu 16.04 LTS for now.
+Ubuntu 18.04 LTS is supported only in the nightly development packages. Use Ubuntu 16.04 LTS for the stable release packages.
 You can also install Sawtooth with Docker. See:
 https://sawtooth.hyperledger.org/docs/core/releases/latest/app_developers_guide/docker.html
 
