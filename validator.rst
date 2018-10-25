@@ -1,11 +1,9 @@
-Unofficial FAQ: Sawtooth Validator
+Sawtooth FAQ: Validator
 ==================
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. contents::
 
-.. Warning::
-   **This FAQ was written by a non-expert so may contain both fiction and fact!**
 
 What validation does the validator do?
 -----------------------

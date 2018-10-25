@@ -1,11 +1,9 @@
-Unofficial FAQ: Using Docker with Sawtooth
+Sawtooth FAQ: Using Docker
 ====================
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. contents::
 
-.. Warning::
-   **This FAQ was written by a non-expert so may contain both fiction and fact!**
 
 Can I run Sawtooth without Docker?
 --------------------------

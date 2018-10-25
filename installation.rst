@@ -1,11 +1,9 @@
-Unofficial FAQ: Sawtooth Installation and Configuration
+Sawtooth FAQ: Installation and Configuration
 ========================
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. contents::
 
-.. Warning::
-   **This FAQ was written by a non-expert so may contain both fiction and fact!**
 
 How do I list and install Sawtooth packages?
 --------------------------------------------

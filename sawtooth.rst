@@ -1,11 +1,9 @@
-Unofficial FAQ: Sawtooth in General
+Sawtooth FAQ: Hyperledger Sawtooth in General
 ========================
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. contents::
 
-.. Warning::
-   **This FAQ was written by a non-expert so may contain both fiction and fact!**
 
 What is Sawtooth?
 -----------------
@@ -36,7 +34,7 @@ Sawtooth mailing list (not as popular as the chat channel above)
     https://lists.hyperledger.org/g/sawtooth
 Official Sawtooth FAQ
     https://www.hyperledger.org/wp-content/uploads/2018/01/Hyperledger_Sawtooth_FAQ.pdf
-Unofficial Sawtooth FAQ
+Sawtooth FAQ
     https://github.com/danintel/sawtooth-faq
 
 Where are some good introductory videos?

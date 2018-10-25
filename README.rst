@@ -1,11 +1,9 @@
-Unofficial Hyperledger Sawtooth FAQ
+Hyperledger Sawtooth FAQ
 ======================================
 Frequently-asked Questions (FAQ) for Hyperledger Sawtooth.
 Many questions and answers originated from the Sawtooth chat channel at
 https://chat.hyperledger.org/channel/sawtooth
 
-.. Warning::
-   **This FAQ was written by a non-expert so may contain both fiction and fact!**
 
 Frequently-asked Questions
 ------------------------------------------

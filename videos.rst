@@ -4,9 +4,6 @@ Appendix: Sawtooth Videos
 
 .. contents::
 
-.. Warning::
-   **This FAQ was written by a non-expert so may contain both fiction and fact!**
-
 
 Selected YouTube Videos
 --------------

@@ -1,11 +1,9 @@
-Appendix: Sawtooth FAQ Glossary
+Sawtooth: Glossary
 ==================
 [PREVIOUS_ | HOME_ | NEXT_]
 
 .. contents::
 
-.. Warning::
-   **This FAQ was written by a non-expert so may contain both fiction and fact!**
 
 See Also
 --------

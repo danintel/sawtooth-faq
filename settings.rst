@@ -4,8 +4,6 @@ Appendix: Sawtooth Settings
 
 .. contents::
 
-.. Warning::
-   **This FAQ was written by a non-expert so may contain both fiction and fact!**
 
 This is an unofficial list of some Transaction Family (TF) settings.
 There is no central registry, most or all of these can be found found on github.
