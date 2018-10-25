@@ -84,6 +84,7 @@ Are there any live demos of a Sawtooth Application?
 Yes. A Sawtooth Supply Chain demo, AssetTrack is at https://demo.bitwise.io/ .
 Another demo, for tracking fish, is at https://demo.bitwise.io/fish/ .
 A Sawbucks demo is at https://demo.bitwise.io/sawbucks/ .
+A Supply Chain Traceability demo is at https://provenance.sawtooth.me/ .
 The source and docs are at https://github.com/hyperledger/sawtooth-marketplace/
 
 What is the Hyperledger Sawtooth Application Developers Forum?
