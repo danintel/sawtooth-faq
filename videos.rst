@@ -59,6 +59,8 @@ Most are in mp4 (video) format, but a few are available in audio only (m4a).
 Located at
 https://drive.google.com/drive/folders/0B_NJV6eJXAA1VnFUakRzaG1raXc
 
+Sawtooth Build and Package Improvements (Ryan Beck-Buysse, Bitwise)
+    20181025
 REMME REMChain (Roman Kravchenko, Eugene Babichenko, and Andrii Fedotov, REMME)
     20180927-sawtooth-forum.mp4_ (starts at 11:00)
 Sawtooth Raft Consensus (Adam Ludvik, Bitwise)
