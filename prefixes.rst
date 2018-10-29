@@ -12,7 +12,7 @@ https://github.com/hyperledger-labs ).
 
 Sawtooth addresses are 70 hex characters.
 The prefix is either the first 6 characters of the SHA-512 hash of the namespace, or, for some base namespaces, a "hex word".
-The validator_registry uses a SHA-256 hash.
+The Sawtooth Validator registry is an outlier. It uses the SHA-256 hash (not SHA-512) and hashes "validator_registry" (not "sawtooth_validator_registry").
 The remainder of the address is TF-specific and defined for each TF.
 Listing of a TF does not imply endorsement.
 
@@ -30,8 +30,9 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_sp
 +---------------+-----------+--------+-----------------------------------------+
 | identity      | Protobuf  | 00001d | Validator Identity for TP/Validator keys|
 +---------------+-----------+--------+-----------------------------------------+
-| validator\_   | Protobuf  | 6a4372 | PoET Validator Registry. Used by PoET   |
-| registry      |           |        | consensus to track other validators     |
+| sawtooth\_     | Protobuf  | 6a4372 | PoET Validator Registry. Used by PoET   |
+| validator\_    |           |        | consensus to track other validators     |
+| registry      |           |        |                                         |
 +---------------+-----------+--------+-----------------------------------------+
 | blockinfo     | Protobuf  | 00b10c | Validator Block Info.  Used for SETH    |
 |               |           |        |                                         |
