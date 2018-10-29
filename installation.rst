@@ -188,9 +188,9 @@ https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/a
 How do I use ssh with AWS?
 --------------------
 By default ssh access to AWS instances are disabled.
-To enable, first paste the contents of your public key, at `` ~/.ssh/id_rsa.pub`` , to ``Key Pairs``  under your EC2 Dashboard.  Use this key when creating your Sawtooth instance.
+To enable, first paste the contents of your public key, at `` ~/.ssh/id_rsa.pub`` , to ``Key Pairs``  under your EC2 Dashboard. Use this key when creating your Sawtooth instance.
 
-After creating your AWS Sawtooth instance, go to your EC2 Dashboard and click on the security group for your instance (usually ``default``). Select the ``Inbound`` tab and  ``Edit``. Add ``SSH`` (TCP port 22) and Source ``Anywhere`` (or ``My IP`` and your IP address) and save.  I had to reboot the instance (Actions --> InstanceState --> Reboot) to get it to work.
+After creating your AWS Sawtooth instance, go to your EC2 Dashboard and click on the security group for your instance (usually ``default``). Select the ``Inbound`` tab and  ``Edit``. Add ``SSH`` (TCP port 22) and Source ``Anywhere`` (or ``My IP`` and your IP address) and save. I had to reboot the instance (Actions --> InstanceState --> Reboot) to get it to work.
 
 
 How to I build Sawtooth from source?
@@ -263,12 +263,16 @@ For the Sawtooth CLIs (sawadm, sawset, sawnet, sawtooth), append ``-h`` after th
 
 Why do I get a ``No module named ...`` error running a Sawtooth program?
 --------------------------
-The ``No module named`` error occurs in Python when a Python module is missing. The usual fix is to install the corresponding Python package.  Something you need to prepend ``python3-`` to the name.  So, for example, if you get a ``No module named 'netifaces'`` error, install the missing package with something like ``apt install python3-netifaces``
+The ``No module named`` error occurs in Python when a Python module is missing. The usual fix is to install the corresponding Python package. Something you need to prepend ``python3-`` to the name. So, for example, if you get a ``No module named 'netifaces'`` error, install the missing package with something like ``apt install python3-netifaces``
 
 How do I fix this error: ``no transaction processors registered for processor type sawtooth_settings: 1.0`` ??
 -----------------------------
 You start the Settings TP, as follows ``sudo -u sawtooth settings-tp -v`` .
 The Settings TP is always required for all Sawtooth nodes, even if you did not add or change any settings.
+
+I get this error trying to install Sawtooth: ``Failed to fetch http://repo.sawtooth.me/ubuntu/bumper/stable/dists/xenial/universe/binary-amd64/Packages  404  Not Found``
+-----------------------------
+The Sawtooth stable documentation is wrong. There is no such thing as a ``bumper/stable`` release. The released (stable) packages are at `http://repo.sawtooth.me/ubuntu/1.0/stable xenial universe` The older Sawtooth 1.0.5 documentation has the correct location: https://sawtooth.hyperledger.org/docs/core/releases/1.0.5/
 
 
 [PREVIOUS_ | HOME_ | NEXT_]
