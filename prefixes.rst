@@ -31,8 +31,8 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_sp
 | identity      | Protobuf  | 00001d | Validator Identity for TP/Validator keys|
 +---------------+-----------+--------+-----------------------------------------+
 | sawtooth      | Protobuf  | 6a4372 | PoET Validator Registry. Used by PoET   |
-| _validator    |           |        | consensus to track other validators     |
-| _registry     |           |        |                                         |
+| _validator    |           |        | consensus to track other validators.    |
+| _registry     |           |        | See note above about hash prefix .      |
 +---------------+-----------+--------+-----------------------------------------+
 | blockinfo     | Protobuf  | 00b10c | Validator Block Info.  Used for SETH    |
 |               |           |        |                                         |
