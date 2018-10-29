@@ -191,6 +191,7 @@ My TP throws an exception of type ``InternalError``, but the ``Apply`` method ge
 ``InternalError`` is supposed to be a transient error (some internal fault like 'out of memory' that is temporary), and may succeed if retried.
 The validator retries the transaction with the TP and results in a loop.
  If the transaction is invalid, you probably want to raise an ``InvalidTransaction`` error instead.
+Bottom line&mdash;internal errors are retried, and invalid transactions are not retried.
 
 I get this error when I try to set some Sawtooth settings: ``Chain head is not set yet. Permit all``
 --------------------
