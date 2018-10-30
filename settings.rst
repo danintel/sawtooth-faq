@@ -6,7 +6,7 @@ Appendix: Sawtooth Settings
 
 
 This is an unofficial list of some Transaction Family (TF) settings.
-There is no central registry, most or all of these can be found found on github.
+There is no central registry, most or all of these can be found on github.
 
 The following are some Sawtooth settings.
 Since Sawtooth settings are extensible and include transaction family-specific settings, this list is incomplete.
