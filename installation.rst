@@ -247,7 +247,7 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/app_developers_guide/
 I get this error installing Sawtooth: ``No matching distribution found for sawtooth_rest_api``
 --------------------------
 You tried to install Sawtooth using Python pip.
-I don't know if could work. I know installing Sawtooth using Ubuntu/Debian installation tools (such as apt, apt-get, dpkg, aptitude) works OK
+I don't know if this could work. I know installing Sawtooth using Ubuntu/Debian installation tools (such as apt, apt-get, dpkg, aptitude) works OK.
 
 I get this error with ``add-apt-repository``: Couldn't connect to accessibility bus: Failed to connect to socket . . . Connection refused
 ----------------------------
