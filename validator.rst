@@ -293,7 +293,7 @@ I am seeing only one transaction per block in my blockchain. Why?
 ------------------------------------
 The Sawtooth Validator combines transaction batches when possible. If you are using dev mode consensus, it is producing blocks as fast as possible, which will typically only contain one transaction. You can simulate what would happen on a real network by setting min and max block times for devmode. If you set min to 10 and max to 20, it will include many more transactions per block. You can also combine transactions from your client by submitting multiple transactions in a batch.
 
-What does ``Block publishing suspended until new chain head arrives'' mean?
+What does ``Block publishing suspended until new chain head arrives`` mean?
 ---------------------
 It means that a new block arrived and the receiving validator wants to stop creating the block it was working on until it finds the new chain head.
 
