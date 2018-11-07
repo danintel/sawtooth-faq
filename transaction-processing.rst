@@ -103,7 +103,7 @@ What mechanism prevents a rogue TP from operating and corrupting data?
 ------------------------------
 The design is as such that rogue TPs can't harm legitimate TPs. When you run a network of validators, each validator has to have same version of TPs. If a rogue TP is modifying your TPs data, the same TP has to run in the rest of the validators in the network, to be able to affect the blockchain. The validator where the rogue TP is working will constantly fail state validations(Merkle hashes will be different with rest of the network). Hence, the bigger the validator network, the more robust it is against such attacks.
 
-What does this error mean: ``processor | [... DEBUG executor] transaction processors registered for processor type cryptomoji: 0.1`?
+What does this error mean: ``processor | [... DEBUG executor] transaction processors registered for processor type cryptomoji: 0.1``?
 -----------------------
 It means there is no transaction processor running for your transaction family.
 
