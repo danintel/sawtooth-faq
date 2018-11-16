@@ -142,6 +142,11 @@ Here is an example that changes the consensus to Raft:
   '["0276f8fed116837eb7646f800e2dad6d13ad707055923e49df08f47a963547b631", \
   "035d8d519a200cdb8085c62d6fb9f2678cf71cbde738101d61c4c8c2e9f2919aa"]'``
 
+How do I change the consensus algorithm for a network that has forked?
+----------------------------------------------------------------------
+Bring the network down to one node with the preferred blocks and submit
+your consensus change proposal.  Bring in the other nodes, with any consensus-required TPs running (for example, PoET requires the Validator Registry TP).
+
 Where can I find information on the proposed PoET2 algorithm?
 ------------------------------------
 PoET2 is different from PoET in that it supports SGX without relying on Intel Platform Services Enclave (PSE), making it suitable in cloud environments.
