@@ -47,6 +47,8 @@ Client
     Any program that creates a transaction; interfaces with the validator using REST. Does not have to be a web-based app
 Consensus algorithm
     Method to decide what block to add next to a blockchain
+Context
+    The snapshot of the global state. Specifically, the subset of the state required for the transaction, based on the input and output addresses specified in the transaction.
 Classical Consensus
     Uses an agreement or voting mechanism to select a leader (vs. Nakamoto-style consensus)
     E.g., PBFT and Raft
