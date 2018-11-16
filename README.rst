@@ -49,6 +49,7 @@ This sign-off means you agree the commit satisfies the
 .. _Sawtooth FAQ Glossary: glossary.rst
 .. _Sawtooth Transaction Family Prefixes: prefixes.rst
 .. _Sawtooth Settings: settings.rst
+.. _Sawooth Permissioning: permissioning.rst
 .. _Sawtooth Videos: videos.rst
 .. _GitHub: https://github.com/danintel/sawtooth-faq
 .. _Developer Certificate of Origin (DCO): https://developercertificate.org/

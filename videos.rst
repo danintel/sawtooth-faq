@@ -122,7 +122,7 @@ PoET Consensus on Sawtooth Lake (Jamie Jason, Intel)
 
 [PREVIOUS_ | HOME_]
 
-.. _PREVIOUS: settings.rst
+.. _PREVIOUS: permissioning.rst
 .. _HOME: README.rst
 .. _20180927-sawtooth-forum.mp4: https://drive.google.com/file/d/1-XP-DflRJvAekACYv0tAQsbyl2VnN80o/view
 .. _20180927-sawtooth-forum.mp4: https://drive.google.com/file/d/1-XP-DflRJvAekACYv0tAQsbyl2VnN80o/view

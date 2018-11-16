@@ -136,6 +136,6 @@ transactor.transaction_signer.xo
 
 .. _PREVIOUS: prefixes.rst
 .. _HOME: README.rst
-.. _NEXT: videos.rst
+.. _NEXT: permissioning.rst
 
 © Copyright 2018, Intel Corporation.
