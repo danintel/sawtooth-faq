@@ -82,14 +82,6 @@ Proxy configurations are firewall-dependent, but this might serve as a pattern:
     export https_proxy="https://proxy.mycompany.com:912/"
     export no_proxy=".mycompany.com,10.0.0.0/8,192.168.0.0/16,localhost,127.0.0.0/8"
 
-::
-
-    # /etc/systemd/system/docker.service.d/override.conf
-    Environment="HTTP_PROXY=http://proxy.mycompany.com:911/"
-    Environment="HTTPS_PROXY=http://proxy.mycompany.com:912/"
-    Environment="FTP_PROXY=http://proxy.mycompany.com:911/"
-    Environment="NO_PROXY=.mycompany.com,10.0.0.0/8,192.168.0.0/16,localhost,127.0.0.0/8"
-
 I get this error: ``ERROR: repository . . . not found: does not exist or no pull access``
 ------------
 Also a proxy problem--see the answer above.

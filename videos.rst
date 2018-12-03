@@ -19,6 +19,12 @@ Intel: Building Blockchain for the Enterprise. Shows how Sawtooth builds are don
 Sawtooth 1.0 Architecture and App Development (31:26, Zac Delventhal, Bitwise, 2018)
     https://www.youtube.com/watch?v=uBebFQM49Xk
 
+Hyperledger Sawtooth Technical Overview (58:38, Dan Anderson, Intel, 2018)
+    https://www.youtube.com/watch?v=KGFuKIBma_M
+
+Hyperledger Sawtooth Application Developer Overview using "CookieJar" (54:58, Dan Anderson, Intel, 2018)
+    https://www.youtube.com/watch?v=VFXary3rwY0
+
 Blockchain and Hyperledger Sawtooth Overview (6:15, Daniel Homlund Martin Kronberg and Daniel Homlund, Intel, 2018)
     https://www.youtube.com/watch?v=HwFItjV6Czo
 
@@ -49,6 +55,9 @@ Hyperledger Sawtooth 1.0: Market Significance and Technical Overview. Free regis
 
 Intel Chip Chat Audio
 ----------------------
+Revolutionizing Identity Management with Sawtooth Blockchain. Ep. 612 (8:33, Chris Spanton, T-Mobile, 2018)
+    https://connectedsocialmedia.com/16839/revolutionizing-identity-management-with-blockchain-intel-chip-chat-episode-612/
+
 Why Enterprises Should Be Moving Blockchain Forward. Ep. 576 (9:51, Mike Reed, Intel, 2018)
     https://connectedsocialmedia.com/16399/why-enterprises-should-be-moving-blockchain-forward-intel-chip-chat-episode-576/
 
