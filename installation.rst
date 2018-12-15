@@ -14,37 +14,49 @@ and installs the core packages
 .. code:: sh
 
     $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 8AA7AF1F1091A5FD
-    $ sudo add-apt-repository 'deb http://repo.sawtooth.me/ubuntu/1.0/stable xenial universe'
+    $ sudo add-apt-repository 'deb [arch=amd64] http://repo.sawtooth.me/ubuntu/bumper/stable xenial universe'
     $ sudo apt update
     $ aptitude install sawtooth python3-sawtooth-*
     $ aptitude search sawtooth
-    p  python3-sawtooth-block-info     - Sawtooth Block Info Transaction Processor
-    iA python3-sawtooth-cli            - Sawtooth CLI
-    p  python3-sawtooth-config         - Sawtooth Config Transaction Processor
-    p  python3-sawtooth-ias-client     - Sawtooth IAS Client
-    p  python3-sawtooth-ias-proxy      - Sawtooth IAS Proxy
-    c  python3-sawtooth-identity       - Sawtooth Identity Transaction Processor
-    iA python3-sawtooth-intkey         - Sawtooth IntKey Python Example
-    p  python3-sawtooth-manage         - Sawtooth Lake Management Library
-    iA python3-sawtooth-poet-cli       - Sawtooth PoET CLI
-    iA python3-sawtooth-poet-common    - Sawtooth PoET Common Modules
-    iA python3-sawtooth-poet-core      - Sawtooth Core Consensus Module
-    iA python3-sawtooth-poet-families  - Sawtooth Transaction Processor Families
-    p  python3-sawtooth-poet-sgx       - Sawtooth PoET SGX Enclave
-    iA python3-sawtooth-poet-simulator - Sawtooth PoET Simulator Enclave
-    iA python3-sawtooth-rest-api       - Sawtooth REST API
-    i  python3-sawtooth-sdk            - Sawtooth Python SDK
-    iA python3-sawtooth-settings       - Sawtooth Settings Transaction Processor
-    iA python3-sawtooth-signing        - Sawtooth Signing Library
-    iA python3-sawtooth-validator      - Sawtooth Validator
-    iA python3-sawtooth-xo             - Sawtooth XO Example
-    i  sawtooth                        - Hyperledger Sawtooth Distributed Ledger
-    p  sawtooth-admin-tools            - Sawtooth Admin Tools
-    BB sawtooth-cxx-sdk                - Hyperledger Sawtooth C++ SDK
-    p  sawtooth-intkey-tp-go           - Sawtooth IntKey TP Go
-    p  sawtooth-noop-tp-go             - Sawtooth Noop TP Go
-    p  sawtooth-smallbank-tp-go        - Sawtooth Smallbank TP Go
-    p  sawtooth-xo-tp-go               - Sawtooth Go XO TP
+    i python3-sawtooth-block-info     - ST Block Info Transaction Processor
+    i python3-sawtooth-cli            - Sawtooth CLI
+    i python3-sawtooth-config         -
+    i python3-sawtooth-ias-client     - ST Intel Attestation Service Client
+    i python3-sawtooth-ias-proxy      - ST Intel Attestation Service Proxy
+    i python3-sawtooth-identity       - ST Identity Transaction Processor
+    p python3-sawtooth-integration    - ST Integration
+    i python3-sawtooth-intkey         - ST Intkey Python Example
+    p python3-sawtooth-intkey-tests   - ST Intkey Python Test
+    i python3-sawtooth-manage         - ST Lake Management Library
+    i python3-sawtooth-poet-cli       - ST PoET CLI
+    i python3-sawtooth-poet-common    - ST PoET Common Modules
+    i python3-sawtooth-poet-core      - ST Core Consensus Module
+    p python3-sawtooth-poet-engine    - ST PoET Consensus Engine
+    i python3-sawtooth-poet-families  - ST Transaction Processor Families
+    i python3-sawtooth-poet-sgx       - ST PoET SGX Enclave
+    i python3-sawtooth-poet-simulator - ST PoET Simulator Enclave
+    i python3-sawtooth-rest-api       - ST REST API
+    i python3-sawtooth-sdk            - ST Python SDK
+    i python3-sawtooth-settings       - ST Settings Transaction Processor
+    i python3-sawtooth-signing        - ST Signing Library
+    i python3-sawtooth-validator      - ST Validator
+    i python3-sawtooth-xo             - ST XO Example
+    p python3-sawtooth-xo-tests       - ST XO Python Test
+    i sawtooth                        - ST Distributed Ledger
+    i sawtooth-cxx-sdk                - ST C++ SDK
+    p sawtooth-devmode-engine-rust    - ST DevMode Rust consensu
+    p sawtooth-intkey-tp-go           - ST Intkey TP Go
+    p sawtooth-intkey-workload        - [from Rust crate sawtooth-intkey]
+    p sawtooth-noop-tp-go             - Sawtooth Noop TP Go
+    p sawtooth-pbft-engine            - PBFT consensus algorithm for Sawtooth
+    p sawtooth-raft-engine            - Sawtooth Raft consensus engine
+    p sawtooth-sabre                  - Sawtooth Sabre Transaction Processor
+    p sawtooth-seth-cli               - Sawtooth Seth CLI
+    p sawtooth-seth-rpc               - Sawtooth Seth RPC
+    p sawtooth-seth-tp                - Sawtooth Seth Transaction Processor
+    p sawtooth-smallbank-tp-go        - Sawtooth Smallbank TP Go
+    p sawtooth-smallbank-workload     - [from Rust crate sawtooth-smallb]
+    p sawtooth-xo-tp-go               - Sawtooth Go XO TP
 
 For more, up-to-date installation information see
 https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/installation.html
@@ -136,7 +148,7 @@ that reverse a previous transaction.
 
 I get a usage error running ``sawnet peers`` or ``sawnet list-blocks``
 ----------------------------------------------------
-These commands were added after the Sawtooth 1.0.4 release and are not available in earlier releases.
+You should upgrade to the current release. These commands were added after the Sawtooth 1.0.4 release and are not available in earlier releases.
 
 How can I change on-chain settings without deleting the blockchain?
 ------------------------------------------
@@ -265,14 +277,10 @@ Why do I get a ``No module named ...`` error running a Sawtooth program?
 --------------------------
 The ``No module named`` error occurs in Python when a Python module is missing. The usual fix is to install the corresponding Python package. Something you need to prepend ``python3-`` to the name. So, for example, if you get a ``No module named 'netifaces'`` error, install the missing package with something like ``apt install python3-netifaces``
 
-How do I fix this error: ``no transaction processors registered for processor type sawtooth_settings: 1.0`` ??
+How do I fix this error: ``no transaction processors registered for processor type sawtooth_settings`` ??
 -----------------------------
 You start the Settings TP, as follows ``sudo -u sawtooth settings-tp -v`` .
 The Settings TP is always required for all Sawtooth nodes, even if you did not add or change any settings.
-
-I get this error trying to install Sawtooth: ``Failed to fetch http://repo.sawtooth.me/ubuntu/bumper/stable/dists/xenial/universe/binary-amd64/Packages  404  Not Found``
------------------------------
-The Sawtooth stable documentation is wrong. There is no such thing as a ``bumper/stable`` release. The released (stable) packages are at `http://repo.sawtooth.me/ubuntu/1.0/stable xenial universe` The older Sawtooth 1.0.5 documentation has the correct location: https://sawtooth.hyperledger.org/docs/core/releases/1.0.5/
 
 
 [PREVIOUS_ | HOME_ | NEXT_]

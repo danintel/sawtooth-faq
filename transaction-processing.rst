@@ -63,7 +63,7 @@ The transactions are sent to transaction processors supporting the same transact
 
 What are inputs and outputs in Sawtooth?
 -------------------------------------
-In a Sawtooth transaction, inputs list what are the inputs for the transaction (what addresses the TP can read). Outputs list what are the outputs for the transaction (what addresses the TP can modify). The inputs and outputs lists are specific to a transaction. See https://sawtooth.hyperledger.org/docs/core/releases/1.0/architecture/transactions_and_batches.html
+In a Sawtooth transaction, inputs list what are the inputs for the transaction (what addresses the TP can read). Outputs list what are the outputs for the transaction (what addresses the TP can modify). The inputs and outputs lists are specific to a transaction. See https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture/transactions_and_batches.html
 
 Why use round-robin if the transaction processors are identical?
 --------------------------------------------------------
@@ -236,7 +236,7 @@ What does this message mean: ``Did not respond to the ping, removing transaction
 -----------------------------------
 This is a message from the Hyperledger Sawtooth blockchain's Validator. A timeout occurred when the Validator was checking connections with all the registered transaction processors. If a transaction processor does not respond, it is removed from the list.
 
-Some possible causes: the transaction processor (TP) died. Check that the TP process is still running (check in the Docker container if you are running docker). Check network connectivity if the TP is on another host or another virtual machine. Check the message logs. Perhaps the TP is "frozen" or hanging or has a bug. Add logging messages (using LOGGER).
+Some possible causes: the transaction processor (TP) died. Check that the TP process is still running (check in the Docker container if you are running docker). Check network connectivity if the TP is on another host or another virtual machine. Check the message logs. Perhaps the TP is "frozen" or hanging or has a bug. Add logging messages (using ``LOGGER.info()` for Python or Rust log4rs ``info!()``).
 
 What does this message mean: ``Block . . . rejected due to state root hash mismatch`` ?
 ----------------------------
@@ -248,7 +248,9 @@ This message has been seen when a node is not running a needed transaction proce
 
 How do I debug a transaction processor?
 ---------------------------
-One way is to add logging messages (using LOGGER) and sprinkle your code with debug messages, such as ``LOGGER.info("Action = %s.", action)`` in Python (or another language you use for the TP). Start the transaction processor with the ``-vv`` or ``-vvv`` flags and look for console output.
+One way is to add logging messages
+(using ``LOGGER.info()` for Python or Rust log4rs ``info!()``).
+and sprinkle your code with debug messages, such as ``LOGGER.info("Action = %s.", action)`` in Python (or another language you use for the TP). Start the transaction processor with the ``-vv`` or ``-vvv`` flags and look for console output.
 
 What does this message mean: ``failing transaction ... since it isn't required in the configuration`` ?
 ----------------------------

@@ -153,7 +153,7 @@ How do I tell what version of Sawtooth is running?
 .. code:: sh
 
     $ sawtooth --version
-    sawtooth-cli (Hyperledger Sawtooth) version 1.0.5
+    sawtooth-cli (Hyperledger Sawtooth) version 1.1.2
 
 What's the difference between the ``sawtooth``, ``sawadm``, ``sawnet``, and ``sawset`` commands?
 -------------------------------

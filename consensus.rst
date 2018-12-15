@@ -101,7 +101,7 @@ In an ideal world, you want a distribution where one and only one random wait ti
 
 Where is PoET 1.0 Specification?
 ----------------------------------
-https://sawtooth.hyperledger.org/docs/core/releases/1.0/architecture/poet.html
+https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture/poet.html
 
 Where is the PoET SGX Enclave configuration file?
 ----------------------

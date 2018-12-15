@@ -81,6 +81,11 @@ Use the ``delete_state`` in the SDK to delete a specific state variable.
 The data will remain in previously-created blocks (which are immutable),
 but will not be in the current blockchain state.
 
+How can a Sawtooth client access a validator on another machine?
+------------------------------
+By default, the REST API listens to client requests on localhost (127.0.0.1) and is not accessible from a client on another machine.  To change this, edit file /etc/sawtooth/rest_api.toml` (copy from `rest_api.toml.example`) and add a line similar to:
+``bind = ["10.1.1.2:8008"]`` where you change ``10.1.1.2`` to your IP address or hostname.
+
 
 [PREVIOUS_ | HOME_ | NEXT_]
 

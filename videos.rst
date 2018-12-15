@@ -10,6 +10,9 @@ Selected YouTube Videos
 
 2018 YouTube Videos
 --------------
+Hyperledger Sawtooth Release 1.1 (34:28, Dan Anderson, Intel, 2018)
+    https://youtu.be/SSFVV71skP4
+
 Hyperledger Sawtooth Seafood Supply Chain Demo (3:21, Bitwise, 2018)
     https://www.youtube.com/watch?v=q0T8qAyzY30
 
@@ -24,6 +27,9 @@ Hyperledger Sawtooth Technical Overview (58:38, Dan Anderson, Intel, 2018)
 
 Hyperledger Sawtooth Application Developer Overview using "CookieJar" (54:58, Dan Anderson, Intel, 2018)
     https://www.youtube.com/watch?v=VFXary3rwY0
+
+Hyperledger Sawtooth Explainer Video (2:06, Hyperledger, 2018)
+    https://www.youtube.com/watch?v=3BVUiPQuv-w
 
 Blockchain and Hyperledger Sawtooth Overview (6:15, Daniel Homlund Martin Kronberg and Daniel Homlund, Intel, 2018)
     https://www.youtube.com/watch?v=HwFItjV6Czo
