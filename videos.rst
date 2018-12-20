@@ -31,6 +31,10 @@ Hyperledger Sawtooth Application Developer Overview using "CookieJar" (54:58, Da
 Hyperledger Sawtooth Explainer Video (2:06, Hyperledger, 2018)
     https://www.youtube.com/watch?v=3BVUiPQuv-w
 
+Hyperledger Sawtooth Blockchain Security (Dan Anderson, Intel, 2018)
+    Part 1 (23:30): https://youtu.be/ZEM1F5-U0_o
+    Part 2 (28:03): https://youtu.be/nkQfCexqJac
+
 Blockchain and Hyperledger Sawtooth Overview (6:15, Daniel Homlund Martin Kronberg and Daniel Homlund, Intel, 2018)
     https://www.youtube.com/watch?v=HwFItjV6Czo
 
@@ -61,7 +65,7 @@ Hyperledger Sawtooth 1.0: Market Significance and Technical Overview. Free regis
 
 Intel Chip Chat Audio
 ----------------------
-Revolutionizing Identity Management with Sawtooth Blockchain. Ep. 612 (8:33, Chris Spanton, T-Mobile, 2018)
+Revolutionizing Identity Management with [Sawtooth] Blockchain. Ep. 612 (8:33, Chris Spanton, T-Mobile, 2018)
     https://connectedsocialmedia.com/16839/revolutionizing-identity-management-with-blockchain-intel-chip-chat-episode-612/
 
 Why Enterprises Should Be Moving Blockchain Forward. Ep. 576 (9:51, Mike Reed, Intel, 2018)
