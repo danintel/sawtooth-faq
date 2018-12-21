@@ -1,11 +1,12 @@
 Sawtooth FAQ: Permissioning
-====================
-[PREVIOUS_ | HOME_ | NEXT_]
+===========================
+
+[PREVIOUS_ | FAQ_ | NEXT_]
 
 .. contents::
 
 How to solve this error ``Wait timed out! Policy was not committed... PENDING`` when ``sawtooth identity policy create`` is run?
---------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
 There is a possibility that rest-api is down or identity-tp is not running or it might be due to permissioning issues.
 If the cause is due to permissioning, follow these steps:
 
@@ -16,11 +17,10 @@ If the cause is due to permissioning, follow these steps:
 Refer https://sawtooth.hyperledger.org/docs/core/nightly/master/sysadmin_guide/configuring_permissions.html for detailed information.  
 
 
-
-[PREVIOUS_ | HOME_ | NEXT_]
+[PREVIOUS_ | FAQ_ | NEXT_]
 
 .. _PREVIOUS: settings.rst
-.. _HOME: README.rst
+.. _FAQ: README.rst
 .. _NEXT: videos.rst
 
 © Copyright 2018, Intel Corporation.

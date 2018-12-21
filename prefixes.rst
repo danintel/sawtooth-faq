@@ -1,6 +1,7 @@
 Appendix: Sawtooth Transaction Family Prefixes
-==================
-[PREVIOUS_ | HOME_ | NEXT_]
+==============================================
+
+[PREVIOUS_ | FAQ_ | NEXT_]
 
 .. contents::
 
@@ -112,10 +113,11 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/transaction_family_sp
 | polls         |           |        |                                         |
 +---------------+-----------+--------+-----------------------------------------+
 
-[PREVIOUS_ | HOME_ | NEXT_]
+
+[PREVIOUS_ | FAQ_ | NEXT_]
 
 .. _PREVIOUS: glossary.rst
-.. _HOME: README.rst
+.. _FAQ: README.rst
 .. _NEXT: settings.rst
 
 © Copyright 2018, Intel Corporation.
