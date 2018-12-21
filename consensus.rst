@@ -211,9 +211,9 @@ for small test networks (say, < ~12 nodes) with:
 
 ::
 
-    sawtooth.poet.block_claim_delay=1 
+    sawtooth.poet.block_claim_delay=1
     sawtooth.poet.key_block_claim_limit= 100000
-    sawtooth.poet.ztest_minimum_win_count=999999999 
+    sawtooth.poet.ztest_minimum_win_count=999999999
 
 
 How should peer nodes be distributed?
