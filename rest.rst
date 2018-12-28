@@ -105,6 +105,10 @@ Back pressure is a flow-control technique to help prevent DoS attacks.
 It results in a ``Status.QUEUE_FULL`` client batch submit response or a 429 "Too Many Requests" REST API error.
 If the validator is overwhelmed it will stop accepting new batches until it can handle more work. The number of batches that validator can accept is based on a multiplier,  QUEUE_MULTIPLIER (currently 10, formerly 2), times a rolling average of the number of published batches.
 
+Can I disable the back pressure test?
+-------------------------------------
+No. There isn't a way to disable that currently because it's determined based on a multiplier of the publishing rate of the network. It allows the slower members of the network to not drift behind the faster members when it comes to staying in consensus. You would have to make a custom build of Sawtooth to remove that check.
+
 What does this error mean from sawset: ``There is no resource with the identifier``?
 ------------------------------------------------------------------------------------
 It means the command format is correct, but the identifier does not exist.
