@@ -62,9 +62,15 @@ sawtooth.poet.enclave_module_name
     Python module name implementing the PoET enclave.
     Set to ``sawtooth_poet_sgx.poet_enclave_sgx.poet_enclave``
 sawtooth.poet.initial_wait_time
-    For C Test: initial time to wait in seconds before proposing a block (e.g., 25; default 3000)
+    For C Test: initial time to wait in seconds before proposing a block (e.g., 25; default is 3000)
+sawtooth.poet.block_claim_delay
+    For C Test: block claim delay in blocks.
+    Set to 1 to prevent most reasonable attacks.
+    Set to 2 or 3 if you want more agressive protection.  Default is 1.
 sawtooth.poet.key_block_claim_limit
-    For K Test: maximum number of blocks a validator may claim with a PoET keypair before it needs to refresh its signup information (default 250)
+    For K Test: maximum number of blocks a validator may claim with a PoET keypair before it needs to refresh its signup information.
+    I recommend bumping up so each key is good for 100000 blocks.
+    A big number reduces the likelihood that validator keys will expire simultaneously and deadlock the network. Default is 250
 sawtooth.poet.population_estimate_sample_size
     Sample size, in blocks, to compute the local mean wait time (default 50).
     The local mean wait time multiplied by random_float(0,1) yields the PoET duration time.
@@ -81,7 +87,8 @@ sawtooth.poet.valid_enclave_measurements
     Adds the enclave measurement for your enclave to the blockchain for the validator registry transaction processor to use to check signup information.
     From ``poet enclave --enclave-module sgx measurement`` or (for PoET CFT) ``poet enclave measurement``
 sawtooth.poet.ztest_minimum_win_count
-    For Z Test: minimum win count, to test a node is not winning too frequently
+    For Z Test: minimum win count, to test a node is not winning too frequently.
+    For test networks, disable by setting to 999999999, which gives you several decades before the Z test kicks in (16 years * 5 validators @ 30 seconds/block). This test is meant to catch rogue validators who have broken their enclave and are publishing too frequently.  The Z Test doesn't work on small networks because all validators publish often
 
 sawtooth.publisher.max_batches_per_block
     Maximum batches allowed per block (e.g., 100)

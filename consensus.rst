@@ -175,6 +175,21 @@ What are the minimum number of nodes needed for PoET?
 ------------------------------------------
 PoET needs at least 3 nodes, but works best with at least 4 or 5 nodes. This is to avoid Z Test failures (a node winning too frequently).  In production, to keep a blockchain safe, more nodes are always better, regardless of the consensus. 10 nodes are good for internal testing. For production, have 2 nodes per identity.
 
+Can PoET be configured for small networks?
+------------------------------------
+Yes, for development purposes.
+For production purposes, consider using another consensus algorithm.
+For example, Raft or PBFT handles a small number of nodes nicely.
+For PoET in a small blockchain network, disable defense-in-depth tests
+for small test networks (say, < ~12 nodes) with:
+
+::
+
+    sawtooth.poet.block_claim_delay=1 
+    sawtooth.poet.key_block_claim_limit= 100000
+    sawtooth.poet.ztest_minimum_win_count=999999999 
+
+
 How should peer nodes be distributed?
 -------------------
 Blockchain achieves fault tolerance by having its state (data) completely duplicated among the peer nodes.  Best practice means distributing your nodes--geographically and organizationally.

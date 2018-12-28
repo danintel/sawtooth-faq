@@ -38,30 +38,31 @@ Sawtooth FAQ
     https://github.com/danintel/sawtooth-faq
 
 Where are some good introductory videos?
----------------------------------------
+----------------------------------------
 Hyperledger Sawtooth 1.0: Market Significance & Technical Overview (Hyperledger, 2018, 61:27) (free registration required):
   https://gateway.on24.com/wcc/gateway/linux/1101876/1585244/hyperledger-sawtooth-v10-market-significance-and-technical-overview
   https://www.hyperledger.org/resources/webinars
 Hyperledger Sawtooth 1.0 Architecture and App Development (Bitwise IO, 2018, 31:26):
-  https://www.youtube.com/watch?v=uBebFQM49Xk
+  https://youtu.be/uBebFQM49Xk
 You can find several more here:
   https://www.youtube.com/results?search_query=Hyperledger+Sawtooth
 
 Where are some good advanced videos?
--------------------------------------
+------------------------------------
 A list of Hyperledger Sawtooth videos_ (mostly Sawtooth Technical Forum recordings) are at
 https://github.com/danintel/sawtooth-faq/blob/master/settings.rst
 
 What courses are available on Hyperledger Sawtooth?
------------------------------------------
+---------------------------------------------------
+* B9Lab has a five-week Sawtooth Developer training course.  See https://academy.b9lab.com/courses/B9lab/current-sawtooth-course
 * EdX has a "Blockchain for Business" course that reviews Blockchain technology and includes an introduction to Sawtooth and other Hyperledger blockchain software. See
-https://www.edx.org/course/blockchain-business-introduction-linuxfoundationx-lfs171x-0
-* An intermediate EdX course, edx 201 "Hyperledger Sawtooth for Application Developers" is under final review for release. It will use Simple Supply Chain as an example, https://github.com/hyperledger/education-sawtooth-simple-supply
+  https://www.edx.org/course/blockchain-business-introduction-linuxfoundationx-lfs171x-0
+* A self-study set of PDF slides, with a simple supply chain application as an example, is at https://github.com/hyperledger/education-sawtooth-simple-supply
 * A self-paced course is Cryptomoji, which where students extend a Cryptokitties clone,  https://github.com/hyperledger/education-cryptomoji
 * The Kerala Blockchain Academy offers a Certified Hyperledger Sawtooth Developer (CHD) program at IITM-K, India. See http://www.iiitmk.ac.in/kba/
 
 What Sawtooth exams are available?
--------------------------------------
+----------------------------------
 A Certified Hyperledger Sawtooth Administrator exam will be available in late 2018. See https://www.hyperledger.org/blog/2018/09/05/hyperledger-fabric-sawtooth-certification-exams-coming-soon
 and the exam outline at
 https://www.hyperledger.org/resources/training/hyperledger-sawtooth-certification
