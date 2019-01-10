@@ -228,6 +228,16 @@ Can I restrict what validator nodes win consensus?
 No. Every peer node validates blocks and every peer node can publish a block.
 You can write your own plugin consensus module to restrict what peer nodes win. Or modify an existing consensus module to experiment.
 
+How do I restart a consensus engine?
+------------------------------------
+First stop the validator, then restart the consensus engine.
+If you leave the validator engine running, it will not connect to the restarted consensus engine.
+
+Do I start the consensus engine before or after the validator?
+--------------------------------------------------------------
+The consensus engine can start before or after the validator.
+The preferred order is to start the validator first, then the consensus engine.
+If you start the consensus engine before the validator, the consensus engine will retry connecting to the validator (through TCP port 5050) until it the consensus engine is successful.
 
 [PREVIOUS_ | FAQ_ | NEXT_]
 

@@ -262,6 +262,13 @@ I noticed that TPs on various nodes do not process transactions in the same orde
 ---------------------------------------------------------------------------------------
 There is no guarantee of sequencing in terms of how different transactions are submitted and executed by the TPs. When transactions read or modify the same portions of state, the validator enforces ordering correctness, even with parallel execution. That is because the validator's scheduler understands the ordering relationship and needs to apply each state transition to the context provided to the next transaction's execution.
 
+What do ``failed state root hash validation`` errors mean?
+----------------------------------------------------------
+You have something non-deterministic happening with your changes to state.
+You should not do non-deterministic actions in your transaction processor such as generateing timestamps or random numbers.  The serialization must also be deterministic--the data must always serialize the same.
+You should log the contents of `entries` prior to setState calls in your transaction processor.
+There will likely be a difference between the publishing and validation executions of the transaction (they always need to be identical)
+
 
 [PREVIOUS_ | FAQ_ | NEXT_]
 

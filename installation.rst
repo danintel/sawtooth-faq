@@ -189,6 +189,32 @@ It could be a file or directory permission problem--try changing the file owners
 Another cause is the file doesn't exist. Create it with ``sawset genesis`` .
 
 
+How do I install Sawtooth on Ubuntu?
+------------------------------------
+Follow the instructions at https://sawtooth.hyperledger.org/docs/core/releases/latest/app_developers_guide/ubuntu.html
+
+These instructions are missing steps for installing and starting the DevMode consensus engine. If the consensus engine is not started, no new blocks can be published. The missing steps are:
+
+* After the "Install Sawtooth" step, install the DevMode consensus engine package.
+
+.. code:: sh
+
+    $ # If you installed from the stable repository (``sawtooth -V`` is 1.1.x):
+    $ sudo -u sawtooth devmode-engine-rust -vv --connect tcp://localhost:5050
+    $ # If you installed from the nightly repository (``sawtooth -V`` is 1.2+):
+    $ sudo -u sawtooth devmode-rust        -vv --connect tcp://localhost:5050
+
+* After "Step 5: Start the Validator", start the DevMode consensus engine
+
+.. code:: sh
+
+    $ # If you installed from the stable repository (``sawtooth -V`` is 1.1.x):
+    $ sudo -u sawtooth devmode-engine-rust -vv --connect tcp://localhost:5050
+    $ # If you installed from the nightly repository (``sawtooth -V`` is 1.2+):
+    $ sudo -u sawtooth devmode-rust        -vv --connect tcp://localhost:5050
+
+* A "Consensus engine registered" message should appear indicating the consensus engine connected with validator TCP port 5050 (for consensus messages).
+
 How do I install Sawtooth on AWS?
 ---------------------------------
 * Sign up for a free AWS Free Tier account, if you don't have an account. The AWS Free Tier is free for qualifying developers. This gives you 1 Micro instance (or any combination of instances up to 750 hours/month) for 12 months. See https://aws.amazon.com/free/
