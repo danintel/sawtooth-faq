@@ -193,7 +193,7 @@ The validator has two schedulers--parallel and serial.
 The parallel scheduler gives a performance boost because it allows multiple transactions to be processed at the same time when the transaction inputs/outputs do not conflict.
 The scheduler is specified with the
 ``sawtooth-validator --scheduler {parallel,serial}`` option.
-The current default is ``serial``, but it may change to ``parallel`` in the future.
+The current default is ``serial`` for Sawtooth 1.1 and earlier and ``parallel`` for Sawtooth 1.2 (nightly).
 For example:
 ``sawtooth-validator --scheduler parallel -vv`` .
 
