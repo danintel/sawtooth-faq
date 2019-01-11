@@ -239,6 +239,12 @@ The consensus engine can start before or after the validator.
 The preferred order is to start the validator first, then the consensus engine.
 If you start the consensus engine before the validator, the consensus engine will retry connecting to the validator (through TCP port 5050) until it the consensus engine is successful.
 
+What can cause a fork with PoET?
+--------------------------------
+In PoET, forks occur due to a network partition, the size of the network, the time it takes to transfer and validate blocks across the network, and the likelihood that two or more validator will think they have “won” and therefore publish a block during this time period.
+
+TPs don’t really affect forks, unless they have a severe impact on the validation duration of the block.
+
 [PREVIOUS_ | FAQ_ | NEXT_]
 
 .. _PREVIOUS: validator.rst
