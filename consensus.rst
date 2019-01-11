@@ -10,18 +10,18 @@ What consensus algorithms does Sawtooth support?
 ------------------------------------------------
 
 dev-mode
-    Only suitable for testing TPs with single validator deployments.  Uses a simplified random-leader algorithm for development and testing.  Not for production use
+    Only suitable for testing TPs with single validator deployments. Uses a simplified random-leader algorithm for development and testing. Not for production use
 PoET CFT (also known as PoET Simulator)
-    PoET with a simulated SGX environment. Provides CFT similar to Fabric and some other blockchains.  Requires poet-validator-registry TP. Runs on any processor (does not require Intel or SGX).  Has Crash Fault Tolerance and can be used for production networks if BFT is not required
+    PoET with a simulated SGX environment. Provides CFT similar to Fabric and some other blockchains. Requires poet-validator-registry TP. Runs on any processor (does not require Intel or SGX). Has Crash Fault Tolerance and can be used for production networks if BFT is not required
 PoET SGX
     Takes advantage of SGX in order to provide consensus with Byzantine Fault Tolerance (BFT), like PoW algorithms have, but at very low CPU usage. PoET SGX is the only algorithm that has hardware requirements (a processor supporting SGX)
 Raft
-    Consensus algorithm that elects a leader for a term of arbitrary time. Leader replaced if it times-out. Raft is faster than PoET, but is CFT, not BFT. Also Raft does not fork.  For Sawtooth Raft is new and still being stabilized.
+    Consensus algorithm that elects a leader for a term of arbitrary time. Leader replaced if it times-out. Raft is faster than PoET, but is CFT, not BFT. Also Raft does not fork. For Sawtooth Raft is new and still being stabilized.
 
 Will Sawtooth support more consensus algorithms in the future?
 --------------------------------------------------------------
 
-Yes. With pluggable consensus, the idea is to have a meaningful set of consensus algorithms so the "best fit" can be applied to an application's use case.  Raft is a recent addition--still being stabilized. There is a PBFT prototype in the works.  Others are being planned.
+Yes. With pluggable consensus, the idea is to have a meaningful set of consensus algorithms so the "best fit" can be applied to an application's use case. Raft is a recent addition--still being stabilized. There is a PBFT prototype in the works. Others are being planned.
 
 REMME.io has independently implemented Algorand Byzantine Agreement on Sawtooth.
 
@@ -67,7 +67,7 @@ But you can change consensus after the Sawtooth network has started.
 Is PoET CFT suitable for production use?
 ----------------------------------------
 
-Yes.  It is for systems that do not have SGX and is intended for use in production.  Both PoET CFT and PoET SGX have tests to guard against bad actors, such as the "Z Test" to check a validator is not winning too frequently.
+Yes. It is for systems that do not have SGX and is intended for use in production. Both PoET CFT and PoET SGX have tests to guard against bad actors, such as the "Z Test" to check a validator is not winning too frequently.
 PoET CFT simulates the SGX environment and provides CFT (similar to Fabric and other blockchain software), which is good enough to go into production.
 That said, PoET SGX is preferred because of the additional SGX protections for generating the wait time.
 
@@ -94,12 +94,12 @@ SGX also needs to be enabled in the BIOS menu.
 Does Sawtooth require a certain processor to be deployed on a network?
 ----------------------------------------------------------------------
 
-No.  If you use PoET SGX consensus you need a processor that supports SGX.
+No. If you use PoET SGX consensus you need a processor that supports SGX.
 
 Does Sawtooth require SGX?
 --------------------------
 
-No.  SGX is only needed if you use the hardened version of PoET, PoET SGX.
+No. SGX is only needed if you use the hardened version of PoET, PoET SGX.
 We also have a version of PoET that just uses conventional software, PoET CFT,
 which runs on a Sawtooth network with any processor.
 
@@ -154,7 +154,7 @@ How do I change the Sawtooth consensus algorithm?
 
 * Install the software package containing the consensus engine you wish to use on all nodes, if it is not already installed.
 * Start any consensus-required TPs, if any, on all nodes (for example PoET requires the ``sawtooth_validator_registry`` TP).
-* Use the ``sawset proposal create`` subcommand to modify ``sawtooth.consensus.algorithm`` (along with any consensus-required settings).  For an example, see https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/creating_sawtooth_network.html
+* Use the ``sawset proposal create`` subcommand to modify ``sawtooth.consensus.algorithm`` (along with any consensus-required settings). For an example, see https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/creating_sawtooth_network.html
 
 The initial default consensus algorithm is ``devmode``, which is not for production use.
 
@@ -167,7 +167,7 @@ Here is an example that changes the consensus to Raft:
 How do I change the consensus algorithm for a network that has forked?
 ----------------------------------------------------------------------
 Bring the network down to one node with the preferred blocks and submit
-your consensus change proposal.  Bring in the other nodes, with any consensus-required TPs running (for example, PoET requires the Validator Registry TP).
+your consensus change proposal. Bring in the other nodes, with any consensus-required TPs running (for example, PoET requires the Validator Registry TP).
 
 Where can I find information on the proposed PoET2 algorithm?
 -------------------------------------------------------------
@@ -184,7 +184,7 @@ https://drive.google.com/drive/folders/0B_NJV6eJXAA1VnFUakRzaG1raXc
 What is the Intel Platform Developers Kit for Blockchain - Ubuntu?
 ------------------------------------------------------------------
 
-The PDK is a small form factor computer with SGX with Ubuntu, Hyperledger Sawtooth, and development software pre-installed.  For information, see
+The PDK is a small form factor computer with SGX with Ubuntu, Hyperledger Sawtooth, and development software pre-installed. For information, see
 https://designintools.intel.com/Intel_Platform_Developers_Kit_for_Blockchain_p/q6uidcbkcpdk.htm
 
 Where is the Consensus Engine API documented?
@@ -199,7 +199,7 @@ https://drive.google.com/drive/folders/0B_NJV6eJXAA1VnFUakRzaG1raXc
 What are the minimum number of nodes needed for PoET?
 -----------------------------------------------------
 
-PoET needs at least 3 nodes, but works best with at least 4 or 5 nodes. This is to avoid Z Test failures (a node winning too frequently).  In production, to keep a blockchain safe, more nodes are always better, regardless of the consensus. 10 nodes are good for internal testing. For production, have 2 nodes per identity.
+PoET needs at least 3 nodes, but works best with at least 4 or 5 nodes. This is to avoid Z Test failures (a node winning too frequently). In production, to keep a blockchain safe, more nodes are always better, regardless of the consensus. 10 nodes are good for internal testing. For production, have 2 nodes per identity.
 
 Can PoET be configured for small networks?
 ------------------------------------
@@ -219,7 +219,7 @@ for small test networks (say, < ~12 nodes) with:
 How should peer nodes be distributed?
 -------------------------------------
 
-Blockchain achieves fault tolerance by having its state (data) completely duplicated among the peer nodes.  Best practice means distributing your nodes--geographically and organizationally.
+Blockchain achieves fault tolerance by having its state (data) completely duplicated among the peer nodes. Best practice means distributing your nodes--geographically and organizationally.
 Distributing nodes on virtual machines sharing the same host does nothing to guard against hardware faults.
 Distributing nodes at the same site does not protect against site outages.
 
@@ -243,7 +243,7 @@ What can cause a fork with PoET?
 --------------------------------
 In PoET, forks occur due to a network partition, the size of the network, the time it takes to transfer and validate blocks across the network, and the likelihood that two or more validator will think they have “won” and therefore publish a block during this time period.
 
-TPs don’t really affect forks, unless they have a severe impact on the validation duration of the block.
+TPs don’t really affect forks, unless they have a severe impact on the validation duration of the block. However, unresolvable forks due to non-determinism, are likely a TP problem.
 
 [PREVIOUS_ | FAQ_ | NEXT_]
 
