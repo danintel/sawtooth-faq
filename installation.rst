@@ -17,47 +17,8 @@ and installs the core packages
     $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 8AA7AF1F1091A5FD
     $ sudo add-apt-repository 'deb [arch=amd64] http://repo.sawtooth.me/ubuntu/bumper/stable xenial universe'
     $ sudo apt update
-    $ aptitude install sawtooth python3-sawtooth-*
-    $ aptitude search sawtooth
-    i python3-sawtooth-block-info     - ST Block Info Transaction Processor
-    i python3-sawtooth-cli            - Sawtooth CLI
-    i python3-sawtooth-config         -
-    i python3-sawtooth-ias-client     - ST Intel Attestation Service Client
-    i python3-sawtooth-ias-proxy      - ST Intel Attestation Service Proxy
-    i python3-sawtooth-identity       - ST Identity Transaction Processor
-    p python3-sawtooth-integration    - ST Integration
-    i python3-sawtooth-intkey         - ST Intkey Python Example
-    p python3-sawtooth-intkey-tests   - ST Intkey Python Test
-    i python3-sawtooth-manage         - ST Lake Management Library
-    i python3-sawtooth-poet-cli       - ST PoET CLI
-    i python3-sawtooth-poet-common    - ST PoET Common Modules
-    i python3-sawtooth-poet-core      - ST Core Consensus Module
-    p python3-sawtooth-poet-engine    - ST PoET Consensus Engine
-    i python3-sawtooth-poet-families  - ST Transaction Processor Families
-    i python3-sawtooth-poet-sgx       - ST PoET SGX Enclave
-    i python3-sawtooth-poet-simulator - ST PoET Simulator Enclave
-    i python3-sawtooth-rest-api       - ST REST API
-    i python3-sawtooth-sdk            - ST Python SDK
-    i python3-sawtooth-settings       - ST Settings Transaction Processor
-    i python3-sawtooth-signing        - ST Signing Library
-    i python3-sawtooth-validator      - ST Validator
-    i python3-sawtooth-xo             - ST XO Example
-    p python3-sawtooth-xo-tests       - ST XO Python Test
-    i sawtooth                        - ST Distributed Ledger
-    i sawtooth-cxx-sdk                - ST C++ SDK
-    p sawtooth-devmode-engine-rust    - ST DevMode Rust consensu
-    p sawtooth-intkey-tp-go           - ST Intkey TP Go
-    p sawtooth-intkey-workload        - [from Rust crate sawtooth-intkey]
-    p sawtooth-noop-tp-go             - Sawtooth Noop TP Go
-    p sawtooth-pbft-engine            - PBFT consensus algorithm for Sawtooth
-    p sawtooth-raft-engine            - Sawtooth Raft consensus engine
-    p sawtooth-sabre                  - Sawtooth Sabre Transaction Processor
-    p sawtooth-seth-cli               - Sawtooth Seth CLI
-    p sawtooth-seth-rpc               - Sawtooth Seth RPC
-    p sawtooth-seth-tp                - Sawtooth Seth Transaction Processor
-    p sawtooth-smallbank-tp-go        - Sawtooth Smallbank TP Go
-    p sawtooth-smallbank-workload     - [from Rust crate sawtooth-smallb]
-    p sawtooth-xo-tp-go               - Sawtooth Go XO TP
+    $ apt install sawtooth python3-sawtooth-*
+    $ apt search sawtooth
 
 For more, up-to-date installation information see
 https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/installation.html
@@ -127,18 +88,11 @@ This usually occurs when there is no genesis node created. To create, type the f
 
 I get this error when running ``sudo -u sawtooth sawadm genesis config-genesis.batch`` : ``Permission denied``
 --------------------------------------------------------------------------------------------------------------
-The ownership or permission is wrong. To fix it, type:
-
-.. code:: sh
-
-    $ sudo chown sawtooth:sawtooth /var/lib/sawtooth
-    $ sudo chmod 750 sawtooth:sawtooth /var/lib/sawtooth
-    $ ls -ld /var/lib/sawtooth
-    drwxr-x--- 2 sawtooth sawtooth 4096 Jun  2 14:43 /var/lib/sawtooth
+Change to a sawtooth user-writable directory before running the command and make sure file `config-genesis.batch` does not already exist: ``cd /tmp; ls config-genesispoet_genesis.batch``
 
 I get a ``Key file is not readable`` error when starting ``sudo -u sawtooth sawtooth-validator -vv``
 ----------------------------------------------------------------------------------------------------
-The validator key file permissions are wrong.  To fix it, type:
+The validator key file permissions are wrong. To fix it, type:
 
 .. code:: sh
 
@@ -320,6 +274,18 @@ How do I fix this error: ``no transaction processors registered for processor ty
 --------------------------------------------------------------------------------------------------------------
 You start the Settings TP, as follows ``sudo -u sawtooth settings-tp -v`` .
 The Settings TP is always required for all Sawtooth nodes, even if you did not add or change any settings.
+
+I get ``unmet dependencies`` errors on ``python3-sawtooth-poet-cli`` and other packages with ``sudo apt-get install -y sawtooth`` on Ubuntu Xenial
+--------------------------------------------------------------------------------------------------------------------------------------------------
+The Sawtooth PoET packages are not yet available for Sawtooth nightly (1.2.x) on Ubuntu 18.x LTS (Xenial). As a workaround do not install the meta-package ``sawtooth``.  Instead list the Sawtooth packages and install the packages you need. For example:
+
+.. code:: sh
+
+    $ apt search sawtooth # List Sawtooth packages (optional)
+    $ sudo apt-get install python3-sawtooth-cli python3-sawtooth-integration \
+        python3-sawtooth-rest-api python3-sawtooth-sdk \
+        python3-sawtooth-settings python3-sawtooth-signing \
+        python3-sawtooth-validator sawtooth-devmode-engine-rust
 
 
 [PREVIOUS_ | FAQ_ | NEXT_]

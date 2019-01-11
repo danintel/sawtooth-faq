@@ -133,13 +133,11 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/sysadmin_guide/config
 
 I run ``sudo -u sawtooth poet registration create . . .`` and get ``Permission denied: 'poet_genesis.batch'`` error
 -------------------------------------------------------------------------------------------------------------------
-
-Change to a sawtooth user-writable directory before running the command: ``cd /tmp``
+Change to a sawtooth user-writable directory before running the command and make sure file `poet_genesis.batch` does not already exist: ``cd /tmp; ls poet_genesis.batch``
 
 
 What does ``Consensus not ready to build candidate block`` mean?
 ----------------------------------------------------------------
-
 This message is usually an innocuous information message. It usually means that the validator isn't yet registered in the validator registry or that its previous registration has expired and it's waiting for the new one to commit.
 The message occurs after the block publisher polls the consensus interface asking if it is time to build the block. If not enough time has elapsed, it logs that message.
 
