@@ -136,6 +136,24 @@ The ownership or permission is wrong. To fix it, type:
     $ ls -ld /var/lib/sawtooth
     drwxr-x--- 2 sawtooth sawtooth 4096 Jun  2 14:43 /var/lib/sawtooth
 
+I get a ``Key file is not readable`` error when starting ``sudo -u sawtooth sawtooth-validator -vv``
+----------------------------------------------------------------------------------------------------
+The validator key file permissions are wrong.  To fix it, type:
+
+.. code:: sh
+
+    $ sudo
+    $ sudo chown root:sawtooth /etc/sawtooth/keys /etc/sawtooth/keys/*
+    $ sudo chmod 755 /etc/sawtooth/keys
+    $ sudo chmod 640 /etc/sawtooth/keys/validator.priv
+    $ sudo chmod 644 /etc/sawtooth/keys/validator.pub
+    $ ls -la /etc/sawtooth/keys
+    drwxr-xr-x 2 root sawtooth 4096 Jan 11 11:35 .
+    -rw-r----- 1 root sawtooth   65 Jan 11 11:35 validator.priv
+    -rw-r--r-- 1 root sawtooth   67 Jan 11 11:35 validator.pub
+
+If the validator key files are missing, type ``sudo sawadm keygen``
+
 How to I delete all blockchain data?
 ------------------------------------
 Type the following: ``sudo -u sawtooth rm -rf /var/lib/sawtooth/*``
