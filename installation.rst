@@ -199,19 +199,13 @@ These instructions are missing steps for installing and starting the DevMode con
 
 .. code:: sh
 
-    $ # If you installed from the stable repository (``sawtooth -V`` is 1.1.x):
     $ sudo -u sawtooth devmode-engine-rust -vv --connect tcp://localhost:5050
-    $ # If you installed from the nightly repository (``sawtooth -V`` is 1.2+):
-    $ sudo -u sawtooth devmode-rust        -vv --connect tcp://localhost:5050
 
 * After "Step 5: Start the Validator", start the DevMode consensus engine
 
 .. code:: sh
 
-    $ # If you installed from the stable repository (``sawtooth -V`` is 1.1.x):
     $ sudo -u sawtooth devmode-engine-rust -vv --connect tcp://localhost:5050
-    $ # If you installed from the nightly repository (``sawtooth -V`` is 1.2+):
-    $ sudo -u sawtooth devmode-rust        -vv --connect tcp://localhost:5050
 
 * A "Consensus engine registered" message should appear indicating the consensus engine connected with validator TCP port 5050 (for consensus messages).
 
