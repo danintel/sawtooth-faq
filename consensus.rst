@@ -147,6 +147,11 @@ Unlikely but worth mentioning: are you mapping volumes into the containers? If a
 
 More commonly, the defense-in-depth checks are too stringent during the initial launch. You can relax these parameters (see Settings_ in this FAQ) or, easier yet, relaunch the network.
 
+What does `` Failed to create wait certificate: Cannot create wait certificate because timer has timed out`` mean?
+------------------------------------------------------------------------------------------------------------------
+It means too much time has elapsed between the creation of the wait timer and the attempt to finalize the block and create the wait certificate.
+Look at the logs for that node and determine when it started to publish the block prior to that error, and see what transpired in between. When the timer expires, the validator is supposed to wrap up the schedule immediately and create the block, so that message is kind of unusual.  In versions of Sawtooth before 1.0, we waited until the entire schedule executed, which could be quite long running, and this message was quite common.
+
 How do I change the Sawtooth consensus algorithm?
 -------------------------------------------------
 
