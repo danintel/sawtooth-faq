@@ -8,7 +8,6 @@ Sawtooth FAQ: Consensus Algorithms (including PoET)
 
 What consensus algorithms does Sawtooth support?
 ------------------------------------------------
-
 dev-mode
     Only suitable for testing TPs with single validator deployments. Uses a simplified random-leader algorithm for development and testing. Not for production use
 PoET CFT (also known as PoET Simulator)
@@ -20,38 +19,32 @@ Raft
 
 Will Sawtooth support more consensus algorithms in the future?
 --------------------------------------------------------------
-
 Yes. With pluggable consensus, the idea is to have a meaningful set of consensus algorithms so the "best fit" can be applied to an application's use case. Raft is a recent addition--still being stabilized. There is a PBFT prototype in the works. Others are being planned.
 
 REMME.io has independently implemented Algorand Byzantine Agreement on Sawtooth.
 
 Where is Raft documented?
 -------------------------
-
 https://sawtooth.hyperledger.org/docs/raft/nightly/master/
 To use, basically set ``sawtooth.consensus.algorithm`` to ``raft`` and
 ``sawtooth.consensus.raft.peers`` to a list of peer nodes (network public keys).
 
 Does the PBFT implementation follow the original paper?
 -------------------------------------------------------
-
 Yes, it follows the original 1999 Castro and Liskov paper without modifications or optimizations.
 
 Does the PoET CFT implement the same consensus algorithm as PoET SGX?
 ---------------------------------------------------------------------
-
 Yes--they are same same consensus algorithm. The difference is the
 PoET CFT also simulates the enclave module, allowing PoET to run on non-SGX
 hardware.
 
 For PoET CFT (PoET Simulator), should I generate my own ``simulator_rk_pub.pem`` file or do I use the one in ``/etc/sawtooth/`` ?
 ---------------------------------------------------------------------------------------------------------------------------------
-
 No, you use the one that is installed. It must match the private key that is in the PoET Simulator. The public key is needed to verify attestation verification reports from PoET.
 
 What is unpluggable consensus?
 ------------------------------
-
 Sawtooth supports unpluggable consensus, meaning you can change the consensus algorithm on the fly,
 at a block boundary.
 Changing consensus on the fly means it is done without stopping validators, flushing state,
@@ -60,33 +53,28 @@ It is also called Dynamic Consensus.
 
 Can my Sawtooth network have validators with a mixture of PoET SGX and PoET CFT?
 --------------------------------------------------------------------------------
-
 No. You need to pick one consensus for all nodes.
 But you can change consensus after the Sawtooth network has started.
 
 Is PoET CFT suitable for production use?
 ----------------------------------------
-
 Yes. It is for systems that do not have SGX and is intended for use in production. Both PoET CFT and PoET SGX have tests to guard against bad actors, such as the "Z Test" to check a validator is not winning too frequently.
 PoET CFT simulates the SGX environment and provides CFT (similar to Fabric and other blockchain software), which is good enough to go into production.
 That said, PoET SGX is preferred because of the additional SGX protections for generating the wait time.
 
 What cloud services offer SGX?
 ------------------------------
-
 SGX is available on IBM cloud and Alibaba.
 Early access was available on Microsoft Azure, but not now.
 
 Does PoET SGX function with SGX on cloud services?
 --------------------------------------------------
-
 No. For PoET SGX to function, one also needs Platform Services (PSW), which is not available from any cloud provider.
 Instead, one can use PoET CFT, which is also supported.
 But other software software that requires SGX may be deployed on cloud services.
 
 I get this error during PoET SGX registration: "Machine requires update (probably BIOS) for SGX compliance."
 ------------------------------------------------------------------------------------------------------------
-
 During EPID provisioning your computer is trying to get an anonymous credential from Intel. If that process is failing one possibility is that there's a network issue like a proxy. A second possibility is that there's some firmware out of date and so the protocol isn't doing what the backend expects it to. You can check for a firmware / BIOS update for that platform.
 
 SGX also needs to be enabled in the BIOS menu.
@@ -118,12 +106,13 @@ In an ideal world, you want a distribution where one and only one random wait ti
 
 Where is PoET 1.0 Specification?
 --------------------------------
-
 https://sawtooth.hyperledger.org/docs/core/releases/latest/architecture/poet.html
+Why is PoET SGX Byzantine Fault Tolerant?
+-----------------------------------------
+Because the PoET waiting time is enforced with an SGX enclave. There is also more defense-in-depth checks, but that doesn't make it BFT. In comparison, Bitcoin's PoW accomplishes the same thing with repeatedly hashing, which is effectively the same thing (although more wasteful) than PoET's trusted timer. For details, see the PoET 1.0 spec in the link above.
 
 Where is the PoET SGX Enclave configuration file?
 -------------------------------------------------
-
 It is at ``/etc/sawtooth/poet_enclave_sgx.toml`` .
 It is only for configuring PoET SGX Enclave, not the PoET CFT (PoET without SGX).
 A sample file is at
@@ -154,7 +143,6 @@ Look at the logs for that node and determine when it started to publish the bloc
 
 How do I change the Sawtooth consensus algorithm?
 -------------------------------------------------
-
 * Install the software package containing the consensus engine you wish to use on all nodes, if it is not already installed.
 * Start any consensus-required TPs, if any, on all nodes (for example PoET requires the ``sawtooth_validator_registry`` TP).
 * Use the ``sawset proposal create`` subcommand to modify ``sawtooth.consensus.algorithm`` (along with any consensus-required settings). For an example, see https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/creating_sawtooth_network.html
