@@ -171,7 +171,7 @@ These instructions are missing steps for installing and starting the DevMode con
 
 .. code:: sh
 
-    $ sudo -u sawtooth devmode-engine-rust -vv --connect tcp://localhost:5050
+    $ sudo apt-get install sawtooth-devmode-engine-rust 
 
 * After "Step 5: Start the Validator", start the DevMode consensus engine
 
