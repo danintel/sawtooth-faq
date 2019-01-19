@@ -9,6 +9,11 @@ Appendix: Sawtooth Videos
 Selected YouTube Videos
 -----------------------
 
+2019 YouTube Videos
+-------------------
+Hyperledger Sawtooth Performance Metrics with Grafana (Dan Anderson, Intel, 2019)
+    https://youtu.be/YBd7PJlNRSQ
+
 2018 YouTube Videos
 -------------------
 Hyperledger Sawtooth Release 1.1 (34:28, Dan Anderson, Intel, 2018)
