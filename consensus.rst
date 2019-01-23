@@ -58,7 +58,7 @@ But you can change consensus after the Sawtooth network has started.
 
 Is PoET CFT suitable for production use?
 ----------------------------------------
-Yes. It is for systems that do not have SGX and is intended for use in production. Both PoET CFT and PoET SGX have tests to guard against bad actors, such as the "Z Test" to check a validator is not winning too frequently.
+Yes. It is for systems that do not have SGX and is intended for use in production for systems that do not require BFT. Both PoET CFT and PoET SGX have tests to guard against bad actors, such as the "Z Test" to check a validator is not winning too frequently.
 PoET CFT simulates the SGX environment and provides CFT (similar to Fabric and other blockchain software), which is good enough to go into production.
 That said, PoET SGX is preferred because of the additional SGX protections for generating the wait time.
 
