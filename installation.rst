@@ -287,6 +287,22 @@ The Sawtooth PoET packages are not yet available for Sawtooth nightly (1.2.x) on
         python3-sawtooth-settings python3-sawtooth-signing \
         python3-sawtooth-validator sawtooth-devmode-engine-rust
 
+I get ``Unable to start validator; sawtooth.consensus.algorithm.name and sawtooth.consensus.algorithm.version must be set in the genesis block`` when installing Sawtooth 1.2 nightly
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The installation instructions for "Step 3" at
+https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/ubuntu.html
+are incomplete for Sawtooth Nightly (1.2).
+They work for Sawtooth 1.1, but for 1.2 the consensus engine setting is now required in 1.2.  The correct instructions in Step 3 for 1.2 are:
+
+.. code:: sh
+
+    $ cd /tmp
+    $ sudo -u sawtooth sawset genesis -k /etc/sawtooth/keys/validator.priv
+    $ sudo -u sawtooth sawset proposal create \
+         -k /etc/sawtooth/keys/validator.priv \
+         sawtooth.consensus.algorithm.name=Devmode \
+         sawtooth.consensus.algorithm.version=0.1 -o config.batch
+    $ sudo -u sawtooth sawadm genesis config-genesis.batch config.batch 
 
 [PREVIOUS_ | FAQ_ | NEXT_]
 
