@@ -29,8 +29,10 @@ Since Sawtooth settings are extensible and include transaction family-specific s
 sawtooth.config.authorization_type
     Example setting--never used.  To set authorization type, use command line option ``sawtooth-validator --network-auth {trust|challenge}``
 
-sawtooth.consensus.algorithm
-    Consensus algorithm (e.g., ``poet`` (PoET SGX or PoET CFT) or ``devmode`` (default) or ``raft`` or any other pluggable consensus engine you provide)
+sawtooth.consensus.algorithm.name
+    Pluggable consensus algorithm name. These include ``PoET``, ``Devmode``, ``sawtooth-raft-engine``, and ``sawtooth-pbft``.  The default is ``devmode`` for Sawtooth 1.1 or earlier, with no default for 1.2.
+sawtooth.consensus.algorithm.version
+    Consensus algorithm version. Currently 0.1 for PoET, Devmode, and sawtooth-pbft, and 0.1.0 for sawtooth-raft-engine.
 sawtooth.consensus.block_validation_rules
     Lists validation rules to use in deciding what blocks to add to the blockchain.
     See https://sawtooth.hyperledger.org/docs/core/nightly/master/architecture/injecting_batches_block_validation_rules.html
@@ -38,6 +40,18 @@ sawtooth.consensus.max_wait_time
     Maximum devmode consensus wait time, in seconds
 sawtooth.consensus.min_wait_time
     Minimum devmode consensus wait time, in seconds
+
+sawtooth.consensus.pbft.block_duration
+    How often to try to publish a block. Optional, default 200 ms.
+sawtooth.consensus.pbft.checkpoint_period
+    How many committed blocks in between each checkpoint. Optional, default 100 blocks
+sawtooth.consensus.pbft.commit_timeout
+    How long to wait between block commits before deeming a primary node faulty. Optional, default 4000 ms.
+sawtooth.consensus.pbft.message_timeout
+    How long to wait for updates from the Consensus API. Optional, default 10 ms.
+sawtooth.consensus.pbft.max_log_size
+    Log size. Optional, default 1000 messages
+
 sawtooth.consensus.raft.election_tick
     RAFT consensus election tick, in seconds. E.g., 1500
 sawtooth.consensus.raft.heartbeat_tick
