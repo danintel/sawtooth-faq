@@ -249,6 +249,8 @@ Ubuntu 18.04 LTS is supported only in the nightly development packages. Use Ubun
 You can also install Sawtooth with Docker. See:
 https://sawtooth.hyperledger.org/docs/core/releases/latest/app_developers_guide/docker.html
 
+If you wish to install the nightly development packages on Ubuntu 18.04 LTS (Bionic), then, for now, specify the individual packages you wish to install instead of parent package ``sawtooth``.  For example, ``sudo apt-get install python3-sawtooth-cli python3-sawtooth-integration python3-sawtooth-rest-api python3-sawtooth-sdk python3-sawtooth-settings python3-sawtooth-signing python3-sawtooth-validator sawtooth-devmode-engine-rust``
+
 I get this error installing Sawtooth: ``No matching distribution found for sawtooth_rest_api``
 ----------------------------------------------------------------------------------------------
 You tried to install Sawtooth using Python pip.
