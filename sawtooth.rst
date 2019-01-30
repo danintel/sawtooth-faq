@@ -61,11 +61,12 @@ What courses are available on Hyperledger Sawtooth?
 * A self-study set of PDF slides, with a simple supply chain application as an example, is at https://github.com/hyperledger/education-sawtooth-simple-supply
 * A self-paced course is Cryptomoji, which where students extend a Cryptokitties clone,  https://github.com/hyperledger/education-cryptomoji
 * The Kerala Blockchain Academy offers a Certified Hyperledger Sawtooth Developer (CHD) program at IITM-K, India. See http://www.iiitmk.ac.in/kba/
+* Blockchain Educators offers a Certified Hyperledger Sawtooth Administrator (CHSA) course. See
+https://www.blockchaineducators.org/hyperledger/
 
 What Sawtooth exams are available?
 ----------------------------------
-A Certified Hyperledger Sawtooth Administrator exam will be available in late 2018. See https://www.hyperledger.org/blog/2018/09/05/hyperledger-fabric-sawtooth-certification-exams-coming-soon
-and the exam outline at
+A Certified Hyperledger Sawtooth Administrator (CHSA) exam is available at
 https://www.hyperledger.org/resources/training/hyperledger-sawtooth-certification
 
 Are there any example applications based on Sawtooth?
