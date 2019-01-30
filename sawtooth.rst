@@ -210,6 +210,18 @@ https://github.com/hyperledger/sawtooth-explorer
 It may or may not be merged with Hyperledger Explorer in the future.
 Sawtooth Explorer provides visibility into the Sawtooth blockchain for node operators.
 
+How do I setup and use Sawtooth Explorer?
+-----------------------------------------
+* Install, configure, and run Hyperledger Sawtooth
+* Clone Sawtooth Explorer with ``git clone https://github.com/hyperledger/sawtooth-explorer``
+* ``cd sawtooth-explorer``
+* In file ``docker/nginx.conf``, change ``proxy_pass`` to ``http://localhost:8008``
+* In file ``src/environments/environment.ts``, change ``apiURL`` to ``http://<host-ip-address>:8090`` (change to your hostname or IP address)
+* Start Sawtooth Explorer with ``docker-compose up``
+* In a web browser, navigate to http://<host-ip-address>:8090 (change to your hostname or IP address) 
+* You can now see the transactions/batches that you submit from the client to Sawtooth in the Explorer user interface
+* More details are at https://github.com/hyperledger/sawtooth-explorer
+
 How do I report a bug?
 ----------------------
 Use the JIRA bug tracking system at
