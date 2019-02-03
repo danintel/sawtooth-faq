@@ -90,19 +90,19 @@ By default, the REST API listens to client requests on localhost (127.0.0.1) and
 
 How do I use the Rust SDK in MS Windows?
 ----------------------------------------
-Colin McCullough gives these steps:
+`Colin McCullough`_ gives these steps:
 
-1. Download libzmq from https://github.com/zeromq/libzmq and compile from source using ``cmake``. One option is to follow the steps in the ``.appveyor.bat`` file in the ``sawtooth-zmq-0.8.2-dev5`` folder, located in your ```.crates``` folder. It contains appropriate ``cmake`` and ``msbuild`` commands, which may save some time, rather than try to follow the INSTALL instructions that come with libzmq. Windows binaries stop after something around 4.04 and you need 4.2. I believe you also need to rename the built lib file from ``libzmq.lib`` to ``zmq.lib``
+1. Download libzmq from https://github.com/zeromq/libzmq and compile from source using ``cmake``. One option is to follow the steps in the ``.appveyor.bat`` file in the ``sawtooth-zmq-0.8.2-dev5`` folder, located in your ``.crates`` folder. It contains appropriate ``cmake`` and ``msbuild`` commands, which may save some time, rather than try to follow the INSTALL instructions that come with libzmq. Windows binaries stop after something around 4.04 and you need 4.2. I believe you also need to rename the built lib file from ``libzmq.lib`` to ``zmq.lib``
 
 2. Download OpenSSL and install. A dependency ``rust-openssl`` states that it will autolocate your ssl installation, but that was not the case for me. You'll have to set the location as an environment variable
 
-3. Download the protobuf compiler, ``protoc``, from `https://github.com/protocolbuffers/protobuf/releases` and set in your path
+3. Download the protobuf compiler, ``protoc``, from https://github.com/protocolbuffers/protobuf/releases and set in your path
 
-4. Set these environment variables ``OPENSSL_DIR``, ``LIBZMQ_INCLUDE_DIR``, ``LIBZMQ_PREFIX``, ``LIBZMQ_LIB_DIR``
+4. Set these environment variables ``OPENSSL_DIR``, ``LIBZMQ_INCLUDE_DIR``, ``LIBZMQ_PREFIX``, ``LIBZMQ_LIB_DIR``.  Building may only require the ``OPENSSL_DIR`` and ``LIBZMQ_PREFIX`` to be set.  If you run a build with an incorrect environment variable or you move the dependencies to another location, you must run ``cargo clean`` to reset the build environment.  Rust will look to the old build environment for any environment variables rather than the currently set paths.
 
-5. After all of this I still faced a missing dll error. One of the dependencies needs ``libzmq.dll`` and will not look for it under any of those set variable locations. I put it in a folder specified in one of my environment variables above.
+5. After all of this I still faced a missing dll error. One of the dependencies needs ``libzmq.dll`` and will not look for it under any of those set variable locations. I put the file in the system32 folder, which fixed the issue.  Any input on what environment variable needs to be set would be helpful.
 
-I will probably just use a custom Docker file I built for this. It just adds a little to the build time, but at least I know it will work across environments.
+Until Rust and the RustSDK are a bit more mature, I still recommend using a Docker container for development to avoid any MS Windows troubles.  You can reach me at hello@colinmac.me with any questions.
 
 
 [PREVIOUS_ | FAQ_ | NEXT_]
@@ -110,5 +110,6 @@ I will probably just use a custom Docker file I built for this. It just adds a l
 .. _PREVIOUS: consensus.rst
 .. _FAQ: README.rst
 .. _NEXT: rest.rst
+.. _Colin McCullough: https://github.com/colincmcc
 
 © Copyright 2018, Intel Corporation.
