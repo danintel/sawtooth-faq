@@ -265,7 +265,7 @@ There is no guarantee of sequencing in terms of how different transactions are s
 What do ``failed state root hash validation`` errors mean?
 ----------------------------------------------------------
 You have something non-deterministic happening with your changes to state.
-You should not do non-deterministic actions in your transaction processor such as generateing timestamps or random numbers.  The serialization must also be deterministic--the data must always serialize the same.
+You should not do non-deterministic actions in your transaction processor such as generating timestamps or random numbers. The serialization must also be deterministic--the data must always serialize the same.
 You should log the contents of `entries` prior to setState calls in your transaction processor.
 There will likely be a difference between the publishing and validation executions of the transaction (they always need to be identical)
 

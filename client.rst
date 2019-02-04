@@ -14,7 +14,7 @@ What languages does the Sawtooth Client SDK support?
 ----------------------------------------------------
 JavaScript, Python 3, and Rust.
 Others are in the process of being added: Java and C++.
-A third-party Microsoft .NET SDK is also available from https://github.com/hyperledger/sawtooth-sdk-dotnet
+A SDK for Microsoft .NET is also available from https://github.com/hyperledger/sawtooth-sdk-dotnet
 One can also interface directly to Sawtooth without a SDK.
 Multiple languages are supported as different languages are more suited for different problem spaces and developers tend to be more comfortable with some languages more than others.
 See this chart of Sawtooth SDK support:
