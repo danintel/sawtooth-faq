@@ -190,6 +190,25 @@ How do I install Sawtooth on AWS?
 * Then follow the instructions for using your Sawtooth AWS instance at
   https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/aws.html
 
+How do I install Sawtooth Supply Chain on AWS?
+----------------------------------------------
+* Sign up for a free AWS Free Tier account, if you don't have an account. The AWS Free Tier is free for qualifying developers. This gives you 1 Micro instance (or any combination of instances up to 750 hours/month) for 12 months. See https://aws.amazon.com/free/
+* Create your instance from the Hyperledger Sawtooth Supply Chain product page on AWS Marketplace, at https://aws.amazon.com/marketplace/pp/B077FLR7V5
+* Follow instructions to launch an AWS Marketplace instance using this gist:
+https://gist.github.com/danintel/04c9a6b870730842c30454a8cc1e594e
+* This installs Sawtooth 0.8 (prerelease, 2017) and Sawtooth Supply Chain
+* For the current version, install the current Sawtooth release (1.1, Bumper) on a Ubuntu 16 LTS (Xenial) instance on AWS, then install Sawtooth Supply Chain with Docker from https://github.com/hyperledger/sawtooth-supply-chain . The repo supports Sawtooth 1.2, which is not released, and Ubunt 18 LTS (Bionic).  To patch Supply Chain to support Sawtooth 1.1, follow these steps:
+.. code:: sh
+
+    $ git clone https://github.com/hyperledger/sawtooth-supply-chain
+    $ cd sawtooth-supply-chain
+    $ git diff 50c404c >bionic.patch
+    $ patch --dry-run -R -p1 <bionic.patch
+    $ patch           -R -p1 <bionic.patch
+    $ sudo docker-compose up
+
+
+
 How do I use ssh with AWS?
 --------------------------
 By default ssh access to AWS instances are disabled.
