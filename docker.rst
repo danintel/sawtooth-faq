@@ -207,7 +207,7 @@ It is best to set `$SAWTOOTH_HOME` so all the configuration and data is under on
 
 I get this error running Docker: ``ERROR: manifest for hyperledger/sawtooth-validator:1.2 not found``
 -----------------------------------------------------------------------------------------------------
-You are following instructions for the unreleased ``nightly`` build, Sawtooth 1.2. There are no Docker images for the unreleased Sawtooth 1.2 release. Instead use the ``latest`` build documentation at https://sawtooth.hyperledger.org/docs/core/releases/latest/app_developers_guide.html
+You are following instructions for the unreleased Sawtooth ``nightly`` build. There are no Docker images for the nightly build. Instead use the ``latest`` build documentation at https://sawtooth.hyperledger.org/docs/core/releases/latest/app_developers_guide.html
 
 
 [PREVIOUS_ | FAQ_ | NEXT_]

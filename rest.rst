@@ -107,7 +107,7 @@ If the validator is overwhelmed it will stop accepting new batches until it can 
 
 Can I disable the back pressure test?
 -------------------------------------
-No. There isn't a way to disable that currently because it's determined based on a multiplier of the publishing rate of the network. It allows the slower members of the network to not drift behind the faster members when it comes to staying in consensus. You would have to make a custom build of Sawtooth to remove that check.
+No. There isn't a way to disable that currently because it's determined based on a multiplier of the publishing rate of the network. Back pressure test is about rejecting load (in the form of batches) that the network wouldn't be able to accommodate in a reasonable amount of time (next couple blocks). This should never be turned off as without this feature it is trivial to do a client-based attack which overwhelms the network creating a DoS. You would have to make a custom build of Sawtooth to remove that check.
 
 What does this error mean from sawset: ``There is no resource with the identifier``?
 ------------------------------------------------------------------------------------

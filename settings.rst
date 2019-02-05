@@ -30,7 +30,7 @@ sawtooth.config.authorization_type
     Example setting--never used.  To set authorization type, use command line option ``sawtooth-validator --network-auth {trust|challenge}``
 
 sawtooth.consensus.algorithm.name
-    Pluggable consensus algorithm name. These include ``PoET``, ``Devmode``, ``sawtooth-raft-engine``, and ``sawtooth-pbft``.  The default is ``devmode`` for Sawtooth 1.1 or earlier, with no default for 1.2.
+    Pluggable consensus algorithm name. These include ``PoET``, ``Devmode``, ``sawtooth-raft-engine``, and ``sawtooth-pbft``.  The default is ``devmode`` for Sawtooth 1.1 or earlier, with no default for the (unreleased) nightly build.
 sawtooth.consensus.algorithm.version
     Consensus algorithm version. Currently 0.1 for PoET, Devmode, and sawtooth-pbft, and 0.1.0 for sawtooth-raft-engine.
 sawtooth.consensus.block_validation_rules
@@ -81,7 +81,7 @@ sawtooth.poet.initial_wait_time
 sawtooth.poet.block_claim_delay
     For C Test: block claim delay in blocks.
     Set to 1 to prevent most reasonable attacks.
-    Set to 2 or 3 if you want more agressive protection.  Default is 1.
+    Set to 2 or 3 if you want more aggressive protection. Default is 1.
 sawtooth.poet.key_block_claim_limit
     For K Test: maximum number of blocks a validator may claim with a PoET keypair before it needs to refresh its signup information.
     I recommend bumping up so each key is good for 100000 blocks.

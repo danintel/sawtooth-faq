@@ -88,7 +88,7 @@ This usually occurs when there is no genesis node created. To create, type the f
 
 I get this error when running ``sudo -u sawtooth sawadm genesis config-genesis.batch`` : ``Permission denied``
 --------------------------------------------------------------------------------------------------------------
-Change to a sawtooth user-writable directory before running the command and make sure file `config-genesis.batch` does not already exist: ``cd /tmp; ls config-genesispoet_genesis.batch``
+Change to a sawtooth user-writable directory before running the command and make sure file `config-genesis.batch` does not already exist: ``cd /tmp; ls config-genesis.batch``
 
 I get a ``Key file is not readable`` error when starting ``sudo -u sawtooth sawtooth-validator -vv``
 ----------------------------------------------------------------------------------------------------
@@ -190,24 +190,6 @@ How do I install Sawtooth on AWS?
 * Then follow the instructions for using your Sawtooth AWS instance at
   https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/aws.html
 
-How do I install Sawtooth Supply Chain on AWS?
-----------------------------------------------
-* Sign up for a free AWS Free Tier account, if you don't have an account. The AWS Free Tier is free for qualifying developers. This gives you 1 Micro instance (or any combination of instances up to 750 hours/month) for 12 months. See https://aws.amazon.com/free/
-* Create your instance from the Hyperledger Sawtooth Supply Chain product page on AWS Marketplace, at https://aws.amazon.com/marketplace/pp/B077FLR7V5
-* Follow instructions to launch an AWS Marketplace instance using this gist:
-https://gist.github.com/danintel/04c9a6b870730842c30454a8cc1e594e
-* This installs Sawtooth 0.8 (prerelease, 2017) and Sawtooth Supply Chain
-* For the current version, install the current Sawtooth release (1.1, Bumper) on a Ubuntu 16 LTS (Xenial) instance on AWS, then install Sawtooth Supply Chain with Docker from https://github.com/hyperledger/sawtooth-supply-chain . The repo supports Sawtooth 1.2, which is not released, and Ubunt 18 LTS (Bionic).  To patch Supply Chain to support Sawtooth 1.1, follow these steps:
-.. code:: sh
-
-    $ git clone https://github.com/hyperledger/sawtooth-supply-chain
-    $ cd sawtooth-supply-chain
-    $ git diff 50c404c >bionic.patch
-    $ patch --dry-run -R -p1 <bionic.patch
-    $ patch           -R -p1 <bionic.patch
-    $ sudo docker-compose up
-
-
 
 How do I use ssh with AWS?
 --------------------------
@@ -270,6 +252,8 @@ https://sawtooth.hyperledger.org/docs/core/releases/latest/app_developers_guide/
 
 If you wish to install the nightly development packages on Ubuntu 18.04 LTS (Bionic), then, for now, specify the individual packages you wish to install instead of parent package ``sawtooth``.  For example, ``sudo apt-get install python3-sawtooth-cli python3-sawtooth-integration python3-sawtooth-rest-api python3-sawtooth-sdk python3-sawtooth-settings python3-sawtooth-signing python3-sawtooth-validator sawtooth-devmode-engine-rust``
 
+For details, see https://jira.hyperledger.org/projects/STL/issues/STL-1465
+
 I get this error installing Sawtooth: ``No matching distribution found for sawtooth_rest_api``
 ----------------------------------------------------------------------------------------------
 You tried to install Sawtooth using Python pip.
@@ -298,7 +282,7 @@ The Settings TP is always required for all Sawtooth nodes, even if you did not a
 
 I get ``unmet dependencies`` errors on ``python3-sawtooth-poet-cli`` and other packages with ``sudo apt-get install -y sawtooth`` on Ubuntu Xenial
 --------------------------------------------------------------------------------------------------------------------------------------------------
-The Sawtooth PoET packages are not yet available for Sawtooth nightly (1.2.x) on Ubuntu 18.x LTS (Xenial). As a workaround do not install the meta-package ``sawtooth``.  Instead list the Sawtooth packages and install the packages you need. For example:
+The Sawtooth PoET packages are not yet available for the unreleased Sawtooth nightly builds on Ubuntu 18.x LTS (Xenial). As a workaround do not install the meta-package ``sawtooth``.  Instead list the Sawtooth packages and install the packages you need. For example:
 
 .. code:: sh
 
@@ -308,12 +292,12 @@ The Sawtooth PoET packages are not yet available for Sawtooth nightly (1.2.x) on
         python3-sawtooth-settings python3-sawtooth-signing \
         python3-sawtooth-validator sawtooth-devmode-engine-rust
 
-I get ``Unable to start validator; sawtooth.consensus.algorithm.name and sawtooth.consensus.algorithm.version must be set in the genesis block`` when installing Sawtooth 1.2 nightly
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+I get ``Unable to start validator; sawtooth.consensus.algorithm.name and sawtooth.consensus.algorithm.version must be set in the genesis block`` when installing Sawtooth nightly builds
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 The installation instructions for "Step 3" at
 https://sawtooth.hyperledger.org/docs/core/nightly/master/app_developers_guide/ubuntu.html
-are incomplete for Sawtooth Nightly (1.2).
-They work for Sawtooth 1.1, but for 1.2 the consensus engine setting is now required in 1.2.  The correct instructions in Step 3 for 1.2 are:
+are incomplete for Sawtooth nightly builds.
+They work for Sawtooth 1.1, but for nightly builds the consensus engine setting is now required. The correct instructions in Step 3 for nightly builds are:
 
 .. code:: sh
 
