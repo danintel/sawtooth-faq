@@ -41,14 +41,37 @@ sawtooth.consensus.max_wait_time
 sawtooth.consensus.min_wait_time
     Minimum devmode consensus wait time, in seconds
 
+sawtooth.consensus.pbft.peers
+    JSON list of each peer node's public key. Only required PBFT setting.
+    Key is from ``/etc/sawtooth/keys/validator.pub`` .
+    Example:
+    ``["0276f8fed116837eb7646f800e2dad6d13ad707055923e49df08f47a963547b631",\
+    "035d8d519a200cdb8085c62d6fb9f2678cf71cbde738101d61c4c8c2e9f2919aa"]``
+
+    For details on this and other PBFT settings, see
+    https://github.com/hyperledger/sawtooth-pbft/blob/master/src/config.rs
 sawtooth.consensus.pbft.block_duration
     How often to try to publish a block. Optional, default 200 ms.
-sawtooth.consensus.pbft.checkpoint_period
-    How many committed blocks in between each checkpoint. Optional, default 100 blocks
-sawtooth.consensus.pbft.commit_timeout
-    How long to wait between block commits before deeming a primary node faulty. Optional, default 4000 ms.
+sawtooth.consensus.pbft.exponential_retry_base
+    Base time to use for retrying with exponential backoff
+    Optional, default 100 ms
+sawtooth.consensus.pbft.exponential_retry_max
+    Maximum time for retrying with exponential backoff.
+    Optional, default 60s
+sawtooth.consensus.pbft.faulty_primary_timeout
+    How long to wait for the next (BlockNew + PrePrepare) before determining
+    primary is faulty. Should be > block_duration.
+    Optional, default 30s
+sawtooth.consensus.pbft.view_change_duration
+    If the node starts a change to view (v + 2),
+    the timeout will be (2 * view_change_duration)
+    Optional, default 5s
+sawtooth.consensus.pbft.forced_view_change_period
+    How many blocks to commit before forcing a view change for fairness
+    Optional, default 30 blocks
 sawtooth.consensus.pbft.message_timeout
-    How long to wait for updates from the Consensus API. Optional, default 10 ms.
+    How long to wait for updates from the Consensus API.
+    Optional, default 10 ms.
 sawtooth.consensus.pbft.max_log_size
     Log size. Optional, default 1000 messages
 
