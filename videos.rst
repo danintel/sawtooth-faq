@@ -11,7 +11,10 @@ Selected YouTube Videos
 
 2019 YouTube Videos
 -------------------
-Hyperledger Sawtooth Performance Metrics with Grafana (Dan Anderson, Intel, 2019)
+Hyperledger Sawtooth Application Development Overview using "SimpleWallet" (57:18, Dan Anderson, Intel, 2019)
+    https://youtu.be/4VUaZkwJdCc
+
+Hyperledger Sawtooth Performance Metrics with Grafana (28:00, Dan Anderson, Intel, 2019)
     https://youtu.be/YBd7PJlNRSQ
 
 2018 YouTube Videos
