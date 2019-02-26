@@ -244,7 +244,7 @@ The usual problem when you get this message is configuring the peer endpoints
 
 * Check peer configuration in your local and remote ``/etc/sawtooth/validator.toml`` files. Check the ``peering`` and ``endpoint`` lines. Check the ``seeds`` line (for dynamic peering) or ``peers`` line (for static peering)
 
-* If you are connecting to external nodes on the network, bind to 0.0.0.0 (which means any IP address) or your external IP address instead of 127.0.0.1 (localhost only).
+* If you are connecting to external nodes on the network, bind to 0.0.0.0 (which means any IP address) or your external IP address instead of 127.0.0.1 (localhost only). Be careful doing this as this opens up the listening port to the outside network.
 
 I get ``unmet dependencies`` errors installing Sawtooth on Ubuntu 18.04 LTS.
 ----------------------------------------------------------------------------
