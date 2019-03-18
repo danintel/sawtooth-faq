@@ -58,13 +58,17 @@ sawtooth.consensus.pbft.exponential_retry_base
 sawtooth.consensus.pbft.exponential_retry_max
     Maximum time for retrying with exponential backoff.
     Optional, default 60s
-sawtooth.consensus.pbft.faulty_primary_timeout
+sawtooth.consensus.pbft.idle_timeout
     How long to wait for the next (BlockNew + PrePrepare) before determining
-    primary is faulty. Should be > block_duration.
+    primary is faulty. Must be longer than block_duration.
+    Optional, default 30s
+sawtooth.consensus.pbft.commit_timeout
+    How long to wait (after Pre-Preparing) for the node to commit the block
+    before starting a view change
     Optional, default 30s
 sawtooth.consensus.pbft.view_change_duration
-    If the node starts a change to view (v + 2),
-    the timeout will be (2 * view_change_duration)
+    If a node on view v starts a change to view (v + n), the timeout before
+    starting a new change to view (v + n + 1) will be (n * view_change_duration)
     Optional, default 5s
 sawtooth.consensus.pbft.forced_view_change_period
     How many blocks to commit before forcing a view change for fairness
@@ -73,7 +77,8 @@ sawtooth.consensus.pbft.message_timeout
     How long to wait for updates from the Consensus API.
     Optional, default 10 ms.
 sawtooth.consensus.pbft.max_log_size
-    Log size. Optional, default 1000 messages
+    How large the PBFT message log is allowed to get.
+    Optional, default 1000 messages
 
 sawtooth.consensus.raft.election_tick
     RAFT consensus election tick, in seconds. E.g., 1500
