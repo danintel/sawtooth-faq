@@ -99,6 +99,10 @@ I am getting this error: ``Cross-Origin Request Blocked: The Same Origin Policy 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 The Sawtooth REST API doesn't support CORS. To allow cross-origin access to the Sawtooth API, put it behind a proxy.
 
+What does this error mean: ``Request failed with status code 429``
+------------------------------------------------------------------
+To avoid DDoS attacks (too many requests from a single source), Sawtooth has a mechanism called "backpressure test" which avoids such things as excessive network traffice and excessive Sawtooth transactions.
+
 What is the back pressure test?
 -------------------------------
 Back pressure is a flow-control technique to help prevent DoS attacks.
