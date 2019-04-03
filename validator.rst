@@ -315,6 +315,9 @@ What are the maximum number of blocks in a Sawtooth blockchain?
 ---------------------------------------------------------------
 There is no limit, other than the available storage for a node.
 
+What does this error mean: ``Request failed with status code 429``
+---------------------------------------------------------------
+To avoid DDOS attacks (Too many requests from a single source). Sawtooth has a mechanism called ``backpressure test`` which avoids such things to break the network.
 
 [PREVIOUS_ | FAQ_ | NEXT_]
 
