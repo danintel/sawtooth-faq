@@ -315,7 +315,6 @@ What are the maximum number of blocks in a Sawtooth blockchain?
 ---------------------------------------------------------------
 There is no limit, other than the available storage for a node.
 
-
 [PREVIOUS_ | FAQ_ | NEXT_]
 
 .. _PREVIOUS: transaction-processing.rst

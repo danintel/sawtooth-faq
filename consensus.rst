@@ -10,6 +10,8 @@ What consensus algorithms does Sawtooth support?
 ------------------------------------------------
 Devmode (name "Devmode", version 0.1)
     Only suitable for testing TPs with single validator deployments. Uses a simplified random-leader algorithm for development and testing. Not for production use
+PBFT (name "pbft", version 0.1)
+    Leader-based, non-forking consensus algorithm with finality that provides Byzantine Fault Tolerance (BFT). Ideal for smaller, consortium-style networks that do not require open membership.
 PoET CFT (name "PoET", version 0.1)
     Also known as PoET Simulator. PoET with a simulated SGX environment. Provides CFT similar to some other blockchains. Requires poet-validator-registry TP. Runs on any processor (does not require Intel or SGX). Has Crash Fault Tolerance (CFT), but is not Byzantine Fault Tolerant (BFT)
 PoET SGX (name "PoET", version 0.1)
@@ -19,7 +21,7 @@ Raft (name "sawtooth-raft-engine", version 0.1.0). Currently supported in Sawtoo
 
 Will Sawtooth support more consensus algorithms in the future?
 --------------------------------------------------------------
-Yes. With pluggable consensus, the idea is to have a meaningful set of consensus algorithms so the "best fit" can be applied to an application's use case. Raft is a recent addition--still being stabilized. There is a PBFT prototype in the works. Others are being planned.
+Yes. With pluggable consensus, the idea is to have a meaningful set of consensus algorithms so the "best fit" can be applied to an application's use case. Raft is a recent addition--still being stabilized. Others are being planned.
 
 REMME.io has independently implemented Algorand Byzantine Agreement on Sawtooth.
 
@@ -193,7 +195,7 @@ What are the minimum number of nodes needed for PoET?
 PoET needs at least 3 nodes, but works best with at least 5 nodes. This is to avoid Z Test failures (a node winning too frequently). In production, to keep a blockchain safe, more nodes are always better, regardless of the consensus. 10 nodes are good for internal testing. For production, have 2 nodes per identity.
 
 Can PoET be configured for small networks?
-------------------------------------
+------------------------------------------
 Yes, for development purposes.
 For production purposes, consider using another consensus algorithm.
 We recommend PBFT for small networks.
