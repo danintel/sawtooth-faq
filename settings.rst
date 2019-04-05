@@ -41,8 +41,9 @@ sawtooth.consensus.max_wait_time
 sawtooth.consensus.min_wait_time
     Minimum devmode consensus wait time, in seconds
 
-sawtooth.consensus.pbft.peers
-    JSON list of each peer node's public key. Only required PBFT setting.
+sawtooth.consensus.pbft.members
+    JSON list of public keys belonging to each node that is a member of the PBFT
+    network. Only required PBFT setting.
     Key is from ``/etc/sawtooth/keys/validator.pub`` .
     Example:
     ``["0276f8fed116837eb7646f800e2dad6d13ad707055923e49df08f47a963547b631",\
