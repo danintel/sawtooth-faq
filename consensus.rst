@@ -16,7 +16,7 @@ PoET CFT (name "PoET", version 0.1)
     Also known as PoET Simulator. PoET with a simulated SGX environment. Provides CFT similar to some other blockchains. Requires poet-validator-registry TP. Runs on any processor (does not require Intel or SGX). Has Crash Fault Tolerance (CFT), but is not Byzantine Fault Tolerant (BFT)
 PoET SGX (name "PoET", version 0.1)
     Takes advantage of SGX in order to provide consensus with Byzantine Fault Tolerance (BFT), like PoW algorithms have, but at very low CPU usage. PoET SGX is the only algorithm that has hardware requirements (a processor supporting SGX)
-Raft (name "sawtooth-raft-engine", version 0.1.0). Currently supported in Sawtooth 1.0 only.
+Raft (name "sawtooth-raft-engine", version 0.1)
     Consensus algorithm that elects a leader for a term of arbitrary time. Leader replaced if it times-out. Raft is faster than PoET, but is CFT, not BFT. Also Raft does not fork. For Sawtooth Raft is new and still being stabilized.
 
 Will Sawtooth support more consensus algorithms in the future?
