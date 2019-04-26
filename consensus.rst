@@ -240,6 +240,16 @@ In PoET, forks occur due to a network partition, the size of the network, the ti
 
 TPs don’t really affect forks, unless they have a severe impact on the validation duration of the block. However, unresolvable forks due to non-determinism, are likely a TP problem.
 
+How do I fix PoET using Intel SGX IAS API version 2, which is end of life?
+--------------------------------------------------------------------------
+For those who are trying to use PoET SGX with IAS, you need to move to the IAS API v3 interface. Basically just go through and change the IAS URLs from `/v2/` to `/v3/`
+The change needs to be made in files `ias_client/sawtooth_ias_client/ias_client.py`
+and `ias_client/tests/unit/test_ias_client.py` .
+
+The Intel SGX IAS v3 API is at
+https://software.intel.com/sites/default/files/managed/7e/3b/ias-api-spec.pdf
+
+ 
 [PREVIOUS_ | FAQ_ | NEXT_]
 
 .. _PREVIOUS: validator.rst
