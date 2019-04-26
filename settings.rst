@@ -30,9 +30,9 @@ sawtooth.config.authorization_type
     Example setting--never used.  To set authorization type, use command line option ``sawtooth-validator --network-auth {trust|challenge}``
 
 sawtooth.consensus.algorithm.name
-    Pluggable consensus algorithm name. These include ``PoET``, ``Devmode``, ``sawtooth-raft-engine``, and ``sawtooth-pbft``.  The default is ``devmode`` for Sawtooth 1.1 or earlier, with no default for the (unreleased) nightly build.
+    Pluggable consensus algorithm name. These include ``PoET``, ``Devmode``, ``raft``, and ``pbft``.  The default is ``devmode`` for Sawtooth 1.1 or earlier, with no default for the (unreleased) nightly build.
 sawtooth.consensus.algorithm.version
-    Consensus algorithm version. Currently 0.1 for PoET, Devmode, and sawtooth-pbft, and 0.1.0 for sawtooth-raft-engine.
+    Consensus algorithm version. Currently 0.1 for PoET, Devmode, PBFT, and Raft.
 sawtooth.consensus.block_validation_rules
     Lists validation rules to use in deciding what blocks to add to the blockchain.
     See https://sawtooth.hyperledger.org/docs/core/nightly/master/architecture/injecting_batches_block_validation_rules.html
