@@ -33,7 +33,7 @@ To use, basically set ``sawtooth.consensus.algorithm`` to ``raft`` and
 
 Does the PBFT implementation follow the original paper?
 -------------------------------------------------------
-Yes, it follows the original 1999 Castro and Liskov paper without modifications or optimizations.
+Yes, it follows the original 1999 Castro and Liskov paper with some modifications and optimizations.
 
 Does the PoET CFT implement the same consensus algorithm as PoET SGX?
 ---------------------------------------------------------------------
