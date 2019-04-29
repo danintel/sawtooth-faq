@@ -51,35 +51,25 @@ sawtooth.consensus.pbft.members
 
     For details on this and other PBFT settings, see
     https://github.com/hyperledger/sawtooth-pbft/blob/master/src/config.rs
-sawtooth.consensus.pbft.block_duration
-    How often to try to publish a block. Optional, default 200 ms.
-sawtooth.consensus.pbft.exponential_retry_base
-    Base time to use for retrying with exponential backoff
-    Optional, default 100 ms
-sawtooth.consensus.pbft.exponential_retry_max
-    Maximum time for retrying with exponential backoff.
-    Optional, default 60s
+sawtooth.consensus.pbft.block_publishing_delay
+    How often to try to publish a block. Optional, default 1000 ms.
 sawtooth.consensus.pbft.idle_timeout
     How long to wait for the next (BlockNew + PrePrepare) before determining
-    primary is faulty. Must be longer than block_duration.
-    Optional, default 30s
+    primary is faulty. Must be longer than block_publishing_delay.
+    Optional, default 30000 ms
 sawtooth.consensus.pbft.commit_timeout
     How long to wait (after Pre-Preparing) for the node to commit the block
     before starting a view change
-    Optional, default 30s
+    Optional, default 10000 ms
 sawtooth.consensus.pbft.view_change_duration
-    If a node on view v starts a change to view (v + n), the timeout before
-    starting a new change to view (v + n + 1) will be (n * view_change_duration)
-    Optional, default 5s
-sawtooth.consensus.pbft.forced_view_change_period
+    How long to wait for a valid ``NewView`` message before starting the next
+    view change. If a node on view v starts a change to view (v + n), the
+    timeout before starting a new change to view (v + n + 1) will be
+    (n * view_change_duration)
+    Optional, default 5000 ms
+sawtooth.consensus.pbft.forced_view_change_interval
     How many blocks to commit before forcing a view change for fairness
-    Optional, default 30 blocks
-sawtooth.consensus.pbft.message_timeout
-    How long to wait for updates from the Consensus API.
-    Optional, default 10 ms.
-sawtooth.consensus.pbft.max_log_size
-    How large the PBFT message log is allowed to get.
-    Optional, default 1000 messages
+    Optional, default 100 blocks
 
 sawtooth.consensus.raft.election_tick
     RAFT consensus election tick, in seconds. E.g., 1500
