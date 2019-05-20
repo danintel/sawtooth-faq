@@ -214,6 +214,6 @@ You are following instructions for the unreleased Sawtooth ``nightly`` build. Th
 
 .. _PREVIOUS: rest.rst
 .. _FAQ: README.rst
-.. _NEXT: glossary.rst
+.. _NEXT: upgrade.rst
 
 © Copyright 2018, Intel Corporation.

@@ -17,6 +17,7 @@ Frequently-asked Questions
 - `Sawtooth Client`_
 - `Sawtooth REST API`_
 - `Using Docker with Sawtooth`_
+- `Sawtooth Upgrade`_
 
 Appendix
 --------
@@ -48,6 +49,7 @@ This sign-off means you agree the commit satisfies the
 .. _Sawtooth Client: client.rst
 .. _Sawtooth REST API: rest.rst
 .. _Using Docker with Sawtooth: docker.rst
+.. _Sawtooth Upgrade: upgrade.rst
 .. _Sawtooth FAQ Glossary: glossary.rst
 .. _Sawtooth Transaction Family Prefixes: prefixes.rst
 .. _Sawtooth Settings: settings.rst

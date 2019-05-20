@@ -260,7 +260,7 @@ zkSNARKS
 
 [PREVIOUS_ | FAQ_ | NEXT_]
 
-.. _PREVIOUS: docker.rst
+
 .. _FAQ: README.rst
 .. _NEXT: prefixes.rst
 
