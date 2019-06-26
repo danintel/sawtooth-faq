@@ -208,6 +208,20 @@ It is best to set `$SAWTOOTH_HOME` so all the configuration and data is under on
 I get this error running Docker: ``ERROR: manifest for hyperledger/sawtooth-validator:1.2 not found``
 -----------------------------------------------------------------------------------------------------
 You are following instructions for the unreleased Sawtooth ``nightly`` build. There are no Docker images for the nightly build. Instead use the ``latest`` build documentation at https://sawtooth.hyperledger.org/docs/core/releases/latest/app_developers_guide.html
+ 
+Why doesn't sawtooth-default-poet.yaml start the network successfully on subsequent runs ?
+------------------------------------------------------------------------------------------
+
+The root cause is the stale volume mounted, these are mounted for storing
+sawtooth keys in order to share between the containers. If you observe the error
+in subsequent runs that means these mounted volumes are left behind. The command
+"docker-compose down" does not remove the stale volumes mounted. To solve the
+problem, you can prune the volume as well and not just down the containers.
+For example the following removes containers and volumes
+
+::
+   
+   docker-compose down -v
 
 
 [PREVIOUS_ | FAQ_ | NEXT_]
