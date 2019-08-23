@@ -198,19 +198,10 @@ To enable, first paste the contents of your public key, at `` ~/.ssh/id_rsa.pub`
 
 After creating your AWS Sawtooth instance, go to your EC2 Dashboard and click on the security group for your instance (usually ``default``). Select the ``Inbound`` tab and  ``Edit``. Add ``SSH`` (TCP port 22) and Source ``Anywhere`` (or ``My IP`` and your IP address) and save. I had to reboot the instance (Actions --> InstanceState --> Reboot) to get it to work.
 
-
 How to I build Sawtooth from source?
 ------------------------------------
-Use ``git`` to download the source, then ``build_all`` to build. Type ``./bin/build_all`` for options. For example:
-.. code:: sh
-
-    $ sawtooth --version
-    $ git clone https://github.com/hyperledger/sawtooth-core
-    $ cd sawtooth-core
-    $ ./bin/build_all -l python
-
-For details, see
-https://github.com/hyperledger/sawtooth-core/blob/master/BUILD.md
+Run ``sudo docker-compose build`` from the root source directory. For instructions
+see https://github.com/hyperledger/sawtooth-core/blob/master/BUILD.md
 
 How do I install Sawtooth on FreeBSD?
 -------------------------------------
@@ -267,7 +258,7 @@ It is just a warning and you can ignore it. Verify the Sawtooth repository was a
 
 I get this error starting Sawtooth on Docker: ``No response from ... beginning heartbeat pings``
 ------------------------------------------------------------------------------------------------
-This means there is a problem with the genesis node and peer nodes connecting.
+It means that there has been no message exchange between the validators for 10 seconds. There is not necessarily a problem, but it could mean the the genesis node and peer nodes are not connecting.
 
 How do I list sawtooth command line options?
 --------------------------------------------
