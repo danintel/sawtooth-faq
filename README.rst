@@ -1,13 +1,13 @@
 Hyperledger Sawtooth FAQ
 ========================
 
-Frequently-asked Questions (FAQ) for Hyperledger Sawtooth.
-Many questions and answers originated from the Sawtooth chat channel at
-https://chat.hyperledger.org/channel/sawtooth
+**The Hyperledger Sawtooth FAQ has moved to**
+https://sawtooth.hyperledger.org/faq/
 
+**Please update your links.**
 
-Frequently-asked Questions
---------------------------
+Sawtooth FAQ Sections
+---------------------
 
 - `Sawtooth in General`_
 - `Sawtooth Installation and Configuration`_
@@ -16,6 +16,7 @@ Frequently-asked Questions
 - `Sawtooth Consensus Algorithms (including PoET)`_
 - `Sawtooth Client`_
 - `Sawtooth REST API`_
+- `Sawtooth Permissioning`_
 - `Using Docker with Sawtooth`_
 - `Sawtooth Upgrade`_
 
@@ -27,36 +28,19 @@ Appendix
 - `Sawtooth Settings`_
 - `Sawtooth Videos`_
 
-Contributing
-------------
+.. _Sawtooth in General: https://sawtooth.hyperledger.org/faq/sawtooth/
+.. _Sawtooth Installation and Configuration: https://sawtooth.hyperledger.org/faq/installation/
+.. _Sawtooth Transaction Processing: https://sawtooth.hyperledger.org/faq/transaction-processing/
+.. _Sawtooth Validator: https://sawtooth.hyperledger.org/faq/validator/
+.. _Sawtooth Consensus Algorithms (including PoET): https://sawtooth.hyperledger.org/faq/consensus/
+.. _Sawtooth Client: https://sawtooth.hyperledger.org/faq/client/
+.. _Sawtooth REST API: https://sawtooth.hyperledger.org/faq/rest/
+.. _Using Docker with Sawtooth: https://sawtooth.hyperledger.org/faq/docker/
+.. _Sawtooth Upgrade: https://sawtooth.hyperledger.org/faq/upgrade/
+.. _Sawtooth FAQ Glossary: https://sawtooth.hyperledger.org/faq/glossary/
+.. _Sawtooth Transaction Family Prefixes: https://sawtooth.hyperledger.org/faq/prefixes/
+.. _Sawtooth Settings: https://sawtooth.hyperledger.org/faq/settings/
+.. _Sawtooth Permissioning: https://sawtooth.hyperledger.org/faq/permissioning/
+.. _Sawtooth Videos: https://sawtooth.hyperledger.org/faq/videos/
 
-This FAQ is licensed under Creative Commons Attribution 4.0 International
-License. You may obtain a copy of the license at:
-http://creativecommons.org/licenses/by/4.0/.
-
-We accept contributions via GitHub_ pull requests. Each commit must include a
-``Signed-off-by:`` in the commit message (``git commit -s``).
-This sign-off means you agree the commit satisfies the
-`Developer Certificate of Origin (DCO)`_.]
-
-[NEXT_]
-
-.. _Sawtooth in General: sawtooth.rst
-.. _Sawtooth Installation and Configuration: installation.rst
-.. _Sawtooth Transaction Processing: transaction-processing.rst
-.. _Sawtooth Validator: validator.rst
-.. _Sawtooth Consensus Algorithms (including PoET): consensus.rst
-.. _Sawtooth Client: client.rst
-.. _Sawtooth REST API: rest.rst
-.. _Using Docker with Sawtooth: docker.rst
-.. _Sawtooth Upgrade: upgrade.rst
-.. _Sawtooth FAQ Glossary: glossary.rst
-.. _Sawtooth Transaction Family Prefixes: prefixes.rst
-.. _Sawtooth Settings: settings.rst
-.. _Sawooth Permissioning: permissioning.rst
-.. _Sawtooth Videos: videos.rst
-.. _GitHub: https://github.com/danintel/sawtooth-faq
-.. _Developer Certificate of Origin (DCO): https://developercertificate.org/
-.. _NEXT: sawtooth.rst
-
-© Copyright 2018, Intel Corporation.
+© Copyright 2019 Intel Corporation.
