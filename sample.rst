@@ -41,17 +41,17 @@ Lists
 - Use single dash character ``-`` at the beginning of the line
 - Second item
 - Third item
-- To next a list, indent the items and preceed with a blank line
+- To nest a list, indent the items by four spaces and preceed with a blank line
 
-  - First nested item preceeded with a blank line
-  - Second nested item
+    - First nested item preceeded with a blank line
+    - Second nested item
 
 1. For a numbered list, use numbers followed by a period, ``.``
 2. Second item
 3. Third item
 
-  1. First nested item preceeded with a blank line
-  2. Second nested item
+    1. First nested item preceeded with a blank line and indented four spaces
+    2. Second nested item
 
 Definition List
   A list of term/definition pairs
