@@ -14,6 +14,12 @@ https://github.com/hyperledger/sawtooth-website/tree/master/generator/source/faq
 and the generated result at
 https://sawtooth.hyperledger.org/faq/
 
+I usually debug RST by creating and pushing a new branch to Github.
+Then I view the new or modified file in the branch I pushed.
+There are also standalone RST viewers available.
+Be aware RST has minor variations with different implementations,
+so the best way to check Github RST is to use Github.
+
 Simple Examples
 ===============
 I will show several examples here that I taken from the FAQ example above.
