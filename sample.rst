@@ -3,11 +3,11 @@ Restructured Text Example
 =========================
 RST or Restructured Text markup is a powerful markup language.
 It's more powerful than MarkDown (MD) and used in Linux-style documentation
-(using ``Spinx <spinx-doc.org>`_``).
+(using `Spinx <spinx-doc.org>`_).
 MD is **not** upwards compatible with RST.
 So, for these reasons I recommend using RST for non-trivial documentation
 (anything more than a simple README),
-``Github <github.com>`_`` renders RST similar to MD.
+`Github <github.com>`_ renders RST similar to MD.
 
 For examples of RST markdown, see the Sawtooth FAQ source at
 https://github.com/hyperledger/sawtooth-website/tree/master/generator/source/faq
