@@ -3,7 +3,7 @@ Restructured Text Example
 =========================
 RST or Restructured Text markup is a powerful markup language.
 It's more powerful than MarkDown (MD) and used in Linux-style documentation
-(using Sphinx).
+(using ``Spinx <spinx-doc.org>`_``).
 MD is **not** upwards compatible with RST.
 So, for these reasons I recommend using RST for non-trivial documentation
 (anything more than a simple README),
