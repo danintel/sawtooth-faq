@@ -80,12 +80,19 @@ There are many ways to make a table.  The easiest is just to use ASCII graphics.
 
 
 >     +--------------+-----------+----------+
+
 >     | PROGRAMMING  |           |          |
+
 >     | LANGUAGE     | EXTENSION | RELEASED |
+
 >     +==============+===========+==========+
+
 >     | C++          | .cpp      | 1985     |
+
 >     +--------------+-----------+----------+
+
 >     | Python       | .py       | 1991     |
+
 >     +--------------+-----------+----------+
 
 Becomes this:
