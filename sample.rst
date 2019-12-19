@@ -81,19 +81,19 @@ There are many ways to make a table.  The easiest is just to use ASCII graphics.
 
 
 ``+--------------+-----------+----------+``
-<br>
+<br />
 ``| PROGRAMMING  |           |          |``
-<br>
+<br />
 ``| LANGUAGE     | EXTENSION | RELEASED |``
-<br>
+<br />
 ``+==============+===========+==========+``
-<br>
+<br />
 ``| C++          | .cpp      | 1985     |``
-<br>
+<br />
 ``+--------------+-----------+----------+``
-<br>
+<br />
 ``| Python       | .py       | 1991     |``
-<br>
+<br />
 ``+--------------+-----------+----------+``
 
 Becomes this:
