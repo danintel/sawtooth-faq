@@ -53,9 +53,11 @@ RST
 Code
 ======
 
-To add code blocks, use ``.. code:: sh`` where ``sh`` is the (optional) language (sh, python, c, cpp, js, rst),
-followed by a blank line, then the code.
+To add code blocks, use ``.. code:: sh`` where ``sh`` is the (optional) language
+(sh, python, c, cpp, js, rst),
+preceeded and followed by a blank line, then the code.
 For example:
+
 .. code:: python
 
         # Simple Python program
