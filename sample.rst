@@ -46,7 +46,7 @@ Lists
     - First nested item preceeded with a blank line
     - Second nested item
 
-#. For a numbered list, use numbers followed by a period, ``.``
+#. For a numbered list, use the pound sign followed by a period, ``#.``
 #. Second item
 #. Third item
 
@@ -79,16 +79,14 @@ Tables
 There are many ways to make a table.  The easiest is just to use ASCII graphics.  For example, this:
 
 
-``
-     +--------------+-----------+----------+
-     | PROGRAMMING  |           |          |
-     | LANGUAGE     | EXTENSION | RELEASED |
-     +==============+===========+==========+
-     | C++          | .cpp      | 1985     |
-     +--------------+-----------+----------+
-     | Python       | .py       | 1991     |
-     +--------------+-----------+----------+
-``
+>     +--------------+-----------+----------+
+>     | PROGRAMMING  |           |          |
+>     | LANGUAGE     | EXTENSION | RELEASED |
+>     +==============+===========+==========+
+>     | C++          | .cpp      | 1985     |
+>     +--------------+-----------+----------+
+>     | Python       | .py       | 1991     |
+>     +--------------+-----------+----------+
 
 Becomes this:
 
