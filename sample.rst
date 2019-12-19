@@ -79,6 +79,7 @@ Tables
 ======
 There are many ways to make a table.  The easiest is just to use ASCII graphics.  For example, this:
 
+    This:
 
     +--------------+-----------+----------+
     | PROGRAMMING  |           |          |
