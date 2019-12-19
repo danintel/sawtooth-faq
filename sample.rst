@@ -46,12 +46,12 @@ Lists
     - First nested item preceeded with a blank line
     - Second nested item
 
-1. For a numbered list, use numbers followed by a period, ``.``
-2. Second item
-3. Third item
+#. For a numbered list, use numbers followed by a period, ``.``
+#. Second item
+#. Third item
 
-    1. First nested item preceeded with a blank line and indented four spaces
-    2. Second nested item
+    #. First nested item preceeded with a blank line and indented four spaces
+    #. Second nested item
 
 Definition List
   A list of term/definition pairs
