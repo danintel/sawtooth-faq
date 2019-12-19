@@ -45,12 +45,10 @@ Lists
 
 Definition List
   A list of term/definition pairs
-Term
+Term goes here
   Definition goes here
 RST
   Restructured Text
-MD
-  Markdown
 
 Code
 ======
@@ -95,6 +93,7 @@ References
 Several cheatsheets are available.
 I usually just look for "restructured text" and the formatting I want in a search engine.
 Here are two random cheat sheets:
+
 * https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html#inline-markup-and-special-characters-e-g-bold-italic-verbatim
 * https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst
 
