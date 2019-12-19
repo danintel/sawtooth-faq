@@ -81,7 +81,7 @@ There are many ways to make a table.  The easiest is just to use ASCII graphics.
 
 
 | ``+--------------+-----------+----------+``
-| ``| PROGRAMMING  | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |          |``
+| ``| PROGRAMMING  | `` `` `` `` `` `` `` `` `` `` |          |``
 | ``| LANGUAGE     | EXTENSION | RELEASED |``
 | ``+==============+===========+==========+``
 | ``| C++          | .cpp      | 1985     |``
